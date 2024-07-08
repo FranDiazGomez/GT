@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>Diagnosis YouTube Dialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"1080px","designHeight":"768px"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"800px","height":"600px","minWidth":"800px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","justifyContent":"Space-between"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Diagnosis YouTube Dialog","fontClass":"OpenSans22","width":"90%","margin":"8px 8px 8px 20px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 8px 0px 0px","symbol":"close","width":"auto"}'
+                        data-win-actions='{
+	                	                	                                            "triggers":[
+	                	                	                                                {
+	                	                	                                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+	                	                	                                                    "eventName":"onButtonClick",
+	                	                	                                                    "triggeredActions":[
+	                	                	                                                        {
+	                	                	                                                            "type":"VisiWin.Actions.CloseDialogAction"
+	                	                	                                                        }
+	                	                	                                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default"}'>
+                    <div data-win-control="Lenze.UI.YouTubePlayer"
+                        data-win-options='{"style":"Custom.Default","left":"120px","top":"100px","width":"100%","height":"100%","right":"-84px","bottom":"-45px","watchCode":"tZCSOkUpK-w"}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","text":"OK","foregroundColor":"@White","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Ok"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

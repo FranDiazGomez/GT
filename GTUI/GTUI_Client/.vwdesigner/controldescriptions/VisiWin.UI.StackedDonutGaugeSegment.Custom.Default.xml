@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.2" spec="1.0" runtimeType="VisiWin.UI.StackedDonutGaugeSegment" style="Custom.Default" name="VisiWin.UI.StackedDonutGaugeSegment.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">StackedDonutGaugeSegment</title>
+	<description type="text/plain">A StackedDonutGaugeSegment control.</description>
+	
+	<properties>
+		<!-- Variable -->
+		<property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+		editorParameter="ItemDataTypeFilter:Numeric:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+			<description type="text/plain">Gets or sets the VariableName option.</description>
+		</property>
+		<property displayName="Value" name="value" datatype="String" category="Variable" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Value option.</description>
+		</property>
+		<property displayName="Show value" name="showValue" datatype="Boolean" category="Variable" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowValue option.</description>
+		</property>
+		<property displayName="Use raw value" name="useRawValue" datatype="Boolean" category="Variable" isBrowsable="false">
+			<description type="text/plain">Gets or sets the UseRawValue option.</description>
+		</property>
+		<property displayName="Decimal places" name="decimalPlaces" datatype="Number" category="Variable" isBrowsable="true" isInteger="true">
+			<description type="text/plain">Gets or sets the DecimalPlaces option.</description>
+		</property>
+
+		  <!-- Appearance -->
+	<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+		<!-- Text -->
+		<property displayName="Text width" name="textWidth" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the TextWidth option.</description>
+		</property>
+		<property displayName="Text height" name="textHeight" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the TextHeight option.</description>
+		</property>
+		<property displayName="Text alignment" name="textAlignment" datatype="VisiWin.UI.Text.Alignment" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextAlignment option.</description>
+		</property>
+		<property displayName="Text contrast" name="textContrast" datatype="Number" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextContrast option.</description>
+		</property>
+
+		<!-- Label -->
+		<property displayName="Use variable text" name="useVariableText" datatype="Boolean" category="Label" isBrowsable="true">
+			<description type="text/plain">Gets or sets the UseVariableText option.</description>
+		</property>
+		<property displayName="Label text" name="labelText" datatype="String" category="Label" isBrowsable="true">
+			<description type="text/plain">Gets or sets the LabelText option.</description>
+		</property>
+		<property displayName="Localizable label text" name="localizableLabelText" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableLabelText option.</description>
+		</property>
+		<property displayName="Font class" name="fontClass" datatype="Lenze.UI.Text.FontClass" category="Label" isBrowsable="false">
+			<description type="text/plain">Gets or sets the FontClass option.</description>
+		</property>
+		<property displayName="Font size" name="fontSize" datatype="String" category="Label" isBrowsable="false" >
+			<description type="text/plain">Gets or sets the FontSize option.</description>
+		</property>	
+		<property displayName="Text color" name="textColor" datatype="String" category="Label" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" >
+			<description type="text/plain">Gets or sets the TextColor option.</description>
+		</property>
+		<property displayName="Uppercase" name="uppercase" datatype="Boolean" category="Label" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Uppercase option.</description>
+		</property>
+		<property displayName="Show label" name="showLabel" datatype="Boolean" category="Label" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowLabel option.</description>
+		</property>	
+	
+
+		<!-- Layout -->
+		<property displayName="Radial bar width" name="radialBarWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the RadialBarWidth option.</description>
+		</property>
+		<property displayName="Cap form" name="capForm" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the CapForm option.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Fill color" name="fillColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the FillColor option.</description>
+		</property>
+		<property displayName="Start color" name="startColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the StartColor option.</description>
+		</property>
+		<property displayName="End color" name="endColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the EndColor option.</description>
+		</property>
+
+		<!-- Unit -->
+		<property displayName="Localizable unit text" name="localizableUnitText" datatype="String" category="Unit" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableUnitText option.</description>
+		</property>
+		<property displayName="Unit text" name="unitText" datatype="String" category="Unit" isBrowsable="true">
+			<description type="text/plain">Gets or sets the UnitText option.</description>
+		</property>
+		<property displayName="Use variable unit text" name="useVariableUnitText" datatype="Boolean" category="Unit" isBrowsable="true">
+			<description type="text/plain">Gets or sets the UseVariableUnitText option.</description>
+		</property>
+
+	</properties>
+
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.StackedDonutGaugeSegment" data-win-options="{style:'Custom.Default'}"></div>]]>
+	</content>
+</control>

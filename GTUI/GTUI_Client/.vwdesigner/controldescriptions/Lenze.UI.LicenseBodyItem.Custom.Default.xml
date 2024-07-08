@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.LicenseBodyItem" style="Custom.Default" name="Lenze.UI.LicenseBodyItem.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">LicenseBodyItem</title>
+  <description type="text/plain">Control for showing a summary of the license information.</description>
+  <properties>
+
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the DataContext option.</description>
+    </property>
+
+
+    <!-- Component Type -->
+    <property displayName="Type text alignment" name="typeTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Component Type" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TypeTextAlignment option.</description>
+    </property>
+    <property displayName="Type line clamp" name="typeLineClamp" datatype="Number" category="Component Type" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the TypeLineClamp option.</description>
+    </property>
+    <property displayName="Type text wrapping" name="typeTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Component Type" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TypeTextWrapping option.</description>
+    </property>
+    <property displayName="Type text trimming" name="typeTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Component Type" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TypeTextTrimming option.</description>
+    </property>
+    <property displayName="Type text contrast" name="typeTextContrast" datatype="Number" category="Component Type" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TypeTextContrast option.</description>
+    </property>
+    <property displayName="Type uppercase" name="typeUppercase" datatype="Boolean" category="Component Type" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TypeUppercase option.</description>
+    </property>
+    <property displayName="Type text decoration" name="typeTextDecoration" datatype="String" category="Component Type" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TypeTextDecoration option.</description>
+    </property>
+    <property displayName="Type text shadow" name="typeTextShadow" datatype="String" category="Component Type" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TypeTextShadow option.</description>
+    </property>
+
+    <property displayName="Type font class" name="typeFontClass" datatype="Lenze.UI.Text.FontClass" category="Component Type" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TypeFontClass option.</description>
+    </property>
+    <property displayName="Type font family" name="typeFontFamily" datatype="String" category="Component Type" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeFontFamily option.</description>
+    </property>
+    <property displayName="Type font size" name="typeFontSize" datatype="String" category="Component Type" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeFontSize option.</description>
+    </property>
+    <property displayName="Type font weight" name="typeFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Component Type" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeFontWeight option.</description>
+    </property>
+    <property displayName="Type line height" name="typeLineHeight" datatype="String" category="Component Type" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeLineHeight option.</description>
+    </property>
+    <property displayName="Type font style" name="typeFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Component Type" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeFontStyle option.</description>
+    </property>
+    <property displayName="Type letter spacing" name="typeLetterSpacing" datatype="String" category="Component Type" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TypeLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Component Name -->
+    <property displayName="Name text alignment" name="nameTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Component Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NameTextAlignment option.</description>
+    </property>
+    <property displayName="Name line clamp" name="nameLineClamp" datatype="Number" category="Component Name" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the NameLineClamp option.</description>
+    </property>
+    <property displayName="Name text wrapping" name="nameTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Component Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NameTextWrapping option.</description>
+    </property>
+    <property displayName="Name text trimming" name="nameTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Component Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NameTextTrimming option.</description>
+    </property>
+    <property displayName="Name text contrast" name="nameTextContrast" datatype="Number" category="Component Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NameTextContrast option.</description>
+    </property>
+    <property displayName="Name uppercase" name="nameUppercase" datatype="Boolean" category="Component Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NameUppercase option.</description>
+    </property>
+    <property displayName="Name text decoration" name="nameTextDecoration" datatype="String" category="Component Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NameTextDecoration option.</description>
+    </property>
+    <property displayName="Name text shadow" name="nameTextShadow" datatype="String" category="Component Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NameTextShadow option.</description>
+    </property>
+
+    <property displayName="Name font class" name="nameFontClass" datatype="Lenze.UI.Text.FontClass" category="Component Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NameFontClass option.</description>
+    </property>
+    <property displayName="Name font family" name="nameFontFamily" datatype="String" category="Component Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameFontFamily option.</description>
+    </property>
+    <property displayName="Name font size" name="nameFontSize" datatype="String" category="Component Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameFontSize option.</description>
+    </property>
+    <property displayName="Name font weight" name="nameFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Component Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameFontWeight option.</description>
+    </property>
+    <property displayName="Name line height" name="nameLineHeight" datatype="String" category="Component Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameLineHeight option.</description>
+    </property>
+    <property displayName="Name font style" name="nameFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Component Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameFontStyle option.</description>
+    </property>
+    <property displayName="Name letter spacing" name="nameLetterSpacing" datatype="String" category="Component Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NameLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Credits -->
+    <property displayName="Credits text alignment" name="creditsTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Credits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CreditsTextAlignment option.</description>
+    </property>
+    <property displayName="Credits line clamp" name="creditsLineClamp" datatype="Number" category="Credits" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the CreditsLineClamp option.</description>
+    </property>
+    <property displayName="Credits text wrapping" name="creditsTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Credits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CreditsTextWrapping option.</description>
+    </property>
+    <property displayName="Credits text trimming" name="creditsTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Credits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CreditsTextTrimming option.</description>
+    </property>
+    <property displayName="Credits text contrast" name="creditsTextContrast" datatype="Number" category="Credits" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CreditsTextContrast option.</description>
+    </property>
+    <property displayName="Credits uppercase" name="creditsUppercase" datatype="Boolean" category="Credits" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CreditsUppercase option.</description>
+    </property>
+    <property displayName="Credits text decoration" name="creditsTextDecoration" datatype="String" category="Credits" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CreditsTextDecoration option.</description>
+    </property>
+    <property displayName="Credits text shadow" name="creditsTextShadow" datatype="String" category="Credits" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CreditsTextShadow option.</description>
+    </property>
+
+    <property displayName="Credits font class" name="creditsFontClass" datatype="Lenze.UI.Text.FontClass" category="Credits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CreditsFontClass option.</description>
+    </property>
+    <property displayName="Credits font family" name="creditsFontFamily" datatype="String" category="Credits" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsFontFamily option.</description>
+    </property>
+    <property displayName="Credits font size" name="creditsFontSize" datatype="String" category="Credits" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsFontSize option.</description>
+    </property>
+    <property displayName="Credits font weight" name="creditsFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Credits" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsFontWeight option.</description>
+    </property>
+    <property displayName="Credits line height" name="creditsLineHeight" datatype="String" category="Credits" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsLineHeight option.</description>
+    </property>
+    <property displayName="Credits font style" name="creditsFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Credits" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsFontStyle option.</description>
+    </property>
+    <property displayName="Credits letter spacing" name="creditsLetterSpacing" datatype="String" category="Credits" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CreditsLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+
+    <property displayName="Type background color" name="typeBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TypeBackgroundColor option.</description>
+    </property>
+    <property displayName="Type foreground color" name="typeForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TypeForegroundColor option.</description>
+    </property>
+
+    <property displayName="Name background color" name="nameBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NameBackgroundColor option.</description>
+    </property>
+    <property displayName="Name foreground color" name="nameForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NameForegroundColor option.</description>
+    </property>
+
+    <property displayName="Credits background color" name="creditsBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CreditsBackgroundColor option.</description>
+    </property>
+    <property displayName="Credits foreground color" name="creditsForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CreditsForegroundColor option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.LicenseBodyItem" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

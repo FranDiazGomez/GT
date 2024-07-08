@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "none",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "./libs/typings/"
+    ],
+    "skipLibCheck": true
+  }
+}

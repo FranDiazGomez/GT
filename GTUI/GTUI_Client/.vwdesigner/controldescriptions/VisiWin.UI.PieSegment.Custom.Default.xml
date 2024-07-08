@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.PieSegment" style="Custom.Default" name="VisiWin.UI.PieSegment.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">PieSegment</title>
+  <description type="text/plain">A PieSegment control.</description>
+  <properties>
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Numeric:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Value" name="value" datatype="String" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+    <property displayName="Decimal places" name="decimalPlaces" datatype="Number" category="Variable" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the DecimalPlaces option.</description>
+    </property>
+
+       <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+    <!-- Radius -->
+    <property displayName="Inner radius" name="innerRadius" datatype="String" category="Radius" isBrowsable="false">
+      <description type="text/plain">Gets or sets the InnerRadius option.</description>
+    </property>
+    <property displayName="Outer radius" name="outerRadius" datatype="String" category="Radius" isBrowsable="false">
+      <description type="text/plain">Gets or sets the OuterRadius option.</description>
+    </property>
+
+    
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+
+    <!-- Label -->
+    <property displayName="Use variable text" name="useVariableText" datatype="Boolean" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableText option.</description>
+    </property>
+    <property displayName="Label text" name="labelText" datatype="String" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LabelText option.</description>
+    </property>
+    <property displayName="Localizable label text" name="localizableLabelText" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableLabelText option.</description>
+    </property>
+
+    <!-- Unit -->
+    <property displayName="Use variable unit text" name="useVariableUnitText" datatype="Boolean" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableUnitText option.</description>
+    </property>
+    <property displayName="Unit text" name="unitText" datatype="String" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UnitText option.</description>
+    </property>
+    <property displayName="Localizable unit text" name="localizableUnitText" datatype="String" category="Unit" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableUnitText option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Fill color" name="fillColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the FillColor option.</description>
+    </property>
+  </properties>
+
+  <content>
+    <![CDATA[<div data-win-control="VisiWin.UI.PieSegment" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>ContentDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"600px","height":"400px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","margin":"8px 8px 8px 14px","fontClass":"OpenSans16","text":"Scanner Arm"}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","padding":"0px 8px","width":"100%","justifyContent":"Center","alignItems":"Start"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Outlined","foregroundColor":"@PrimaryColor","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Cancel","width":"45%","height":"48px","fontClass":"OpenSans16","symbolMargin":"0px 8px 0px 0px"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","foregroundColor":"@SecondaryColor","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Ok","width":"135px","height":"48px","borderWidth":"1px","fontClass":"OpenSans16","symbolMargin":"0px 8px 0px 0px"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

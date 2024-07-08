@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>ChangeUserDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"800px","designHeight":"800px","dataContext":"changeUser"}'
+        data-win-bind="winControl.onAfterHide:reset">
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","alignItems":"Center"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","height":"auto","minWidth":"320px","borderRadius":"0px 0px 0px 0px","minHeight":"480px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Change user","localizableText":"@[ServerApplication].UserManagement.EditUser","fontClass":"OpenSans22","margin":"8px 8px 8px 20px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 8px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"24px 24px 16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 16px 0px","listType":"ChangeUsers","showErrorText":true,"errorTextAlignment":"Justify","justifyContent":"Start","showLabel":false,"localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrName","floatingLabelText":"","textContainerHeight":"48px","showFloatingLabel":true}'
+                        data-win-bind="winControl.selectedValue:name         VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserNameError">
+                    </div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 16px 0px","lostKeyboardFocusBehaviour":"WriteInput","inputFieldMargin":"0px 8px","floatingLabelText":"Full name","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrFullName","showErrorText":true,"justifyContent":"Start","labelUppercase":false,"inputHeight":"48px","showFloatingLabel":true,"watermarkText":"","showLabel":false,"disabledBackgroundColor":"@AppBackgroundColor"}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:fullName VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserFullNameError;  winControl.disabled:noUserSelected">
+                    </div>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 16px 0px","listType":"ChangeUserGroups","justifyContent":"Start","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrUserGroup","showLabel":false,"symbolMargin":"0px 0px 4px 0px","labelFontClass":"Roboto14","textContainerHeight":"48px","showFloatingLabel":true,"localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrUserGroup","disabledBackgroundColor":"@AppBackgroundColor"}'
+                        data-win-bind="winControl.selectedValue:groupName;                                winControl.errorText: errorText; winControl.errorMode: isUserGroupError;     winControl.disabled:noUserSelected">
+                    </div>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 16px 0px","listType":"ChangeUserStates","justifyContent":"Start","showLabel":false,"localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.lblState","textContainerHeight":"48px","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblState","showFloatingLabel":true,"disabledBackgroundColor":"@AppBackgroundColor"}'
+                        data-win-bind="winControl.selectedValue:userState;  winControl.errorText: errorText; winControl.errorMode: isUserStateError;     winControl.disabled:noUserSelected">
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Outlined","minWidth":"100px","margin":"0px 12px 8px 0px","fontClass":"OpenSans16","width":"45%","localizableText":"@[ServerApplication].Common.Cancel"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","minWidth":"100px","margin":"0px 0px 8px 0px","text":"Ok","width":"50%","fontClass":"OpenSans16","fontSize":"16px","localizableText":"@[ServerApplication].Common.Ok"}'
+                        data-win-bind="winControl.disabled:canExecute Converters.booleanInverter"
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.ChangeUserAction"}]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

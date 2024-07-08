@@ -1,0 +1,52 @@
+﻿{
+  "stateCollections": [
+    {
+      "name": "colorCollection1",
+      "propertyType": "color",
+      "states": [
+        {
+          "value": "<0",
+          "propertyValue": "white"
+        },
+        {
+          "value": "0",
+          "propertyValue": "green"
+        },
+        {
+          "value": "1..20",
+          "propertyValue": "yellow"
+        },
+        {
+          "value": "21,23,25,27,29",
+          "propertyValue": "red"
+        },
+        {
+          "value": "22,24,26,28",
+          "propertyValue": "blue"
+        },
+        {
+          "value": ">=30",
+          "propertyValue": "black"
+        }
+      ]
+    },
+    {
+      "name": "colorCollection2",
+      "propertyType": "color",
+      "states": [
+        {
+          "value": "<0",
+          "propertyValue": "white"
+        },
+        {
+          "value": "0",
+          "propertyValue": "#FFEBEE"
+        },
+        {
+          "value": "1",
+          "propertyValue": "rgb(255, 255, 128)"
+        }
+      ]
+    }
+  ]
+}

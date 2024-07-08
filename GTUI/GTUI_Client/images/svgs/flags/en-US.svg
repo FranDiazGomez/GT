@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+   xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9 6">
+   <g id="g121" transform="matrix(0.001,0,0,0.001,0,0)">
+      <g id="g99">
+         <rect style="fill:#b22234;stroke-width:1.36695898" width="9000" height="6000" id="rect2" />
+         <path style="stroke:#ffffff;stroke-width:410.087677" d="m 0,692.30768 h 9000 m 0,923.07692 H 0 m 0,923.0769 h 9000 m 0,923.0769 H 0 m 0,923.0769 h 9000 m 0,923.0769 H 0" id="path4" />
+      </g>
+      <g transform="scale(1,1.0068506)" id="g95">
+         <rect style="fill:#3c3b6e;stroke-width:1.36695898" width="3600" height="3230.769" id="rect6" />
+         <g style="fill:#ffffff" id="g31" transform="scale(1.2145749,1.5384615)">
+            <g id="s18">
+               <g id="s9">
+                  <g id="s5">
+                     <g id="s4">
+                        <path id="s" d="M 247,90 317.53423,307.08204 132.87322,172.91796 H 361.12678 L 176.46577,307.08204 Z" />
+                        <use xlink:href="#s" y="420" id="use9" />
+                        <use xlink:href="#s" y="840" id="use11" />
+                        <use xlink:href="#s" y="1260" id="use13" />
+                     </g>
+                     <use xlink:href="#s" y="1680" id="use16" />
+                  </g>
+                  <use xlink:href="#s4" x="247" y="210" id="use19" />
+               </g>
+               <use xlink:href="#s9" x="494" id="use22" />
+            </g>
+            <use xlink:href="#s18" x="988" id="use25" />
+            <use xlink:href="#s9" x="1976" id="use27" />
+            <use xlink:href="#s5" x="2470" id="use29" />
+         </g>
+      </g>
+   </g>
+</svg>

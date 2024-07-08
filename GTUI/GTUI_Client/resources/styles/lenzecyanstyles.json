@@ -1,0 +1,1644 @@
+{
+  "styles": {
+    "controls": {
+      "Lenze.UI.AlarmLine.LenzeCyan.Default": {
+        "options": {
+          "alarmOneActAckBackgroundColor": "@ErrorColor",
+          "alarmOneActAckBorderColor": "@ErrorColor",
+          "alarmOneActAckSymbolColor": "@Black",
+          "alarmOneActAckTextColor": "@Black",
+          "alarmOneActBackgroundColor": "@ErrorColor",
+          "alarmOneActBorderColor": "@ErrorColor",
+          "alarmOneActSymbolColor": "@White",
+          "alarmOneActTextColor": "@White",
+          "alarmOneDesiredClasses": "Systemalarm, Alarm",
+          "alarmOneIconFont": "material-icons",
+          "alarmOneInactAckBackgroundColor": "@Transparent",
+          "alarmOneInactAckBorderColor": "@ErrorColor",
+          "alarmOneInactAckSymbolColor": "@Black",
+          "alarmOneInactAckTextColor": "@Black",
+          "alarmOneInactBackgroundColor": "@Transparent",
+          "alarmOneInactBorderColor": "@ErrorColor",
+          "alarmOneInactSymbolColor": "@ErrorColor",
+          "alarmOneInactTextColor": "@Black",
+          "alarmOneSymbol": "error",
+          "alarmThreeActAckBackgroundColor": "@InfoColor",
+          "alarmThreeActAckBorderColor": "@InfoColor",
+          "alarmThreeActAckSymbolColor": "@Black",
+          "alarmThreeActAckTextColor": "@Black",
+          "alarmThreeActBackgroundColor": "@InfoColor",
+          "alarmThreeActBorderColor": "@InfoColor",
+          "alarmThreeActSymbolColor": "@White",
+          "alarmThreeActTextColor": "@White",
+          "alarmThreeDesiredClasses": "Hint",
+          "alarmThreeIconFont": "material-icons",
+          "alarmThreeInactAckBackgroundColor": "@Transparent",
+          "alarmThreeInactAckBorderColor": "@InfoColor",
+          "alarmThreeInactAckSymbolColor": "@Black",
+          "alarmThreeInactAckTextColor": "@Black",
+          "alarmThreeInactBackgroundColor": "@Transparent",
+          "alarmThreeInactBorderColor": "@InfoColor",
+          "alarmThreeInactSymbolColor": "@InfoColor",
+          "alarmThreeInactTextColor": "@Black",
+          "alarmThreeSymbol": "info",
+          "alarmTwoActAckBackgroundColor": "@WarningColor",
+          "alarmTwoActAckBorderColor": "@WarningColor",
+          "alarmTwoActAckSymbolColor": "@Black",
+          "alarmTwoActAckTextColor": "@Black",
+          "alarmTwoActBackgroundColor": "@WarningColor",
+          "alarmTwoActBorderColor": "@WarningColor",
+          "alarmTwoActSymbolColor": "@White",
+          "alarmTwoActTextColor": "@White",
+          "alarmTwoDesiredClasses": "Message",
+          "alarmTwoIconFont": "material-icons",
+          "alarmTwoInactAckBackgroundColor": "@Transparent",
+          "alarmTwoInactAckBorderColor": "@WarningColor",
+          "alarmTwoInactAckSymbolColor": "@Black",
+          "alarmTwoInactAckTextColor": "@Black",
+          "alarmTwoInactBackgroundColor": "@Transparent",
+          "alarmTwoInactBorderColor": "@WarningColor",
+          "alarmTwoInactSymbolColor": "@WarningColor",
+          "alarmTwoInactTextColor": "@Black",
+          "alarmTwoSymbol": "warning",
+          "borderRadius": "0px",
+          "borderWidth": "0px",
+          "height": "40px",
+          "inactiveBackgroundColor": "@Transparent",
+          "margin": "0px",
+          "width": "100%"
+        }
+      },
+      "Lenze.UI.AlarmLineCollection.LenzeCyan.Default": {
+        "options": {
+          "dropDownAcknowledgeButtonBackgroundColor": "@PrimaryColor",
+          "dropDownAcknowledgeButtonBorderColor": "transparent",
+          "dropDownAcknowledgeButtonBorderRadius": "0px",
+          "dropDownAcknowledgeButtonBorderStyle": "none",
+          "dropDownAcknowledgeButtonBorderWidth": "1px",
+          "dropDownAcknowledgeButtonDisabledBackgroundColor": "@MediumGrey",
+          "dropDownAcknowledgeButtonDisabledBorderColor": "@DisabledBorderColor",
+          "dropDownAcknowledgeButtonDisabledForegroundColor": "@DarkGrey",
+          "dropDownAcknowledgeButtonFontClass": "OpenSans16",
+          "dropDownAcknowledgeButtonForegroundColor": "@AltForegroundColor",
+          "dropDownAcknowledgeButtonHeight": "40px",
+          "dropDownAcknowledgeButtonHoverBackgroundColor": "@HoverBackgroundColor",
+          "dropDownAcknowledgeButtonHoverBorderColor": "@HoverBorderColor",
+          "dropDownAcknowledgeButtonPressedBackgroundColor": "@PressedBackgroundColor",
+          "dropDownAcknowledgeButtonPressedForegroundColor": "@White",
+          "dropDownAcknowledgeButtonShowSymbol": false,
+          "dropDownAcknowledgeButtonTextPosition": "Center",
+          "dropDownAcknowledgeButtonUppercase": false,
+          "dropDownAcknowledgeButtonWidth": "200px",
+          "dropDownCloseButtonBackgroundColor": "@PrimaryColor",
+          "dropDownCloseButtonBorderColor": "transparent",
+          "dropDownCloseButtonBorderRadius": "0px",
+          "dropDownCloseButtonBorderStyle": "none",
+          "dropDownCloseButtonBorderWidth": "1px",
+          "dropDownCloseButtonDisabledBackgroundColor": "@MediumGrey",
+          "dropDownCloseButtonDisabledBorderColor": "@DisabledBorderColor",
+          "dropDownCloseButtonDisabledForegroundColor": "@DarkGrey",
+          "dropDownCloseButtonFontClass": "OpenSans16",
+          "dropDownCloseButtonForegroundColor": "@AltForegroundColor",
+          "dropDownCloseButtonHeight": "40px",
+          "dropDownCloseButtonHoverBackgroundColor": "@HoverBackgroundColor",
+          "dropDownCloseButtonHoverBorderColor": "@HoverBorderColor",
+          "dropDownCloseButtonPressedBackgroundColor": "@PressedBackgroundColor",
+          "dropDownCloseButtonPressedForegroundColor": "@White",
+          "dropDownCloseButtonShowSymbol": false,
+          "dropDownCloseButtonTextPosition": "Center",
+          "dropDownCloseButtonUppercase": false,
+          "dropDownCloseButtonWidth": "100px",
+          "dropDownCustomButtonBackgroundColor": "@PrimaryColor",
+          "dropDownCustomButtonBorderColor": "transparent",
+          "dropDownCustomButtonBorderRadius": "0px",
+          "dropDownCustomButtonBorderStyle": "none",
+          "dropDownCustomButtonBorderWidth": "1px",
+          "dropDownCustomButtonDisabledBackgroundColor": "@MediumGrey",
+          "dropDownCustomButtonDisabledBorderColor": "@DisabledBorderColor",
+          "dropDownCustomButtonDisabledForegroundColor": "@DarkGrey",
+          "dropDownCustomButtonFontClass": "OpenSans16",
+          "dropDownCustomButtonForegroundColor": "@AltForegroundColor",
+          "dropDownCustomButtonHeight": "40px",
+          "dropDownCustomButtonHoverBackgroundColor": "@HoverBackgroundColor",
+          "dropDownCustomButtonHoverBorderColor": "@HoverBorderColor",
+          "dropDownCustomButtonPressedBackgroundColor": "@PressedBackgroundColor",
+          "dropDownCustomButtonPressedForegroundColor": "@White",
+          "dropDownCustomButtonShowSymbol": false,
+          "dropDownCustomButtonTextPosition": "Center",
+          "dropDownCustomButtonUppercase": false,
+          "dropDownCustomButtonWidth": "100px"
+        }
+      },
+      "Lenze.UI.AlarmLineItem.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.AssetTree.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.DateTimePresenter.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "dateBackgroundColor": "@Transparent",
+          "dateBorderColor": "@PrimaryColor",
+          "dateFirst": false,
+          "dateFontClass": "OpenSans16",
+          "dateFontSize": "16px",
+          "dateForegroundColor": "@ForegroundColor",
+          "dateFormat": "DD/MM/YYYY",
+          "dateLineHeight": "24px",
+          "dateMargin": "0px",
+          "datePadding": "0px",
+          "displayHorizontal": false,
+          "height": "auto",
+          "margin": "0px",
+          "padding": "0px",
+          "showDate": true,
+          "showTime": true,
+          "timeBackgroundColor": "@Transparent",
+          "timeBorderColor": "@PrimaryColor",
+          "timeFontClass": "OpenSans22",
+          "timeForegroundColor": "@ForegroundColor",
+          "timeFormat": "HH:mm",
+          "timeMargin": "0px",
+          "timePadding": "0px",
+          "width": "122px"
+        }
+      },
+      "Lenze.UI.FunctionTree.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.LanguageSelector.LenzeCyan.Default": {
+        "options": {
+          "labelFontClass": "OpenSans14"
+        }
+      },
+      "Lenze.UI.LicenseList.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.LicenseTotal.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.Logbook.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.LogbookFilter.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.NetworkTree.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.PanoramaView.LenzeCyan.Default": {
+        "options": {
+          "leftSymbol": "keyboard_arrow_left",
+          "rightSymbol": "keyboard_arrow_right"
+        }
+      },
+      "Lenze.UI.PanoramaViewItem.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.PdfViewer.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.RecipesControl.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.Scrollbar.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.SegmentBar.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "barActiveColor": "@PrimaryColor",
+          "barInactiveColor": "@LightGrey",
+          "barsAmount": "25",
+          "barsBorderRadius": "0px",
+          "barsSpaceBetween": "5px",
+          "bodyForegroundColor": "@DarkGrey",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBarActiveColor": "@DarkGrey",
+          "disabledBarInactiveColor": "@WhiteGrey",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "footerContainerHeight": "auto",
+          "footerContainerMargin": "0px",
+          "footerContainerPadding": "0px",
+          "footerContainerWidth": "auto",
+          "footerFontSize": "32px",
+          "footerHeight": "auto",
+          "footerLineClamp": 1,
+          "footerLineHeight": 1,
+          "footerMargin": "8px 0px 0px 0px",
+          "footerPadding": "0px",
+          "footerTextAlignment": "Right",
+          "footerTextContrast": 1,
+          "footerTextTrimming": "None",
+          "footerTextWrapping": "NoWrap",
+          "footerUnitFontClass": "OpenSans20",
+          "footerUnitForegroundColor": "@PrimaryColor",
+          "footerUnitText": "%",
+          "footerValueContainerMargin": "0px 8px 0px 0px",
+          "footerValueFontClass": "OpenSans20",
+          "footerValueForegroundColor": "@PrimaryColor",
+          "footerValueHeight": "auto",
+          "footerValueTextAlignment": "Right",
+          "footerValueWidth": "100%",
+          "headerContainerHeight": "auto",
+          "headerContainerMargin": "8px",
+          "headerContainerPadding": "0px",
+          "headerContainerWidth": "auto",
+          "headerFontClass": "OpenSans16",
+          "headerFontSize": "16px",
+          "headerHeight": "auto",
+          "headerLabelForegroundColor": "@ForegroundColor",
+          "headerLabelHeight": "auto",
+          "headerLabelText": "SegmentBar",
+          "headerLabelWidth": "auto",
+          "headerLineClamp": 1,
+          "headerLineHeight": 1,
+          "headerMargin": "0px 8px 0px 8px",
+          "headerPadding": "1px",
+          "headerShowLabel": false,
+          "headerTextAlignment": "Center",
+          "headerTextContrast": 1,
+          "headerTextTrimming": "None",
+          "headerTextWrapping": "NoWrap",
+          "headerUppercase": false,
+          "headerWidth": "100%",
+          "height": "300px",
+          "margin": "0px",
+          "maxValue": 100,
+          "minValue": 0,
+          "padding": "0px",
+          "showFooterUnit": true,
+          "showFooterValue": true,
+          "useVariableFooterUnitText": true,
+          "width": "80px"
+        }
+      },
+      "Lenze.UI.VirtualKeyboard.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AltGrey2",
+          "enterKeyActiveForegroundColor": "@White",
+          "enterKeyForegroundColor": "@White",
+          "keyActiveForegroundColor": "@Black",
+          "keyForegroundColor": "@Black",
+          "spaceKeyBackgroundColor": "@MediumGrey",
+          "specialKeysActiveForegroundColor": "@Black",
+          "specialKeysBackgroundColor": "@WhiteGrey",
+          "specialKeysForegroundColor": "@Black"
+        }
+      },
+      "Lenze.UI.VirtualKeyboardDialog.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.VirtualizingTableColumn.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.XYChart.LenzeCyan.Default": {
+        "options": {
+          "width": "300px"
+        }
+      },
+      "Lenze.UI.XYChartLine.LenzeCyan.Default": {
+        "options": {}
+      },
+      "Lenze.UI.YouTubePlayer.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AltBackgroundColor"
+        }
+      },
+      "VisiWin.UI.AbsoluteLayout.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.AlarmIndicator.LenzeCyan.Default": {
+        "options": {
+          "badgeBackgroundColor": "@PrimaryColor"
+        }
+      },
+      "VisiWin.UI.AlarmIndicatorItem.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent"
+        }
+      },
+      "VisiWin.UI.AlarmList.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.AppBar.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@White",
+          "height": "56px",
+          "shadow": "@Elevation_z4",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.AppBarLayout.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "height": "100%",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.AppBaseLayout.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.AppDrawerHeader.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "height": "56px",
+          "margin": "0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.AppErrorList.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.AppNavDrawer.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@BackgroundColor",
+          "shadow": "@Elevation_z4",
+          "width": "256px"
+        }
+      },
+      "VisiWin.UI.AppNavMenu.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.AppNavMenuButton.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "foregroundColor": "@ForegroundColor",
+          "height": "32px",
+          "width": "32px"
+        }
+      },
+      "VisiWin.UI.AppPageNavigator.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@MediumGrey",
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.AppPageTitle.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "fontClass": "Title",
+          "foregroundColor": "@ForegroundColor",
+          "height": "32px",
+          "textContrast": "1",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.AppSideNavLayout.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AppBackgroundColor",
+          "drawerMode": "Responsive",
+          "height": "100%",
+          "responsiveWidth": "900px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.AppToolbar.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@White",
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.Bar.LenzeCyan.Default": {
+        "options": {
+          "authorizationMode": "Disabled",
+          "barBackgroundColor": "@LightGrey",
+          "barIndicatorColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "decimalPlaces": 0,
+          "direction": "Up",
+          "disabledBarBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBarIndicatorColor": "@DisabledForegroundColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledValueLabelBackgroundColor": "@DisabledBackgroundColor",
+          "height": "250px",
+          "limitMax": 100,
+          "limitMin": 0,
+          "majorLabelsDecimalPlaces": 0,
+          "majorLabelsFontClass": "OpenSans12",
+          "majorLabelsOffset": 8,
+          "majorSteps": 10,
+          "majorTicksColor": "@AltGrey",
+          "majorTicksLength": 12,
+          "majorTicksWidth": 1,
+          "margin": "0px",
+          "middleSteps": 2,
+          "middleTicksColor": "@AltGrey",
+          "middleTicksLength": 12,
+          "middleTicksWidth": 1,
+          "minorSteps": 5,
+          "minorTicksColor": "@AltGrey",
+          "minorTicksLength": 6,
+          "minorTicksWidth": 1,
+          "scaleForegroundColor": "@ForegroundColor",
+          "showBaseLine": false,
+          "showMajorTicks": true,
+          "showMiddleTicks": true,
+          "showMinorTicks": false,
+          "showUnit": true,
+          "showValue": true,
+          "unitFontClass": "OpenSans20",
+          "unitForegroundColor": "@PrimaryColor",
+          "unitHeight": "auto",
+          "unitMargin": "0px",
+          "unitPosition": "Inside",
+          "unitText": "%",
+          "unitTextAlignment": "Left",
+          "unitTextContrast": 1,
+          "unitWidth": "auto",
+          "valueFontClass": "OpenSans20",
+          "valueForegroundColor": "@PrimaryColor",
+          "valueHeight": "auto",
+          "valueLabelBackgroundColor": "@Transparent",
+          "valueLabelBorderRadius": "0px",
+          "valueLabelBorderStyle": "solid",
+          "valueLabelBorderWidth": "0px",
+          "valueLabelMargin": "0px 0px 8px 8px",
+          "valueLabelOffset": 4,
+          "valueMargin": "0px",
+          "valueTextAlignment": "Right",
+          "valueTextContrast": 1,
+          "valueWidth": "auto",
+          "width": "70px"
+        }
+      },
+      "VisiWin.UI.BarLimit.LenzeCyan.Default": {
+        "options": {
+          "endValue": 35,
+          "fillColor": "@PrimaryColor",
+          "startValue": 20
+        }
+      },
+      "VisiWin.UI.Button.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@PrimaryColor",
+          "borderColor": "transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@MediumGrey",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DarkGrey",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@AltForegroundColor",
+          "height": "40px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "showText": true,
+          "symbolMargin": "0px 8px 0px 0px",
+          "text": "Button",
+          "textAlignment": "Center",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "textWidth": "100%",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.Button.LenzeCyan.Icon": {
+        "options": {
+          "backgroundColor": "@None",
+          "borderRadius": "50%",
+          "containerBorderRadius": "50%",
+          "height": "48px",
+          "hoverBackgroundColor": "@PrimaryLightColor",
+          "pressedBackgroundColor": "@PrimaryDarkColor",
+          "pressedForegroundColor": "@White",
+          "showSymbol": true,
+          "showText": false,
+          "symbol": "close",
+          "symbolMargin": "0px",
+          "textMargin": "0px",
+          "width": "48px"
+        }
+      },
+      "VisiWin.UI.Button.LenzeCyan.Outlined": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@PrimaryColor",
+          "height": "40px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "symbolMargin": "0px 8px 0px 0px",
+          "text": "Button",
+          "textAlignment": "Center",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "textWidth": "100%",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.Card.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "shadow": "none"
+        }
+      },
+      "VisiWin.UI.CardContent.LenzeCyan.Default": {
+        "options": {
+          "borderStyle": "none"
+        }
+      },
+      "VisiWin.UI.CardHeader.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AltBackgroundColor",
+          "borderStyle": "none",
+          "height": "53px",
+          "subtitleMargin": "-6px 0px 0px",
+          "titleFontClass": "OpenSans20",
+          "titleFontSize": "18px",
+          "titleFontWeight": "FW500",
+          "titleForegroundColor": "@ForegroundColor"
+        }
+      },
+      "VisiWin.UI.CardLayout.LenzeCyan.Default": {
+        "options": {
+          "overflow": "auto"
+        }
+      },
+      "VisiWin.UI.Checkbox.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "checkedBackgroundColor": "@Transparent",
+          "checkedBorderColor": "@Transparent",
+          "checkedCheckmarkBackgroundColor": "@CheckedBackgroundColor",
+          "checkedCheckmarkBorderColor": "@Transparent",
+          "checkedCheckmarkForegroundColor": "@AltForegroundColor",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedHoverCheckmarkBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverCheckmarkBorderColor": "@HoverBorderColor",
+          "checkedHoverCheckmarkForegroundColor": "@AltForegroundColor",
+          "checkedPressedCheckmarkBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedCheckmarkBorderColor": "@PressedBorderColor",
+          "checkedPressedCheckmarkForegroundColor": "@PrimaryLightColor",
+          "checkmarkBackgroundColor": "@Transparent",
+          "checkmarkBorderColor": "@BorderColor",
+          "checkmarkBorderWidth": "2px",
+          "checkmarkSymbolSize": "24px",
+          "disabledBackgroundColor": "@Transparent",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledCheckedCheckmarkBackgroundColor": "@Transparent",
+          "disabledCheckedCheckmarkBorderColor": "@DisabledForegroundColor",
+          "disabledCheckedCheckmarkForegroundColor": "@DisabledForegroundColor",
+          "disabledCheckmarkBorderColor": "@DisabledForegroundColor",
+          "disabledCheckmarkForegroundColor": "@Transparent",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "foregroundColor": "@ForegroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "hoverCheckmarkBackgroundColor": "@HoverBackgroundColor",
+          "hoverCheckmarkBorderColor": "@HoverBorderColor",
+          "labelFontClass": "OpenSans16",
+          "labelMargin": "0px 0px 0px 8px",
+          "labelText": "CheckBox",
+          "pressedCheckmarkBorderColor": "@BorderColor",
+          "showLabel": true
+        }
+      },
+      "VisiWin.UI.Clock.LenzeCyan.Default": {
+        "options": {
+          "dateFontClass": "OpenSans16",
+          "timeFontClass": "OpenSans16"
+        }
+      },
+      "VisiWin.UI.ColorIndicator.LenzeCyan.Default": {
+        "options": {
+          "height": "24px",
+          "width": "24px"
+        }
+      },
+      "VisiWin.UI.ColorIndicatorLimit.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.ContentDialog.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AppBackgroundColor",
+          "borderRadius": "0px 0px 0px 0px"
+        }
+      },
+      "VisiWin.UI.ContentDialogActionBar.LenzeCyan.Default": {
+        "options": {
+          "height": "auto",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.ContentDialogContent.LenzeCyan.Default": {
+        "options": {
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.ContentDialogHeader.LenzeCyan.Default": {
+        "options": {
+          "height": "auto",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.DateTimeVarIn.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "errorMode": false,
+          "inputFontClass": "OpenSans16",
+          "inputHeight": "48px",
+          "labelFontClass": "OpenSans14",
+          "labelHeight": "auto",
+          "labelWidth": "auto",
+          "width": "260px"
+        }
+      },
+      "VisiWin.UI.DateTimeVarOut.LenzeCyan.Default": {
+        "options": {
+          "dateFontClass": "OpenSans16",
+          "dateTimeMode": "TimeCRDate",
+          "formatDate": "ShortDate",
+          "timeFontClass": "OpenSans16"
+        }
+      },
+      "VisiWin.UI.Dialog.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.DialogView.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.Divider.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@MediumGrey",
+          "height": "1px",
+          "margin": "8px 0px 8px 0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.DonutGauge.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "decimalPlaces": 0,
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledIndicatorBackgroundColor": "@DisabledBackgroundColor",
+          "disabledIndicatorColor": "@DisabledForegroundColor",
+          "endAngle": 150,
+          "height": "200px",
+          "indicatorBackgroundColor": "@AltBackgroundColor",
+          "indicatorColor": "@PrimaryColor",
+          "innerRadius": "95%",
+          "limitMax": 100,
+          "limitMin": 0,
+          "outerRadius": "100%",
+          "showUnit": true,
+          "showValue": true,
+          "startAngle": 210,
+          "unitBackgroundColor": "@Transparent",
+          "unitFontClass": "OpenSans40",
+          "unitForegroundColor": "@PrimaryColor",
+          "unitHeight": "auto",
+          "unitMargin": "0px",
+          "unitPosition": "Inside",
+          "unitText": "%",
+          "unitTextAlignment": "Center",
+          "unitTextContrast": 1,
+          "unitWidth": "auto",
+          "useVariableLimits": false,
+          "valueBackgroundColor": "@Transparent",
+          "valueBorderColor": "@PrimaryColor",
+          "valueFontClass": "OpenSans40",
+          "valueForegroundColor": "@PrimaryColor",
+          "valueHeight": "auto",
+          "valueLabelPosition": "Center",
+          "valueMargin": "0px",
+          "valueTextAlignment": "Center",
+          "valueTextContrast": 1,
+          "valueWidth": "auto",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.DropDownBox.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AppBackgroundColor",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedForegroundColor": "@White",
+          "checkedInputBorderColor": "@AltGrey",
+          "floatingLabelForegroundColor": "@ForegroundColor",
+          "floatingLabelMargin": "8px 0px 0px 0px",
+          "focusedInputFieldBackgroundColor": "@CheckedBackgroundColor",
+          "height": "auto ",
+          "inputBorderColor": "@AltGrey",
+          "inputBorderRadius": "0px",
+          "inputBorderStyle": "solid",
+          "inputBorderWidth": "1px",
+          "inputFieldBackgroundColor": "@White",
+          "inputHeight": "48px",
+          "labelContainerWidth": "100%",
+          "labelFontClass": "OpenSans14",
+          "labelMargin": "0px 0px 4px 0px",
+          "labelWidth": "100%",
+          "menuBackgroundColor": "@AppBackgroundColor",
+          "showLeadingSymbol": false,
+          "trailingSymbol": "keyboard_arrow_down",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.DropDownBoxItem.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "0px 1px 1px 1px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedBorderColor": "@BorderColor",
+          "checkedForegroundColor": "@White",
+          "checkedHoverBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedPressedBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedForegroundColor": "@White",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "Label1",
+          "foregroundColor": "@ForegroundColor",
+          "height": "48px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "lineClamp": 1,
+          "margin": "0px",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "showSymbol": false,
+          "showText": true,
+          "symbolMargin": "0px 8px",
+          "symbolSize": "24px",
+          "textAlignment": "Left",
+          "textContrast": 1,
+          "textHeight": "auto",
+          "textMargin": "6px 8px 0px 8px",
+          "textPadding": "0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.EmbeddedWebsite.LenzeCyan.Default": {
+        "options": {
+          "height": "300px",
+          "width": "300px"
+        }
+      },
+      "VisiWin.UI.FlexLayout.LenzeCyan.Default": {
+        "options": {
+          "overflow": "hidden"
+        }
+      },
+      "VisiWin.UI.Group.LenzeCyan.Absolute": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "height": "auto",
+          "titleFontClass": "OpenSans20",
+          "titleMargin": "8px 0px 0px 4px",
+          "titleText": "Group Title",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.Group.LenzeCyan.AbsoluteCheckboxGroup": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "height": "auto",
+          "titleFontClass": "OpenSans20",
+          "titleMargin": "8px 0px 0px 4px",
+          "titleText": "Group Title",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.Group.LenzeCyan.Flex": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "height": "200px",
+          "titleFontClass": "OpenSans20",
+          "titleMargin": "8px 0px 0px 4px",
+          "titleText": "Group Title",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.Group.LenzeCyan.FlexCheckboxGroup": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "height": "auto",
+          "titleFontClass": "OpenSans20",
+          "titleMargin": "8px 0px 0px 4px",
+          "titleText": "CheckBox Group Title",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.HistoricalAlarmList.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.Image.LenzeCyan.Default": {
+        "options": {
+          "height": "24px",
+          "width": "24px"
+        }
+      },
+      "VisiWin.UI.ImageState.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.Key.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@PrimaryColor",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "margin": "8px",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "textMargin": "0px",
+          "textPadding": "0px"
+        }
+      },
+      "VisiWin.UI.Label.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "fontClass": "OpenSans16",
+          "labelForegroundColor": "@ForegroundColor",
+          "symbolForegroundColor": "@ForegroundColor",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.LoadingSpinner.LenzeCyan.Default": {
+        "options": {
+          "spinnerForegroundColor": "@PrimaryColor"
+        }
+      },
+      "VisiWin.UI.MenuItem.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderStyle": "none",
+          "borderWidth": "0px 0px 1px 0px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedForegroundColor": "@White",
+          "checkedHoverBackgroundColor": "@HoverBackgroundColor",
+          "checkedPressedBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedForegroundColor": "@AltForegroundColor",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "fontSize": "16px",
+          "fontWeight": "FW400",
+          "foregroundColor": "@ForegroundColor",
+          "height": "40px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "iconFont": "material-icons",
+          "lineHeight": "24px",
+          "margin": "0px",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "showSymbol": true,
+          "symbol": "dashboard",
+          "symbolMargin": "0px 20px 0px 20px",
+          "text": "Text",
+          "textMargin": "0px 8px 0px 0px",
+          "textPadding": "0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.NumericVarIn.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@Transparent",
+          "errorSymbol": "error",
+          "errorTextFontClass": "OpenSans12",
+          "floatingLabelFontClass": "OpenSans12",
+          "focusedInputBackgroundColor": "@Transparent",
+          "focusedInputBorderColor": "@CheckedBorderColor",
+          "height": "auto",
+          "helperTextFontClass": "OpenSans12",
+          "hoverInputBackgroundColor": "@Transparent",
+          "hoverInputBorderColor": "@HoverBorderColor",
+          "inputBackgroundColor": "@Transparent",
+          "inputBorderColor": "@BorderColor",
+          "inputBorderRadius": "0px",
+          "inputBorderStyle": "solid",
+          "inputBorderWidth": "1px",
+          "inputContainerWidth": "100%",
+          "inputFieldMargin": "4px 8px 0px 8px",
+          "inputFontClass": "OpenSans16",
+          "inputForegroundColor": "@ForegroundColor",
+          "inputHeight": "48px",
+          "inputLineHeight": "1.5",
+          "inputTextAlignment": "Left",
+          "labelContainerWidth": "auto",
+          "labelFontClass": "OpenSans14",
+          "labelForegroundColor": "@ForegroundColor",
+          "labelMargin": "0px 8px 4px 0px",
+          "labelWidth": "auto",
+          "leadingSymbolForegroundColor": "@ForegroundColor",
+          "margin": "16px 8px 8px 8px",
+          "showErrorSymbol": false,
+          "showErrorText": true,
+          "showUnit": true,
+          "symbolForegroundColor": "@ForegroundColor",
+          "trailingSymbolForegroundColor": "@ForegroundColor",
+          "trailingSymbolMargin": "8px",
+          "unitFontClass": "OpenSans16",
+          "unitForegroundColor": "@ForegroundColor",
+          "unitMargin": "8px 8px 6px 2px",
+          "unitTextAlignment": "Right",
+          "unitWidth": "auto",
+          "useVariableUnitText": false,
+          "watermarkText": "1234",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.NumericVarOut.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderRadius": "0px 0px 0px 0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@Transparent",
+          "height": "auto",
+          "labelContainerWidth": "100%",
+          "labelFontClass": "OpenSans14",
+          "labelForegroundColor": "@ForegroundColor",
+          "labelLineheight": 1.5,
+          "labelMargin": "0px 0px 4px 0px",
+          "labelPosition": "Top",
+          "labelTextAlignment": "Left",
+          "labelUppercase": false,
+          "labelWidth": "100%",
+          "margin": "8px",
+          "symbolMargin": "0px 8px 0px 0px",
+          "textHeight": "auto",
+          "unitFontClass": "OpenSans16",
+          "unitForegroundColor": "@ForegroundColor",
+          "unitLineHeight": 1.5,
+          "unitMargin": "8px 8px 6px 8px",
+          "unitWidth": "auto",
+          "useVariableUnitText": false,
+          "valueContainerBackgroundColor": "@Transparent",
+          "valueContainerHeight": "48px",
+          "valueContainerWidth": "100%",
+          "valueFontClass": "OpenSans16",
+          "valueForegroundColor": "@ForegroundColor",
+          "valueHeight": "auto",
+          "valueLineHeight": 1.5,
+          "valueMargin": "8px 8px 6px 8px",
+          "valueTextAlignment": "Left",
+          "valueWidth": "auto",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.Option.LenzeCyan.Default": {
+        "options": {
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "hoverBackgroundColor": "@HoverBackgroundColor"
+        }
+      },
+      "VisiWin.UI.PDFViewer.LenzeCyan.Default": {
+        "options": {
+          "height": "90%",
+          "width": "90%"
+        }
+      },
+      "VisiWin.UI.Page.LenzeCyan.Default": {
+        "options": {
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.PieChart.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderWidth": "0px",
+          "disabledBackroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledLegendBorderColor": "@DisabledBorderColor",
+          "foregroundColor": "@ForegroundColor",
+          "height": "120px",
+          "innerRadius": "80%",
+          "legendAlignment": "Center",
+          "legendBorderColor": "@BorderColor",
+          "legendBorderRadius": "0px",
+          "legendBorderWidth": "0px",
+          "legendHeight": "auto",
+          "legendMargin": "30px",
+          "legendPadding": "0px",
+          "legendPosition": "Right",
+          "legendWidth": "auto",
+          "margin": "0px",
+          "outerRadius": "100%",
+          "pieHeight": "100px",
+          "pieMargin": "0px",
+          "piePadding": "0px",
+          "pieWidth": "100px",
+          "showLegend": true,
+          "width": "350px"
+        }
+      },
+      "VisiWin.UI.PieSegment.LenzeCyan.Default": {
+        "options": {
+          "decimalPlaces": 0,
+          "fillColor": "@PrimaryColor",
+          "labelText": "Description",
+          "unitText": "%"
+        }
+      },
+      "VisiWin.UI.RadialInstrument.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "disabledBackgroundColor": "@Transparent",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledIndicatorBackgroundColor": "@Transparent",
+          "endAngle": 150,
+          "height": "200px",
+          "indicatorSize": "100%",
+          "indicatorUri": "images/svgs/instruments/cyandial.svg",
+          "limitMax": 100,
+          "limitMin": 0,
+          "majorLabelDecimalPlaces": 0,
+          "majorLabelOffset": 5,
+          "majorLabelsFontClass": "OpenSans14",
+          "majorSteps": 10,
+          "majorTicksColor": "@DarkGrey",
+          "majorTicksLength": 10,
+          "majorTicksWidth": 2,
+          "margin": "0px",
+          "middleSteps": 2,
+          "middleTicksColor": "@AltGrey",
+          "middleTicksLength": 10,
+          "middleTicksWidth": 1,
+          "minorSteps": 5,
+          "minorTicksColor": "@AltGrey",
+          "minorTicksLength": 10,
+          "minorTicksWidth": 1,
+          "rangeInnerRadius": "95%",
+          "rangeOuterRadius": "100%",
+          "scaleForegroundColor": "@AltGrey",
+          "scalePosition": "Inside",
+          "scaleRadius": "100%",
+          "showBaseLine": false,
+          "showMajorLabels": true,
+          "showMajorTicks": true,
+          "showMiddleTicks": true,
+          "showMinorTicks": true,
+          "startAngle": -150,
+          "value": 40,
+          "width": "240px"
+        }
+      },
+      "VisiWin.UI.RadioButton.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "checkedBackgroundColor": "@Transparent",
+          "checkedBorderColor": "@Transparent",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedHoverInnerCircleBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverOuterCircleBorderColor": "@HoverBorderColor",
+          "checkedInnerCircleBackgroundColor": "@CheckedBackgroundColor",
+          "checkedOuterCircleBorderColor": "@PrimaryColor",
+          "checkedPressedInnerCircleBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedOuterCircleBorderColor": "@PressedBackgroundColor",
+          "disabledBackgroundColor": "@Transparent",
+          "disabledCheckedInnerCircleBackgroundColor": "@DisabledForegroundColor",
+          "disabledCheckedInnerCircleBorderColor": "@DisabledBorderColor",
+          "disabledInnerCircleBorderColor": "@DisabledBorderColor",
+          "disabledOuterCircleBorderColor": "@DisabledBorderColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "hoverOuterCircleBorderColor": "@HoverBorderColor",
+          "labelFontClass": "OpenSans16",
+          "labelMargin": "0px 0px 0px 8px",
+          "outerCircleBorderColor": "@BorderColor",
+          "outerCircleBorderWidth": "2px",
+          "outerCircleHeight": "32px",
+          "outerCircleWidth": "32px",
+          "pressedOuterCircleBorderColor": "@PressedBorderColor"
+        }
+      },
+      "VisiWin.UI.RadioButtonGroup.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "height": "auto",
+          "titleFontClass": "OpenSans20",
+          "titleText": "RadioButton Group Title",
+          "width": "auto"
+        }
+      },
+      "VisiWin.UI.Region.LenzeCyan.Default": {
+        "options": {
+          "height": "200px",
+          "width": "300px"
+        }
+      },
+      "VisiWin.UI.Select.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@AppBackgroundColor",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "checkedBorderColor": "@BorderColor",
+          "checkedInputBackgroundColor": "@CheckedBackgroundColor",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "floatingLabelForegroundColor": "@AltGrey",
+          "hoverInputBackgroundColor": "@HoverBackgroundColor",
+          "inputBorderColor": "@BorderColor",
+          "inputForegroundColor": "@ForegroundColor",
+          "labelFontClass": "OpenSans16",
+          "labelForegroundColor": "@ForegroundColor",
+          "menuBorderRadius": "0px",
+          "menuBorderStyle": "solid",
+          "menuBorderWidth": "1px",
+          "primaryTextFontClass": "OpenSans16",
+          "primaryTextForegroundColor": "@ForegroundColor",
+          "textContainerHeight": "48px"
+        }
+      },
+      "VisiWin.UI.Slider.LenzeCyan.Default": {
+        "options": {
+          "activeTrackColor": "@PrimaryColor",
+          "backgroundColor": "@Transparent",
+          "bitNumber": "0",
+          "borderColor": "@PrimaryColor",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledActiveTrackColor": "@MediumGrey",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledThumbColor": "@MediumGrey",
+          "disabledTrackColor": "@MediumGrey",
+          "disabledValueLabelBackgroundColor": "@Transparent",
+          "disabledValueLabelBorderColor": "@DisabledBorderColor",
+          "foregroundColor": "@ForegroundColor",
+          "height": "80px",
+          "hoverActiveTrackColor": "@HoverBackgroundColor",
+          "hoverThumbBackgroundColor": "@HoverBackgroundColor",
+          "hoverThumbBorderColor": "@HoverBorderColor",
+          "maxLabelFontClass": "OpenSans16",
+          "maxValue": "100",
+          "minLabelFontClass": "OpenSans16",
+          "minValue": "0",
+          "padding": "2px 6px 2px 6px",
+          "pressedActiveTrackColor": "@PressedBackgroundColor",
+          "pressedThumbBackgroundColor": "@PressedBackgroundColor",
+          "pressedThumbBorderColor": "@PressedBorderColor",
+          "step": "1",
+          "thumbBackgroundColor": "@White",
+          "thumbBorderColor": "@PrimaryColor",
+          "thumbBorderStyle": "solid",
+          "thumbBorderWidth": "1px",
+          "thumbHeight": "30px",
+          "thumbWidth": "30px",
+          "trackBorderRadius": "4px",
+          "trackColor": "@AltGrey",
+          "unitWidth": "auto",
+          "valueFontClass": "OpenSans20",
+          "valueLabelBackgroundColor": "@Transparent",
+          "valueLabelBorderColor": "@Transparent",
+          "valueLabelBorderRadius": "0px",
+          "valueLabelBorderWidth": "1px",
+          "valueLabelHeight": "24px",
+          "valueLabelMargin": "8px 8px 8px 8px",
+          "valueLabelPadding": "0px",
+          "valueLabelWidth": "60px",
+          "valueTextAlignment": "Left",
+          "valueTextContrast": "1",
+          "valueWidth": "auto",
+          "width": "300px"
+        }
+      },
+      "VisiWin.UI.Spacer.LenzeCyan.Default": {
+        "options": {
+          "height": "0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.StateIndicator.LenzeCyan.Default": {
+        "options": {
+          "textMargin": "0px",
+          "textPadding": "0px"
+        }
+      },
+      "VisiWin.UI.StateIndicatorItem.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.Submenu.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "checkedHeaderBackgroundColor": "@Transparent",
+          "checkedHeaderForegroundColor": "@ForegroundColor",
+          "checkedHoverHeaderBackgroundColor": "@HoverBackgroundColor",
+          "checkedPressedHeaderBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedHeaderForegroundColor": "@White",
+          "containerMaxHeight": "300px",
+          "disabledHeaderBackgroundColor": "@DisabledBackgroundColor",
+          "disabledHeaderForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "fontSize": "16px",
+          "fontWeight": "FW400",
+          "headerBackgroundColor": "@Transparent",
+          "headerForegroundColor": "@ForegroundColor",
+          "height": "auto",
+          "hoverHeaderBackgroundColor": "@HoverBackgroundColor",
+          "lineHeight": "24px",
+          "margin": "0px",
+          "pressedHeaderBackgroundColor": "@PressedBackgroundColor",
+          "pressedHeaderForegroundColor": "@White",
+          "showSymbol": true,
+          "symbol": "menu",
+          "symbolMargin": "0px 20px 0px 20px",
+          "symbolSize": "24px",
+          "text": "Submenu",
+          "textMargin": "0px 8px 0px 0px",
+          "textPadding": "0px",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.Switch.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "checkedBackgroundColor": "@Transparent",
+          "checkedBorderColor": "@Transparent",
+          "checkedHoverBackgroundColor": "@Transparent",
+          "checkedHoverBorderColor": "@Transparent",
+          "checkedHoverThumbBackgroundColor": "@White",
+          "checkedHoverThumbBorderColor": "@HoverBorderColor",
+          "checkedHoverTrackBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverTrackBorderColor": "@HoverBorderColor",
+          "checkedLabelForegroundColor": "@ForegroundColor",
+          "checkedPressedBackgroundColor": "@Transparent",
+          "checkedPressedLabelForegroundColor": "@ForegroundColor",
+          "checkedPressedTextForegroundColor": "@ForegroundColor",
+          "checkedPressedThumbBackgroundColor": "@White",
+          "checkedPressedThumbBorderColor": "@PressedBorderColor",
+          "checkedPressedTrackBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedTrackBorderColor": "@PressedBorderColor",
+          "checkedTextForegroundColor": "@ForegroundColor",
+          "checkedThumbBackgroundColor": "@White",
+          "checkedThumbBorderColor": "@CheckedBorderColor",
+          "checkedTrackBackgroundColor": "@CheckedBackgroundColor",
+          "checkedTrackBorderColor": "@PressedBorderColor",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledCheckedThumbBackgroundColor": "@White",
+          "disabledCheckedThumbBorderColor": "@DisabledBorderColor",
+          "disabledCheckedTrackBackgroundColor": "@DisabledBackgroundColor",
+          "disabledCheckedTrackBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "disabledThumbBackgroundColor": "@White",
+          "disabledThumbBorderColor": "@DisabledBorderColor",
+          "disabledTrackBackgroundColor": "@DisabledBackgroundColor",
+          "disabledTrackBorderColor": "@DisabledBorderColor",
+          "fontClass": "OpenSans14",
+          "height": "auto",
+          "hoverBackgroundColor": "@Transparent",
+          "hoverBorderColor": "@Transparent",
+          "hoverThumbBackgroundColor": "@HoverBackgroundColor",
+          "hoverThumbBorderColor": "@HoverBorderColor",
+          "hoverTrackBackgroundColor": "@AltGrey",
+          "hoverTrackBorderColor": "@AltGrey",
+          "labelFontClass": "OpenSans16",
+          "labelForegroundColor": "@ForegroundColor",
+          "labelMargin": "0px 0px 8px 0px",
+          "labelPosition": "Top",
+          "labelTextAlignment": "Left",
+          "pressedBackgroundColor": "@Transparent",
+          "pressedLabelForegroundColor": "@ForegroundColor",
+          "pressedTextForegroundColor": "@ForegroundColor",
+          "pressedThumbBackgroundColor": "@White",
+          "pressedThumbBorderColor": "@PressedBorderColor",
+          "pressedThumbTextForegroundColor": "@ForegroundColor",
+          "pressedTrackBackgroundColor": "@AltGrey",
+          "pressedTrackBorderColor": "@AltGrey",
+          "showText": false,
+          "showThumbText": false,
+          "textForegroundColor": "@ForegroundColor",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "thumbBackgroundColor": "@White",
+          "thumbBorderColor": "@AltGrey",
+          "thumbBorderRadius": "25px",
+          "thumbBorderStyle": "solid",
+          "thumbBorderWidth": "1px",
+          "thumbHeight": "32px",
+          "thumbMargin": "0px",
+          "thumbTextFontClass": "OpenSans16",
+          "thumbWidth": "32px",
+          "touchRippleEnabled": false,
+          "trackBackgroundColor": "@AltGrey",
+          "trackBorderColor": "@AltGrey",
+          "trackBorderRadius": "24px",
+          "trackBorderStyle": "solid",
+          "trackBorderWidth": "1px",
+          "trackHeight": "16px",
+          "trackWidth": "64px"
+        }
+      },
+      "VisiWin.UI.TabBar.LenzeCyan.Default": {
+        "options": {
+          "alignContent": "Center",
+          "alignItems": "End",
+          "backgroundColor": "@Transparent",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "height": "auto",
+          "justifyContent": "Start",
+          "margin": "0px",
+          "selectedIndex": 0,
+          "showUnderline": false,
+          "underlineHeight": 2,
+          "underlineMode": "TabWidth",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.TabButton.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px 0.5px 1px 0.5px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedBorderColor": "@Transparent",
+          "checkedForegroundColor": "@AltForegroundColor",
+          "checkedHoverBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedPressedBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedForegroundColor": "@White",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@ForegroundColor",
+          "height": "100px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "iconFont": "material-icons",
+          "lineHeight": "1.5",
+          "margin": "0px",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "showSymbol": true,
+          "showText": true,
+          "symbol": "home",
+          "symbolMargin": "8px",
+          "symbolPosition": "Top",
+          "symbolSize": "36px",
+          "symbolType": "Icon",
+          "text": "TabButton",
+          "textAlignment": "Left",
+          "textContrast": 1,
+          "textHeight": "auto",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "uppercase": false,
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.TabMenuButton.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px 0.5px 1px 0.5px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedBorderColor": "@Transparent",
+          "checkedForegroundColor": "@AltForegroundColor",
+          "checkedHoverBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedPressedBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedForegroundColor": "@White",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@ForegroundColor",
+          "height": "100px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "iconFont": "material-icons",
+          "margin": "0px",
+          "menuBorderColor": "@BorderColor",
+          "menuBorderStyle": "solid",
+          "menuPlacement": "Top",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "showSymbol": true,
+          "showText": true,
+          "symbol": "dashboard",
+          "symbolMargin": "8px",
+          "symbolPosition": "Top",
+          "symbolSize": "36px",
+          "symbolType": "Icon",
+          "text": "TabMenuButton",
+          "textAlignment": "Left",
+          "textContrast": 1,
+          "textHeight": "auto",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "uppercase": false,
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.TextBlock.LenzeCyan.Default": {
+        "options": {}
+      },
+      "VisiWin.UI.TextVarIn.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@BorderColor",
+          "borderRadius": "0px",
+          "borderStyle": "none",
+          "borderWidth": "1px",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "errorTextFontClass": "OpenSans12",
+          "errorTextLineClamp": "2",
+          "errorTextTrimming": "Ellipsis",
+          "errorTextWrapping": "WrapWithLineClamp",
+          "floatingLabelForegroundColor": "@AltGrey",
+          "focusedInputBackgroundColor": "@Transparent",
+          "focusedInputBorderColor": "@CheckedBorderColor",
+          "foregroundColor": "@ForegroundColor",
+          "height": "auto",
+          "helperTextFontClass": "OpenSans12",
+          "helperTextForegroundColor": "@AltGrey",
+          "hoverInputBorderColor": "@HoverBorderColor",
+          "inputBackgroundColor": "@Transparent",
+          "inputBorderColor": "@BorderColor",
+          "inputBorderRadius": "0px",
+          "inputBorderStyle": "solid",
+          "inputBorderWidth": "1px",
+          "inputContainerWidth": "100%",
+          "inputFieldMargin": "10px 8px 4px 8px",
+          "inputFontClass": "OpenSans16",
+          "inputForegroundColor": "@ForegroundColor",
+          "inputHeight": "48px",
+          "labelContainerWidth": "auto",
+          "labelFontClass": "OpenSans14",
+          "labelMargin": "0px 0px 4px 0px",
+          "labelWidth": "auto",
+          "leadingSymbolForegroundColor": "@ForegroundColor",
+          "margin": "8px",
+          "showLabel": true,
+          "symbolForegroundColor": "@ForegroundColor",
+          "symbolMargin": "0px 8px 4px 0px",
+          "trailingSymbolForegroundColor": "@ForegroundColor",
+          "trailingSymbolMargin": "8px",
+          "watermarkText": "abcd",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.TextVarOut.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "disabledBackgroundColor": "@Transparent",
+          "labelContainerWidth": "100%",
+          "labelFontClass": "OpenSans14",
+          "labelHeight": "auto",
+          "labelMargin": "0px 8px 4px 0px",
+          "labelPosition": "Top",
+          "labelText": "TextVarOut",
+          "labelWidth": "100%",
+          "symbolMargin": "0px 8px 0px 0px",
+          "value": "abcd",
+          "valueContainerBackgroundColor": "@Transparent",
+          "valueContainerBorderStyle": "none",
+          "valueContainerHeight": "48px",
+          "valueContainerWidth": "100%",
+          "valueFontClass": "OpenSans16",
+          "valueForegroundColor": "@ForegroundColor",
+          "valueHeight": "auto",
+          "valueMargin": "6px 8px 6px 8px",
+          "valueTextAlignment": "Left",
+          "valueWidth": "auto",
+          "width": "200px"
+        }
+      },
+      "VisiWin.UI.ToggleButton.LenzeCyan.Default": {
+        "options": {
+          "backgroundColor": "@Transparent",
+          "borderColor": "@PrimaryColor",
+          "borderRadius": "0px",
+          "borderStyle": "solid",
+          "borderWidth": "1px",
+          "checkedBackgroundColor": "@CheckedBackgroundColor",
+          "checkedBorderColor": "@CheckedBorderColor",
+          "checkedForegroundColor": "@AltForegroundColor",
+          "checkedHoverBackgroundColor": "@HoverBackgroundColor",
+          "checkedHoverBorderColor": "@HoverBorderColor",
+          "checkedPressedBackgroundColor": "@PressedBackgroundColor",
+          "checkedPressedForegroundColor": "@White",
+          "disabledBackgroundColor": "@DisabledBackgroundColor",
+          "disabledBorderColor": "@DisabledBorderColor",
+          "disabledForegroundColor": "@DisabledForegroundColor",
+          "fontClass": "OpenSans16",
+          "foregroundColor": "@PrimaryColor",
+          "height": "40px",
+          "hoverBackgroundColor": "@HoverBackgroundColor",
+          "hoverBorderColor": "@HoverBorderColor",
+          "margin": "0px 0px 0px 8px",
+          "pressedBackgroundColor": "@PressedBackgroundColor",
+          "pressedForegroundColor": "@White",
+          "showText": true,
+          "text": "ToggleButton",
+          "textAlignment": "Left",
+          "textContrast": 1,
+          "textHeight": "auto",
+          "textMargin": "0px",
+          "textPadding": "0px",
+          "textWidth": "auto",
+          "uppercase": false,
+          "width": "184px"
+        }
+      },
+      "VisiWin.UI.VideoPlayer.LenzeCyan.Default": {
+        "options": {
+          "height": "200px",
+          "width": "300px"
+        }
+      },
+      "VisiWin.UI.View.LenzeCyan.Default": {
+        "options": {
+          "height": "100%",
+          "width": "100%"
+        }
+      },
+      "VisiWin.UI.ViewBox.LenzeCyan.Default": {
+        "options": {}
+      }
+    }
+  }
+}

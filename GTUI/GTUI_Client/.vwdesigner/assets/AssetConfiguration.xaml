@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="clr-namespace:VisiWin.AssetService;assembly=VisiWin7.AssetService">
+  <DesignTabConfig d2p1:Name="config" xmlns:d2p1="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DesignTabConfig.DesignTabGroups>
+      <DesignTabGroup Name="@DesignTabGroup.Name.Controls" Position="1" ImageLarge="VarOut.png" ImageSmall="VarOutSmall.png">
+        <DesignTabGroup.SingleButtonConfigurations>
+          <ControlAssetInfo Description="Button" Type="VisiWin.UI.Button.@StyleFamily.Default" ImageLarge="Button.png" ImageSmall="ButtonSmall.png" />
+          <ControlAssetInfo Description="Label" Type="VisiWin.UI.Label.@StyleFamily.Default" ImageLarge="Label.png" ImageSmall="LabelSmall.png" />
+          <ControlAssetInfo Description="TextVarIn" Type="VisiWin.UI.TextVarIn.@StyleFamily.Default" ImageLarge="TextVarIn.png" ImageSmall="TextVarInSmall.png" />
+          <ControlAssetInfo Description="TextVarOut" Type="VisiWin.UI.TextVarOut.@StyleFamily.Default" ImageLarge="TextVarOut.png" ImageSmall="TextVarOutSmall.png" />
+          <ControlAssetInfo Description="NumericVarOut" Type="VisiWin.UI.NumericVarOut.@StyleFamily.Default" ImageLarge="NumericVarOut.png" ImageSmall="NumericVarOutSmall.png" />
+          <ControlAssetInfo Description="NumericVarIn" Type="VisiWin.UI.NumericVarIn.@StyleFamily.Default" ImageLarge="NumericVarIn.png" ImageSmall="NumericVarInSmall.png" />
+          <ControlAssetInfo Description="Image" Type="VisiWin.UI.Image.@StyleFamily.Default" ImageLarge="Picture.png" ImageSmall="PictureSmall.png" />
+        </DesignTabGroup.SingleButtonConfigurations>
+        <DesignTabGroup.PopUpButtonConfigurations>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.Buttons" ImageSmall="Buttons.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Common" Description="Button" Type="VisiWin.UI.Button.@StyleFamily.Default" ImageLarge="Button.png" ImageSmall="ButtonSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Common" Description="Button (Outlined)" Type="VisiWin.UI.Button.@StyleFamily.Outlined" ImageLarge="ButtonOutlined.png" ImageSmall="ButtonOutlinedSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Common" Description="ToggleButton" Type="VisiWin.UI.ToggleButton.@StyleFamily.Default" ImageLarge="ToggleButton.png" ImageSmall="ToggleButtonSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="Key" Type="VisiWin.UI.Key.@StyleFamily.Default" ImageLarge="Key.png" ImageSmall="KeySmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="Switch" Type="VisiWin.UI.Switch.@StyleFamily.Default" ImageLarge="Switch.png" ImageSmall="SwitchSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="CheckBox" Type="VisiWin.UI.Checkbox.@StyleFamily.Default" ImageLarge="CheckBox.png" ImageSmall="CheckBoxSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="RadioButton" Type="VisiWin.UI.RadioButton.@StyleFamily.Default" ImageLarge="RadioButton.png" ImageSmall="RadioButtonSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="CheckBoxGroup" Type="VisiWin.UI.Group.@StyleFamily.FlexCheckboxGroup" ImageLarge="CheckBoxGroup.png" ImageSmall="CheckBoxGroupSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.SwitchesAndButtons" Description="RadioButtonGroup" Type="VisiWin.UI.RadioButtonGroup.@StyleFamily.Default" ImageLarge="RadioButtonGroup.png" ImageSmall="RadioButtonGroupSmall.png" />
+          </PopUpButtonConfiguration>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.InputOutput" ImageSmall="InputOutputControls.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Lists" Description="DropDownBox" Type="VisiWin.UI.DropDownBox.@StyleFamily.Default" ImageLarge="ListBox.png" ImageSmall="ListBoxSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="NumericVarOut" Type="VisiWin.UI.NumericVarOut.@StyleFamily.Default" ImageLarge="NumericVarOut.png" ImageSmall="NumericVarOutSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="TextVarOut" Type="VisiWin.UI.TextVarOut.@StyleFamily.Default" ImageLarge="TextVarOut.png" ImageSmall="TextVarOutSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="DateTimeVarOut" Type="VisiWin.UI.DateTimeVarOut.@StyleFamily.Default" ImageLarge="DateTimeVarOut.png" ImageSmall="DateTimeVarOutSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableInput" Description="DateTimeVarIn" Type="VisiWin.UI.DateTimeVarIn.@StyleFamily.Default" ImageLarge="DateTimeVarIn.png" ImageSmall="DateTimeVarInSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="Clock" Type="VisiWin.UI.Clock.@StyleFamily.Default" ImageLarge="DigitalClock.png" ImageSmall="DigitalClockSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="Bar" Type="VisiWin.UI.Bar.@StyleFamily.Default" ImageLarge="Bar.png" ImageSmall="BarSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="SegmentBar" Type="Lenze.UI.SegmentBar.@StyleFamily.Default" ImageLarge="SegmentBar.png" ImageSmall="SegmentBarSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="RadialInstrument" Type="VisiWin.UI.RadialInstrument.@StyleFamily.Default" ImageLarge="Gauge.png" ImageSmall="GaugeSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="PieChart" Type="VisiWin.UI.PieChart.@StyleFamily.Default" ImageLarge="PieChart.png" ImageSmall="PieChartSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="XYChart" Type="Lenze.UI.XYChart.@StyleFamily.Default" ImageLarge="TrendChart.png" ImageSmall="TrendChartSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableInput" Description="NumericVarIn" Type="VisiWin.UI.NumericVarIn.@StyleFamily.Default" ImageLarge="NumericVarIn.png" ImageSmall="NumericVarInSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableInput" Description="TextVarIn" Type="VisiWin.UI.TextVarIn.@StyleFamily.Default" ImageLarge="TextVarIn.png" ImageSmall="TextVarInSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableInput" Description="Slider" Type="VisiWin.UI.Slider.@StyleFamily.Default" ImageLarge="Slider.png" ImageSmall="SliderSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.TextOutput" Description="Label" Type="VisiWin.UI.Label.@StyleFamily.Default" ImageLarge="Label.png" ImageSmall="LabelSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Grafic" Description="Image" Type="VisiWin.UI.Image.@StyleFamily.Default" ImageLarge="Picture.png" ImageSmall="PictureSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.VariableOutput" Description="DonutGauge" Type="VisiWin.UI.DonutGauge.@StyleFamily.Default" ImageLarge="DonutGauge.png" ImageSmall="DonutGaugeSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Grafic" Description="ColorIndicator" Type="VisiWin.UI.ColorIndicator.@StyleFamily.Default" ImageLarge="ColorIndicator.png" ImageSmall="ColorIndicatorSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Grafic" Description="StateIndicator" Type="VisiWin.UI.StateIndicator.@StyleFamily.Default" ImageLarge="StatePresenter.png" ImageSmall="StatePresenterSmall.png" />
+          </PopUpButtonConfiguration>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.System" ImageSmall="SystemControls.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Alarms" Description="AlarmLine" Type="Lenze.UI.AlarmLineCollection.@StyleFamily.Default" ImageLarge="AlarmLine.png" ImageSmall="AlarmLineSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Alarms" Description="AlarmList" Type="VisiWin.UI.AlarmList.@StyleFamily.Default" ImageLarge="AlarmList.png" ImageSmall="AlarmListSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Alarms" Description="HistoricalAlarmList" Type="VisiWin.UI.HistoricalAlarmList.@StyleFamily.Default" ImageLarge="AlarmList.png" ImageSmall="AlarmListSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Alarms" Description="AlarmIndicator" Type="VisiWin.UI.AlarmIndicator.@StyleFamily.Default" ImageLarge="AlarmIndicator.png" ImageSmall="AlarmIndicatorSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Languages" Description="LanguageSelector" Type="Lenze.UI.LanguageSelector.@StyleFamily.Default" ImageLarge="LanguageComboBox.png" ImageSmall="LanguageComboBoxSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Trends" Description="TrendChart" Type="VisiWin.UI.TrendChart.@StyleFamily.Default" ImageLarge="TrendChart.png" ImageSmall="TrendChartSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Trends" Description="TrendChartController" Type="VisiWin.UI.TrendChartController.@StyleFamily.Default" ImageLarge="TrendChartController.png" ImageSmall="TrendChartControllerSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="FunctionTree" Type="Lenze.UI.FunctionTree" ImageLarge="MachineModule.png" ImageSmall="MachineModuleSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="NetworkTree" Type="Lenze.UI.NetworkTree" ImageLarge="MachineModule.png" ImageSmall="MachineModuleSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="Logbook" Type="Lenze.UI.Logbook" ImageLarge="Logbook.png" ImageSmall="LogbookSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="LogbookFilter" Type="Lenze.UI.LogbookFilter" ImageLarge="LogbookFilter.png" ImageSmall="LogbookFilterSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="LicenseTotal" Type="Lenze.UI.LicenseTotal" ImageLarge="FAST.png" ImageSmall="FASTSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.FAST" Description="LicenseList" Type="Lenze.UI.LicenseList" ImageLarge="FAST.png" ImageSmall="FASTSmall.png" />
+          </PopUpButtonConfiguration>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.Layout" ImageSmall="Container.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Basic" Description="AbsoluteLayout" Type="VisiWin.UI.AbsoluteLayout.@StyleFamily.Default" ImageLarge="Canvas.png" ImageSmall="CanvasSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Basic" Description="FlexLayout" Type="VisiWin.UI.FlexLayout.@StyleFamily.Default" ImageLarge="Grid.png" ImageSmall="GridSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Basic" Description="Group" Type="VisiWin.UI.Group.@StyleFamily.Flex" ImageLarge="GroupBox.png" ImageSmall="GroupBoxSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Card" Description="CardLayout" Type="VisiWin.UI.CardLayout.@StyleFamily.Default" ImageLarge="CardLayout.png" ImageSmall="CardLayout.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Card" Description="Card" Type="VisiWin.UI.Card.@StyleFamily.Default" ImageLarge="Card.png" ImageSmall="CardSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Layout" Description="ViewBox" Type="VisiWin.UI.ViewBox.@StyleFamily.Default" ImageLarge="ViewBox.png" ImageSmall="ViewBoxSmall.png" />
+          </PopUpButtonConfiguration>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.Navigation" ImageSmall="NavigationContainer.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Menu" Description="TabBar" Type="VisiWin.UI.TabBar.@StyleFamily.Default" ImageLarge="TabBar.png" ImageSmall="TabBarSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Menu" Description="TabButton" Type="VisiWin.UI.TabButton.@StyleFamily.Default" ImageLarge="TabButton.png" ImageSmall="TabButtonSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Menu" Description="TabMenuButton" Type="VisiWin.UI.TabMenuButton.@StyleFamily.Default" ImageLarge="TabMenuButton.png" ImageSmall="TabMenuButtonSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Menu" Description="MenuItem" Type="VisiWin.UI.MenuItem.@StyleFamily.Default" ImageLarge="MenuItem.png" ImageSmall="MenuItemSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Menu" Description="SubMenu" Type="VisiWin.UI.Submenu.@StyleFamily.Default" ImageLarge="SubMenu.png" ImageSmall="SubMenuSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Container" Description="Region" Type="VisiWin.UI.Region.@StyleFamily.Default" ImageLarge="Region.png" ImageSmall="RegionSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Container" Description="PanoramaView" Type="Lenze.UI.PanoramaView.@StyleFamily.Default" ImageLarge="Panorama.png" ImageSmall="PanoramaSmall.png" />
+          </PopUpButtonConfiguration>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.Media" ImageSmall="Media.png">
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Media" Description="YouTubePlayer" Type="Lenze.UI.YouTubePlayer.@StyleFamily.Default" ImageLarge="YouTubePlayer.png" ImageSmall="YouTubePlayerSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Media" Description="VideoPlayer" Type="VisiWin.UI.VideoPlayer.@StyleFamily.Default" ImageLarge="VideoPlayer.png" ImageSmall="VideoPlayerSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Media" Description="PDFViewer" Type="VisiWin.UI.PDFViewer.@StyleFamily.Default" ImageLarge="PDFViewer.png" ImageSmall="PDFViewerSmall.png" />
+            <ControlAssetInfo Category="@ControlAssetInfo.Category.Media" Description="EmbeddedWebsite" Type="VisiWin.UI.EmbeddedWebsite.@StyleFamily.Default" ImageLarge="EmbeddedWebsite.png" ImageSmall="EmbeddedWebsiteSmall.png" />
+          </PopUpButtonConfiguration>
+        </DesignTabGroup.PopUpButtonConfigurations>
+      </DesignTabGroup>
+      <DesignTabGroup Name="@DesignTabGroup.Name.Functions" Position="3" ImageLarge="SetViewAction.png" ImageSmall="SetViewActionSmall.png">
+        <DesignTabGroup.SingleButtonConfigurations>
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Language" Description="Set language" Type="VisiWin.Actions.SetLanguageAction" ImageLarge="ChangeLanguageAction.png" ImageSmall="ChangeLanguageActionSmall.png" />
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Set variable" Type="VisiWin.Actions.SetVariableAction" ImageLarge="SetVariableAction.png" ImageSmall="SetVariableActionSmall.png" />
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Property" Description="Set property" Type="VisiWin.Actions.SetPropertyAction" ImageLarge="SetPropertyAction.png" ImageSmall="SetPropertyActionSmall.png" />
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Navigation" Description="Navigate to page" Type="VisiWin.Actions.NavigateToPageAction" ImageLarge="NavigateAction.png" ImageSmall="NavigateActionSmall.png" />
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Navigation" Description="Set view" Type="VisiWin.Actions.SetViewAction" ImageLarge="SetViewAction.png" ImageSmall="SetViewActionSmall.png" />
+          <ActionAssetInfo Category="@ActionAssetInfo.Category.Alarms" Description="Acknowledge all alarms" Type="VisiWin.Actions.AcknowledgeAlarmsAction" ImageLarge="AcknowledgeAlarmAction.png" ImageSmall="AcknowledgeAlarmActionSmall.png" />
+        </DesignTabGroup.SingleButtonConfigurations>
+        <DesignTabGroup.PopUpButtonConfigurations>
+          <PopUpButtonConfiguration Name="@PopUpButtonConfiguration.Name.AllFunctions" ImageSmall="Actions.png">
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Project" Description="Set language" Type="VisiWin.Actions.SetLanguageAction" ImageLarge="ChangeLanguageAction.png" ImageSmall="ChangeLanguageActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Project" Description="Set theme" Type="VisiWin.Actions.SetThemeAction" ImageLarge="SetThemeAction.png" ImageSmall="SetThemeActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Project" Description="Login" Type="VisiWin.Actions.LogonAction" ImageLarge="LoginAction.png" ImageSmall="LoginActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Project" Description="Restart" Type="VisiWin.Actions.RestartAction" ImageLarge="RestartAction.png" ImageSmall="RestartActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Toggle bit" Type="VisiWin.Actions.ToggleBitAction" ImageLarge="ToggleBitAction.png" ImageSmall="ToggleBitActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Decrement variable" Type="VisiWin.Actions.DecrementVariableAction" ImageLarge="DecrementVariableAction.png" ImageSmall="DecrementVariableActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Increment variable" Type="VisiWin.Actions.IncrementVariableAction" ImageLarge="IncrementVariableAction.png" ImageSmall="IncrementVariableActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Reset bit" Type="VisiWin.Actions.ResetBitAction" ImageLarge="ResetBitAction.png" ImageSmall="ResetBitActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Set bit" Type="VisiWin.Actions.SetBitAction" ImageLarge="SetBitAction.png" ImageSmall="SetBitActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Variable" Description="Set variable" Type="VisiWin.Actions.SetVariableAction" ImageLarge="SetVariableAction.png" ImageSmall="SetVariableActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Navigation" Description="Navigate to page" Type="VisiWin.Actions.NavigateToPageAction" ImageLarge="NavigateAction.png" ImageSmall="NavigateActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Navigation" Description="Set view" Type="VisiWin.Actions.SetViewAction" ImageLarge="SetViewAction.png" ImageSmall="SetViewActionSmall.png" />
+            <ActionAssetInfo Category="@ActionAssetInfo.Category.Alarms" Description="Acknowledge all alarms" Type="VisiWin.Actions.AcknowledgeAlarmsAction" ImageLarge="AcknowledgeAlarmAction.png" ImageSmall="AcknowledgeAlarmActionSmall.png" />
+          </PopUpButtonConfiguration>
+        </DesignTabGroup.PopUpButtonConfigurations>
+      </DesignTabGroup>
+      <DesignTabGroup Name="@DesignTabGroup.Name.UserControls" Position="3" Key="DesignTabGroupControls">
+        <DesignTabGroup.PopUpButtonConfigurations />
+      </DesignTabGroup>
+    </DesignTabConfig.DesignTabGroups>
+  </DesignTabConfig>
+</Assets>

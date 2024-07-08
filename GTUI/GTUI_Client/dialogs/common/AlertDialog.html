@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>AlertDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"600px","designHeight":"400px","dataContext":"AlertDialog"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","alignItems":"Center"}'>
+            <div data-win-control="VisiWin.UI.AlertDialog" data-win-bind="
+                    winControl.titleText: titleText;
+                    winControl.localizableTitleText: localizableTitleText;
+                    winControl.contentText: contentText;
+                    winControl.localizableContentText: localizableContentText;
+                    winControl.showAction1Button: showAction1Button;
+                    winControl.action1ButtonText: action1ButtonText;
+                    winControl.localizableAction1ButtonText: localizableAction1ButtonText;
+                    winControl.showAction2Button: showAction2Button;
+                    winControl.action2ButtonText: action2ButtonText;
+                    winControl.localizableAction2ButtonText: localizableAction2ButtonText;
+                    winControl.style: style">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

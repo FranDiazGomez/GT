@@ -1,0 +1,60 @@
+{
+  "stateCollections": [
+    {
+      "iconFont": null,
+      "imageType": null,
+      "EnumImageType": 0,
+      "name": "textCollection1",
+      "propertyType": "text",
+      "EnumPropertyType": 2,
+      "states": [
+        {
+          "propertyValue": "Text <0",
+          "value": "<0"
+        },
+        {
+          "propertyValue": "Text 0",
+          "value": "0"
+        },
+        {
+          "propertyValue": "Text 1..20",
+          "value": "1..20"
+        },
+        {
+          "propertyValue": "Text 21,23,25,27,29",
+          "value": "21,23,25,27,29"
+        },
+        {
+          "propertyValue": "Text 22,24,26,28",
+          "value": "22,24,26,28"
+        },
+        {
+          "propertyValue": "Text >30",
+          "value": ">=30"
+        }
+      ]
+    },
+    {
+      "iconFont": null,
+      "imageType": null,
+      "EnumImageType": 0,
+      "name": "textCollection2",
+      "propertyType": "text",
+      "EnumPropertyType": 2,
+      "states": [
+        {
+          "propertyValue": "@[ServerApplication].Common.Off",
+          "value": "0"
+        },
+        {
+          "propertyValue": "@[ServerApplication].Common.On",
+          "value": "1"
+        },
+        {
+          "propertyValue": "@[ServerApplication].Common.Ok",
+          "value": "2"
+        }
+      ]
+    }
+  ]
+}

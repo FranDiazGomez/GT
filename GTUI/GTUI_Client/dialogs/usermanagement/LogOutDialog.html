@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>LogOutDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","minWidth":"340px","borderRadius":"0px 0px 0px 0px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"auto","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"","fontClass":"OpenSans22","localizableText":"@[ServerApplication].UserManagement.LogoutUser","margin":"8px 8px 8px 20px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"auto","padding":"24px 20px 16px 16px","minWidth":"340px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","width":"90%","textAlignment":"Left","fontClass":"OpenSans16","height":"48px","fontSize":"16px","textWrapping":"Wrap","localizableText":"@[ServerApplication].UserManagement.LogoutQuestion","lineClamp":2.0,"minWidth":"80%"}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"auto","padding":"16px 24px 16px 24px","alignItems":"Start","justifyContent":"End"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","width":"94%","height":"40px","localizableText":"@[ServerApplication].Common.Ok","textAlignment":"Center","margin":"8px 8px 8px 8px","textPosition":"Center","padding":"0px 0px 0px 0px"}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.RestartAction"}]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>Diagnosis PDF Dialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"1080px","designHeight":"768px"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","minWidth":"800px","width":"800px","height":"600px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","margin":"8px 0px 0px 0px","justifyContent":"Space-between"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Diagnosis PDF Dialog","fontClass":"OpenSans22","margin":"8px 8px 8px 20px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","symbol":"close"}' data-win-actions='{
+                        "triggers":[
+                            {
+                                "type":"VisiWin.Triggers.ControlEventTrigger",
+                                "eventName":"onButtonClick",
+                                "triggeredActions":[
+                                    {
+                                        "type":"VisiWin.Actions.CloseDialogAction"
+                                    }
+                        ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent" data-win-options="{style:'Custom.Default'}">
+                    <div data-win-control="VisiWin.UI.PDFViewer"
+                        data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","source":""}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options="{style:'Custom.Default'}">
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","text":"OK","foregroundColor":"@White","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Ok"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

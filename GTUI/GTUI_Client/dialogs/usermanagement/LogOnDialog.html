@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>LogOnDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"800px","designHeight":"500px","dataContext":"logon"}'
+        data-win-bind="winControl.onAfterHide:reset">
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","alignItems":"Center"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","minWidth":"320px","borderRadius":"0px 0px 0px 0px","height":"auto"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Log on user","localizableText":"@[ServerSystem].Dialogs.UserManagement.capLogOn","fontClass":"OpenSans22","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"24px 24px 16px 24px","labelFontClass":"Roboto14","labelFontSize":"14px","labelLineHeight":"1.5","errorTextFontClass":"Roboto12","errorTextFontSize":"12px","errorTextLineHeight":"1.5","helperTextFontClass":"Roboto12","helperTextFontSize":"12px","helperTextLineHeight":"1.5","inputFontClass":"Roboto16","inputFontSize":"16px","inputLineHeight":"1.5","labelMargin":"0px 0px 4px","height":"220px"}'>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","margin":"0px 0px 16px 0px","inputType":"Text","lostKeyboardFocusBehaviour":"WriteInput","inputFieldMargin":"0px 8px 0px 8px","floatingLabelText":"Name","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblName","showTrailingSymbol":true,"trailingSymbol":"person","showErrorText":false,"justifyContent":"Start","labelMargin":"0px 0px 4px","labelFontClass":"OpenSans14","labelFontSize":"14px","labelLineHeight":"1.5","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrUserName","labelUppercase":false,"errorColor":"@BorderColor","showFloatingLabel":true,"showLabel":false,"watermarkText":""}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:name     VisiWin.Binding.Mode.twoWay;"></div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","margin":"0px 0px 0px 0px","inputType":"Password","lostKeyboardFocusBehaviour":"WriteInput","inputFieldMargin":"0px 8px 0px 8px","floatingLabelText":"Password","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblPassword","showTrailingSymbol":true,"trailingSymbol":"lock_outline","showErrorText":false,"justifyContent":"Start","labelFontClass":"OpenSans14","labelFontSize":"14px","labelLineHeight":"1.5","errorTextFontClass":"Roboto12","errorTextFontSize":"12px","errorTextLineHeight":"1.5","helperTextFontClass":"Roboto12","helperTextFontSize":"12px","helperTextLineHeight":"1.5","inputFontClass":"OpenSans16","inputFontSize":"16px","inputLineHeight":"1.5","labelMargin":"0px 0px 4px","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.lblPassword","labelUppercase":false,"errorColor":"@BorderColor","showFloatingLabel":true,"showLabel":false,"watermarkText":""}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:password VisiWin.Binding.Mode.twoWay;"></div>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans12","labelForegroundColor":"@ErrorColor","showSymbol":false,"iconFont":"lenze-icons","symbol":"alert_active","symbolForegroundColor":"@ErrorColor","margin":"8px 8px 8px 0px"}'
+                        data-win-bind="winControl.text:errorText"></div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","width":"100%","margin":"0px 0px 8px 0px","text":"Log on","localizableText":"@[ServerSystem].Dialogs.UserManagement.cmdLogOn","fontClass":"OpenSans16"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.LogonAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

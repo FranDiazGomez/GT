@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>RemoveUserDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"800px","designHeight":"800px","dataContext":"removeUser"}'
+        data-win-bind="winControl.onAfterHide:reset">
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","alignItems":"Center"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","minWidth":"320px","borderRadius":"0px 0px 0px 0px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Delete user","localizableText":"@[ServerSystem].Dialogs.UserManagement.capRemoveUser","fontClass":"OpenSans22","width":"70%","margin":"8px 8px 8px 20px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 8px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"24px 24px 16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"80px","margin":"0px 0px 16px 0px","listType":"RemoveUser","showHelperText":true,"helperTextAlignment":"Justify","showErrorText":true,"errorTextAlignment":"Justify","justifyContent":"Start","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrName","showLabel":false,"labelFontClass":"Roboto14","localizableHelperText":"@[ServerSystem].Dialogs.UserManagement.msgRemoveUser","helperTextMargin":"12px 0px 0px 0px","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrName","showFloatingLabel":true,"helperTextForegroundColor":"@AltGrey","textContainerHeight":"48px"}'
+                        data-win-bind="winControl.selectedValue:name VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserNameError">
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Outlined","minWidth":"100px","margin":"0px 12px 8px 0px","width":"45%","fontClass":"OpenSans16","localizableText":"@[ServerApplication].Common.Cancel"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","minWidth":"100px","margin":"0px 0px 8px 0px","width":"50%","fontClass":"OpenSans16","borderWidth":"1px","text":"Ok","localizableText":"@[ServerApplication].Common.Ok","borderStyle":"solid"}'
+                        data-win-bind="winControl.disabled:canExecute Converters.booleanInverter" data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.RemoveUserAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

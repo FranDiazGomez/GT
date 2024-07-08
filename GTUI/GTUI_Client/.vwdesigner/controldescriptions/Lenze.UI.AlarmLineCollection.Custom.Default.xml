@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.AlarmLineCollection" style="Custom.Default" name="Lenze.UI.AlarmLineCollection.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">AlarmLineCollection</title>
+  <description type="text/plain">An alarm line showing up when a set alarm class is active.</description>
+  <properties>
+    
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+
+    <!-- Alarm Items -->
+    <property displayName="Alarm line items" name="alarmLineItems" datatype="Lenze.UI.AlarmLineItem" category="Alarm Items" isBrowsable="true" isArray="true">
+      <description type="text/plain">Gets or sets the AlarmLineItems option.</description>
+    </property>
+
+
+    <!-- Options -->
+    <property displayName="Show alarm param1" name="showAlarmParam1" datatype="Boolean" category="Options" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowAlarmParam1 option.</description>
+    </property>
+    <property displayName="Newest alarm on top" name="newestAlarmOnTop" datatype="Boolean" category="Options" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NewestAlarmOnTop option.</description>
+    </property>
+    <property displayName="Disable grow on click" name="disableGrowOnClick" datatype="Boolean" category="Options" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DisableGrowOnClick option.</description>
+    </property>
+    <property displayName="Dropdown enabled" name="dropDownEnabled" datatype="Boolean" category="Options" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DropDownEnabled option.</description>
+    </property>
+
+    <!-- Common properties-->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	</property>
+
+    <!-- Date and Time -->
+    <property displayName="Date time mode" name="dateTimeMode" datatype="VisiWin.UI.DateTimeFormat" category="Date &amp; Time"  isBrowsable="true">
+      <description type="text/plain">Gets or sets the DateTimeMode option.</description>
+    </property>
+    <property displayName="Date format" name="formatDate" datatype="VisiWin.UI.DateFormat" category="Date &amp; Time"  isBrowsable="true">
+      <description type="text/plain">Gets or sets the FormatDate option.</description>
+    </property>
+    <property displayName="Time format" name="formatTime" datatype="VisiWin.UI.TimeFormat" category="Date &amp; Time"  isBrowsable="true">
+      <description type="text/plain">Gets or sets the FormatTime option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Inactive background color" name="inactiveBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactiveBackgroundColor when no alarm is active.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Layout -->
+    <property displayName="Close button width" name="dropDownCloseButtonWidth" datatype="String" category="Close Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the CloseButtonWidth option.</description>
+    </property>
+    <property displayName="Close button min width" name="dropDownCloseButtonMinWidth" datatype="String" category="Close Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the CloseButtonMinWidth option.</description>
+    </property>
+    <property displayName="Close button max width" name="dropDownCloseButtonMaxWidth" datatype="String" category="Close Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the CloseButtonMaxWidth option.</description>
+    </property>
+    <property displayName="Close button height" name="dropDownCloseButtonHeight" datatype="String" category="Close Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the CloseButtonHeight option.</description>
+    </property>
+    <property displayName="Close button min height" name="dropDownCloseButtonMinHeight" datatype="String" category="Close Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the CloseButtonMinHeight option.</description>
+    </property>
+    <property displayName="Close button max height" name="dropDownCloseButtonMaxHeight" datatype="String" category="Close Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the CloseButtonMaxHeight option.</description>
+    </property>
+    <property displayName="Close button margin" name="dropDownCloseButtonMargin" datatype="String" category="Close Button Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonMargin option.</description>
+    </property>
+    <property displayName="Close button padding" name="dropDownCloseButtonPadding" datatype="String" category="Close Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonPadding option.</description>
+    </property>
+    <property displayName="Close button flex shrink" name="dropDownCloseButtonFlexShrink" datatype="Number" category="Close Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CloseButtonFlexShrink option.</description>
+    </property>
+    <property displayName="Close button flex grow" name="dropDownCloseButtonFlexGrow" datatype="Number" category="Close Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CloseButtonFlexGrow option.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Appearance -->
+    <property displayName="Close button border width" name="dropDownCloseButtonBorderWidth" datatype="String" category="Close Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonBorderWidth option.</description>
+    </property>
+    <property displayName="Close button border style" name="dropDownCloseButtonBorderStyle" datatype="VisiWin.UI.Border.Style" category="Close Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonBorderStyle option.</description>
+    </property>
+    <property displayName="Close button border radius" name="dropDownCloseButtonBorderRadius" datatype="String" category="Close Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonBorderRadius option.</description>
+    </property>
+    <property displayName="Close button opacity" name="dropDownCloseButtonOpacity" datatype="Number" category="Close Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonOpacity option.</description>
+    </property>
+    <property displayName="Close button visibility" name="dropDownCloseButtonVisibility" datatype="VisiWin.UI.Visibility" category="Close Button Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonVisibility option.</description>
+    </property>
+    <property displayName="Close button shadow" name="dropDownCloseButtonShadow" datatype="String" category="Close Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonShadow option.</description>
+    </property>
+    <property displayName="Close button pressed shadow" name="dropDownCloseButtonPressedShadow" datatype="String" category="Close Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonPressedShadow option.</description>
+    </property>
+    <property displayName="Close button transition" name="dropDownCloseButtonTransition" datatype="String" category="Close Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTransition option.</description>
+    </property>
+    <property displayName="Close button background" name="dropDownCloseButtonBackground" datatype="String" category="Close Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the CloseButtonBackground option.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Common Properties -->
+    <property displayName="Close button disabled" name="dropDownCloseButtonDisabled" datatype="Boolean" category="Close Button Common Properties" isBrowsable="false">
+      <description type="text/plain">Gets or sets CloseButtonDisabled option.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Symbol -->
+    <property displayName="Close button show symbol" name="dropDownCloseButtonShowSymbol" datatype="Boolean" category="Close Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonShowSymbol option.</description>
+    </property>
+    <property displayName="Close button icon font" name="dropDownCloseButtonIconFont" datatype="String" category="Close Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonIconFont option.</description>
+    </property>
+    <property displayName="Close button symbol" name="dropDownCloseButtonSymbol" datatype="String" category="Close Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonSymbol option.</description>
+    </property>
+    <property displayName="Close button symbol pressed" name="dropDownCloseButtonSymbolPressed" datatype="String" category="Close Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+      <description type="text/plain">Gets or sets the CloseButtonSymbolPressed option.</description>
+    </property>
+    <property displayName="Close button symbol type" name="dropDownCloseButtonSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Close Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonSymbolType option.</description>
+    </property>
+    <property displayName="Close button symbol size" name="dropDownCloseButtonSymbolSize" datatype="String" category="Close Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonSymbolSize option.</description>
+    </property>
+    <property displayName="Close button symbol margin" name="dropDownCloseButtonSymbolMargin" datatype="String" category="Close Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonSymbolMargin option.</description>
+    </property>
+    <property displayName="Close button symbol position" name="dropDownCloseButtonSymbolPosition" datatype="VisiWin.UI.Positions.Position6" category="Close Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonSymbolPosition option.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Text -->
+    <property displayName="Close button show text" name="dropDownCloseButtonShowText" datatype="Boolean" category="Close Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonShowText option.</description>
+    </property>
+    <property displayName="Close button text width" name="dropDownCloseButtonTextWidth" datatype="String" category="Close Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the CloseButtonTextWidth option.</description>
+    </property>
+    <property displayName="Close button text height" name="dropDownCloseButtonTextHeight" datatype="String" category="Close Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the CloseButtonTextHeight option.</description>
+    </property>
+    <property displayName="Close button text margin" name="dropDownCloseButtonTextMargin" datatype="String" category="Close Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonTextMargin option.</description>
+    </property>
+    <property displayName="Close button text padding" name="dropDownCloseButtonTextPadding" datatype="String" category="Close Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonTextPadding option.</description>
+    </property>
+    <property displayName="Close button text" name="dropDownCloseButtonText" datatype="String" category="Close Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonText option.</description>
+    </property>
+    <property displayName="Close button localizable text" name="dropDownCloseButtonLocalizableText" datatype="String" category="Close Button Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonLocalizableText option.</description>
+    </property>
+    <property displayName="Close button text alignment" name="dropDownCloseButtonTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTextAlignment option.</description>
+    </property>
+    <property displayName="Close button line clamp" name="dropDownCloseButtonLineClamp" datatype="Number" category="Close Button Text" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CloseButtonLineClamp option.</description>
+    </property>
+    <property displayName="Close button text wrapping" name="dropDownCloseButtonTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTextWrapping option.</description>
+    </property>
+    <property displayName="Close button text trimming" name="dropDownCloseButtonTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTextTrimming option.</description>
+    </property>
+    <property displayName="Close button font class" name="dropDownCloseButtonFontClass" datatype="Lenze.UI.Text.FontClass" category="Close Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CloseButtonFontClass option.</description>
+    </property>
+    <property displayName="Close button font size" name="dropDownCloseButtonFontSize" datatype="String" category="Close Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CloseButtonFontSize option.</description>
+    </property>
+    <property displayName="Close button font weight" name="dropDownCloseButtonFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Close Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CloseButtonFontWeight option.</description>
+    </property>
+    <property displayName="Close button line height" name="dropDownCloseButtonLineHeight" datatype="String" category="Close Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CloseButtonLineHeight option.</description>
+    </property>
+    <property displayName="Close button text contrast" name="dropDownCloseButtonTextContrast" datatype="Number" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTextContrast option.</description>
+    </property>
+    <property displayName="Close button uppercase" name="dropDownCloseButtonUppercase" datatype="Boolean" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonUppercase option.</description>
+    </property>
+    <property displayName="Close button text position" name="dropDownCloseButtonTextPosition" datatype="VisiWin.UI.Positions.Position6" category="Close Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CloseButtonTextPosition option.</description>
+    </property>
+
+
+    <!-- DropDownCloseButton Colors -->
+    <property displayName="Close button background color" name="dropDownCloseButtonBackgroundColor" datatype="String" category="Close Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonBackgroundColor option.</description>
+    </property>
+    <property displayName="Close button hover background color" name="dropDownCloseButtonHoverBackgroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonHoverBackgroundColor option.</description>
+    </property>
+    <property displayName="Close button pressed background color" name="dropDownCloseButtonPressedBackgroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonPressedBackgroundColor option.</description>
+    </property>
+    <property displayName="Close button disabled background color" name="dropDownCloseButtonDisabledBackgroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonDisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Close button foreground color" name="dropDownCloseButtonForegroundColor" datatype="String" category="Close Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonForegroundColor option.</description>
+    </property>
+    <property displayName="Close button pressed foreground color" name="dropDownCloseButtonPressedForegroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonPressedForegroundColor option.</description>
+    </property>
+    <property displayName="Close button auth symbol foreground color" name="dropDownCloseButtonAuthSymbolForegroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonAuthSymbolForegroundColor option.</description>
+    </property>
+    <property displayName="Close button disabled foreground color" name="dropDownCloseButtonDisabledForegroundColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonDisabledForegroundColor option.</description>
+    </property>
+    <property displayName="Close button border color" name="dropDownCloseButtonBorderColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonBorderColor option.</description>
+    </property>
+    <property displayName="Close button hover border color" name="dropDownCloseButtonHoverBorderColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonHoverBorderColor option.</description>
+    </property>
+    <property displayName="Close button disabled border color" name="dropDownCloseButtonDisabledBorderColor" datatype="String" category="Close Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CloseButtonDisabledBorderColor option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Layout -->
+    <property displayName="Acknowledge button width" name="dropDownAcknowledgeButtonWidth" datatype="String" category="Acknowledge Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonWidth option.</description>
+    </property>
+    <property displayName="Acknowledge button min width" name="dropDownAcknowledgeButtonMinWidth" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonMinWidth option.</description>
+    </property>
+    <property displayName="Acknowledge button max width" name="dropDownAcknowledgeButtonMaxWidth" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonMaxWidth option.</description>
+    </property>
+    <property displayName="Acknowledge button height" name="dropDownAcknowledgeButtonHeight" datatype="String" category="Acknowledge Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonHeight option.</description>
+    </property>
+    <property displayName="Acknowledge button min height" name="dropDownAcknowledgeButtonMinHeight" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonMinHeight option.</description>
+    </property>
+    <property displayName="Acknowledge button max height" name="dropDownAcknowledgeButtonMaxHeight" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonMaxHeight option.</description>
+    </property>
+    <property displayName="Acknowledge button margin" name="dropDownAcknowledgeButtonMargin" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonMargin option.</description>
+    </property>
+    <property displayName="Acknowledge button padding" name="dropDownAcknowledgeButtonPadding" datatype="String" category="Acknowledge Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonPadding option.</description>
+    </property>
+    <property displayName="Acknowledge button flex shrink" name="dropDownAcknowledgeButtonFlexShrink" datatype="Number" category="Acknowledge Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonFlexShrink option.</description>
+    </property>
+    <property displayName="Acknowledge button flex grow" name="dropDownAcknowledgeButtonFlexGrow" datatype="Number" category="Acknowledge Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonFlexGrow option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Appearance -->
+    <property displayName="Acknowledge button border width" name="dropDownAcknowledgeButtonBorderWidth" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBorderWidth option.</description>
+    </property>
+    <property displayName="Acknowledge button border style" name="dropDownAcknowledgeButtonBorderStyle" datatype="VisiWin.UI.Border.Style" category="Acknowledge Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBorderStyle option.</description>
+    </property>
+    <property displayName="Acknowledge button border radius" name="dropDownAcknowledgeButtonBorderRadius" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBorderRadius option.</description>
+    </property>
+    <property displayName="Acknowledge button opacity" name="dropDownAcknowledgeButtonOpacity" datatype="Number" category="Acknowledge Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonOpacity option.</description>
+    </property>
+    <property displayName="Acknowledge button visibility" name="dropDownAcknowledgeButtonVisibility" datatype="VisiWin.UI.Visibility" category="Acknowledge Button Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonVisibility option.</description>
+    </property>
+    <property displayName="Acknowledge button shadow" name="dropDownAcknowledgeButtonShadow" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonShadow option.</description>
+    </property>
+    <property displayName="Acknowledge button pressed shadow" name="dropDownAcknowledgeButtonPressedShadow" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonPressedShadow option.</description>
+    </property>
+    <property displayName="Acknowledge button transition" name="dropDownAcknowledgeButtonTransition" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTransition option.</description>
+    </property>
+    <property displayName="Acknowledge button background" name="dropDownAcknowledgeButtonBackground" datatype="String" category="Acknowledge Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBackground option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Common Properties -->
+    <property displayName="Acknowledge button disabled" name="dropDownAcknowledgeButtonDisabled" datatype="Boolean" category="Acknowledge Button Common Properties" isBrowsable="false">
+      <description type="text/plain">Gets or sets AcknowledgeButtonDisabled option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Symbol -->
+    <property displayName="Acknowledge button show symbol" name="dropDownAcknowledgeButtonShowSymbol" datatype="Boolean" category="Acknowledge Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonShowSymbol option.</description>
+    </property>
+    <property displayName="Acknowledge button icon font" name="dropDownAcknowledgeButtonIconFont" datatype="String" category="Acknowledge Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonIconFont option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol" name="dropDownAcknowledgeButtonSymbol" datatype="String" category="Acknowledge Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbol option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol pressed" name="dropDownAcknowledgeButtonSymbolPressed" datatype="String" category="Acknowledge Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbolPressed option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol type" name="dropDownAcknowledgeButtonSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Acknowledge Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbolType option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol size" name="dropDownAcknowledgeButtonSymbolSize" datatype="String" category="Acknowledge Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbolSize option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol margin" name="dropDownAcknowledgeButtonSymbolMargin" datatype="String" category="Acknowledge Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbolMargin option.</description>
+    </property>
+    <property displayName="Acknowledge button symbol position" name="dropDownAcknowledgeButtonSymbolPosition" datatype="VisiWin.UI.Positions.Position6" category="Acknowledge Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonSymbolPosition option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Text -->
+    <property displayName="Acknowledge button show text" name="dropDownAcknowledgeButtonShowText" datatype="Boolean" category="Acknowledge Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonShowText option.</description>
+    </property>
+    <property displayName="Acknowledge button text width" name="dropDownAcknowledgeButtonTextWidth" datatype="String" category="Acknowledge Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextWidth option.</description>
+    </property>
+    <property displayName="Acknowledge button text height" name="dropDownAcknowledgeButtonTextHeight" datatype="String" category="Acknowledge Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextHeight option.</description>
+    </property>
+    <property displayName="Acknowledge button text margin" name="dropDownAcknowledgeButtonTextMargin" datatype="String" category="Acknowledge Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextMargin option.</description>
+    </property>
+    <property displayName="Acknowledge button text padding" name="dropDownAcknowledgeButtonTextPadding" datatype="String" category="Acknowledge Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextPadding option.</description>
+    </property>
+    <property displayName="Acknowledge button text" name="dropDownAcknowledgeButtonText" datatype="String" category="Acknowledge Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonText option.</description>
+    </property>
+    <property displayName="Acknowledge button localizable text" name="dropDownAcknowledgeButtonLocalizableText" datatype="String" category="Acknowledge Button Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonLocalizableText option.</description>
+    </property>
+    <property displayName="Acknowledge button text alignment" name="dropDownAcknowledgeButtonTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextAlignment option.</description>
+    </property>
+    <property displayName="Acknowledge button line clamp" name="dropDownAcknowledgeButtonLineClamp" datatype="Number" category="Acknowledge Button Text" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonLineClamp option.</description>
+    </property>
+    <property displayName="Acknowledge button text wrapping" name="dropDownAcknowledgeButtonTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextWrapping option.</description>
+    </property>
+    <property displayName="Acknowledge button text trimming" name="dropDownAcknowledgeButtonTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextTrimming option.</description>
+    </property>
+    <property displayName="Acknowledge button font class" name="dropDownAcknowledgeButtonFontClass" datatype="Lenze.UI.Text.FontClass" category="Acknowledge Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonFontClass option.</description>
+    </property>
+    <property displayName="Acknowledge button font size" name="dropDownAcknowledgeButtonFontSize" datatype="String" category="Acknowledge Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonFontSize option.</description>
+    </property>
+    <property displayName="Acknowledge button font weight" name="dropDownAcknowledgeButtonFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Acknowledge Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonFontWeight option.</description>
+    </property>
+    <property displayName="Acknowledge button line height" name="dropDownAcknowledgeButtonLineHeight" datatype="String" category="Acknowledge Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonLineHeight option.</description>
+    </property>
+    <property displayName="Acknowledge button text contrast" name="dropDownAcknowledgeButtonTextContrast" datatype="Number" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextContrast option.</description>
+    </property>
+    <property displayName="Acknowledge button uppercase" name="dropDownAcknowledgeButtonUppercase" datatype="Boolean" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonUppercase option.</description>
+    </property>
+    <property displayName="Acknowledge button text position" name="dropDownAcknowledgeButtonTextPosition" datatype="VisiWin.UI.Positions.Position6" category="Acknowledge Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonTextPosition option.</description>
+    </property>
+
+
+    <!-- DropDownAcknowledgeButton Colors -->
+    <property displayName="Acknowledge button background color" name="dropDownAcknowledgeButtonBackgroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBackgroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button hover background color" name="dropDownAcknowledgeButtonHoverBackgroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonHoverBackgroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button pressed background color" name="dropDownAcknowledgeButtonPressedBackgroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonPressedBackgroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button disabled background color" name="dropDownAcknowledgeButtonDisabledBackgroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonDisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button foreground color" name="dropDownAcknowledgeButtonForegroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonForegroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button pressed foreground color" name="dropDownAcknowledgeButtonPressedForegroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonPressedForegroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button auth symbol foreground color" name="dropDownAcknowledgeButtonAuthSymbolForegroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonAuthSymbolForegroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button disabled foreground color" name="dropDownAcknowledgeButtonDisabledForegroundColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonDisabledForegroundColor option.</description>
+    </property>
+    <property displayName="Acknowledge button border color" name="dropDownAcknowledgeButtonBorderColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonBorderColor option.</description>
+    </property>
+    <property displayName="Acknowledge button hover border color" name="dropDownAcknowledgeButtonHoverBorderColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonHoverBorderColor option.</description>
+    </property>
+    <property displayName="Acknowledge button disabled border color" name="dropDownAcknowledgeButtonDisabledBorderColor" datatype="String" category="Acknowledge Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AcknowledgeButtonDisabledBorderColor option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Layout -->
+    <property displayName="Custom button width" name="dropDownCustomButtonWidth" datatype="String" category="Custom Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the CustomButtonWidth option.</description>
+    </property>
+    <property displayName="Custom button min width" name="dropDownCustomButtonMinWidth" datatype="String" category="Custom Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the CustomButtonMinWidth option.</description>
+    </property>
+    <property displayName="Custom button max width" name="dropDownCustomButtonMaxWidth" datatype="String" category="Custom Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the CustomButtonMaxWidth option.</description>
+    </property>
+    <property displayName="Custom button height" name="dropDownCustomButtonHeight" datatype="String" category="Custom Button Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the CustomButtonHeight option.</description>
+    </property>
+    <property displayName="Custom button min height" name="dropDownCustomButtonMinHeight" datatype="String" category="Custom Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the CustomButtonMinHeight option.</description>
+    </property>
+    <property displayName="Custom button max height" name="dropDownCustomButtonMaxHeight" datatype="String" category="Custom Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the CustomButtonMaxHeight option.</description>
+    </property>
+    <property displayName="Custom button margin" name="dropDownCustomButtonMargin" datatype="String" category="Custom Button Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonMargin option.</description>
+    </property>
+    <property displayName="Custom button padding" name="dropDownCustomButtonPadding" datatype="String" category="Custom Button Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonPadding option.</description>
+    </property>
+    <property displayName="Custom button flex shrink" name="dropDownCustomButtonFlexShrink" datatype="Number" category="Custom Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CustomButtonFlexShrink option.</description>
+    </property>
+    <property displayName="Custom button flex grow" name="dropDownCustomButtonFlexGrow" datatype="Number" category="Custom Button Layout" isBrowsable="true" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CustomButtonFlexGrow option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Appearance -->
+    <property displayName="Custom button border width" name="dropDownCustomButtonBorderWidth" datatype="String" category="Custom Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonBorderWidth option.</description>
+    </property>
+    <property displayName="Custom button border style" name="dropDownCustomButtonBorderStyle" datatype="VisiWin.UI.Border.Style" category="Custom Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonBorderStyle option.</description>
+    </property>
+    <property displayName="Custom button border radius" name="dropDownCustomButtonBorderRadius" datatype="String" category="Custom Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonBorderRadius option.</description>
+    </property>
+    <property displayName="Custom button opacity" name="dropDownCustomButtonOpacity" datatype="Number" category="Custom Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonOpacity option.</description>
+    </property>
+    <property displayName="Custom button visibility" name="dropDownCustomButtonVisibility" datatype="VisiWin.UI.Visibility" category="Custom Button Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonVisibility option.</description>
+    </property>
+    <property displayName="Custom button shadow" name="dropDownCustomButtonShadow" datatype="String" category="Custom Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonShadow option.</description>
+    </property>
+    <property displayName="Custom button pressed shadow" name="dropDownCustomButtonPressedShadow" datatype="String" category="Custom Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonPressedShadow option.</description>
+    </property>
+    <property displayName="Custom button transition" name="dropDownCustomButtonTransition" datatype="String" category="Custom Button Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTransition option.</description>
+    </property>
+    <property displayName="Custom button background" name="dropDownCustomButtonBackground" datatype="String" category="Custom Button Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the CustomButtonBackground option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Common Properties -->
+    <property displayName="Custom button disabled" name="dropDownCustomButtonDisabled" datatype="Boolean" category="Custom Button Common Properties" isBrowsable="false">
+      <description type="text/plain">Gets or sets CustomButtonDisabled option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Symbol -->
+    <property displayName="Custom button show symbol" name="dropDownCustomButtonShowSymbol" datatype="Boolean" category="Custom Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonShowSymbol option.</description>
+    </property>
+    <property displayName="Custom button icon font" name="dropDownCustomButtonIconFont" datatype="String" category="Custom Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonIconFont option.</description>
+    </property>
+    <property displayName="Custom button symbol" name="dropDownCustomButtonSymbol" datatype="String" category="Custom Button Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonSymbol option.</description>
+    </property>
+    <property displayName="Custom button symbol pressed" name="dropDownCustomButtonSymbolPressed" datatype="String" category="Custom Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+      <description type="text/plain">Gets or sets the CustomButtonSymbolPressed option.</description>
+    </property>
+    <property displayName="Custom button symbol type" name="dropDownCustomButtonSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Custom Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonSymbolType option.</description>
+    </property>
+    <property displayName="Custom button symbol size" name="dropDownCustomButtonSymbolSize" datatype="String" category="Custom Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonSymbolSize option.</description>
+    </property>
+    <property displayName="Custom button symbol margin" name="dropDownCustomButtonSymbolMargin" datatype="String" category="Custom Button Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonSymbolMargin option.</description>
+    </property>
+    <property displayName="Custom button symbol position" name="dropDownCustomButtonSymbolPosition" datatype="VisiWin.UI.Positions.Position6" category="Custom Button Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonSymbolPosition option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Text -->
+    <property displayName="Custom button show text" name="dropDownCustomButtonShowText" datatype="Boolean" category="Custom Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonShowText option.</description>
+    </property>
+    <property displayName="Custom button text width" name="dropDownCustomButtonTextWidth" datatype="String" category="Custom Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the CustomButtonTextWidth option.</description>
+    </property>
+    <property displayName="Custom button text height" name="dropDownCustomButtonTextHeight" datatype="String" category="Custom Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the CustomButtonTextHeight option.</description>
+    </property>
+    <property displayName="Custom button text margin" name="dropDownCustomButtonTextMargin" datatype="String" category="Custom Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonTextMargin option.</description>
+    </property>
+    <property displayName="Custom button text padding" name="dropDownCustomButtonTextPadding" datatype="String" category="Custom Button Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonTextPadding option.</description>
+    </property>
+    <property displayName="Custom button text" name="dropDownCustomButtonText" datatype="String" category="Custom Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonText option.</description>
+    </property>
+    <property displayName="Custom button localizable text" name="dropDownCustomButtonLocalizableText" datatype="String" category="Custom Button Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonLocalizableText option.</description>
+    </property>
+    <property displayName="Custom button text alignment" name="dropDownCustomButtonTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTextAlignment option.</description>
+    </property>
+    <property displayName="Custom button line clamp" name="dropDownCustomButtonLineClamp" datatype="Number" category="Custom Button Text" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Gets or sets the CustomButtonLineClamp option.</description>
+    </property>
+    <property displayName="Custom button text wrapping" name="dropDownCustomButtonTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTextWrapping option.</description>
+    </property>
+    <property displayName="Custom button text trimming" name="dropDownCustomButtonTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTextTrimming option.</description>
+    </property>
+    <property displayName="Custom button font class" name="dropDownCustomButtonFontClass" datatype="Lenze.UI.Text.FontClass" category="Custom Button Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the CustomButtonFontClass option.</description>
+    </property>
+    <property displayName="Custom button font size" name="dropDownCustomButtonFontSize" datatype="String" category="Custom Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CustomButtonFontSize option.</description>
+    </property>
+    <property displayName="Custom button font weight" name="dropDownCustomButtonFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Custom Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CustomButtonFontWeight option.</description>
+    </property>
+    <property displayName="Custom button line height" name="dropDownCustomButtonLineHeight" datatype="String" category="Custom Button Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the CustomButtonLineHeight option.</description>
+    </property>
+    <property displayName="Custom button text contrast" name="dropDownCustomButtonTextContrast" datatype="Number" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTextContrast option.</description>
+    </property>
+    <property displayName="Custom button uppercase" name="dropDownCustomButtonUppercase" datatype="Boolean" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonUppercase option.</description>
+    </property>
+    <property displayName="Custom button text position" name="dropDownCustomButtonTextPosition" datatype="VisiWin.UI.Positions.Position6" category="Custom Button Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CustomButtonTextPosition option.</description>
+    </property>
+
+
+    <!-- DropDownCustomButton Colors -->
+    <property displayName="Custom button background color" name="dropDownCustomButtonBackgroundColor" datatype="String" category="Custom Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonBackgroundColor option.</description>
+    </property>
+    <property displayName="Custom button hover background color" name="dropDownCustomButtonHoverBackgroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonHoverBackgroundColor option.</description>
+    </property>
+    <property displayName="Custom button pressed background color" name="dropDownCustomButtonPressedBackgroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonPressedBackgroundColor option.</description>
+    </property>
+    <property displayName="Custom button disabled background color" name="dropDownCustomButtonDisabledBackgroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonDisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Custom button foreground color" name="dropDownCustomButtonForegroundColor" datatype="String" category="Custom Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonForegroundColor option.</description>
+    </property>
+    <property displayName="Custom button pressed foreground color" name="dropDownCustomButtonPressedForegroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonPressedForegroundColor option.</description>
+    </property>
+    <property displayName="Custom button auth symbol foreground color" name="dropDownCustomButtonAuthSymbolForegroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonAuthSymbolForegroundColor option.</description>
+    </property>
+    <property displayName="Custom button disabled foreground color" name="dropDownCustomButtonDisabledForegroundColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonDisabledForegroundColor option.</description>
+    </property>
+    <property displayName="Custom button border color" name="dropDownCustomButtonBorderColor" datatype="String" category="Custom Button Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonBorderColor option.</description>
+    </property>
+    <property displayName="Custom button hover border color" name="dropDownCustomButtonHoverBorderColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonHoverBorderColor option.</description>
+    </property>
+    <property displayName="Custom button disabled border color" name="dropDownCustomButtonDisabledBorderColor" datatype="String" category="Custom Button Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CustomButtonDisabledBorderColor option.</description>
+    </property>
+
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onButtonClick" isDefault="true"/>
+    <event name="onCustomClick"/>
+    <event name="onAcknowledgeClick"/>
+  </events>
+
+  <content>
+    <![CDATA[
+      <div data-win-control="Lenze.UI.AlarmLineCollection"  data-win-options="{style:'Custom.Default'}">
+			  <div data-win-control="Lenze.UI.AlarmLineItem" data-win-options='{"style":"Custom.Default","actAckBackgroundColor":"@ErrorColor","actAckBorderColor":"@ErrorColor","actAckTextColor":"@AltForegroundColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@ErrorColor","inactBackgroundColor":"@BackgroundColor","inactBorderColor":"@ErrorColor","inactSymbolColor":"@ErrorColor","symbol":"error","desiredAlarmClasses":"Systemalarm, Alarm"}'></div>
+				<div data-win-control="Lenze.UI.AlarmLineItem" data-win-options='{"style":"Custom.Default","desiredAlarmClasses":"Warning","actAckBackgroundColor":"@WarningColor","actAckBorderColor":"@WarningColor","actAckTextColor":"@AltForegroundColor","actBackgroundColor":"@WarningColor","actBorderColor":"@WarningColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@WarningColor","inactBackgroundColor":"@BackgroundColor","inactSymbolColor":"@WarningColor","symbol":"warning"}'></div>
+				<div data-win-control="Lenze.UI.AlarmLineItem" data-win-options='{"style":"Custom.Default","actAckTextColor":"@AltForegroundColor","actBackgroundColor":"@InfoColor","actBorderColor":"@InfoColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@InfoColor","inactBackgroundColor":"@BackgroundColor","inactBorderColor":"@InfoColor","inactSymbolColor":"@InfoColor","symbol":"info","desiredAlarmClasses":"Info"}'></div>
+			</div>
+    ]]>
+  </content>
+</control>

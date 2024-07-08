@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>ErrorView</title>
+    <script src="ErrorView.js"></script>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.View" data-win-options='{"style":"Custom.Default"}' id="errorview">
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","alignItems":"Center","borderColor":"@PrimaryLightColor","alignContent":"End","justifyContent":"End"}'>
+
+            <div data-win-control="VisiWin.UI.AppErrorList"
+                data-win-options='{"style":"Custom.Default","height":"100%","width":"100%","visibility":"Collapse"}' id="errorList"></div>
+            <div data-win-control="VisiWin.UI.FlexLayout"
+                data-win-options='{"style":"Custom.Default","left":"0px","top":"0px","right":"0px","bottom":"0px","width":"auto","height":"auto","padding":"0px","alignItems":"Center","margin":"0px 0px 12px","orientation":"Horizontal","alignContent":"Start","justifyContent":"Start","maxWidth":"100%","minWidth":"400px"}'>
+                <div data-win-control="VisiWin.UI.FlexLayout"
+                    data-win-options='{"style":"Custom.Default","left":"0px","top":"0px","right":"0px","bottom":"0px","width":"100%","height":"100%","padding":"0px","alignItems":"Start","margin":"0%","orientation":"Vertical","alignContent":"Center","justifyContent":"Start"}'
+                    id="statusView">
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","text":"Client cannot load","backgroundColor":"@Transparent","labelForegroundColor":"@PrimaryColor","showSymbol":true,"margin":"8px","symbol":"cancel","symbolForegroundColor":"@ErrorColor","lineClamp":4.0,"textWrapping":"WrapWithLineClamp"}'
+                        id="labelClientState"></div>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","text":"Server is not available","backgroundColor":"@Transparent","labelForegroundColor":"@PrimaryColor","showSymbol":true,"margin":"0px 8px 8px","symbol":"cancel","symbolForegroundColor":"@ErrorColor","lineClamp":4.0,"textWrapping":"WrapWithLineClamp"}'
+                        id="labelServerState"></div>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","text":"Connection is lost","backgroundColor":"@Transparent","labelForegroundColor":"@PrimaryColor","showSymbol":true,"margin":"0px 8px 8px","symbol":"cancel","symbolForegroundColor":"@ErrorColor","lineClamp":4.0,"textWrapping":"WrapWithLineClamp"}'
+                        id="labelSocketState"></div>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","text":"Status is unkown","backgroundColor":"@Transparent","labelForegroundColor":"@PrimaryColor","showSymbol":true,"margin":"0px 8px 8px","symbol":"cancel","symbolForegroundColor":"@ErrorColor","lineClamp":4.0,"textWrapping":"WrapWithLineClamp"}'
+                        id="labelUnkownState"></div>
+                </div>
+            </div>
+            <div data-win-control="VisiWin.UI.Button"
+                data-win-options='{"style":"Custom.Default","text":"Reload","margin":"4px 8px 28px","iconFont":"lenze-icons","showSymbol":true,"symbol":"refresh","textAlignment":"Center","symbolMargin":"0px 8px 0px 0px"}'
+                data-win-actions='{"name":"BHShow","triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.RestartAction"}]}]}'>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

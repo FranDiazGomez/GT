@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.RadialInstrument" style="Custom.Default" name="VisiWin.UI.RadialInstrument.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">RadialInstrument</title>
+  <description type="text/plain">A RadialInstrument control.</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Numeric:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Value" name="value" datatype="Number" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+    <property displayName="Use raw value" name="useRawValue" datatype="Boolean" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseRawValue option.</description>
+    </property>
+
+    <!-- Limits -->
+    <property displayName="Raw limit min" name="rawLimitMin" datatype="Number" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RawLimitMin option.</description>
+    </property>
+    <property displayName="Raw limit max" name="rawLimitMax" datatype="Number" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RawLimitMax option.</description>
+    </property>
+    <property displayName="Use variable limits" name="useVariableLimits" datatype="Boolean" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableLimits option.</description>
+    </property>
+    <property displayName="Limits" name="limits" isArray="True" datatype="VisiWin.UI.RadialRangeLimit.Custom.Default" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Limits option.</description>
+    </property>
+
+		<!-- ReferenceValue -->
+		<property displayName="Raw reference value" name="rawReferenceValue" datatype="Number" category="ReferenceValue" isBrowsable="false">
+			<description type="text/plain">Gets or sets the RawReferenceValue option.</description>
+		</property>
+
+ <!-- Common Properties -->
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property>
+    <property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Disabled option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+
+    <!-- Instrument -->
+    <property displayName="Start angle" name="startAngle" datatype="Number" category="Instrument" isBrowsable="true">
+      <description type="text/plain">Gets or sets the StartAngle option.</description>
+    </property>
+    <property displayName="End angle" name="endAngle" datatype="Number" category="Instrument" isBrowsable="true">
+      <description type="text/plain">Gets or sets the EndAngle option.</description>
+    </property>
+    <property displayName="Background URI" name="backgroundUri" datatype="String" category="Instrument" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundUri option.</description>
+    </property>
+	<property displayName="Show all ranges" name="showAllRanges" datatype="Boolean" category="Instrument" isBrowsable="false">
+	  <description type="text/plain">Gets or sets ShowAllRanges option.</description>
+	</property>
+
+    <!-- Range -->
+    <property displayName="Range inner radius" name="rangeInnerRadius" datatype="String" category="Range" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RangeInnerRadius option.</description>
+    </property>
+    <property displayName="Range outer radius" name="rangeOuterRadius" datatype="String" category="Range" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RangeOuterRadius option.</description>
+    </property>
+
+    <!-- Scale -->
+	<property displayName="Scale mode" name="scaleMode" datatype="VisiWin.UI.Scale.Mode" category="Scale" isBrowsable="true">
+	   <description type="text/plain">Gets or sets the ScaleMode option.</description>
+	</property>
+	<property displayName="Scale placement" name="scalePlacement" datatype="VisiWin.UI.Placements.Placement1" category="Scale" isBrowsable="false">
+		<description type="text/plain">Gets or sets the ScalePlacement option.</description>
+	</property>
+	<property displayName="Show scale base line" name="showScaleBaseLine" datatype="Boolean" category="Scale" isBrowsable="false">
+		<description type="text/plain">Gets or sets the ShowScaleBaseLine option.</description>
+    </property>
+	<property displayName="Scale limits visibility" name="scaleLimitsVisibility" datatype="VisiWin.UI.Scale.LimitsVisibility" category="Scale" isBrowsable="false">
+		<description type="text/plain">Gets or sets the ScaleLimitsVisibility option.</description>
+    </property>
+	<property displayName="Scale radius" name="scaleRadius" datatype="String" category="Scale" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="RadiusUnits">
+		<description type="text/plain">Gets or sets the ScaleRadius option.</description>
+    </property>
+    <property displayName="Show major ticks" name="showMajorTicks" datatype="Boolean" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMajorTicks option.</description>
+    </property>
+    <property displayName="Major step size" name="majorStepSize" datatype="Number" category="Scale" isBrowsable="false">
+	  <description type="text/plain">Gets or sets the MajorStepSize option.</description>
+	</property>
+    <property displayName="Major steps" name="majorSteps" datatype="Number" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MajorSteps option.</description>
+    </property>
+    <property displayName="Major ticks length" name="majorTicksLength" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MajorTicksLength option.</description>
+    </property>
+    <property displayName="Major ticks width" name="majorTicksWidth" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MajorTicksWidth option.</description>
+    </property>
+    <property displayName="Show middle ticks" name="showMiddleTicks" datatype="Boolean" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMiddleTicks option.</description>
+    </property>
+    <property displayName="Middle step size" name="middleStepSize" datatype="Number" category="Scale" isBrowsable="false">
+		<description type="text/plain">Gets or sets the MiddleStepSize option.</description>
+	</property>
+    <property displayName="Middle steps" name="middleSteps" datatype="Number" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MiddleSteps option.</description>
+    </property>
+    <property displayName="Middle ticks length" name="middleTicksLength" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MiddleTicksLength option.</description>
+    </property>
+    <property displayName="Middle ticks width" name="middleTicksWidth" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MiddleTicksWidth option.</description>
+    </property>
+    <property displayName="Show minor ticks" name="showMinorTicks" datatype="Boolean" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMinorTicks option.</description>
+    </property>
+    <property displayName="Minor step size" name="minorStepSize" datatype="Number" category="Scale" isBrowsable="false">
+		<description type="text/plain">Gets or sets the MinorStepSize option.</description>
+	</property>
+    <property displayName="Minor steps" name="minorSteps" datatype="Number" category="Scale" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinorSteps option.</description>
+    </property>
+    <property displayName="Minor ticks length" name="minorTicksLength" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinorTicksLength option.</description>
+    </property>
+    <property displayName="Minor ticks width" name="minorTicksWidth" datatype="Number" category="Scale" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinorTicksWidth option.</description>
+    </property>
+
+    <!-- MajorLabels -->
+    <property displayName="Show major labels" name="showMajorLabels" datatype="Boolean" category="MajorLabels" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMajorLabels option.</description>
+    </property>
+    <property displayName="Major labels font class" name="majorLabelsFontClass" datatype="Lenze.UI.Text.FontClass" category="MajorLabels" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MajorLabelsFontClass option.</description>
+    </property>
+    <property displayName="Major labels font size" name="majorLabelsFontSize" datatype="String" category="MajorLabels" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the MajorLabelsFontSize option.</description>
+    </property>
+    <property displayName="Major labels font weight" name="majorLabelsFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="MajorLabels" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the MajorLabelsFontWeight option.</description>
+    </property>
+    <property displayName="Major labels line height" name="majorLabelsLineHeight" datatype="String" category="MajorLabels" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the MajorLabelsLineHeight option.</description>
+    </property>
+    <property displayName="Major labels text contrast" name="majorLabelsTextContrast" datatype="Number" category="MajorLabels" isBrowsable="false">
+	  <description type="text/plain">Gets or sets the MajorLabelsTextContrast option.</description>
+	</property>
+    <property displayName="Major labels offset" name="majorLabelsOffset" datatype="Number" category="MajorLabels" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MajorLabelsOffset option.</description>
+    </property>
+    <property displayName="Major labels decimal places" name="majorLabelsDecimalPlaces" datatype="Number" category="MajorLabels" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MajorLabelsDecimalPlaces option.</description>
+    </property>
+
+    <!-- Indicator -->
+    <property displayName="Indicator URI" name="indicatorUri" datatype="String" category="Indicator" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the IndicatorUri option.</description>
+    </property>
+    <property displayName="Indicator size" name="indicatorSize" datatype="String" category="Indicator" isBrowsable="false">
+      <description type="text/plain">Gets or sets the IndicatorSize option.</description>
+    </property>
+
+    <!-- Authorization -->
+    <property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+    </property>
+    <property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+    </property>
+	<property displayName="Authorized (design time)" name="authorized" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+	  <description type="text/plain">Gets or sets the Authorized option.</description>
+	</property>
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Range background color" name="rangeBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the RangeBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled range background color" name="disabledRangeBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledRangeBackgroundColor option.</description>
+    </property>
+    <property displayName="Scale foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ScaleForegroundColor option.</description>
+    </property>
+    <property displayName="Scale background color" name="scaleBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ScaleBackgroundColor option.</description>
+    </property>
+    <property displayName="Major ticks color" name="majorTicksColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the MajorTicksColor option.</description>
+    </property>
+    <property displayName="Middle ticks color" name="middleTicksColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the MiddleTicksColor option.</description>
+    </property>
+    <property displayName="Minor ticks color" name="minorTicksColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the MinorTicksColor option.</description>
+    </property>
+    <property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled scale background color" name="disabledScaleBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledScaleBackgroundColor option.</description>
+    </property>
+    <property displayName="Indicator background color" name="indicatorBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the IndicatorBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled indicator background color" name="disabledIndicatorBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledIndicatorBackgroundColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+  </events>
+
+  <content>
+    <![CDATA[<div data-win-control="VisiWin.UI.RadialInstrument" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

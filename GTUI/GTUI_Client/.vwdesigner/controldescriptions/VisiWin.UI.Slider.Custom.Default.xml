@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.Slider" style="Custom.Default" name="VisiWin.UI.Slider.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">Slider</title>
+  <description type="text/plain">A Slider control.</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    
+		<!-- Alignment -->
+		<property displayName="Align items" name="alignItems" datatype="VisiWin.UI.FlexLayout.AlignItems" category="Alignment" isBrowsable="false">
+	 		<description type="text/plain">Gets or sets the AlignItems option.</description>
+		</property>
+		<property displayName="Justify content" name="justifyContent" datatype="VisiWin.UI.FlexLayout.JustifyContent" category="Alignment" isBrowsable="false">
+			<description type="text/plain">Gets or sets the JustifyContent option.</description>
+		</property>
+		
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+     <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Numeric:ItemAccessRightsFilter:Write,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Value" name="value" datatype="Number" category="Variable" isBrowsable="true" shouldSerialize="false">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+    <property displayName="Decimal places" name="decimalPlaces" datatype="Number" category="Variable" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the DecimalPlaces option.</description>
+    </property>
+    <property displayName="Use raw value" name="useRawValue" datatype="Boolean" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseRawValue option.</description>
+    </property>
+
+    <!-- Limits -->
+    <property displayName="Raw limit min" name="rawLimitMin" datatype="Number" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RawLimitMin option.</description>
+    </property>
+    <property displayName="Raw limit max" name="rawLimitMax" datatype="Number" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RawLimitMax option.</description>
+    </property>
+    <property displayName="Use variable limits" name="useVariableLimits" datatype="Boolean" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableLimits option.</description>
+    </property>
+
+
+    <!-- Common Properties -->
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property>
+    <property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Disabled option.</description>
+    </property>
+    <property displayName="Hover (design time)" name="hover" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+      <description type="text/plain">Gets or sets Hover option.</description>
+    </property>
+    <property displayName="Pressed (design time)" name="pressed" datatype="Boolean" category="Control States" isBrowsable="true" shouldSerialize="false">
+      <description type="text/plain">Gets or sets Pressed option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+
+    <!-- Slider -->
+    <property displayName="Step" name="step" datatype="Number" category="Slider" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Step option.</description>
+    </property>
+    <property displayName="Immediate" name="immediate" datatype="Boolean" category="Slider" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Immediate option.</description>
+    </property>
+    <property displayName="Orientation" name="orientation" datatype="VisiWin.UI.FlexLayout.Orientation" category="Slider" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Orientation option.</description>
+    </property>
+    <property displayName="Orientation reversed" name="orientationReversed" datatype="Boolean" category="Slider" isBrowsable="true">
+      <description type="text/plain">Gets or sets the OrientationReversed option.</description>
+    </property>
+    <property displayName="Track thickness" name="trackThickness" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="ThicknessUnits">
+      <description type="text/plain">Gets or sets the TrackThickness option.</description>
+    </property>
+ <property displayName="Track border radius" name="trackBorderRadius" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackBorderRadius option.</description>
+    </property>
+
+    <property displayName="Slider container width" name="sliderContainerWidth" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the SliderContainerWidth option.</description>
+    </property>
+    <property displayName="Slider container height" name="sliderContainerHeight" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the SliderContainerHeight option.</description>
+    </property>
+    <property displayName="Slider container margin" name="sliderContainerMargin" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the SliderContainerMargin option.</description>
+    </property>
+    <property displayName="Slider container padding" name="sliderContainerPadding" datatype="String" category="Slider" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the SliderContainerPadding option.</description>
+    </property>
+
+
+    <!-- Thumb -->
+    <property displayName="Thumb border width" name="thumbBorderWidth" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderWidth option.</description>
+    </property>
+    <property displayName="Thumb border style" name="thumbBorderStyle" datatype="VisiWin.UI.Border.Style" category="Thumb" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ThumbBorderStyle option.</description>
+    </property>
+    <property displayName="Thumb border radius" name="thumbBorderRadius" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderRadius option.</description>
+    </property>
+    <property displayName="Thumb width" name="thumbWidth" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the ThumbWidth option.</description>
+    </property>
+    <property displayName="Thumb height" name="thumbHeight" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the ThumbHeight option.</description>
+    </property>
+    <property displayName="Thumb margin" name="thumbMargin" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbMargin option.</description>
+    </property>
+    <property displayName="Thumb padding" name="thumbPadding" datatype="String" category="Thumb" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbPadding option.</description>
+    </property>
+    <property displayName="Thumb shadow" name="thumbShadow" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbShadow option.</description>
+    </property>
+
+   <!-- MinMaxLabel -->
+    <property displayName="Min max label thickness" name="minMaxLabelThickness" datatype="String" category="MinMaxLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="ThicknessUnits">
+      <description type="text/plain">Gets or sets the MinMaxLabelThickness option.</description>
+    </property>
+    <property displayName="Min max label position" name="minMaxLabelPosition" datatype="VisiWin.UI.Positions.Position5" category="MinMaxLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinMaxLabelPosition option.</description>
+    </property>
+    <property displayName="Min max label align items" name="minMaxLabelAlignItems" datatype="VisiWin.UI.FlexLayout.AlignItems" category="MinMaxLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinMaxLabelAlignItems option.</description>
+    </property>
+    <property displayName="Min max label justify content" name="minMaxLabelJustifyContent" datatype="VisiWin.UI.FlexLayout.JustifyContent" category="MinMaxLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinMaxLabelJustifyContent option.</description>
+    </property>
+    <!-- MinLabel -->
+    <property displayName="Show min label" name="showMinLabel" datatype="Boolean" category="MinLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMinLabel option.</description>
+    </property>
+    <property displayName="Min label width" name="minLabelWidth" datatype="String" category="MinLabel" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the MinLabelWidth option.</description>
+    </property>
+    <property displayName="Min label height" name="minLabelHeight" datatype="String" category="MinLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the MinLabelHeight option.</description>
+    </property>
+    <property displayName="Min label margin" name="minLabelMargin" datatype="String" category="MinLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the MinLabelMargin option.</description>
+    </property>
+    <property displayName="Min label padding" name="minLabelPadding" datatype="String" category="MinLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the MinLabelPadding option.</description>
+    </property>
+    <property displayName="Min label text alignment" name="minLabelTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="MinLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinLabelTextAlignment option.</description>
+    </property>
+    <property displayName="Min label line clamp" name="minLabelLineClamp" datatype="Number" category="MinLabel" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Min label text wrapping" name="minLabelTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="MinLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinLabelTextWrapping option.</description>
+    </property>
+    <property displayName="Min label text trimming" name="minLabelTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="MinLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinLabelTextTrimming option.</description>
+    </property>
+    <property displayName="Min label font class" name="minLabelFontClass" datatype="Lenze.UI.Text.FontClass" category="MinLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinLabelFontClass option.</description>
+    </property>
+    <property displayName="Min label font size" name="minLabelFontSize" datatype="String" category="MinLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MinLabelFontSize option.</description>
+    </property>
+    <property displayName="Min label font weight" name="minLabelFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="MinLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MinLabelFontWeight option.</description>
+    </property>
+    <property displayName="Min label line height" name="minLabelLineHeight" datatype="String" category="MinLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MinLabelLineHeight option.</description>
+    </property>
+    <property displayName="Min label text contrast" name="minLabelTextContrast" datatype="Number" category="MinLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MinLabelTextContrast option.</description>
+    </property>
+
+    <!-- MaxLabel -->
+    <property displayName="Show max label" name="showMaxLabel" datatype="Boolean" category="MaxLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowMaxLabel option.</description>
+    </property>
+    <property displayName="Max label width" name="maxLabelWidth" datatype="String" category="MaxLabel" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the MaxLabelWidth option.</description>
+    </property>
+    <property displayName="Max label height" name="maxLabelHeight" datatype="String" category="MaxLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the MaxLabelHeight option.</description>
+    </property>
+    <property displayName="Max label margin" name="maxLabelMargin" datatype="String" category="MaxLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the MaxLabelMargin option.</description>
+    </property>
+    <property displayName="Max label padding" name="maxLabelPadding" datatype="String" category="MaxLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the MaxLabelPadding option.</description>
+    </property>
+    <property displayName="Max label text alignment" name="maxLabelTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="MaxLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MaxLabelTextAlignment option.</description>
+    </property>
+    <property displayName="Max label line clamp" name="maxLabelLineClamp" datatype="Number" category="MaxLabel" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Max label text wrapping" name="maxLabelTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="MaxLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MaxLabelTextWrapping option.</description>
+    </property>
+    <property displayName="Max label text trimming" name="maxLabelTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="MaxLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MaxLabelTextTrimming option.</description>
+    </property>
+    <property displayName="Max label font class" name="maxLabelFontClass" datatype="Lenze.UI.Text.FontClass" category="MaxLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MaxLabelFontClass option.</description>
+    </property>
+    <property displayName="Max label font size" name="maxLabelFontSize" datatype="String" category="MaxLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MaxLabelFontSize option.</description>
+    </property>
+    <property displayName="Max label font weight" name="maxLabelFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="MaxLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MaxLabelFontWeight option.</description>
+    </property>
+    <property displayName="Max label line height" name="maxLabelLineHeight" datatype="String" category="MaxLabel" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the MaxLabelLineHeight option.</description>
+    </property>
+    <property displayName="Max label text contrast" name="maxLabelTextContrast" datatype="Number" category="MaxLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the MaxLabelTextContrast option.</description>
+    </property>
+
+    <!-- ValueLabel -->
+    <property displayName="Show value label" name="showValueLabel" datatype="Boolean" category="ValueLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowValueLabel option.</description>
+    </property>
+    <property displayName="Value label border width" name="valueLabelBorderWidth" datatype="String" category="ValueLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelBorderWidth option.</description>
+    </property>
+    <property displayName="Value label border style" name="valueLabelBorderStyle" datatype="VisiWin.UI.Border.Style" category="ValueLabel" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ValueLabelBorderStyle option.</description>
+    </property>
+    <property displayName="Value label border radius" name="valueLabelBorderRadius" datatype="String" category="ValueLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelBorderRadius option.</description>
+    </property>
+    <property displayName="Value label width" name="valueLabelWidth" datatype="String" category="ValueLabel" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the ValueLabelWidth option.</description>
+    </property>
+    <property displayName="Value label height" name="valueLabelHeight" datatype="String" category="ValueLabel" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the ValueLabelHeight option.</description>
+    </property>
+    <property displayName="Value label margin" name="valueLabelMargin" datatype="String" category="ValueLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelMargin option.</description>
+    </property>
+    <property displayName="Value label padding" name="valueLabelPadding" datatype="String" category="ValueLabel" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelPadding option.</description>
+    </property>
+    <property displayName="Value label position" name="valueLabelPosition" datatype="VisiWin.UI.Slider.ValueLabelPosition" category="ValueLabel" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ValueLabelPosition option.</description>
+    </property>
+
+    <!-- Value -->
+    <property displayName="Show value" name="showValue" datatype="Boolean" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowValue option.</description>
+    </property>
+    <property displayName="Value width" name="valueWidth" datatype="String" category="Value" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the ValueWidth option.</description>
+    </property>
+    <property displayName="Value height" name="valueHeight" datatype="String" category="Value" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the ValueHeight option.</description>
+    </property>
+    <property displayName="Value margin" name="valueMargin" datatype="String" category="Value" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueMargin option.</description>
+    </property>
+    <property displayName="Value padding" name="valuePadding" datatype="String" category="Value" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ValuePadding option.</description>
+    </property>
+    <property displayName="Value text alignment" name="valueTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ValueTextAlignment option.</description>
+    </property>
+    <property displayName="Value line clamp" name="valueLineClamp" datatype="Number" category="Value" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Value text wrapping" name="valueTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ValueTextWrapping option.</description>
+    </property>
+    <property displayName="Value text trimming" name="valueTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ValueTextTrimming option.</description>
+    </property>
+    <property displayName="Value font class" name="valueFontClass" datatype="Lenze.UI.Text.FontClass" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ValueFontClass option.</description>
+    </property>
+    <property displayName="Value font size" name="valueFontSize" datatype="String" category="Value" isBrowsable="true" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the ValueFontSize option.</description>
+    </property>
+    <property displayName="Value font weight" name="valueFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Value" isBrowsable="true" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the ValueFontWeight option.</description>
+    </property>
+    <property displayName="Value line height" name="valueLineHeight" datatype="String" category="Value" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the ValueLineHeight option.</description>
+    </property>
+    <property displayName="Value text contrast" name="valueTextContrast" datatype="Number" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ValueTextContrast option.</description>
+    </property>
+
+    <!-- Unit -->
+    <property displayName="Show unit" name="showUnit" datatype="Boolean" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowUnit option.</description>
+    </property>
+    <property displayName="Unit width" name="unitWidth" datatype="String" category="Unit" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the UnitWidth option.</description>
+    </property>
+    <property displayName="Unit height" name="unitHeight" datatype="String" category="Unit" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the UnitHeight option.</description>
+    </property>
+    <property displayName="Unit margin" name="unitMargin" datatype="String" category="Unit" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the UnitMargin option.</description>
+    </property>
+    <property displayName="Unit padding" name="unitPadding" datatype="String" category="Unit" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the UnitPadding option.</description>
+    </property>
+    <property displayName="Use variable unit text" name="useVariableUnitText" datatype="Boolean" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableUnitText of the number.</description>
+    </property>
+    <property displayName="Unit text" name="unitText" datatype="String" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UnitText option.</description>
+    </property>
+    <property displayName="Localizable unit text" name="localizableUnitText" datatype="String" category="Unit" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableUnitText option.</description>
+    </property>
+    <property displayName="Unit text alignment" name="unitTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UnitTextAlignment option.</description>
+    </property>
+    <property displayName="Unit line clamp" name="unitLineClamp" datatype="Number" category="Unit" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Unit text wrapping" name="unitTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Unit" isBrowsable="false">
+      <description type="text/plain">Gets or sets the UnitTextWrapping option.</description>
+    </property>
+    <property displayName="Unit text trimming" name="unitTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Unit" isBrowsable="false">
+      <description type="text/plain">Gets or sets the UnitTextTrimming option.</description>
+    </property>
+    <property displayName="Unit font class" name="unitFontClass" datatype="Lenze.UI.Text.FontClass" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UnitFontClass option.</description>
+    </property>
+    <property displayName="Unit font size" name="unitFontSize" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the UnitFontSize option.</description>
+    </property>
+    <property displayName="Unit font weight" name="unitFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Unit" isBrowsable="true" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the UnitFontWeight option.</description>
+    </property>
+    <property displayName="Unit line height" name="unitLineHeight" datatype="String" category="Unit" isBrowsable="false" isAdvanced="false" >
+      <description type="text/plain">Gets or sets the UnitLineHeight option.</description>
+    </property>
+    <property displayName="Unit text contrast" name="unitTextContrast" datatype="Number" category="Unit" isBrowsable="false">
+      <description type="text/plain">Gets or sets the UnitTextContrast option.</description>
+    </property>
+    <property displayName="Unit position" name="unitPosition" datatype="VisiWin.UI.Placements.Placement1" category="Unit" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UnitPosition option.</description>
+    </property>
+
+    <!-- Authorization -->
+    <property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+    </property>
+    <property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+    </property>
+    <property displayName="Authorized (design time)" name="authorized" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+      <description type="text/plain">Gets or sets the Authorized option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Value label background color" name="valueLabelBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelBackgroundColor option.</description>
+    </property>
+    <property displayName="Value background color" name="valueBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueBackgroundColor option.</description>
+    </property>
+    <property displayName="Unit background color" name="unitBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the UnitBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+
+    <property displayName="Value foreground color" name="valueForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueForegroundColor option.</description>
+    </property>
+    <property displayName="Unit foreground color" name="unitForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the UnitForegroundColor option.</description>
+    </property>
+    <property displayName="Min label foreground color" name="minLabelForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the MinLabelForegroundColor option.</description>
+    </property>
+    <property displayName="Max label foreground color" name="maxLabelForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the MaxLabelForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+    </property>
+
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Value label border color" name="valueLabelBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ValueLabelBorderColor option.</description>
+    </property>
+    <property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+    </property>
+
+    <property displayName="Active track color" name="activeTrackColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActiveTrackColor option.</description>
+    </property>
+    <property displayName="Hover active track color" name="hoverActiveTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverActiveTrackColor option.</description>
+    </property>
+    <property displayName="Pressed active track color" name="pressedActiveTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedActiveTrackColor option.</description>
+    </property>
+    <property displayName="Disabled active track color" name="disabledActiveTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledActiveTrackColor option.</description>
+    </property>
+
+    <property displayName="Track color" name="trackColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackColor option.</description>
+    </property>
+    <property displayName="Hover track color" name="hoverTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverTrackColor option.</description>
+    </property>
+    <property displayName="Pressed track color" name="pressedTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedTrackColor option.</description>
+    </property>
+    <property displayName="Disabled track color" name="disabledTrackColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledTrackColor option.</description>
+    </property>
+
+    <property displayName="Thumb background color" name="thumbBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBackgroundColor option.</description>
+    </property>
+    <property displayName="Hover thumb background color" name="hoverThumbBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverThumbBackgroundColor option.</description>
+    </property>
+    <property displayName="Pressed thumb background color" name="pressedThumbBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedThumbBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled thumb background color" name="disabledThumbBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledThumbBackgroundColor option.</description>
+    </property>
+
+    <property displayName="Thumb border color" name="thumbBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderColor option.</description>
+    </property>
+    <property displayName="Hover thumb border color" name="hoverThumbBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverThumbBorderColor option.</description>
+    </property>
+    <property displayName="Pressed thumb border color" name="pressedThumbBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedThumbBorderColor option.</description>
+    </property>
+    <property displayName="Disabled thumb border color" name="disabledThumbBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledThumbBorderColor option.</description>
+    </property>
+  </properties>
+
+  <!-- Events -->
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+    
+    <event name="onThumbPositionChanged"/>
+
+    <event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+  </events>
+
+  <content>
+    <![CDATA[<div data-win-control="VisiWin.UI.Slider" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

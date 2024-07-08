@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.TrendChartController" style="Custom.Default" name="VisiWin.UI.TrendChartController.Custom.Default">
+	<author name="Lenze" />
+	<title type="text/plain">TrendChartController</title>
+	<description type="text/plain">A TrendChartController control.</description>
+	<properties>
+		<!-- Common -->
+		<property displayName="Trend chart ID" name="trendChartId" datatype="String" category="Common"  refreshRequired="true" isBrowsable="true">
+			<description type="text/plain">Specifies the associated trend chart element.(Required)</description>
+		</property>
+		
+		<property displayName="Template" name="template" datatype="String" category="Common" isBrowsable="true" editor="HTML5Design.DesignInformation.TemplatePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Specifies the tamplete for the controller element.</description>
+		</property>
+	</properties>
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.TrendChartController" data-win-options="{style:'Custom.Default'}"></div>]]>
+	</content>
+</control>

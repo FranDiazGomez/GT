@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg viewBox="0 0 100 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient y2="0.65625" x2="0" y1="0.37109" x1="0.60809" id="needleRagialGradient1">
+            <stop offset="0" stop-color="#890606" />
+            <stop offset="1" stop-opacity="0.99609" stop-color="#ffffff" />
+        </linearGradient>
+    </defs>
+    <g>
+        <title>Instrument Needle Layer1</title>
+        <path fill="url(#needleRagialGradient1)" d="m50,0l0,0l2,57l-4,0l2,-57z" id="instrumentNeedlePath" />
+    </g>
+</svg>

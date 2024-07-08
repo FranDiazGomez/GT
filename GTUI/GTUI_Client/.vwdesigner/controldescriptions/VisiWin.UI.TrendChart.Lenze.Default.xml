@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.TrendChart" style="Custom.Default" name="VisiWin.UI.TrendChart.Custom.Default">
+	<author name="Lenze" />
+	<title type="text/plain">TrendChart</title>
+	<description type="text/plain">A TrendChart control.</description>
+	<properties>
+		<!-- Layout -->
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+			<description type="text/plain">Gets or sets the MinWidth option.</description>
+		</property>
+		<property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+			<description type="text/plain">Gets or sets the MaxWidth option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+			<description type="text/plain">Gets or sets the MinHeight option.</description>
+		</property>
+		<property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+			<description type="text/plain">Gets or sets the MaxHeight option.</description>
+		</property>
+		<property displayName="Margin" name="margin" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Margin option.</description>
+		</property>
+
+		<!-- Appearance -->
+		<property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderWidth option.</description>
+		</property>
+		<property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the BorderStyle option.</description>
+		</property>
+		<property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderRadius option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Authorization -->
+		<property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+		</property>
+		<property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+		</property>
+		<!--<property displayName="Authorized" name="authorized" datatype="Boolean" category="Authorization" isBrowsable="false" shouldSerialize="false">
+			<description type="text/plain">Gets or sets the Authorized option.</description>
+		</property>-->
+
+		<!-- Common Properties -->
+		<property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ClassNames option.</description>
+		</property>
+		<property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true">
+			<description type="text/plain">Gets or sets Disabled option.</description>
+		</property>
+
+		<!-- TrendProvider -->
+		<property displayName="Time span" name="timeSpan" datatype="Number" category="Trend Provider" isBrowsable="true">
+			<description type="text/plain">Specifies the timeSpan in minutes.</description>
+		</property>
+		<!--<property displayName="MaxSamples" name="maxSamples" datatype="Number" category="TrendProvider" isBrowsable="true">
+			<description type="text/plain">Gets or sets the maxSamples option.</description>
+		</property>-->
+		<property displayName="Trend online" name="trendOnline" datatype="Boolean" category="Trend Provider" isBrowsable="true">
+			<description type="text/plain">Specifies whether the trend is online.</description>
+		</property>
+		<property displayName="Trend chart ID" name="trendChartID" datatype="String" category="Trend Provider"  refreshRequired="true" isBrowsable="true">
+			<description type="text/plain">For the trend chart controller to identify the unique chart id.</description>
+		</property>
+
+		<!-- TrendChart -->
+		<property displayName="Series" name="Series" datatype="VisiWin.UI.Series" category="Series" isBrowsable="true" isArray="true">
+			<description type="text/plain">Gets or sets the Series option.</description>
+		</property>
+		<property displayName="Refresh rate" name="refreshRate" datatype="Number" category="Trend Chart" isBrowsable="false">
+			<description type="text/plain">Gets or sets the refreshRate option in milliseconds.(default 1000ms.) </description>
+		</property>
+
+		<!-- xAxis -->
+		<!--<property displayName="XAxis" name="xaxis" datatype="VisiWin.UI.TrendXAxis" category="XAxis" isBrowsable="true" isArray="false">
+			<description type="text/plain">Gets or sets the xaxes option.</description>
+		</property>-->
+		<property displayName="Show X axis " name="showXAxis " datatype="Boolean" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies whether the x-axis is displayed.</description>
+		</property>
+		<property displayName="X axis position" name="xaxisPosition" datatype="String" editorParameter="Bottom; Top" editor="HTML5Design.DesignInformation.StringListPropertyEditor" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the position of the x-axis(top/bottom).</description>
+		</property>
+		<property displayName="X axis ticks" name="xaxisTicks" datatype="Number" category="X Axis" isBrowsable="false">
+			<description type="text/plain">Gets or sets the xaxisTicks option.</description>
+		</property>
+		<property displayName="X axis label width" name="xaxisLabelWidth" datatype="Number" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the label width for the x-axis.</description>
+		</property>
+		<property displayName="X axis label height" name="xaxisLabelHeight" datatype="Number" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the label height for the x-axis.</description>
+		</property>
+		<property displayName="X axis tick length" name="xaxisTickLength" datatype="Number" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the length of the x-axis tick.</description>
+		</property>
+		<!--<property displayName="XaxisTickDecimals" name="xaxisTickDecimals" datatype="Number" category="Xaxis" isBrowsable="false">
+			<description type="text/plain">Gets or sets the xaxisTickDecimals option.</description>
+		</property>-->
+		<property displayName="Show X axis min max " name="showXAxisMinMax " datatype="Boolean" category="X Axis" isBrowsable="true">
+			<description type="text/plain">Specifies whether the minimum and maximum values are displayed on the x-axis.</description>
+		</property>
+		<property displayName="X axis font size" name="xaxisFontSize" datatype="String" category="X Axis" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Specifies the size of the font on the x-axis(px).</description>
+		</property>
+		<property displayName="X axis font weight" name="xaxisFontWeight" datatype="String" category="X Axis" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Specifies the size of the font weight on the x-axis.</description>
+		</property>
+		<!-- Colors -->
+		<property displayName="X axis font color" name="xaxisFontColor" datatype="String" category="X Axis" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" isAdvanced="true">
+			<description type="text/plain">Specifies the size of the font color on the x-axis.</description>
+		</property>
+		<property displayName="X axis tick color" name="xaxisTickColor" datatype="String" category="X Axis" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the size of the tick color on the x-axis.</description>
+		</property>
+		
+		<!--DateTime-->
+		<property displayName="Date time mode" name="dateTimeMode" datatype="VisiWin.UI.DateTimeFormat" category="Date Time Format" isBrowsable="true">
+			<description type="text/plain">Gets or sets the DateTimeMode option.</description>
+		</property>
+		<property displayName="Format date" name="formatDate" datatype="VisiWin.UI.DateFormat" category="Date Time Format" isBrowsable="true">
+			<description type="text/plain">Gets or sets the FormatDate option.</description>
+		</property>
+		<property displayName="Format time" name="formatTime" datatype="VisiWin.UI.TimeFormat" category="Date Time Format" isBrowsable="true">
+			<description type="text/plain">Gets or sets the FormatTime option.</description>
+		</property>
+
+
+		<!-- Grid -->
+		<property displayName="Show grid" name="showGrid" datatype="Boolean" category="Grid" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Turn off the whole grid including tick labels by setting ShowGrid to false.</description>
+		</property>
+		<property displayName="Grid above data" name="gridAboveData" datatype="Boolean" category="Grid" isBrowsable="true">
+			<description type="text/plain">AboveData determines whether the grid is drawn above the data or below (below is default).</description>
+		</property>
+		<property displayName="Grid margin" name="gridMargin" datatype="String" category="Grid" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor" refreshRequired="true" >
+			<description type="text/plain">Specifies the grid margin.</description>
+		</property>
+		<property displayName="Axis value margin" name="axisValueMargin" datatype="Number" category="Grid" isBrowsable="true">
+			<description type="text/plain">Specifies the label margin as the space in pixels between tick labels and axis line.</description>
+		</property>
+		<property displayName="Y axis margin" name="yAxisMargin" datatype="Number" category="Grid" isBrowsable="true">
+			<description type="text/plain">Specifies the grid axis margin is the space in pixels between axes when there are two next to each other.</description>
+		</property>
+		<property displayName="Grid border width" name="gridBorderWidth" datatype="Number" category="Grid" isBrowsable="true">
+			<description type="text/plain">BorderWidth" is the width of the border around the plot. Set it to 0 to disable the border.</description>
+		</property>
+		<property displayName="Grid minor ticks" name="gridMinorTicks" datatype="Number" category="Grid" isBrowsable="true">
+			<description type="text/plain">Specifies the grid minor ticks.</description>
+		</property>
+		<property displayName="Grid minor ticks width" name="gridMinorTicksWidth" datatype="Number" category="Grid" isBrowsable="true">
+			<description type="text/plain">Gets or sets the gridMinorTicksWidth option.</description>
+		</property>
+
+		<!-- Interactivity -->
+		<!--<property displayName="ZoomInteractive" name="zoomInteractive" datatype="Boolean" category="Interactivity" isBrowsable="true">
+			<description type="text/plain">Gets or sets the zoomInteractive option.</description>
+		</property>-->
+		<!--<property displayName="ZoomTrigger" name="zoomTrigger" datatype="String" category="Interactivity" isBrowsable="false">
+			<description type="text/plain">Gets or sets the zoomTrigger option.</description>
+		</property>-->
+		<!--<property displayName="ZoomMouseAmount" name="zoomMouseAmount" datatype="Number" category="Interactivity" isBrowsable="true">
+			<description type="text/plain">Gets or sets the zoomMouseAmount option.</description>
+		</property>
+		<property displayName="ZoomTouchAmount" name="zoomTouchAmount" datatype="Number" category="Interactivity" isBrowsable="true">
+			<description type="text/plain">Gets or sets the zoomTouchAmount option.</description>
+		</property>-->
+		<property displayName="Pan interactive" name="panInteractive" datatype="Boolean" category="Interactivity" isBrowsable="true">
+			<description type="text/plain">Gets or sets the panInteractive option.</description>
+		</property>
+		<property displayName="Pan cursor" name="panCursor" datatype="String" category="Interactivity" isBrowsable="true">
+			<description type="text/plain">Gets or sets the panCursor option.</description>
+		</property>
+		<!--<property displayName="PanFrameRate" name="panFrameRate" datatype="Number" category="Interactivity" isBrowsable="false">
+			<description type="text/plain">Gets or sets the panFrameRate option.</description>
+		</property>
+		<property displayName="PinchAmount" name="pinchAmount" datatype="Number" category="Interactivity" isBrowsable="false">
+			<description type="text/plain">Gets or sets the pinchAmount option.</description>
+		</property>-->
+
+
+		<!-- Grid-Colors -->
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the backgroundColor option.</description>
+		</property>
+		<property displayName="Grid color" name="gridColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the grid tick color.</description>
+		</property>
+		<property displayName="Grid background color" name="gridBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the grid background color.</description>
+		</property>
+		<property displayName="Grid border color" name="gridBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the grid border color.</description>
+		</property>
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onAttached"/>
+		<event name="onDetached"/>
+		<event name="onVisibilityChanged"/>
+	</events>
+
+	<content>
+		<![CDATA[
+		<div data-win-control="VisiWin.UI.TrendChart" data-win-options="{style:'Custom.Default'}">
+			<div data-win-control="VisiWin.UI.Series" data-win-options="{style:'Custom.Default'}"></div>
+		</div>
+		]]>
+	</content>
+</control>

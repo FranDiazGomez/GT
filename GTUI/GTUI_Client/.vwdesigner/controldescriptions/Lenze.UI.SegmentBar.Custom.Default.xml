@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.SegmentBar" style="Custom.Default" name="Lenze.UI.SegmentBar.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">SegmentBar</title>
+  <description type="text/plain">A bar indicating the current value.</description>
+  <properties>
+
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Bars padding" name="barsPadding" datatype="String" category="Appearance" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BarsPadding option.</description>
+    </property>
+    <property displayName="Number of bars" name="barsAmount" datatype="Number" category="Appearance" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets NumberOfBars option.</description>
+    </property>
+    <property displayName="Space between bars" name="barsSpaceBetween" datatype="String" category="Appearance" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets SpaceBetweenBars option.</description>
+    </property>
+    <property displayName="Bars border radius" name="barsBorderRadius" datatype="String" category="Appearance" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets BarsBorderRadius option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    <!-- Label -->
+    <property displayName="Label container width" name="headerLabelContainerWidth" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the HeaderContainerWidth option.</description>
+    </property>
+    <property displayName="Label container height" name="headerLabelContainerHeight" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the HeaderContainerHeight option.</description>
+    </property>
+    <property displayName="Label container margin" name="headerLabelContainerMargin" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderContainerMargin option.</description>
+    </property>
+    <property displayName="Label container padding" name="headerLabelContainerPadding" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderContainerPadding option.</description>
+    </property>
+    <property displayName="Show label" name="headerShowLabel" datatype="Boolean" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowHeader option.</description>
+    </property>
+    <property displayName="Label width" name="headerLabelWidth" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the HeaderWidth option.</description>
+    </property>
+    <property displayName="Label height" name="headerLabelHeight" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the HeaderHeight option.</description>
+    </property>
+    <property displayName="Label margin" name="headerLabelMargin" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderMargin option.</description>
+    </property>
+    <property displayName="Label padding" name="headerLabelPadding" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderPadding option.</description>
+    </property>
+    <property displayName="Label text" name="headerLabelText" datatype="String" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderText option.</description>
+    </property>
+    <property displayName="Localizable label text" name="headerLocalizableLabelText" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableHeaderText option.</description>
+    </property>
+    <property displayName="Label text alignment" name="headerLabelTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderTextAlignment option.</description>
+    </property>
+    <property displayName="Label line clamp" name="headerLabelLineClamp" datatype="Number" category="Label" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Label text wrapping" name="headerLabelTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderTextWrapping option.</description>
+    </property>
+    <property displayName="Label text trimming" name="headerLabelTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the HeaderTextTrimming option.</description>
+    </property>
+    <property displayName="Label font class" name="headerLabelFontClass" datatype="Lenze.UI.Text.FontClass" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontClass option.</description>
+    </property>
+    <property displayName="Label font size" name="headerLabelFontSize" datatype="String" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontSize option.</description>
+    </property>
+    <property displayName="Label font weight" name="headerLabelFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontWeight option.</description>
+    </property>
+    <property displayName="Label line height" name="headerLabelLineHeight" datatype="String" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the HeaderLineHeight option.</description>
+    </property>
+    <property displayName="Label text contrast" name="headerLabelTextContrast" datatype="Number" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the HeaderTextContrast option.</description>
+    </property>
+    <property displayName="Label uppercase" name="headerLabelUppercase" datatype="Boolean" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderUppercase option.</description>
+    </property>
+
+    <!-- Symbol -->
+    <property displayName="Show symbol" name="headerLabelShowSymbol" datatype="Boolean" category="Symbol" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the HeaderShowSymbol option.</description>
+    </property>
+    <property displayName="Icon font" name="headerLabelIconFont" datatype="String" category="Symbol" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderIconFont option.</description>
+    </property>
+    <property displayName="Symbol" name="headerLabelSymbol" datatype="String" category="Symbol" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor"  
+    editorParameter="{'symbolType':'headerLabelSymbolType','iconFont':'headerLabelIconFont'}">
+      <description type="text/plain">Gets or sets the HeaderSymbol option.</description>
+    </property>
+    <property displayName="Symbol type" name="headerLabelSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Symbol" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the HeaderSymbolType option.</description>
+    </property>
+    <property displayName="Symbol size" name="headerLabelSymbolSize" datatype="String" category="Symbol" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the HeaderSymbolSize option.</description>
+    </property>
+    <property displayName="Symbol margin" name="headerLabelSymbolMargin" datatype="String" category="Symbol" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderSymbolMargin option.</description>
+    </property>
+    <property displayName="Symbol position" name="headerLabelSymbolPosition" datatype="VisiWin.UI.Button.SymbolPosition" category="Symbol" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the HeaderSymbolPosition option.</description>
+    </property>
+
+          <!-- Common Properties -->
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property> 
+    <property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Disabled option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	  </property>
+
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Integer:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Value" name="value" datatype="String" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+    <property displayName="Round mode" name="roundMode" datatype="Lenze.UI.SegmentBar.RoundMode" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RoundMode option.</description>
+    </property>
+    <property displayName="Min value" name="minValue" datatype="Number" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinValue option.</description>
+    </property>
+    <property displayName="Max value" name="maxValue" datatype="Number" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MaxValue option.</description>
+    </property>
+
+
+       <!-- Value Label -->
+    <property displayName="Value label width" name="footerValueContainerWidth" datatype="String" category="Value Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the FooterContainerWidth option.</description>
+    </property>
+    <property displayName="Value label height" name="footerValueContainerHeight" datatype="String" category="Value Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the FooterContainerHeight option.</description>
+    </property>
+    <property displayName="Value label margin" name="footerValueContainerMargin" datatype="String" category="Value Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterContainerMargin option.</description>
+    </property>
+    <property displayName="Value label padding" name="footerValueContainerPadding" datatype="String" category="Value Label" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterContainerPadding option.</description>
+    </property>
+    
+    <!-- Value -->
+    <property displayName="Show value" name="showFooterValue" datatype="Boolean" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowFooter option.</description>
+    </property>
+    <property displayName="Value width" name="footerValueWidth" datatype="String" category="Value" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the FooterWidth option.</description>
+    </property>
+    <property displayName="Value height" name="footerValueHeight" datatype="String" category="Value" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the FooterHeight option.</description>
+    </property>
+    <property displayName="Value margin" name="footerValueMargin" datatype="String" category="Value" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterMargin option.</description>
+    </property>
+    <property displayName="Value padding" name="footerValuePadding" datatype="String" category="Value" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterPadding option.</description>
+    </property>
+    <property displayName="Value text alignment" name="footerValueTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FooterTextAlignment option.</description>
+    </property>
+    <property displayName="Value font class" name="footerValueFontClass" datatype="Lenze.UI.Text.FontClass" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FooterFontClass option.</description>
+    </property>
+    <property displayName="Value font size" name="footerValueFontSize" datatype="String" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FooterFontSize option.</description>
+    </property>
+    <property displayName="Value font weight" name="footerValueFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FooterFontWeight option.</description>
+    </property>
+    <property displayName="Value line clamp" name="footerValueLineClamp" datatype="Number" category="Value" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Value text wrapping" name="footerValueTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the FooterTextWrapping option.</description>
+    </property>
+    <property displayName="Value text trimming" name="footerValueTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the FooterTextTrimming option.</description>
+    </property>
+    <property displayName="Value line height" name="footerValueLineHeight" datatype="String" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the FooterLineHeight option.</description>
+    </property>
+    <property displayName="Value text contrast" name="footerValueTextContrast" datatype="Number" category="Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the FooterTextContrast option.</description>
+    </property>
+
+
+    <!-- Unit -->
+    <property displayName="Show unit" name="showFooterUnit" datatype="Boolean" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the ShowFooterUnit option.</description>
+    </property>
+    <property displayName="Unit width" name="footerUnitWidth" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the FooterUnitWidth option.</description>
+    </property>
+    <property displayName="Unit height" name="footerUnitHeight" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the FooterUnitHeight option.</description>
+    </property>
+    <property displayName="Unit margin" name="footerUnitMargin" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterUnitMargin option.</description>
+    </property>
+    <property displayName="Unit padding" name="footerUnitPadding" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterUnitPadding option.</description>
+    </property>
+    <property displayName="Use variable unit text" name="useVariableFooterUnitText" datatype="Boolean" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the UseVariableFooterUnitText of the number.</description>
+    </property>
+    <property displayName="Unit text" name="footerUnitText" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitText option.</description>
+    </property>
+    <property displayName="Localizable unit text" name="localizableFooterUnitText" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableFooterUnitText option.</description>
+    </property>
+    <property displayName="Unit text alignment" name="footerUnitTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitTextAlignment option.</description>
+    </property>
+    <property displayName="Unit line clamp" name="footerUnitLineClamp" datatype="Number" category="Unit" isBrowsable="false" isAdvanced="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Unit text wrapping" name="footerUnitTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Unit" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitTextWrapping option.</description>
+    </property>
+    <property displayName="Unit text trimming" name="footerUnitTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Unit" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitTextTrimming option.</description>
+    </property>
+    <property displayName="Unit font class" name="footerUnitFontClass" datatype="Lenze.UI.Text.FontClass" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitFontClass option.</description>
+    </property>
+    <property displayName="Unit font size" name="footerUnitFontSize" datatype="String" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitFontSize option.</description>
+    </property>
+    <property displayName="Unit font weight" name="footerUnitFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitFontWeight option.</description>
+    </property>
+    <property displayName="Unit line height" name="footerUnitLineHeight" datatype="String" category="Unit" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitLineHeight option.</description>
+    </property>
+    <property displayName="Unit text contrast" name="footerUnitTextContrast" datatype="Number" category="Unit" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitTextContrast option.</description>
+    </property>
+    <property displayName="Unit position" name="footerUnitPosition" datatype="VisiWin.UI.Unit.Position" category="Unit" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the FooterUnitPosition option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Bar active color" name="barActiveColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BarActiveColor option.</description>
+    </property>
+    <property displayName="Bar inactive color" name="barInactiveColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BarInactiveColor option.</description>
+    </property>
+
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Foreground color" name="bodyForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BodyForegroundColor option.</description>
+    </property>
+    <property displayName="Label foreground color" name="headerLabelForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderLabelForegroundColor option.</description>
+    </property>
+    <property displayName="Symbol foreground color" name="headerSymbolForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderSymbolForegroundColor option.</description>
+    </property>
+    <property displayName="Value foreground color" name="footerValueForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterValueForegroundColor option.</description>
+    </property>
+    <property displayName="Unit foreground color" name="footerUnitForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the FooterUnitForegroundColor option.</description>
+    </property>
+
+    <property displayName="Disabled bar active color" name="disabledBarActiveColor" datatype="String" category="Colors" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBarActiveColor option.</description>
+    </property>
+    <property displayName="Disabled bar inactive color" name="disabledBarInactiveColor" datatype="String" category="Colors" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBarInactiveColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+    </property>
+    <property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onFocusedChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onValueChanged" isDefault="true"/>
+    <event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.SegmentBar" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

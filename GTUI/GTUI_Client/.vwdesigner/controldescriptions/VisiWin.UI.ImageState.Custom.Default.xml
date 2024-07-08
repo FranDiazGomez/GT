@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.2" spec="1.0" runtimeType="VisiWin.UI.ImageState" style="Custom.Default" name="VisiWin.UI.ImageState.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">ImageState</title>
+  <description type="text/plain">A ImageState control.</description>
+  <properties>
+    <!-- Common Properties -->
+    <property displayName="Value" name="value" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+
+       <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    <!-- Image -->
+    <property displayName="Icon font" name="iconFont" datatype="String" category="Image" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IconFont option.</description>
+    </property>
+    <property displayName="Image" name="image" datatype="String" category="Image" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the Image option.</description>
+    </property>
+    <property displayName="Image type" name="imageType" datatype="VisiWin.UI.Symbol.Type" category="Image" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ImageType option.</description>
+    </property>
+  </properties>
+
+  <content>
+    <![CDATA[<div data-win-control="VisiWin.UI.ImageState" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

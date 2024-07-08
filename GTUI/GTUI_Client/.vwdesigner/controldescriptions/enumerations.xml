@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.Enumerations" name="VisiWin.UI.Enumerations">
+  <author name="Lenze" />
+  <title type="text/plain">Enumerations</title>
+
+  <enum name="Lenze.UI.SegmentBar.RoundMode">
+    <options>
+      <option value="Truncate"/>
+      <option value="RoundDown"/>
+      <option value="RoundUp"/>
+      <option value="RoundNearest"/>
+    </options>
+  </enum>
+    
+  <enum name="Lenze.UI.Text.FontClass">
+    <options>
+      <option value="Roboto40"/>
+      <option value="Roboto36"/>
+      <option value="Roboto32"/>
+      <option value="Roboto28"/>
+      <option value="Roboto24"/>
+      <option value="Roboto22"/>
+      <option value="Roboto20"/>
+      <option value="Roboto16"/>
+      <option value="Roboto14"/>
+      <option value="Roboto12"/>
+      <option value="Roboto8"/>
+      <option value="OpenSans40"/>
+      <option value="OpenSans36"/>
+      <option value="OpenSans32"/>
+      <option value="OpenSans28"/>
+      <option value="OpenSans24"/>
+      <option value="OpenSans22"/>
+      <option value="OpenSans20"/>
+      <option value="OpenSans16"/>
+      <option value="OpenSans14"/>
+      <option value="OpenSans12"/>
+      <option value="OpenSans8"/>
+    </options>
+  </enum>
+  
+   <enum name="Lenze.Models.XYCurveEnum">
+    <options>
+      <option value="Basis"/>
+      <option value="BasisClosed"/>
+      <option value="BasisOpen"/>
+      <option value="Bundle"/>
+      <option value="Cardinal"/>
+      <option value="CardinalClosed"/>
+      <option value="CardinalOpen"/>
+      <option value="CatmullRom"/>
+      <option value="CatmullRomClosed"/>
+      <option value="CatmullRomOpen"/>
+      <option value="Linear"/>
+      <option value="LinearClosed"/>
+      <option value="MonotoneX"/>
+      <option value="MonotoneY"/>
+      <option value="Natural"/>
+      <option value="Step"/>
+      <option value="StepAfter"/>
+      <option value="StepBefore"/>
+    </options>
+  </enum>
+
+
+  <enum name="Lenze.Models.StrokeLineCapEnum">
+    <options>
+      <option value="Butt"/>
+      <option value="Round"/>
+      <option value="Square"/>
+    </options>
+  </enum>
+
+  <enum name="Lenze.Models.StrokeLineJoinEnum">
+    <options>
+      <option value="Arcs"/>
+      <option value="Bevel"/>
+      <option value="Miter"/>
+      <option value="MiterClip"/>
+      <option value="Round"/>
+    </options>
+  </enum>
+
+  <enum name="Lenze.Models.StrokeStyleEnum">
+    <options>
+      <option value="Solid"/>
+      <option value="Dashed"/>
+    </options>
+  </enum>
+
+  <enum name="Lenze.Models.ViewBoxStretchEnum">
+    <options>
+      <option value="None"/>
+      <option value="Uniform"/>
+      <option value="UniformToFill"/>
+      <option value="Fill"/>
+    </options>
+  </enum>
+
+</control>

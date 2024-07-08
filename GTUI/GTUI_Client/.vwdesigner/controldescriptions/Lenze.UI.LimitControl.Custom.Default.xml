@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.LimitControl" style="Custom.Default" name="Lenze.UI.LimitControl.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">LimitControl</title>
+  <description type="text/plain">A control for showing and handling static and dynamic limits.</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+
+      <!-- Appearance -->
+	<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    <!-- Input -->
+    <property displayName="Input height" name="inputHeight" datatype="String" category="Input" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the InputHeight option.</description>
+    </property>
+    <property displayName="Input width" name="inputWidth" datatype="String" category="Input" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the InputWidth option.</description>
+    </property>
+
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	  </property>
+
+    <!-- Font -->
+    <property displayName="Font class" name="fontClass" datatype="Lenze.UI.Text.FontClass" category="Font" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontClass option.</description>
+    </property>
+    <property displayName="Font size" name="fontSize" datatype="String" category="Font" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontSize option.</description>
+    </property>
+    <property displayName="Font weight" name="fontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Font" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontWeight option.</description>
+    </property>
+    <property displayName="Show unit" name="showUnit" datatype="Boolean" category="Font" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowUnit option.</description>
+    </property>
+    <property displayName="Localizable unit text" name="localizableUnitText" datatype="String" category="Font" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableUnitText option.</description>
+    </property>
+
+    <!-- Limits -->
+    <property displayName="Is limit check enabled" name="isLimitCheckEnabled" datatype="Boolean" category="Limits" isBrowsable="true">
+      <description type="text/plain">Gets or sets the IsLimitCheckEnabled option.</description>
+    </property>
+    <property displayName="Limit width" name="limitWidth" datatype="string" category="Limits" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the LimitWidth option.</description>
+    </property>
+    <property displayName="Limit min" name="limitMin" datatype="Number" category="Limits" isBrowsable="true" isInteger="true" >
+      <description type="text/plain">Gets or sets the LimitMin option.</description>
+    </property>
+    <property displayName="Limit min variable name" name="limitMinVariableName" datatype="String" category="Limits" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LimitMinVariableName option.</description>
+    </property>
+    <property displayName="Limit max" name="limitMax" datatype="Number" category="Limits" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the LimitMax option.</description>
+    </property>
+    <property displayName="Limit max variable name" name="limitMaxVariableName" datatype="String" category="Limits" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LimitMaxVariableName option.</description>
+    </property>
+
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Decimal places" name="decimalPlaces" datatype="Number" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DecimalPlaces option.</description>
+    </property>
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+    <property displayName="VarIn border color" name="varInBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the VarInBorderColor option.</description>
+    </property>
+    <property displayName="VarIn background color" name="varInBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the VarInBackgroundColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onFocusedChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+    <event name="onValueChanged" isDefault="true"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.LimitControl" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

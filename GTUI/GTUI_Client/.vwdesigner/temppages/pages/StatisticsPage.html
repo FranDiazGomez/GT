@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>StatisticsPage</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.Page"
+        data-win-options='{"style":"Custom.Default","designHeight":"600px","designWidth":"1200px","backgroundColor":"@AppBackgroundColor"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","padding":"15px", "backgroundColor":"@Transparent"}'>
+            <div data-win-control="VisiWin.UI.Label"
+                data-win-options='{"style":"Custom.Default","text":"Statistics","fontClass":"OpenSans22","localizableText":"@[ServerApplication].Common.Statistics"}'>
+            </div>
+            <div data-win-control="VisiWin.UI.Label"
+                data-win-options='{"style":"Custom.Default","text":"Content of page statistics","fontClass":"OpenSans16","localizableText":"@[ServerApplication].Common.ContentOfStatistics"}'>
+            </div>
+	        <div data-win-control="VisiWin.UI.Button" data-win-options="{style:'Custom.Default'}" data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.ShowDialogAction","dialogName":"dialogs/dlgTest1.html"}]}]}' ></div>
+	        
+	              <div data-win-control="VisiWin.UI.TabBar" data-win-options="{style:'Custom.Default'}">
+	                <div data-win-control="VisiWin.UI.TabButton" data-win-options="{style:'Custom.Default'}"></div>
+	                <div data-win-control="VisiWin.UI.TabButton" data-win-options="{style:'Custom.Default'}"></div>
+	        
+	              </div>
+	            
+        </div>
+    </div>
+</body>
+
+</html>

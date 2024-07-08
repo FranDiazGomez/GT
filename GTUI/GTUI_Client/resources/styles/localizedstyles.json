@@ -1,0 +1,14 @@
+﻿{
+  "styles": {
+    "controls": {
+
+      "#Scale1": {
+        "localization": {
+          "de-DE": "{}", 
+          "en-US": "{}"
+        }
+      }
+
+    }
+  }
+}

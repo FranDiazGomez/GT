@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+	<title>AppShell</title>
+	<!--script src="AppShell.js"></script-->
+</head>
+
+<body>
+	<div data-win-control="VisiWin.UI.View"
+		data-win-options='{"style":"Custom.Default","backgroundColor":"@BackgroundColor"}'>
+		<div data-win-control="VisiWin.UI.AppSideNavLayout"
+			data-win-options='{"style":"Custom.Default","drawerMode":"Responsive","backgroundColor":"@AppBackgroundColor"}'>
+			<div data-win-control="VisiWin.UI.AppNavDrawer"
+				data-win-options='{"style":"Custom.Default","top":"0px","bottom":"-56px","width":"256px","height":"100%","borderStyle":"None","backgroundColor":"@AppBackgroundColor"}'>
+				<div data-win-control="VisiWin.UI.AppDrawerHeader"
+					data-win-options='{"style":"Custom.Default","borderWidth":"0px","width":"100%","height":"64px","shadow":"@Elevation_z1","margin":"0px","backgroundColor":"@AppBackgroundColor"}'>
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"64px","orientation":"Horizontal","alignItems":"Center","justifyContent":"Start","overflow":"Hidden"}'>
+						<div data-win-control="VisiWin.UI.Image"
+							data-win-options='{"style":"Custom.Default","width":"auto","height":"100%","margin":"8px 16px","imageSize":"32px","backgroundColor":"@Transparent","iconFont":"lenze-icons","imageType":"Icon","image":""}'
+							data-win-bind="winControl.image:stateSymbol; winControl.backgroundColor:StateInfo.BackColor; winControl.foregroundColor:StateInfo.ForeColor">
+						</div>
+						<div data-win-control="VisiWin.UI.Label"
+							data-win-options='{"style":"Custom.Default","text":"EASY UI","fontClass":"OpenSans24","textMargin":"0px","width":"auto","height":"100%","margin":"0px 8px","symbolType":"Icon","padding":"0px","minHeight":"56px"}'>
+						</div>
+					</div>
+				</div>
+				<nav data-win-control="VisiWin.UI.AppNavMenu"
+					data-win-options='{"style":"Custom.Default","padding":"0px","selectedIndex":0.0,"height":"100%","backgroundColor":"@AppBackgroundColor"}'>
+					<div data-win-control="VisiWin.UI.MenuItem"
+						data-win-options='{"style":"Custom.Default","symbolMargin":"0px 20px","showSymbol":true,"localizableText":"@[ServerApplication].Common.Machine","pageName":"pages/MachinePage.html","symbol":"home","borderWidth":"1px","borderStyle":"None"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.MenuItem" data-win-options='{"style":"Custom.Default","pageName":"pages/SettingsPage.html","localizableText":"@[ServerApplication].Common.Settings","symbol":"settings"}'></div>
+					<div data-win-control="VisiWin.UI.Divider" data-win-options='{"style":"Custom.Default"}'></div>
+
+					<div data-win-control="VisiWin.UI.Submenu"
+						data-win-options='{"style":"Custom.Default","showSymbol":true,"symbol":"dashboard","symbolMargin":"0px 20px","localizableText":"@[ServerApplication].Common.SubMenu","checked":true}'>
+						<div data-win-control="VisiWin.UI.MenuItem"
+							data-win-options='{"style":"Custom.Default","symbolMargin":"0px 20px 0px 40px","symbol":"grade","showSymbol":true,"text":"Colormix","localizableText":"@[ServerApplication].Common.Page1","borderStyle":"None","pageName":"pages/Colormix.html"}'>
+						</div>
+						<div data-win-control="VisiWin.UI.MenuItem"
+							data-win-options='{"style":"Custom.Default","symbolMargin":"0px 20px 0px 40px","symbol":"star_border","showSymbol":true,"localizableText":"@[ServerApplication].Common.Page2","borderStyle":"None"}'>
+						</div>
+					</div>
+
+					<div data-win-control="VisiWin.UI.Divider" data-win-options='{"style":"Custom.Default"}'></div>
+					<div data-win-control="VisiWin.UI.MenuItem"
+						data-win-options='{"style":"Custom.Default","showSymbol":true,"pageName":"pages/RecipesPage.html","text":"Recipes","symbolMargin":"0px 20px","localizableText":"@[ServerApplication].Common.Recipes","symbol":"description","borderStyle":"None"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.MenuItem"
+						data-win-options='{"style":"Custom.Default","showSymbol":true,"pageName":"pages/StatisticsPage.html","text":"Statistics","symbolMargin":"0px 20px","localizableText":"@[ServerApplication].Common.Statistics","symbol":"pie_chart_outlined","borderStyle":"None"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.MenuItem"
+						data-win-options='{"style":"Custom.Default","showSymbol":true,"symbolMargin":"0px 20px","text":"Diagnostics","localizableText":"@[ServerApplication].Common.Diagnostics","pageName":"pages/DiagnosticsPage.html","symbol":"help_outline","borderStyle":"None"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.MenuItem"
+						data-win-options='{"style":"Custom.Default","showSymbol":true,"symbolMargin":"0px 20px","text":"Alarms","localizableText":"@[ServerApplication].Common.Alarms","pageName":"pages/CurrentAlarmsPage.html","symbol":"warning","borderStyle":"None"}'>
+					</div>
+
+				</nav>
+			</div>
+			<div data-win-control="VisiWin.UI.AppBarLayout"
+				data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","backgroundColor":"@AppBackgroundColor"}'>
+				<div data-win-control="VisiWin.UI.AppBar"
+					data-win-options='{"style":"Custom.Default","backgroundColor":"@AppBackgroundColor","width":"100%","height":"auto","shadow":"@Elevation_z1","margin":"0px 0px 0px 1px","minHeight":"64px"}'>
+					<div data-win-control="VisiWin.UI.AppToolbar"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","padding":"0px 0px 0px 0px","minHeight":"64px","backgroundColor":"@AppBackgroundColor"}'>
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","overflow":"Visible"}'>
+							<div data-win-control="VisiWin.UI.FlexLayout"
+								data-win-options='{"style":"Custom.Default","width":"100%","height":"56px","orientation":"Horizontal","minHeight":"56px","padding":"0px 12px 0px 12px","justifyContent":"Space-between","alignContent":"Start","margin":"0px 0px 0px 0px"}'>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"auto","height":"56px","orientation":"Horizontal","minHeight":"50px","alignItems":"Start","alignContent":"Start","justifyContent":"Start","padding":"0px 0px 0px 0px","borderWidth":"0px 0px 0px 0px","overflow":"Auto","width":"auto"}'
+									id="flexlogo">
+									<div data-win-control="VisiWin.UI.Image"
+										data-win-options='{"style":"Custom.Default","imageType":"Svg","width":"86px","height":"100%","imageSize":"100%","image":"images/svgs/Lenze_Logo.svg","margin":"0px 0px 0px 6px","padding":"0px"}'>
+									</div>
+									<div data-win-control="VisiWin.UI.AppPageTitle"
+										data-win-options='{"style":"Custom.Default","foregroundColor":"@ForegroundColor","fontClass":"OpenSans16","lineHeight":"28px","margin":"0px 0px 0px 32px","height":"100%","padding":"6px 0px 0px"}'
+										id="navigationtitle">
+									</div>
+								</div>
+								<!--<div data-win-control="VisiWin.UI.Spacer"-->
+								<!--data-win-options='{"style":"Custom.Default"}'></div>-->
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"auto","height":"56px","orientation":"Horizontal","minHeight":"56px","alignItems":"End","alignContent":"End","justifyContent":"End","padding":"0px 0px 0px 0px","borderWidth":"0px 0px 0px 0px","overflow":"Auto","minWidth":"200px"}'
+									id="flexoptions">
+									<div data-win-control="VisiWin.UI.TextVarOut"
+										data-win-options='{"style":"Custom.Default","height":"100%","padding":"0px","margin":"0px","showLabel":false,"labelMargin":"0px","valueMargin":"0px","valueTextAlignment":"Right","variableName":"","dataContext":"currentUser","value":"abcd","width":"auto","maxWidth":"200px","valueFontClass":"OpenSans16"}'
+										data-win-bind="winControl.value:name" id="usernametitle"></div>
+									<div data-win-control="VisiWin.UI.Button"
+										data-win-options='{"style":"Custom.Default","width":"56px","height":"100%","margin":"0px","showSymbol":true,"symbol":"person","symbolSize":"22px","symbolPosition":"Center","symbolMargin":"4px 0px 4px 0px","backgroundColor":"@Transparent","showText":false,"foregroundColor":"@ForegroundColor"}'
+										data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.ShowDialogAction","dialogName":"dialogs/usermanagement/UserDialog.html"}]}]}'>
+									</div>
+									<div data-win-control="VisiWin.UI.Button"
+										data-win-options='{"style":"Custom.Default","width":"56px","height":"100%","margin":"0px","showSymbol":true,"symbol":"settings","symbolSize":"22px","symbolPosition":"Center","symbolMargin":"4px 0px 4px 0px","backgroundColor":"@Transparent","foregroundColor":"@ForegroundColor","showText":false,"padding":"0px 8px"}'
+										data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.ShowDialogAction","dialogName":"dialogs/settings/SettingsDialog.html"}]}]}'>
+									</div>
+									<div data-win-control="VisiWin.UI.AppNavMenuButton"
+										data-win-options='{"style":"Custom.Default","margin":"0px","height":"100%","width":"56px","padding":"0px 8px"}'>
+									</div>
+									<div data-win-control="VisiWin.UI.Clock"
+										data-win-options='{"style":"Custom.Default","dateTimeMode":"TimeCRDate","margin":"8px 8px 4px 8px","formatDate":"ShortDate"}'
+										id="clocktitle"></div>
+								</div>
+							</div>
+							<div data-win-control="Lenze.UI.AlarmLineCollection"
+								data-win-options='{"style":"Custom.Default","dropDownEnabled":true}'
+								data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onAcknowledgeClick","triggeredActions":[{"type":"VisiWin.Actions.AcknowledgeAlarmsAction"}]},{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onCustomClick","triggeredActions":[{"type":"VisiWin.Actions.ShowAlertDialogAction","localizableAction1ButtonText":"@[ServerApplication].Common.Ok","showAction2Button":false,"localizableTitleText":"@[ServerApplication].AlarmManagement.Information","localizableContentText":"@[ServerApplication].Common.CustomAction"}]}]}'>
+								<div data-win-control="Lenze.UI.AlarmLineItem"
+									data-win-options='{"style":"Custom.Default","actAckBackgroundColor":"@ErrorColor","actAckBorderColor":"@ErrorColor","actAckTextColor":"@AltForegroundColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@ErrorColor","inactBackgroundColor":"@BackgroundColor","inactBorderColor":"@ErrorColor","inactSymbolColor":"@ErrorColor","symbol":"error","desiredAlarmClasses":"Systemalarm, Alarm"}'>
+								</div>
+								<div data-win-control="Lenze.UI.AlarmLineItem"
+									data-win-options='{"style":"Custom.Default","desiredAlarmClasses":"Warning","actAckBackgroundColor":"@WarningColor","actAckBorderColor":"@WarningColor","actAckTextColor":"@AltForegroundColor","actBackgroundColor":"@WarningColor","actBorderColor":"@WarningColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@WarningColor","inactBackgroundColor":"@BackgroundColor","inactSymbolColor":"@WarningColor","symbol":"warning"}'>
+								</div>
+								<div data-win-control="Lenze.UI.AlarmLineItem"
+									data-win-options='{"style":"Custom.Default","actAckTextColor":"@AltForegroundColor","actBackgroundColor":"@InfoColor","actBorderColor":"@InfoColor","actSymbolColor":"@AltForegroundColor","actTextColor":"@AltForegroundColor","inactAckBorderColor":"@InfoColor","inactBackgroundColor":"@BackgroundColor","inactBorderColor":"@InfoColor","inactSymbolColor":"@InfoColor","symbol":"info","desiredAlarmClasses":"Info"}'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-win-control="VisiWin.UI.AppPageNavigator"
+					data-win-options='{"style":"Custom.Default","height":"100%","margin":"0px"}'>
+				</div>
+				<div data-win-control="Lenze.UI.Scrollbar"
+					data-win-options='{"style":"Custom.Default","scrollbarEnabled":true}'></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

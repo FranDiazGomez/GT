@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<!--Based on LenzeCyan style-->
+
+<head>
+	<title>LogbookDialog</title>
+</head>
+
+<body>
+	<div data-win-control="VisiWin.UI.DialogView"
+		data-win-options='{"style":"Custom.Default","minWidth":"900px","minHeight":"48px","backgroundColor":"@None"}'>
+		<div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'
+			data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.HideEventID","valueIfTrue":"0"}],"eventName":"onAttached"},{"type":"VisiWin.Triggers.ControlEventTrigger","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.HideComponentName","valueIfTrue":"1"}],"eventName":"onAttached"},{"type":"VisiWin.Triggers.ControlEventTrigger","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.HideComponentType","valueIfTrue":"1"}],"eventName":"onAttached"},{"type":"VisiWin.Triggers.ControlEventTrigger","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.HideInstanceID","valueIfTrue":"0"}],"eventName":"onAttached"}]}'>
+			<div data-win-control="VisiWin.UI.ContentDialog"
+				data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","minWidth":"640px","maxWidth":"94%","margin":"3% 3% 3% 3%","maxHeight":"96%"}'
+				id="FastLogbookDialog">
+				<div data-win-control="VisiWin.UI.ContentDialogHeader"
+					data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between"}'>
+					<div data-win-control="VisiWin.UI.Label"
+						data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","localizableText":"@[ServerApplication].FAST.Logbook","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Logbook"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.NumericVarOut"
+						data-win-options='{"style":"Custom.Default","variableName":"__FAST.LEM.NumberOfLogbookItems","localizableLabelText":"@[ServerApplication].FAST.NumberOfLogbookEntries","useVariableText":false,"labelText":"Number of logbook entries","width":"auto","height":"auto","margin":"0px 0px 0px 0px","labelPosition":"Left","labelContainerWidth":"auto","labelWidth":"auto","valueContainerWidth":"auto","showUnit":false,"labelFontClass":"OpenSans16","valueFontClass":"OpenSans16","valueMargin":"0px 0px 0px 8px","valuePadding":"0px","labelMargin":"0px 0px 0px 0px","labelPadding":"0px","valueContainerHeight":"auto","value":"1234"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.Button"
+						data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close","width":"48px"}'
+						data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]}]}'>
+					</div>
+				</div>
+				<div data-win-control="VisiWin.UI.ContentDialogContent"
+					data-win-options='{"style":"Custom.Default","width":"100%","alignItems":"Stretch","justifyContent":"Start","alignContent":"Center","height":"auto"}'>
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","padding":"8px 16px 16px 16px","backgroundColor":"@Transparent","alignItems":"Stretch"}'>
+						<!-- #region Logbook content -->
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","maxHeight":"302px","width":"auto","margin":"0px 0px 16px 0px","orientation":"Horizontal","alignItems":"Stretch","height":"auto"}'>
+							<!-- #region Filter -->
+							<div data-win-control="VisiWin.UI.FlexLayout"
+								data-win-options='{"style":"Custom.Default","alignItems":"Stretch","width":"70%","height":"auto","orientation":"Horizontal"}'>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 8px 0px 0px","flexShrink":1.0}'>
+									<div data-win-control="VisiWin.UI.Label"
+										data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.Severity"}'>
+									</div>
+									<div data-win-control="Lenze.UI.LogbookFilter"
+										data-win-options='{"flexGrow":1.0,"disabledBackgroundColor":"@DisabledBackgroundColor","disabledBorderColor":"@Transparent","disabledForegroundColor":"@DisabledForegroundColor","disabledSelectedBackgroundColor":"@PrimaryLightColor","borderColor":"@Transparent","filterOnChange":false}'
+										id="SeverityLogbookFilter">
+									</div>
+								</div>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 8px 0px 8px","flexShrink":1.0}'>
+									<div data-win-control="VisiWin.UI.Label"
+										data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.ComponentNameFilter"}'>
+									</div>
+									<div data-win-control="Lenze.UI.LogbookFilter"
+										data-win-options='{"flexGrow":1.0,"disabledBackgroundColor":"@DisabledBackgroundColor","disabledBorderColor":"@Transparent","disabledForegroundColor":"@DisabledForegroundColor","disabledSelectedBackgroundColor":"@PrimaryLightColor","borderColor":"@Transparent","filterOnChange":false}'
+										id="ComponentNameLogbookFilter">
+									</div>
+								</div>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 8px 0px 8px","flexShrink":1.0}'>
+									<div data-win-control="VisiWin.UI.Label"
+										data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.ComponentTypeFilter"}'>
+									</div>
+									<div data-win-control="Lenze.UI.LogbookFilter"
+										data-win-options='{"flexGrow":1.0,"disabledBackgroundColor":"@DisabledBackgroundColor","disabledBorderColor":"@Transparent","disabledForegroundColor":"@DisabledForegroundColor","disabledSelectedBackgroundColor":"@PrimaryLightColor","borderColor":"@Transparent","filterOnChange":false}'
+										id="ComponentTypeLogbookFilter">
+									</div>
+								</div>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 8px 0px 8px","flexShrink":1.0}'>
+									<div data-win-control="VisiWin.UI.Label"
+										data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.LayerFilter"}'>
+									</div>
+									<div data-win-control="Lenze.UI.LogbookFilter"
+										data-win-options='{"flexGrow":1.0,"disabledBackgroundColor":"@DisabledBackgroundColor","disabledBorderColor":"@Transparent","disabledForegroundColor":"@DisabledForegroundColor","disabledSelectedBackgroundColor":"@PrimaryLightColor","borderColor":"@Transparent","filterOnChange":false}'
+										id="LayerLogbookFilter">
+									</div>
+								</div>
+								<div data-win-control="VisiWin.UI.FlexLayout"
+									data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 0px 0px 8px","flexShrink":1.0}'>
+									<div data-win-control="VisiWin.UI.Label"
+										data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.TargetGroupFilter"}'>
+									</div>
+									<div data-win-control="Lenze.UI.LogbookFilter"
+										data-win-options='{"flexGrow":1.0,"disabledBackgroundColor":"@DisabledBackgroundColor","disabledBorderColor":"@Transparent","disabledForegroundColor":"@DisabledForegroundColor","disabledSelectedBackgroundColor":"@PrimaryLightColor","borderColor":"@Transparent","filterOnChange":false}'
+										id="TargetGroupLogbookFilter">
+									</div>
+								</div>
+							</div>
+							<!-- #endregion Filter -->
+							<!-- #region checkboxes -->
+							<div data-win-control="VisiWin.UI.FlexLayout"
+								data-win-options='{"style":"Custom.Default","width":"15%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 0px 0px 8px","flexShrink":1.0,"minWidth":"125px"}'>
+								<div data-win-control="VisiWin.UI.Label"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.Options"}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Checkbox"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableLabelText":"@[ServerApplication].FAST.Logbook.HideComponentName","width":"auto","height":"40px","checkmarkBorderColor":"@SecondaryDarkColor","variableName":"__FAST.LEM.HideComponentName","checked":false,"labelMargin":"0px 0px 0px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlPropertyTrigger","propertyName":"checked","triggeredActions":[{"type":"VisiWin.Actions.SetPropertyAction","targetSelector":"#LogbookComponentNameColumn","propertyName":"visible","propertyValueIfTrue":"%value"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Checkbox"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableLabelText":"@[ServerApplication].FAST.Logbook.HideComponentType","width":"auto","height":"40px","variableName":"__FAST.LEM.HideComponentType","checkmarkBorderColor":"@SecondaryDarkColor","checked":false,"labelMargin":"0px 0px 0px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlPropertyTrigger","propertyName":"checked","triggeredActions":[{"type":"VisiWin.Actions.SetPropertyAction","targetSelector":"#LogbookComponentTypeColumn","propertyName":"visible","propertyValueIfTrue":"%value"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Checkbox"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableLabelText":"@[ServerApplication].FAST.Logbook.HideEventID","width":"auto","height":"40px","variableName":"__FAST.LEM.HideEventID","checkmarkBorderColor":"@SecondaryDarkColor","checked":false,"labelMargin":"0px 0px 0px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlPropertyTrigger","propertyName":"checked","triggeredActions":[{"type":"VisiWin.Actions.SetPropertyAction","targetSelector":"#LogbookEventIDColumn","propertyName":"visible","propertyValueIfTrue":"%value"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Checkbox"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableLabelText":"@[ServerApplication].FAST.Logbook.HideInstanceID","width":"auto","height":"40px","variableName":"__FAST.LEM.HideInstanceID","checkmarkBorderColor":"@SecondaryDarkColor","checked":false,"labelMargin":"0px 0px 0px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlPropertyTrigger","propertyName":"checked","triggeredActions":[{"type":"VisiWin.Actions.SetPropertyAction","targetSelector":"#LogbookInstanceIDColumn","propertyName":"visible","propertyValueIfTrue":"%value"}]}]}'>
+								</div>
+							</div>
+							<!-- #endregion checkboxes -->
+							<div data-win-control="VisiWin.UI.FlexLayout"
+								data-win-options='{"style":"Custom.Default","width":"20%","height":"auto","flexGrow":0.0,"alignItems":"Stretch","margin":"0px 0px 0px 8px","flexShrink":1.0,"minWidth":"105px"}'>
+								<div data-win-control="VisiWin.UI.Label"
+									data-win-options='{"style":"Custom.Default","margin":"0px 0px 4px 0px","localizableText":"@[ServerApplication].FAST.Logbook.Functions"}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"style":"Custom.Outlined","width":"auto","iconFont":"lenze-icons","symbol":"filter","showSymbol":true,"height":"auto","minWidth":"100%","showText":true,"margin":"2px 0px 2px 0px","text":"Start Filter","localizableText":"@[ServerApplication].FAST.Logbook.SetFilter"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"Lenze.Actions.RefreshLogbookAction","logbookName":"logbook"}]}]}'
+									id="StartFilterButton">
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"width":"auto","localizableText":"@[ServerApplication].FAST.Logbook.Clear","iconFont":"lenze-icons","symbol":"filter_hide","showSymbol":true,"height":"auto","margin":"2px 0px 2px 0px","uppercase":false,"minWidth":"100%","style":"Custom.Outlined","showText":true}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"Lenze.Actions.ClearLogbookFiltersAction","logbookName":"logbook"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"style":"Custom.Outlined","width":"auto","localizableText":"@[ServerApplication].FAST.RequestReset","height":"auto","iconFont":"material-icons","showSymbol":true,"symbol":"restore","textAlignment":"Center","textWidth":"100%","symbolMargin":"0px 8px 0px 0px","margin":"2px 0px 2px 0px","minWidth":"100%"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.RequestReset","valueIfTrue":"0"}]},{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.RequestReset","valueIfTrue":"1"}]},{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.RequestReset","valueIfTrue":"0"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Label"
+									data-win-options='{"style":"Custom.Default","localizableText":"@[ServerApplication].FAST.Logbook","text":"Logbook","margin":"8px 0px 4px 0px"}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"style":"Custom.Outlined","width":"auto","localizableText":"@[ServerApplication].FAST.Logbook.Update","height":"auto","iconFont":"lenze-icons","showSymbol":true,"symbol":"update","textAlignment":"Center","textWidth":"100%","symbolMargin":"0px 8px 0px 0px","minWidth":"100%","margin":"2px 0px 2px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"Lenze.Actions.UpdateLogbookAction","logbookName":"logbook"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"style":"Custom.Outlined","width":"auto","localizableText":"@[ServerApplication].FAST.Logbook.Delete","height":"auto","iconFont":"lenze-icons","showSymbol":true,"symbol":"disposal","textAlignment":"Center","textWidth":"100%","symbolMargin":"0px 8px 0px 0px","minWidth":"100%","margin":"2px 0px 2px 0px","authorizationRight":"advanced"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"Lenze.Actions.DeleteLogbookAction","logbookName":"logbook"}]}]}'>
+								</div>
+								<div data-win-control="VisiWin.UI.Button"
+									data-win-options='{"style":"Custom.Outlined","width":"auto","localizableText":"@[ServerApplication].FAST.Logbook.ExportLogbook","height":"auto","iconFont":"lenze-icons","showSymbol":true,"symbol":"upgrade","textAlignment":"Center","textWidth":"100%","symbolMargin":"0px 8px 0px 0px","minWidth":"100%","margin":"2px 0px 2px 0px"}'
+									data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"Lenze.Actions.ExportLogbookAction","logbookName":"logbook"}]}]}'>
+								</div>
+							</div>
+						</div>
+						<div data-win-control="Lenze.UI.Logbook"
+							data-win-options='{"flexGrow":1.0,"headerBackgroundColor":"@AltForegroundColor","headerForegroundColor":"@ForegroundColor","borderWidth":"1px 1px 1px 1px","headerBorderColor":"@BorderColor","bodyBorderColor":"@BorderColor","bodySelectedBorderColor":"@BorderColor","severityFilterTableName":"SeverityLogbookFilter","componentNameFilterTableName":"ComponentNameLogbookFilter","componentTypeFilterTableName":"ComponentTypeLogbookFilter","layerFilterTableName":"LayerLogbookFilter","targetGroupFilterTableName":"TargetGroupLogbookFilter","bodyFontSize":"16px","headerSymbolBackgroundColor":"@Transparent","headerSymbolActiveForegroundColor":"@ForegroundColor","headerSymbolInactiveForegroundColor":"@DisabledForegroundColor","bodyBorderWidthSides":"0","headerBorderWidthSides":"0px","headerBorderWidthTop":"0px","headerUpperCase":false,"dateTimeLocale":"en-GB"}'
+							id="logbook">
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Number","fieldName":"number","iconFont":"lenze-icons","symbol":"expand_more"}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Time (UTC)","fieldName":"time","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more"}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Counter","fieldName":"counter","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more"}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Severity","fieldName":"severity","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more"}'>
+							</div>
+							<!-- <div data-win-control="Lenze.UI.VirtualizingTableColumn" data-win-options='{"style":"Custom.Default","defaultText":"Priority","fieldName":"priority"}'></div> -->
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Event ID","fieldName":"eventId","visible":false,"orderByEnabled":false}'
+								id="LogbookEventIDColumn">
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Error Text","fieldName":"errorText","textWrapping":"Wrap","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more","minWidth":"200px","lineClamp":4.0}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Component Name","fieldName":"componentName","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more","orderByEnabled":false,"textWrapping":"WrapWithWordBreak","minWidth":"200px"}'
+								id="LogbookComponentNameColumn">
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Component Type","fieldName":"componentType","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more","orderByEnabled":false}'
+								id="LogbookComponentTypeColumn">
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Layer","fieldName":"layer","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more"}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Target Group","fieldName":"targetGroup","iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more"}'>
+							</div>
+							<div data-win-control="Lenze.UI.VirtualizingTableColumn"
+								data-win-options='{"style":"Custom.Default","defaultText":"Instance ID","fieldName":"instanceId","visible":false,"iconFont":"lenze-icons","symbolType":"Icon","symbol":"expand_more","orderByEnabled":false}'
+								id="LogbookInstanceIDColumn">
+							</div>
+						</div>
+						<!-- #endregion Logbook content -->
+					</div>
+				</div>
+				<!-- Disabled OK Button -->
+				<!--
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"width":"100%","padding":"0px 24px 16px 16px","justifyContent":"Center"}'>
+	                <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Outlined","width":"90%","localizableText":"@[ServerApplication].Common.Ok","height":"48px","textAlignment":"Center","textWidth":"100%"}' data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]}]}' ></div>
+                </div>
+				-->
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

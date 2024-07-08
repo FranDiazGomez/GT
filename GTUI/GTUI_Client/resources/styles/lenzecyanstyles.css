@@ -1,0 +1,236 @@
+/*------------------ VisiWin.UI.Button.Lenze.Default ------------------------------*/
+/*------------------ VisiWin.UI.Key.Lenze.Default ---------------------------------*/
+/*------------------ VisiWin.UI.ToggleButton.Lenze.Default ------------------------*/
+.vw-button.lenzecyan.default {
+    width: 184px;
+}
+
+.vw-key.lenze.cyan {
+    width: 66px;
+}
+
+.vw-togglebutton.lenzecyan.default {
+    width: 184px;
+}
+
+.vw-button.lenzecyan.default,
+.vw-key.lenzecyan.default,
+.vw-togglebutton.lenzecyan.default {
+    border-radius: 4px;
+}
+
+
+
+
+/*------------------ VisiWin.UI.TabMenuButton.Lenze.Default -----------------------*/
+.vw-tabmenubutton.lenzecyan.default {
+    width: 140px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+    .vw-tabmenubutton.lenzecyan.default .vw-tabmenubutton__container {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    }
+/*.vw-tabmenubutton__expandsymbol{
+position:absolute;
+right:-35px;
+top:45px;
+margin:0px;
+}*/
+
+/*------------------ VisiWin.UI.Switch.Lenze.Default ------------------------------*/
+.vw-switch.lenzecyan.default .vw-switch__thumb {
+    height: 48px;
+    width:98px;
+    margin-top:2px;
+    border-color: #004da0;
+    border-width:1px;
+    border-radius:24px;
+    z-index:2;
+}
+
+.vw-switch.lenzecyan.default .vw-switch__track {
+    height: 48px;
+    width:136px;
+    border-width:1px;
+    border-radius:24px;
+    border-color:#004da0;
+    background-color:white;
+    z-index:1;
+}
+
+.vw-switch.lenzecyan.default .vw-switchcore__thumb {
+    transition: left 0.1s;
+    
+}
+
+.vw-switch.lenzecyan.default .vw-switch__label {
+    padding: 0 8px;
+}
+
+
+/*------------------ VisiWin.UI.Checkbox.Lenze.Default ----------------------------*/
+.vw-checkbox.lenzecyan.default .vw-checkbox__label {
+    margin: 0 8px;
+}
+
+.vw-checkbox.lenzecyan.default {
+    margin: 8px;
+    width: 180px;
+    height:48px;
+    border-width:1px;
+    border-style:solid;
+    border-radius:4px;
+}
+
+
+.vw-checkbox.lenzecyan.default .vw-checkbox.checkmark__symbol{
+    margin: 8px;
+    height:20px;
+    width: 20px;
+    border-radius:2px;
+}
+
+.vw-checkbox.lenzecyan.default .vw-checkbox__checkmark {
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+/*------------------ VisiWin.UI.RadioButton.Lenze.Default -------------------------*/
+.vw-radiobutton.lenzecyan.default .vw-radiobutton__label {
+    margin: 0 8px;
+}
+
+/*------------------ VisiWin.UI.NumericVarIn.Lenze.Default ------------------------*/
+.vw-numericvarin.lenzecyan.default.vw-numericvarin__input {
+    min-height: 40px;
+}
+
+.vw-numericvarin.lenzecyan.default .vw-numericvarin__underline {
+    height: 2px;
+}
+
+.vw-numericvarin.lenzecyan.default.vw-numericvarin.focused .vw-numericvarin__underline {
+    transform: scaleX(1);
+}
+
+.vw-numericvarin.lenzecyan.default .vw-numericvarin__inputFieldContainer {
+    min-height: 40px;
+    
+}
+
+
+/*------------------ VisiWin.UI.TextVarIn.Lenze.Default ---------------------------*/
+
+.vw-textvarin.lenzecyan.default .vw-textvarin__underline {
+    height: 2px;
+}
+
+.vw-textvarin.lenzecyan.default.vw-textvarin.focused .vw-textvarin__underline {
+    transform: scaleX(1);
+}
+
+
+/*------------------ VisiWin.UI.DropDownBox.Lenze.Default -------------------------*/
+.vw-dropdownbox.lenzecyan.default .vw-dropdownbox__input {
+    border-width: 0px 0px 1px 0px;
+}
+
+.vw-dropdownbox.lenzecyan.default .vw-dropdownbox__underline {
+    height: 2px;
+}
+
+.vw-dropdownbox.lenzecyan.default.vw-dropdownbox.checked .vw-dropdownbox__underline {
+    transform: scaleX(1);
+}
+
+/*------------------ VisiWin.UI.DropDownBoxItem.Lenze.Default ---------------------*/
+.vw-dropdownboxitem.lenzecyan.default {
+    height: 32px;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+    .vw-dropdownboxitem.lenzecyan.default .vw-dropdownboxitem__container {
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+
+
+/*------------------ VisiWin.UI.Slider.Lenze.Default ------------------------------*/
+.vw-slider.lenzecyan.default {
+    width: 150px;
+    height: 32px;
+    margin: 12px;
+}
+
+    .vw-slider.lenzecyan.default .vw-slider__valuelabel {
+        width: 24px;
+        height: 24px;
+        margin: 0px;
+    }
+
+        .vw-slider.lenzecyan.default .vw-slider__valuelabel .vw-slider__value {
+            width: 100%;
+        }
+
+    .vw-slider.lenzecyan.default .vw-slidercore__thumb {
+        width: 16px;
+        height: 16px;
+    }
+
+    .vw-slider.lenzecyan.default .vw-slidercore.pressed .vw-slidercore__thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+
+/*------------------ VisiWin.UI.NumericVarOut.Lenze.Default -----------------------*/
+.vw-numericvarout.lenzecyan.default {
+    border-width: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+
+
+/*------------------ VisiWin.UI.TextVarOut.Lenze.Default --------------------------*/
+.vw-textvarout.lenzecyan.default {
+    width: auto;
+    border-width: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+    .vw-textvarout.lenzecyan.default .vw-textvarout__leadingsymbol {
+        margin: 0px;
+    }
+
+    .vw-textvarout.lenzecyan.default .vw-textvarout__value {
+        width: 100%;
+    }
+
+
+/*------------------ VisiWin.UI.MenuItem.Lenze.Default ----------------------------*/
+.vw-menuitem.lenzecyan.default {
+    height: 48px;
+}
+
+
+
+/*------------------ VisiWin.UI.Submenu.Lenze.Default -----------------------------*/
+.vw-submenu.lenzecyan.default .vw-submenuheader {
+    height: 48px;
+}
+
+
+.vw-submenu.lenzecyan.default.vw-submenuheader__symbol {
+    margin: 12px 16px;
+}
+
+.vw-submenu.lenzecyan.default .vw-submenuheader__text {
+    margin: 0 8px 0 16px;
+}
+
+.vw-submenu.lenzecyan.default .vw-submenuheader__expandsymbol {
+    margin: 12px 16px;
+}
+
+
+

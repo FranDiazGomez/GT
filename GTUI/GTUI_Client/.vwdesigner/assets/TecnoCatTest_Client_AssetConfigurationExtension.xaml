@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="clr-namespace:VisiWin.AssetService;assembly=VisiWin7.AssetService">
+  <DesignTabConfig d2p1:Name="config" xmlns:d2p1="http://schemas.microsoft.com/winfx/2006/xaml">
+    <DesignTabConfig.DesignTabGroups>
+      <DesignTabGroup Name="@DesignTabGroup.Name.CustomControls" Position="4" ImageLarge="VarOut.png" ImageSmall="VarOutSmall.png">
+        <DesignTabGroup.SingleButtonConfigurations>
+          <!-- <ControlAssetInfo Description="CustomButton" Type="VisiWin.UI.Button" ImageLarge="Button.png" ImageSmall="ButtonSmall.png" /> -->
+        </DesignTabGroup.SingleButtonConfigurations>
+		<DesignTabGroup.PopUpButtonConfigurations>
+		  <!-- <PopUpButtonConfiguration Name="FAST" ImageSmall="SystemControls.png">
+            <ControlAssetInfo Category="Logbook" Description="Logbook" Type="Lenze.UI.Logbook" ImageLarge="Logbook.png" ImageSmall="LogbookSmall.png" />
+          </PopUpButtonConfiguration> -->
+        </DesignTabGroup.PopUpButtonConfigurations>
+      </DesignTabGroup>
+    </DesignTabConfig.DesignTabGroups>
+  </DesignTabConfig>
+</Assets>

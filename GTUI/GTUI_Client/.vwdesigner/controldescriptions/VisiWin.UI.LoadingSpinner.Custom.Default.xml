@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.LoadingSpinner" name="VisiWin.UI.LoadingSpinner.Custom.Default">
+	<author name="Lenze" />
+	<title type="text/plain">Label</title>
+	<description type="text/plain">A LoadingSpinner control.</description>
+	<properties>
+		<!-- MainContainer Layout-->
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Orientation" name="orientation" datatype="VisiWin.UI.FlexLayout.Orientation" category="Layout" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Orientation option.</description>
+		</property>
+		<property displayName="Align items" name="alignItems" datatype="VisiWin.UI.FlexLayout.AlignItems" category="Layout" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AlignItems option.</description>
+		</property>
+		<property displayName="Justify content" name="justifyContent" datatype="VisiWin.UI.FlexLayout.JustifyContent" category="Layout" isBrowsable="true">
+			<description type="text/plain">Gets or sets the JustifyContent option.</description>
+		</property>
+		<!-- Spinner Layout-->
+		<property displayName="Spinner width" name="spinnerWidth" datatype="String" category="Spinner Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Spinner height" name="spinnerHeight" datatype="String" category="Spinner Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<!-- Appearance -->
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderWidth option.</description>
+		</property>
+		<property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the BorderStyle option.</description>
+		</property>
+		<property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderRadius option.</description>
+		</property>
+		<property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Opacity option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<!-- Colors -->
+		<!-- Main Container Colors -->
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderColor option.</description>
+		</property>
+		<!-- Spinner Colors -->
+		<property displayName="Spinner background color" name="spinnerBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Spinner foreground color" name="spinnerForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<!-- Loading Spinners -->
+		<property displayName="Loading spinner" name="loadingSpinner" datatype="VisiWin.UI.LoadingSpinnerType" category="Loading Spinners" isBrowsable="true">
+			<description type="text/plain">Gets or sets the loading spinner.</description>
+		</property>
+		<!-- Spinner On and Off -->
+		<property displayName="Play animation" name="playAnimation" datatype="Boolean" category="Play Spinner Animation" isBrowsable="true">
+			<description type="text/plain">Gets or sets the spinner running option.</description>
+		</property>
+	</properties>
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.LoadingSpinner"  data-win-options="{style:'Custom.Default'}"></div>]]>
+	</content>
+</control>

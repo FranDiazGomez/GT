@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.Dialog" style="Custom.Default" name="VisiWin.UI.Dialog.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">Dialog</title>
+	<description type="text/plain">A Dialog control.</description>
+	<properties>
+		<!-- Common Properties -->
+		<property displayName="Anchor" name="anchor" datatype="String" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Anchor option.</description>
+		</property>
+		<property displayName="Placement" name="placement" datatype="VisiWin.UI.Placements.Placement3" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Placement option.</description>
+		</property>
+		<property displayName="Alignment" name="alignment" datatype="VisiWin.UI.Placements.Placement2" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Alignment option.</description>
+		</property>
+		<property displayName="Mode" name="mode" datatype="VisiWin.UI.Dialog.Mode" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Mode option.</description>
+		</property>
+		<property displayName="Dialog name" name="dialogName" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ViewNameDialogPropertyEditor">
+			<description type="text/plain">sets the DialogName of the region.</description>
+		</property>
+		<property displayName="Show at x" name="showAtX" datatype="String" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowAtX option.</description>
+		</property>
+		<property displayName="Show at y" name="showAtY" datatype="String" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowAtY option.</description>
+		</property>
+
+		<!-- Appearance -->
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Bindings -->
+		<property displayName="Title text" name="titleText" datatype="String" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the TitleText option.</description>
+		</property>
+		<property displayName="Localizable title text" name="localizableTitleText" datatype="String" category="Bindings" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableTitleText option.</description>
+		</property>
+		<property displayName="Content text" name="contentText" datatype="String" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ContentText option.</description>
+		</property>
+		<property displayName="Localizable content text" name="localizableContentText" datatype="String" category="Bindings" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableContentText option.</description>
+		</property>
+		<property displayName="Action1 button text" name="action1ButtonText" datatype="String" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Action1ButtonText option.</description>
+		</property>
+		<property displayName="Localizable action1 buttonText" name="localizableAction1ButtonText" datatype="String" category="Bindings" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableAction1ButtonText option.</description>
+		</property>
+		<property displayName="Action2 button text" name="action2ButtonText" datatype="String" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Action2ButtonText option.</description>
+		</property>
+		<property displayName="Localizable action2 button text" name="localizableAction2ButtonText" datatype="String" category="Bindings" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableAction2ButtonText option.</description>
+		</property>
+		<property displayName="Show action1 button" name="showAction1Button" datatype="Boolean" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowAction1Button option.</description>
+		</property>
+		<property displayName="Show action2 button" name="showAction2Button" datatype="Boolean" category="Bindings" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowAction2Button option.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Dialog scrim color" name="dialogScrimColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DialogScrimColor option.</description>
+		</property>
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onResult" isDefault="true"/>
+		<event name="onBeforeShow"/>
+		<event name="onBeforeHide"/>
+		<event name="onAfterShow"/>
+		<event name="onAfterHide"/>
+	</events>
+
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.Dialog" data-win-options="{style:'Custom.Default'}"></div>]]>
+	</content>
+</control>

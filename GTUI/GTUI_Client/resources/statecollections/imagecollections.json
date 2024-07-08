@@ -1,0 +1,78 @@
+{
+  "stateCollections": [
+    {
+      "iconFont": "",
+      "imageType": "bitmap",
+      "EnumImageType": 0,
+      "name": "imageCollection1",
+      "propertyType": "image",
+      "EnumPropertyType": 1,
+      "states": [
+        {
+          "propertyValue": "images/bitmaps/ooops.jpg",
+          "value": "0"
+        },
+        {
+          "propertyValue": "images/bitmaps/EASY_UI_Designer_Flat.ico",
+          "value": ">0"
+        }
+      ]
+    },
+    {
+      "iconFont": "material-icons",
+      "imageType": "icon",
+      "EnumImageType": 1,
+      "name": "imageCollection2",
+      "propertyType": "image",
+      "EnumPropertyType": 1,
+      "states": [
+        {
+          "propertyValue": "ac_unit",
+          "value": "0"
+        },
+        {
+          "propertyValue": "adb",
+          "value": "1"
+        },
+        {
+          "propertyValue": "add",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "iconFont": "",
+      "imageType": "Svg",
+      "EnumImageType": 2,
+      "name": "imageCollection3",
+      "propertyType": "image",
+      "EnumPropertyType": 1,
+      "states": [
+        {
+          "propertyValue": "images/svgs/flags/de-DE.svg",
+          "value": "<0"
+        },
+        {
+          "propertyValue": "images/svgs/flags/en-US.svg",
+          "value": "0"
+        },
+        {
+          "propertyValue": "images/svgs/flags/it-IT.svg",
+          "value": "1..20"
+        },
+        {
+          "propertyValue": "images/svgs/flags/es-ES.svg",
+          "value": "21,23,25,27,29"
+        },
+        {
+          "propertyValue": "images/svgs/flags/nl-NL.svg",
+          "value": "22,24,26,28"
+        },
+        {
+          "propertyValue": "images/svgs/flags/fr-FR.svg",
+          "value": ">=30"
+        }
+      ]
+    }
+  ]
+}

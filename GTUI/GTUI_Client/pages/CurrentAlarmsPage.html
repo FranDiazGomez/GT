@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+	<title>CurrentAlarms</title>
+</head>
+
+<body>
+	<div id="TemplateContainer" data-win-control="VisiWin.UI.TemplateContainer">
+
+		<div id="VisiWin.UI.AlarmListItemTemplate.Custom.Default" data-win-control="WinJS.Binding.Template">
+			<div data-win-control="VisiWin.UI.AlarmItem"
+				data-win-options='{"style":"Custom.Default","height":"auto","borderStyle":"Solid","borderWidth":"0px 0px 1px 0px"}'>
+				<div data-win-control="VisiWin.UI.Image"
+					data-win-options='{"style":"Custom.Default","width":"48px","height":"48px","margin":"0px 8px","imageSize":"40px","backgroundColor":"@LightGrey","iconFont":"lenze-icons", "imageType":"Icon"}'
+					data-win-bind="winControl.image:stateSymbol; winControl.backgroundColor:StateInfo.BackColor; winControl.foregroundColor:StateInfo.ForeColor">
+				</div>
+				<div data-win-control="VisiWin.UI.FlexLayout"
+					data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","flexShrink":"1","orientation":"Horizontal","alignItems":"Center"}'>
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","flexShrink":"1"}'>
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","flexShrink":"1","orientation":"Horizontal"}'>
+							<div data-win-control="VisiWin.UI.DateTimeVarOut"
+								data-win-bind="winControl.value:alarmStateTime"
+								data-win-options='{"style":"Custom.Default","dateTimeMode":"TimeOnly","formateTime":"LongTime","fontClass":"OpenSans16","backgroundColor":"@Transparent", "margin":"0px 0px 2px 4px"}'>
+							</div>
+							<div data-win-control="VisiWin.UI.Label"
+								data-win-options='{"style":"Custom.Default","width":"100%","flexShrink":"1","fontSize":"16px","fontClass":"OpenSans16","margin":"0px 0px 0px 12px", "textWrapping":"wrap"}'
+								data-win-bind="winControl.text:Text"></div>
+						</div>
+						<div data-win-control="VisiWin.UI.Label"
+							data-win-options='{"style":"Custom.Default","width":"100%","flexShrink":"1","fontSize":"12px","fontClass":"OpenSans12","lineHeight":"16px", "margin":"0px 0px 0px 12px", "textWrapping":"wrap"}'
+							data-win-bind="winControl.text:Group.Text"></div>
+						<div data-win-control="VisiWin.UI.Label"
+							data-win-options='{"style":"Custom.Default","width":"100%","flexShrink":"1","fontSize":"12px","fontClass":"OpenSans12","lineHeight":"16px", "margin":"0px 0px 4px 12px", "textWrapping":"wrap"}'
+							data-win-bind="winControl.text:Param1"></div>
+					</div>
+				</div>
+				<div data-win-control="VisiWin.UI.Button"
+					data-win-options='{"style":"Custom.Default","width":"48px","height":"48px","margin":"19px 8px","padding":"0px","showText":false,"showSymbol":true,"symbol":"done","symbolMargin":"0px 0px 0px 2px","symbolPosition":"Center","backgroundColor":"@PrimaryColor","foregroundColor":"@AltForegroundColor","borderRadius":"4px"}'
+					data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"buttonclick","triggeredActions":[{"type":"VisiWin.Actions.AcknowledgeAlarmAction","targetSelector":".vw-alarmlist"}]}]}'>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div data-win-control="VisiWin.UI.Page"
+		data-win-options="{'style':'Custom.Default', backgroundColor:'@AppBackgroundColor'}">
+		<div data-win-control="VisiWin.UI.FlexLayout"
+			data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","padding":"15px", "backgroundColor":"@Transparent"}'>
+			<div data-win-control="VisiWin.UI.Label"
+				data-win-options='{"style":"Custom.Default","text":"CurrentAlarms","fontClass":"OpenSans22","margin":"8px 8px 16px 8px","localizableText":"@[ServerApplication].Common.CurrentAlarms"}'>
+			</div>
+			<div data-win-control="VisiWin.UI.AlarmList"
+				data-win-options="{style:'Custom.Default',template:'VisiWin.UI.AlarmListItemTemplate.Custom.Default',height:'90%'}">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

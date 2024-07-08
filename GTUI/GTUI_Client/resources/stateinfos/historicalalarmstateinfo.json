@@ -1,0 +1,92 @@
+﻿{
+  "styles": {
+    "stateinfo": {
+      "historicalAlarmProvider": {
+        "classes": {
+          "Systemalarm": {
+            "Cleared":     "{stateSymbol: 'alarm_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'alarm_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'alarm_active',    stateText:  'inactive',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'alarm_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'alarm_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'alarm_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "Alarm": {
+            "Cleared":     "{stateSymbol: 'alarm_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'alarm_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'alarm_active',    stateText:  'inactive',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'alarm_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'alarm_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'alarm_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "Warning": {
+            "Cleared":     "{stateSymbol: 'message_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',            stateTag:'' }",
+            "Active":      "{stateSymbol: 'message_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'message_active',    stateText:  'inactive',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'message_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'message_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'message_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "Info": {
+            "Cleared":     "{stateSymbol: 'hint_inactive',    stateText:  'cleared',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'hint_active',    stateText:  'active',       stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'hint_active',    stateText:  'inactive',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'hint_inactive',    stateText:  'activeack',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'hint_inactive',    stateText:  'inactiveack',  stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'hint_active',    stateText:  'reactivated',  stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "ERROR_LEM": {
+            "Cleared":     "{stateSymbol: 'alert_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'alert_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'alert_active',    stateText:  'reset needed',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'alert_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'alert_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'alert_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "FAULT_LEM": {
+            "Cleared":     "{stateSymbol: 'alert_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'alert_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'alert_active',    stateText:  'reset needed',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'alert_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'alert_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'alert_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "TROUBLE_LEM": {
+            "Cleared":     "{stateSymbol: 'alert_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'alert_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'alert_active',    stateText:  'reset needed',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'alert_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'alert_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'alert_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "WARNING_LEM": {
+            "Cleared":     "{stateSymbol: 'message_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',            stateTag:'' }",
+            "Active":      "{stateSymbol: 'message_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'message_active',    stateText:  'inactive',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'message_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'message_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'message_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+            "WARNING_LOCK_LEM": {
+            "Cleared":     "{stateSymbol: 'message_inactive',    stateText:  'cleared',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',            stateTag:'' }",
+            "Active":      "{stateSymbol: 'message_active',    stateText:  'active',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'message_active',    stateText:  'reset needed',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'message_inactive',    stateText:  'activeack',   stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'message_inactive',    stateText:  'inactiveack', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'message_active',    stateText:  'reactivated', stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          },
+          "INFO_LEM": {
+            "Cleared":     "{stateSymbol: 'hint_inactive',    stateText:  'cleared',      stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor',           stateTag:'' }",
+            "Active":      "{stateSymbol: 'hint_active',    stateText:  'active',       stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Inactive":    "{stateSymbol: 'hint_active',    stateText:  'inactive',     stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "ActiveAck":   "{stateSymbol: 'hint_inactive',    stateText:  'activeack',    stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "InactiveAck": "{stateSymbol: 'hint_inactive',    stateText:  'inactiveack',  stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }",
+            "Reactivated": "{stateSymbol: 'hint_active',    stateText:  'reactivated',  stateBackgroundColor: '@AppBackgroundColor', stateForegroundColor: '@ForegroundColor', stateTag:'' }"
+          }
+        },
+        "states": {
+        }
+      }
+    }
+  }
+}

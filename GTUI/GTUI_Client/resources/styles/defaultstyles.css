@@ -1,0 +1,59 @@
+
+
+/*------------------ Lenze.UI.RecipesControl -----------------------------*/
+.lenze-recipescontrol {
+  white-space: pre;    
+}
+
+/*------------------ VisiWin.UI.AppSideNavLayout -----------------------------*/
+
+.vw-appsidenavlayout__scrim.in {
+    background-color: transparent;
+}
+
+.vw-appsidenavlayout__scrim {
+    background-color: transparent;
+}
+
+.vw-popup__scrim {
+    background-color: rgba(104,104,104,0.3) !important;
+}
+
+/*------------------ ErrorView -----------------------------*/
+#errorview{
+    background-image: url('../../images/bitmaps/ooops.jpg');
+    background-repeat: no-repeat;
+    background-position: center top !important;
+    background-size: cover !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+/*------------------ AppShell -----------------------------*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    #usernametitle{
+      display: none;
+    }
+    #flexoptions{
+      width: 300px !important;
+    }
+  }
+
+
+@media screen and (min-width: 0px) and (max-width: 520px) {
+    #navigationtitle{
+      display:none;
+    }
+
+    #clocktitle{
+      display: none;
+    }
+    #flexoptions{
+      width: 150px !important;
+  }
+}
+
+
+

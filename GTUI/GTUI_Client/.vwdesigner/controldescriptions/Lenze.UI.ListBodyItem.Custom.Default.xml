@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.ListBodyItem" style="Custom.Default" name="Lenze.UI.ListBodyItem.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">ListBodyItem</title>
+  <description type="text/plain">Control for showing a summary of the license information.</description>
+  <properties>
+
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="MinWidth" name="minWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="MaxWidth" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="MinHeight" name="minHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="MaxHeight" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="BorderWidth" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="BorderStyle" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="BorderRadius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+
+    <!-- Common Properties -->
+    <property displayName="DataContext" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the DataContext option.</description>
+    </property>
+
+
+    <!-- Text1 -->
+    <property displayName="Text1TextAlignment" name="text1TextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Text1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text1TextAlignment option.</description>
+    </property>
+    <property displayName="Text1LineClamp" name="text1LineClamp" datatype="Number" category="Text1" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the Text1LineClamp option.</description>
+    </property>
+    <property displayName="Text1TextWrapping" name="text1TextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text1TextWrapping option.</description>
+    </property>
+    <property displayName="Text1TextTrimming" name="text1TextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text1TextTrimming option.</description>
+    </property>
+    <property displayName="Text1TextContrast" name="text1TextContrast" datatype="Number" category="Text1" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text1TextContrast option.</description>
+    </property>
+    <property displayName="Text1Uppercase" name="text1Uppercase" datatype="Boolean" category="Text1" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text1Uppercase option.</description>
+    </property>
+    <property displayName="Text1TextDecoration" name="text1TextDecoration" datatype="String" category="Text1" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text1TextDecoration option.</description>
+    </property>
+    <property displayName="Text1TextShadow" name="text1TextShadow" datatype="String" category="Text1" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text1TextShadow option.</description>
+    </property>
+
+    <property displayName="Text1FontClass" name="text1FontClass" datatype="Lenze.UI.Text.FontClass" category="Text1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text1FontClass option.</description>
+    </property>
+    <property displayName="Text1FontFamily" name="text1FontFamily" datatype="String" category="Text1" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1FontFamily option.</description>
+    </property>
+    <property displayName="Text1FontSize" name="text1FontSize" datatype="String" category="Text1" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1FontSize option.</description>
+    </property>
+    <property displayName="Text1FontWeight" name="text1FontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Text1" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1FontWeight option.</description>
+    </property>
+    <property displayName="Text1LineHeight" name="text1LineHeight" datatype="String" category="Text1" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1LineHeight option.</description>
+    </property>
+    <property displayName="Text1FontStyle" name="text1FontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Text1" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1FontStyle option.</description>
+    </property>
+    <property displayName="Text1LetterSpacing" name="text1LetterSpacing" datatype="String" category="Text1" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text1LetterSpacing option.</description>
+    </property>
+
+
+    <!-- Text2 -->
+    <property displayName="Text2TextAlignment" name="text2TextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextAlignment option.</description>
+    </property>
+    <property displayName="Text2LineClamp" name="text2LineClamp" datatype="Number" category="Text2" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the Text2LineClamp option.</description>
+    </property>
+    <property displayName="Text2TextWrapping" name="text2TextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextWrapping option.</description>
+    </property>
+    <property displayName="Text2TextTrimming" name="text2TextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextTrimming option.</description>
+    </property>
+    <property displayName="Text2TextContrast" name="text2TextContrast" datatype="Number" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextContrast option.</description>
+    </property>
+    <property displayName="Text2Uppercase" name="text2Uppercase" datatype="Boolean" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2Uppercase option.</description>
+    </property>
+    <property displayName="Text2TextDecoration" name="text2TextDecoration" datatype="String" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextDecoration option.</description>
+    </property>
+    <property displayName="Text2TextShadow" name="text2TextShadow" datatype="String" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextShadow option.</description>
+    </property>
+
+    <property displayName="Text2FontClass" name="text2FontClass" datatype="Lenze.UI.Text.FontClass" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2FontClass option.</description>
+    </property>
+    <property displayName="Text2FontFamily" name="text2FontFamily" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontFamily option.</description>
+    </property>
+    <property displayName="Text2FontSize" name="text2FontSize" datatype="String" category="Text2" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontSize option.</description>
+    </property>
+    <property displayName="Text2FontWeight" name="text2FontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Text2" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontWeight option.</description>
+    </property>
+    <property displayName="Text2LineHeight" name="text2LineHeight" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2LineHeight option.</description>
+    </property>
+    <property displayName="Text2FontStyle" name="text2FontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontStyle option.</description>
+    </property>
+    <property displayName="Text2LetterSpacing" name="text2LetterSpacing" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2LetterSpacing option.</description>
+    </property>
+
+
+    <!-- Text2 -->
+    <property displayName="Text2TextAlignment" name="text2TextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextAlignment option.</description>
+    </property>
+    <property displayName="Text2LineClamp" name="text2LineClamp" datatype="Number" category="Text2" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the Text2LineClamp option.</description>
+    </property>
+    <property displayName="Text2TextWrapping" name="text2TextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextWrapping option.</description>
+    </property>
+    <property displayName="Text2TextTrimming" name="text2TextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2TextTrimming option.</description>
+    </property>
+    <property displayName="Text2TextContrast" name="text2TextContrast" datatype="Number" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextContrast option.</description>
+    </property>
+    <property displayName="Text2Uppercase" name="text2Uppercase" datatype="Boolean" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2Uppercase option.</description>
+    </property>
+    <property displayName="Text2TextDecoration" name="text2TextDecoration" datatype="String" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextDecoration option.</description>
+    </property>
+    <property displayName="Text2TextShadow" name="text2TextShadow" datatype="String" category="Text2" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Text2TextShadow option.</description>
+    </property>
+
+    <property displayName="Text2FontClass" name="text2FontClass" datatype="Lenze.UI.Text.FontClass" category="Text2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text2FontClass option.</description>
+    </property>
+    <property displayName="Text2FontFamily" name="text2FontFamily" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontFamily option.</description>
+    </property>
+    <property displayName="Text2FontSize" name="text2FontSize" datatype="String" category="Text2" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontSize option.</description>
+    </property>
+    <property displayName="Text2FontWeight" name="text2FontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Text2" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontWeight option.</description>
+    </property>
+    <property displayName="Text2LineHeight" name="text2LineHeight" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2LineHeight option.</description>
+    </property>
+    <property displayName="Text2FontStyle" name="text2FontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2FontStyle option.</description>
+    </property>
+    <property displayName="Text2LetterSpacing" name="text2LetterSpacing" datatype="String" category="Text2" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the Text2LetterSpacing option.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="BackgroundColor" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="BorderColor" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="ForegroundColor" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+
+    <property displayName="Text1BackgroundColor" name="text1BackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text1BackgroundColor option.</description>
+    </property>
+    <property displayName="Text1ForegroundColor" name="text1ForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text1ForegroundColor option.</description>
+    </property>
+
+    <property displayName="Text2BackgroundColor" name="text2BackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text2BackgroundColor option.</description>
+    </property>
+    <property displayName="Text2ForegroundColor" name="text2ForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text2ForegroundColor option.</description>
+    </property>
+
+    <property displayName="Text3BackgroundColor" name="text3BackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text3BackgroundColor option.</description>
+    </property>
+    <property displayName="Text3ForegroundColor" name="text3ForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the Text3ForegroundColor option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.ListBodyItem" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

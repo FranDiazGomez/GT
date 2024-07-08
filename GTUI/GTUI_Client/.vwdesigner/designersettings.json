@@ -1,0 +1,83 @@
+{
+  "FontClassNames": "",
+
+  "FlexBasisUnits": [
+    "px",
+    "auto"
+  ],
+
+  "WidthUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "MinWidthUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "MaxWidthUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "HeightUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "MinHeightUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "MaxHeightUnits": [
+    "px",
+    "%",
+    "auto"
+  ],
+
+  "MarginUnits": [
+    "px",
+    "%"
+  ],
+
+  "PaddingUnits": [
+    "px",
+    "%"
+  ],
+
+  "PositionUnits": [
+    "px"
+  ],
+
+  "OutlineUnits": [
+    "px"
+  ],
+
+  "RadiusUnits": [
+    "px",
+    "%"
+  ],
+
+  "ThicknessUnits": [
+    "px"
+  ],
+
+  "IfConditionOperators": [
+    ">",
+    ">=",
+    "<",
+    "<=",
+    "==",
+    "!=",
+    "<>",
+    "!<>"
+  ],
+  "PreloadAppShell":true
+}

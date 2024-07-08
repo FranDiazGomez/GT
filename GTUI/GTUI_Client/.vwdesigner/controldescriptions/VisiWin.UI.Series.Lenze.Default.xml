@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.Series" style="Custom.Default" name="VisiWin.UI.Series.Custom.Default">
+	<author name="Lenze" />
+	<title type="text/plain">Series</title>
+	<description type="text/plain">A Series control.</description>
+	<properties>
+		<!-- Data -->
+		<property displayName="Design time data" name="designTimeData" editorParameter="Sine; Random" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Series" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Gets or sets the DesignTimeData option.</description>
+		</property>
+		<property displayName="Data" name="data" datatype="String" category="Series" isBrowsable="false">
+			<description type="text/plain">Gets or sets the data option.</description>
+		</property>
+		<property displayName="Archive name" name="archiveName" datatype="String" category="Series" isBrowsable="true">
+			<description type="text/plain">
+				Required property.
+				The series obtains its data from the VisiWin system module Trends.
+				For this purpose, the name of an archive definition is specified via the ArchiveName property.
+			</description>
+		</property>
+		<property displayName="Trend name" name="trendName" datatype="String" category="Series" isBrowsable="true">
+			<description type="text/plain">
+				Required property.
+				The series obtains its data from the VisiWin system module Trends.
+				The TrendName property sets the name of a trend definition within the archive.
+			</description>
+		</property>
+
+		<!-- Line -->
+		<property displayName="Show line" name="showLine" datatype="Boolean" category="Line" isBrowsable="true">
+			<description type="text/plain">Specifies whether the line is drawn.</description>
+		</property>
+		<property displayName="Line width" name="lineWidth" datatype="Number" category="Line" isBrowsable="true">
+			<description type="text/plain">Specifies the line width.</description>
+		</property>
+		<property displayName="Line fill" name="lineFill" datatype="Boolean" category="Line" isBrowsable="true">
+			<description type="text/plain">Specifies whether the area below the line is filled with the LineFillColor.</description>
+		</property>
+		<property displayName="Line fill color" name="lineFillColor" datatype="String" category="Line" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the LineFillColor for the area below the line.</description>
+		</property>
+		<property displayName="Line color" name="lineColor" datatype="String" category="Line" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the LineColor.</description>
+		</property>
+		<property displayName="Line zero" name="lineZero" datatype="Boolean" category="Line" isBrowsable="false">
+			<description type="text/plain"></description>
+		</property>
+		<property displayName="Line steps" name="lineSteps" datatype="Boolean" category="Line" isBrowsable="false">
+			<description type="text/plain"></description>
+		</property>
+
+		<!-- YAxis -->
+		<property displayName="Show axis" name="showAxis" datatype="Boolean" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies whether the Y-Axis should be displayed.</description>
+		</property>
+		<property displayName="Position" name="position" editorParameter="Left; Right" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the Position of the Y-axis(Left/Right).</description>
+		</property>
+		<property displayName="Raw limit min" name="rawLimitMin" datatype="Number" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the maximum value of the Y-axis.</description>
+		</property>
+		<property displayName="Raw limit max" name="rawLimitMax" datatype="Number" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the minimum value of the Y-axis.</description>
+		</property>
+		<property displayName="Label width" name="labelWidth" datatype="Number" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the width of the Y-axis.</description>
+		</property>
+		<property displayName="Y axis color" name="yaxisColor" datatype="String" category="Y Axis" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Specifies the color of the Y-axis.</description>
+		</property>
+
+		<!-- Ticks -->
+		<!--<property displayName="Ticks" name="ticks" datatype="Number" category="YAxis" isBrowsable="true">
+			<description type="text/plain">Specifies the division of the scale.</description>
+		</property>-->
+		<property displayName="Tick length" name="tickLength" datatype="Number" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the length of the scale tick.</description>
+		</property>
+		<property displayName="Decimals places" name="tickDecimals" datatype="Number" category="Y Axis" isBrowsable="true">
+			<description type="text/plain">Specifies the decimals of the scale ticks.</description>
+		</property>
+	</properties>
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.Series" data-win-options="{style:'Custom.Default'}"></div>]]>
+	</content>
+</control>

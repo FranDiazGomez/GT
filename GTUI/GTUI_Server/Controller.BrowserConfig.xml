@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+  <SplitArrays>true</SplitArrays>
+  <SplitStructs>true</SplitStructs>
+  <Messages>true</Messages>
+  <Device>
+    <Alias>PLC</Alias>
+    <Filename>C:\Users\fdiaz\Documents\Repositorios\GT\TecnocatV2.Device.Application.xml</Filename>
+    <NamespaceIndex>4</NamespaceIndex>
+    <DeviceType>c500</DeviceType>
+  </Device>
+</Config>

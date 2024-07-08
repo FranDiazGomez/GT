@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.AlarmIndicatorItem" style="Custom.Default" name="VisiWin.UI.AlarmIndicatorItem.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">AlarmIndicatorItem</title>
+	<description type="text/plain">An AlarmIndicatorItem control.</description>
+
+	<properties>
+		<!-- Appearance -->
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Symbol -->
+		<property displayName="Icon font" name="iconFont" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+			<description type="text/plain">Gets or sets the IconFont option.</description>
+		</property>
+		<property displayName="Symbol type" name="symbolType" datatype="VisiWin.UI.Symbol.Type" category="Symbol" isBrowsable="true">
+			<description type="text/plain">Gets or sets the SymbolType option.</description>
+		</property>
+		<property displayName="Active symbol" name="symbolActive" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+			<description type="text/plain">Gets or sets the SymbolActive option. Symbol which is shown, when the alarmclass has an active alarm.</description>
+		</property>
+		<property displayName="Inactive symbol" name="symbolInactive" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+			<description type="text/plain">Gets or sets the SymbolInactive option. Symbol which is shown, when the alarmclass has an inactive alarm.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Active foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColorActive option. Color of the symbol which is shown, when the alarmclass has an active alarm. </description>
+		</property>
+		<property displayName="Active background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColorActive option. Color of the background which is shown, when the alarmclass has an active alarm. </description>
+		</property>
+		<property displayName="Inactive foreground color" name="foregroundColorInactive" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColorInactive option. Color of the symbol which is shown, when the alarmclass has an inactive alarm. </description>
+		</property>
+		<property displayName="Inactive background color" name="backgroundColorInactive" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColorInactive option. Color of the background which is shown, when the alarmclass has an inactive alarm.</description>
+		</property>
+
+		<!-- Alarm -->
+		<property displayName="Priority" name="priority" datatype="Number" category="Alarm" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Priority option. Priority of the alarmclass, when the useCustomPriority property is checked.</description>
+		</property>		
+		<property displayName="Use custom priority" name="useCustomPriority" category="Alarm" datatype="Boolean" isBrowsable="true">
+			<description type="text/plain">Gets or sets the UseCustomPriority option. Wether to use the priority defined in the priority property instead of the system priority.</description>
+		</property>
+		<property displayName="Alarm class name" name="alarmClassName" datatype="String" category="Alarm" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AlarmClassName option. Class name of the alarmclass defined in the server.</description>
+		</property>	
+	</properties>
+
+
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.AlarmIndicatorItem" data-win-options="{style: 'Custom.Default'}"></div>]]>
+	</content>
+</control>

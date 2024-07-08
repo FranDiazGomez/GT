@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.StackedDonutGauge" style="Custom.Default" name="VisiWin.UI.StackedDonutGauge.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">Label</title>
+	<description type="text/plain">A StackedDonutGauge control.</description>
+	<defaultTemplate id="VisiWin.UI.StackedDonutGaugeLegendTemplate.Custom.Default"></defaultTemplate>
+
+	<properties>
+		<!-- Layout -->
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+			<description type="text/plain">Gets or sets the MinWidth option.</description>
+		</property>
+		<property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+			<description type="text/plain">Gets or sets the MaxWidth option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+			<description type="text/plain">Gets or sets the MinHeight option.</description>
+		</property>
+		<property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+			<description type="text/plain">Gets or sets the MaxHeight option.</description>
+		</property>
+		<property displayName="Left" name="left" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the Left option.</description>
+		</property>
+		<property displayName="Top" name="top" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the Top option.</description>
+		</property>
+		<property displayName="Right" name="right" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the Right option.</description>
+		</property>
+		<property displayName="Bottom" name="bottom" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the Bottom option.</description>
+		</property>
+		<property displayName="Margin" name="margin" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Margin option.</description>
+		</property>
+		<property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="true" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Padding option.</description>
+		</property>
+
+
+		<!-- Appearance -->
+		<property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Opacity option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderWidth option.</description>
+		</property>
+		<property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the BorderStyle option.</description>
+		</property>
+		<property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderRadius option.</description>
+		</property>
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+
+		<!-- Common Properties -->
+		<property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ClassNames option.</description>
+		</property>
+		<property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+		<property displayName="Data source" name="dataSource" datatype="String" category="Common Properties" isBrowsable="true" >
+			<description type="text/plain">Gets or sets the DataSource option.</description>
+		</property>
+		<property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true">
+			<description type="text/plain">Gets or sets Disabled option.</description>
+		</property>
+
+
+
+		<!-- Text/Label -->
+		<property displayName="Show text" name="showText" datatype="Boolean" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowText option.</description>
+		</property>
+		<property displayName="Text width" name="textWidth" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the TextWidth option.</description>
+		</property>
+		<property displayName="Text height" name="textHeight" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the TextHeight option.</description>
+		</property>
+		<property displayName="Text margin" name="textMargin" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the TextMargin option.</description>
+		</property>
+		<property displayName="Text padding" name="textPadding" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the TextPadding option.</description>
+		</property>
+		<property displayName="Use variable text" name="useVariableText" datatype="Boolean" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the UseVariableText option.</description>
+		</property>
+		<property displayName="Text" name="text" datatype="String" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Text option.</description>
+		</property>
+		<property displayName="Localizable text" name="localizableText" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableText option.</description>
+		</property>
+		<property displayName="Position in donut" name="positionInDonut" datatype="Boolean" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the PositionInDonut option.</description>
+		</property>
+		<property displayName="Text alignment" name="textAlignment" datatype="VisiWin.UI.Text.Alignment" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextAlignment option.</description>
+		</property>
+		<property displayName="Line clamp" name="lineClamp" datatype="Number" category="Text" isBrowsable="false" isInteger="false">
+			<description type="text/plain">Gets or sets the LineClamp option.</description>
+		</property>
+		<property displayName="Text wrapping" name="textWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextWrapping option.</description>
+		</property>
+		<property displayName="Text trimming" name="textTrimming" datatype="VisiWin.UI.Text.Trimming" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextTrimming option.</description>
+		</property>
+		<property displayName="Font class" name="fontClass" datatype="Lenze.UI.Text.FontClass" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the FontClass option.</description>
+		</property>
+		<property displayName="Font size" name="fontSize" datatype="String" category="Text" isBrowsable="false" isAdvanced="false">
+			<description type="text/plain">Gets or sets the FontSize option.</description>
+		</property>
+		<property displayName="Font weight" name="fontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Text" isBrowsable="false" isAdvanced="false">
+			<description type="text/plain">Gets or sets the FontWeight option.</description>
+		</property>
+		<property displayName="Line height" name="lineHeight" datatype="String" category="Text" isBrowsable="false" isAdvanced="false">
+			<description type="text/plain">Gets or sets the LineHeight option.</description>
+		</property>
+		<property displayName="Text contrast" name="textContrast" datatype="Number" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the TextContrast option.</description>
+		</property>
+		<property displayName="Text color" name="textColor" datatype="String" category="Text" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" >
+			<description type="text/plain">Gets or sets the TextColor option.</description>
+		</property>
+		<property displayName="Uppercase" name="uppercase" datatype="Boolean" category="Text" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Uppercase option.</description>
+		</property>
+
+
+
+		<!-- Authorization -->
+		<property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+		</property>
+		<property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+		</property>
+
+
+
+		<!-- Colors -->
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColor option.</description>
+		</property>
+		<property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderColor option.</description>
+		</property>
+		<property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+		</property>
+		<property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+		</property>
+		<property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+		</property>
+
+
+
+
+		<!-- StackedDonutGauge Common -->
+		<property displayName="Gauge width" name="gaugeWidth" datatype="String" category="StackedDonutGauge" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the GaugeWidth option.</description>
+		</property>
+		<property displayName="Gauge height" name="gaugeHeight" datatype="String" category="StackedDonutGauge" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the GaugeHeight option.</description>
+		</property>
+		<property displayName="Inner radius" name="innerRadius" datatype="String" category="StackedDonutGauge" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits" refreshRequired="false">
+			<description type="text/plain">Gets or sets the InnerRadius option. Distance between the center and the first donut gauge.</description>
+		</property>
+		<property displayName="Radial bar width" name="radialBarWidth" datatype="String" category="StackedDonutGauge" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits" refreshRequired="false">
+			<description type="text/plain">Gets or sets the RadialBarWidth option. Width of the donut gauge bar.</description>
+		</property>
+		<property displayName="Radial bar spacing" name="radialBarSpacing" datatype="String" category="StackedDonutGauge" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits"  refreshRequired="false">
+			<description type="text/plain">Gets or sets the RadialBarSpacing option. Space between one and another radial bar.</description>
+		</property>
+		<property displayName="Radial bar background" name="radialBarBackground" datatype="String" category="StackedDonutGauge" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the RadialBarBackground option.</description>
+		</property>
+		<property displayName="Radial bar fill color" name="radialBarFillColor" datatype="String" category="StackedDonutGauge" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the RadialBarFillColor option.</description>
+		</property>
+		<property displayName="Min value" name="minValue" datatype="String" category="StackedDonutGauge" isBrowsable="true" refreshRequired="false">
+			<description type="text/plain">Gets or sets the MinValue option. The smallest value that the StackedDonutGauge can represent. Defines the start value of the gauge.</description>
+		</property>
+		<property displayName="Max value" name="maxValue" datatype="String" category="StackedDonutGauge" isBrowsable="true" refreshRequired="false">
+			<description type="text/plain">Gets or sets the MaxValue option. The biggest value that the StackedDonutGauge can represent. Defines the end value of the gauge.</description>
+		</property>
+		<property displayName="Start angle" name="startAngle" datatype="String" category="StackedDonutGauge" isBrowsable="false">
+			<description type="text/plain">Gets or sets the StartAngle option.</description>
+		</property>
+		<property displayName="End angle" name="endAngle" datatype="String" category="StackedDonutGauge" isBrowsable="false">
+			<description type="text/plain">Gets or sets the EndAngle option.</description>
+		</property>
+		<property displayName="Clockwise" name="clockwise" datatype="Boolean" category="StackedDonutGauge" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Clockwise option.</description>
+		</property>
+		<property displayName="Localizable unit text" name="localizableUnitText" datatype="String" category="StackedDonutGauge" isBrowsable="false" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the LocalizableUnitText option.</description>
+		</property>
+		<property displayName="Unit text" name="unitText" datatype="String" category="StackedDonutGauge" isBrowsable="false" refreshRequired="true">
+			<description type="text/plain">Gets or sets the UnitText option.</description>
+		</property>
+		<property displayName="Animation" name="animation" datatype="String" category="StackedDonutGauge" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Animation option.</description>
+		</property>
+		<property displayName="Auto adjustment" name="autoAdjustment" datatype="Boolean" category="StackedDonutGauge" isBrowsable="false" refreshRequired="true">
+			<description type="text/plain">Gets or sets the AutoAdjustment option. Calculates a adjusted StackedDonutGauge that corresponds to the height and width of the control. The size ratio remains the same.</description>
+		</property>
+		<property displayName="Segments" name="segments" datatype="VisiWin.UI.StackedDonutGaugeSegment.Custom.Default" category="StackedDonutGauge" isBrowsable="true" isArray="True">
+			<description type="text/plain">Gets or sets the Segments option.</description>
+		</property> -->
+
+
+
+		<!-- Legende -->
+		<property displayName="Show legend" name="showLegend" datatype="Boolean" category="Legend" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowLegend option.</description>
+		</property>
+		<property displayName="Legend width" name="legendWidth" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the LegendWidth option.</description>
+		</property>
+		<property displayName="Legend height" name="legendHeight" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the LegendHeight option.</description>
+		</property>
+		<property displayName="Legend margin" name="legendMargin" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the LegendMargin option.</description>
+		</property>
+		<property displayName="Legend padding" name="legendPadding" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the LegendPadding option.</description>
+		</property>
+		<property displayName="Legend position" name="legendPosition" datatype="VisiWin.UI.Positions.Position5" category="Legend" isBrowsable="true">
+			<description type="text/plain">Gets or sets the LegendPosition option.</description>
+		</property>
+		<property displayName="Legend alignment" name="legendAlignment" datatype="VisiWin.UI.Positions.Position6" category="Legend" isBrowsable="true">
+			<description type="text/plain">Gets or sets the LegendAlignment option.</description>
+		</property>
+		<property displayName="Show color" name="showColor" datatype="Boolean" category="Legend" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowColor option.</description>
+		</property>
+		<property displayName="Show value" name="showValue" datatype="Boolean" category="Legend" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowValue option.</description>
+		</property>
+		<property displayName="Template" name="template" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.TemplatePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Template option.</description>
+		</property>
+
+
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onAttached"/>
+		<event name="onDetached"/>
+		<event name="onVisibilityChanged"/>
+		<event name="onDisabledChanged"/>
+
+		<event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+	</events>
+
+	<content>
+		<![CDATA[
+		<div data-win-control="VisiWin.UI.StackedDonutGauge" data-win-options="{style:'Custom.Default', template:'VisiWin.UI.StackedDonutGaugeLegendTemplate.Custom.Default'}">
+				<div data-win-control="VisiWin.UI.StackedDonutGaugeSegment" data-win-options='{"style":"Custom.Default","value":10,"labelText":"LabelText","fillColor":"@PrimaryColor"}'></div>
+				<div data-win-control="VisiWin.UI.StackedDonutGaugeSegment" data-win-options='{"style":"Custom.Default","value":50,"labelText":"LabelText","fillColor":"@PrimaryLightColor"}'></div>
+				<div data-win-control="VisiWin.UI.StackedDonutGaugeSegment" data-win-options='{"style":"Custom.Default","value":80,"labelText":"LabelText","fillColor":"@PrimaryDarkColor"}'></div>
+		</div>
+		]]>
+	</content>
+</control>

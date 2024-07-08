@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>AlphabeticalKeyboardDialog</title>
+    <style>
+        #AlphaDialog {
+            width: 80vw !important;
+            max-width: 1280px !important;
+
+            pointer-events: all;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","height":"auto"}' id="AlphaDialog">
+                <div data-win-control="Lenze.UI.VirtualKeyboardDialog"
+                    data-win-options='{"style":"Custom.Default","headerLabelName":"AlphaDialogHeaderLabel","varInName":"AlphaDialogTextVarIn","varOutName":"AlphaDialogTextVarOut","minLimitLabelName":"AlphaDialogMinLabel","maxLimitLabelName":"AlphaDialogMaxLabel","keyboardName":"AlphaDialogKeyboard","minLimitLayoutName":"AlphaDialogMinLayout","maxLimitLayoutName":"AlphaDialogMaxLayout","openWithEmptyValue":true}'>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","padding":"0px 16px 0px 16px","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 0px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","fontSize":"22px"}'
+                        id="AlphaDialogHeaderLabel"></div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 0px 0px 0px","symbol":"close","enablePreventEvents":true}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","alignItems":"Stretch","padding":"8px 16px 16px 16px"}'>
+                    <div data-win-control="VisiWin.UI.TextVarOut"
+                        data-win-options='{"style":"Custom.Default","margin":"0px","borderRadius":"4px 4px 4px 4px","borderStyle":"Solid","borderWidth":"1px 1px 1px 1px","showLabel":false,"backgroundColor":"@ChromeMediumLow","valueHeight":"32px","valueMargin":"8px 8px 0px 8px","valueContainerWidth":"100%","width":"auto"}'
+                        id="AlphaDialogTextVarOut"></div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","showLabel":false,"width":"auto","margin":"8px 0px 8px 0px","height":"auto","inputFieldMargin":"0px 8px 0px 8px"}'
+                        id="AlphaDialogTextVarIn"></div>
+                    <div data-win-control="VisiWin.UI.FlexLayout"
+                        data-win-options='{"style":"Custom.Default","width":"auto","orientation":"Horizontal","justifyContent":"Space-between","height":"auto","margin":"0px 0px 8px 0px"}'>
+                        <div data-win-control="VisiWin.UI.FlexLayout"
+                            data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"auto","height":"auto"}'
+                            id="AlphaDialogMinLayout">
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableText":"@[ServerApplication].Keyboard.MinLength"}'>
+                            </div>
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 8px"}'
+                                id="AlphaDialogMinLabel"></div>
+                        </div>
+                        <div data-win-control="VisiWin.UI.FlexLayout"
+                            data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"auto","height":"auto"}'
+                            id="AlphaDialogMaxLayout">
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","localizableText":"@[ServerApplication].Keyboard.MaxLength","margin":"0px 0px 0px 0px"}'>
+                            </div>
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 8px"}'
+                                id="AlphaDialogMaxLabel"></div>
+                        </div>
+                    </div>
+                    <div data-win-control="Lenze.UI.VirtualKeyboard"
+                        data-win-options='{"style":"Custom.Default","numeric":false,"minHeight":"225px"}'
+                        id="AlphaDialogKeyboard"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

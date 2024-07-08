@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.XYChartLine" style="Custom.Default" name="Lenze.UI.XYChartLine.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">XYChartLine</title>
+  <description type="text/plain">XYChartLine</description>
+  <properties>
+
+    <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+    <!-- Common properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the DataContext option.</description>
+    </property>
+
+    <!--Data-->
+    <property displayName="Data array x variable name" name="dataArrayXVariableName" datatype="String" category="Data" isBrowsable="true"  editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+      editorParameter="ItemDataTypeFilter:Numeric:ItemComplexFilter:Array:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets DataArrayXVariableName option.</description>
+    </property>
+    <property displayName="Data array y variable name" name="dataArrayYVariableName" datatype="String" category="Data" isBrowsable="true"  editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Numeric:ItemComplexFilter:Array:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets DataArrayYVariableName option.</description>
+    </property>
+    <!--<property displayName="DataArrayLength" name="dataArrayLength" datatype="Number" category="Data" isBrowsable="true" >
+      <description type="text/plain">Gets or sets DataArrayLength option.</description>
+    </property>-->
+    <property displayName="Null value" name="nullValue" datatype="Number" category="Data" isBrowsable="true" >
+      <description type="text/plain">Gets or sets NullValue option.</description>
+    </property>
+
+
+    <!--Stroke-->
+    <property displayName="Stroke width" name="strokeWidth" datatype="Number" category="Stroke" isBrowsable="true" >
+      <description type="text/plain">Gets or sets StrokeWidth option.</description>
+    </property>
+    <property displayName="Stroke line join" name="strokeLineJoin" datatype="Lenze.Models.StrokeLineJoinEnum" category="Stroke" isBrowsable="true" >
+      <description type="text/plain">Gets or sets StrokeLineJoin option.</description>
+    </property>
+    <property displayName="Stroke line cap" name="strokeLineCap" datatype="Lenze.Models.StrokeLineCapEnum" category="Stroke" isBrowsable="true" >
+      <description type="text/plain">Gets or sets StrokeLineCap option.</description>
+    </property>
+    <property displayName="Stroke color" name="strokeColor" datatype="String" category="Stroke" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" >
+      <description type="text/plain">Gets or sets StrokeColor option.</description>
+    </property>
+    <property displayName="Stroke style" name="strokeStyle" datatype="Lenze.Models.StrokeStyleEnum" category="Stroke" isBrowsable="true" >
+      <description type="text/plain">Gets or sets StrokeStyle option.</description>
+    </property>
+    <property displayName="Stroke dash" name="strokeDash" datatype="String" category="Stroke" isBrowsable="true" >
+      <description type="text/plain">Gets or sets StrokeDash option.</description>
+    </property>
+
+
+    <!--Dots-->
+    <property displayName="Enable dots" name="enableDots" datatype="Boolean" category="Dots" isBrowsable="true" >
+      <description type="text/plain">Gets or sets EnableDots option.</description>
+    </property>
+    <property displayName="Dots fill color" name="dotsFillColor" datatype="String" category="Dots" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor" >
+      <description type="text/plain">Gets or sets DotsFillColor option.</description>
+    </property>
+    <property displayName="Dots radius" name="dotsRadius" datatype="Number" category="Dots" isBrowsable="true" >
+      <description type="text/plain">Gets or sets DotsRadius option.</description>
+    </property>
+
+
+    <!--Curve-->
+    <property displayName="Curve" name="curve" datatype="Lenze.Models.XYCurveEnum" category="Curve" isBrowsable="true" >
+      <description type="text/plain">Gets or sets Curve option.</description>
+    </property>
+    <property displayName="Curve value" name="curveValue" datatype="Number" category="Curve" isBrowsable="true" >
+      <description type="text/plain">Gets or sets CurveValue option.</description>
+    </property>
+
+  </properties>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.XYChartLine" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

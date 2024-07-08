@@ -1,0 +1,189 @@
+{
+    "default": "en-US",
+    "numeric": [
+        "1 2 3",
+        "4 5 6",
+        "7 8 9",
+        "{dec} 0 {negpos}",
+        "{bksp} {enter}"
+    ],
+    "languages": {
+        "en-US": {
+            "alphaNormal": [
+                "` 1 2 3 4 5 6 7 8 9 0 - = {bksp}",
+                "{clear} q w e r t y u i o p [ ] \\",
+                "{lock} a s d f g h j k l ; ' {enter}",
+                "{shift} z x c v b n m , . / {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "~ ! @ # $ % ^ & * ( ) _ + {bksp}",
+                "{clear} Q W E R T Y U I O P { } |",
+                "{lock} A S D F G H J K L : \" {enter}",
+                "{shift} Z X C V B N M < > ? {shift}",
+                "{space}"
+            ]
+        },
+        "nl-NL": "en-US",
+        "fr-FR": {
+            "alphaNormal": [
+                "\u00B2 & \u00E9 \" ' ( - \u00E8 _ \u00E7 \u00E0 ) = {bksp}",
+                "{clear} a z e r t y u i o p ^ $",
+                "{lock} q s d f g h j k l m \u00F9 * {enter}",
+                "{shift} < w x c v b n , ; : ! {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "{//} 1 2 3 4 5 6 7 8 9 0 \u00B0 + {bksp}",
+                "{clear} A Z E R T Y U I O P \u00A8 \u00A3",
+                "{lock} Q S D F G H J K L M % \u00B5 {enter}",
+                "{shift} > W X C V B N ? . / \u00A7 {shift}",
+                "{space}"
+            ]
+        },
+        "de-DE": {
+            "alphaNormal": [
+                "^ 1 2 3 4 5 6 7 8 9 0 \u00DF \u00B4 {bksp}",
+                "{clear} q w e r t z u i o p \u00FC +",
+                "{lock} a s d f g h j k l \u00F6 \u00E4 # {enter}",
+                "{shift} < y x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u00B0 ! \" \u00A7 $ % & / ( ) = ? ` {bksp}",
+                "{clear} Q W E R T Z U I O P \u00DC *",
+                "{lock} A S D F G H J K L \u00D6 \u00C4 ' {enter}",
+                "{shift} > Y X C V B N M ; : _ {shift}",
+                "{space}"
+            ]
+        },
+        "ru-RU": {
+            "alphaNormal": [
+                "\u0451 1 2 3 4 5 6 7 8 9 0 - = {bksp}",
+                "{clear} \u0439 \u0446 \u0443 \u043a \u0435 \u043d \u0433 \u0448 \u0449 \u0437 \u0445 \u044a \\",
+                "{lock} \u0444 \u044b \u0432 \u0430 \u043f \u0440 \u043e \u043b \u0434 \u0436 \u044d {enter}",
+                "{shift} \\ \u044f \u0447 \u0441 \u043c \u0438 \u0442 \u044c \u0431 \u044e / {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u0401 ! \" \u2116 ; % : ? * ( ) _ + {bksp}",
+                "{clear} \u0419 \u0426 \u0423 \u041a \u0415 \u041d \u0413 \u0428 \u0429 \u0417 \u0425 \u042a /",
+                "{lock} \u0424 \u042b \u0412 \u0410 \u041f \u0420 \u041e \u041b \u0414 \u0416 \u042d {enter}",
+                "{shift} / \u042f \u0427 \u0421 \u041c \u0418 \u0422 \u042c \u0411 \u042e / {shift}",
+                "{space}"
+            ]
+        },
+        "it-IT": {
+            "alphaNormal": [
+                "\\ 1 2 3 4 5 6 7 8 9 0 ' \u00EC {bksp}",
+                "{clear} q w e r t y u i o p \u00E8 +",
+                "{lock} a s d f g h j k l \u00F2 \u00E0 \u00F9 {enter}",
+                "{shift} < z x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "| ! \" \u00A3 $ % & / ( ) = ? ^ {bksp}",
+                "{clear} Q W E R T Y U I O P \u00E9 *",
+                "{lock} A S D F G H J K L \u00E7 \u00B0 \u00A7 {enter}",
+                "{shift} > Z X C V B N M ; : _ {shift}",
+                "{space}"
+            ]
+        },
+        "pl-PL": {
+            "alphaNormal": [
+                "\u02DB 1 2 3 4 5 6 7 8 9 0 + ' {bksp}",
+                "{clear} q w e r t z u i o p \u017C \u015B",
+                "{lock} a s d f g h j k l \u0142 \u0105 \u00F3 {enter}",
+                "{shift} < y x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u00B7 ! \" # \u00A4 % & / ( ) = ? * {bksp}",
+                "{clear} Q W E R T Z U I O P \u0144 \u0107",
+                "{lock} A S D F G H J K L \u0141 \u0119 \u017A {enter}",
+                "{shift} > Y X C V B N M ; : _ {shift}",
+                "{space}"
+            ]
+        },
+        "es-ES": {
+            "alphaNormal": [
+                "\u007c 1 2 3 4 5 6 7 8 9 0 ' \u00bf {bksp}",
+                "{clear} q w e r t y u i o p \u0301 +",
+                "{lock} a s d f g h j k l \u00f1 \u007b \u007d {enter}",
+                "{shift} < z x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u00b0 ! \" # $ % & / ( ) = ? \u00a1 {bksp}",
+                "{clear} Q W E R T Y U I O P \u0308 *",
+                "{lock} A S D F G H J K L \u00d1 \u005b \u005d {enter}",
+                "{shift} > Z X C V B N M ; : _ {shift}",
+                "{space}"
+            ]
+        },
+        "sv-SE": {
+            "alphaNormal": [
+                "\u00A7 1 2 3 4 5 6 7 8 9 0 + \u00B4 {bksp}",
+                "{clear} q w e r t y u i o p \u00E5 ¨",
+                "{lock} a s d f g h j k l \u00F6 \u00E4 ' {enter}",
+                "{shift} < z x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u00B0 ! \" # $ % & / ( ) = ? ` {bksp}",
+                "{clear} Q W E R T Y U I O P \u00C5 ^",
+                "{lock} A S D F G H J K L \u00D6 \u00C4 * {enter}",
+                "{shift} > Z X C V B N M ; : _ {shift}",
+                "{space}"
+            ]
+        },
+        "zh-CN": {
+            "alphaNormal": [
+                "\u20AC \u3105 \u3109 \u02C7 \u02CB \u3113 \u02CA \u02D9 \u311A \u311E \u3122 \u3126 = {bksp}",
+                "{clear} \u3106 \u310A \u310D \u3110 \u3114 \u3117 \u3127 \u311B \u311F \u3123 [ ] \\",
+                "{lock} \u3107 \u310B \u310E \u3111 \u3115 \u3118 \u3128 \u311C \u3120 \u3124 ' {enter}",
+                "{shift} \u3108 \u310C \u310F \u3112 \u3116 \u3119 \u3129 \u311D \u3121 \u3125",
+                "{space}"
+            ],
+            "alphaShift": [
+                "~ ! @ # $ % ^ & * ) ( _ + {bksp}",
+                "{clear} q w e r t y u i o p { } |",
+                "{lock} a s d f g h j k l : \" {enter}",
+                "{shift} z x c v b n m , < > ? {shift}",
+                "{space}"
+            ]
+        },
+        "tr-TR": {
+            "alphaNormal": [
+                "\" 1 2 3 4 5 6 7 8 9 0 * - # {bksp}",
+                "{clear} q w e r t y u ı o p ğ ü [ ]",
+                "{lock} a s d f g h j k l ş i , {enter}",
+                "{shift} < z x c v b n m ö ç . | $ € {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "é ! ' ^ + % & / ( ) = ? _ ~ {bksp}",
+                "{clear} Q W E R T Y U I O P Ğ Ü { }",
+                "{lock} A S D F G H J K L Ş İ ; {enter}",
+                "{shift} > Z X C V B N M Ö Ç : \\ ` ´ {shift}",
+                "{space}"
+            ]
+        },
+        "cs-CZ": {
+            "alphaNormal": [
+                "; + \u011B \u0161 \u010D \u0159 \u017E \u00FD \u00E1 \u00ED \u00E9 \u00B4 {bksp}",
+                "{clear} q w e r t y u i o p \u00FA ) \u00A8",
+                "{lock} a s d f g h j k l \u016F \u00A7 {enter}",
+                "{shift} \\ z x c v b n m , . - {shift}",
+                "{space}"
+            ],
+            "alphaShift": [
+                "\u00b0 1 2 3 4 5 6 7 8 9 0 % \u02c7 {bksp}",
+                "{clear} Q W E R T Y U I O P / ( '",
+                "{lock} A S D F G H J K L \" ! {enter}",
+                "{shift} | Z X C V B N M ? : _ {shift}",
+                "{space}"
+            ]
+        }
+    }
+}

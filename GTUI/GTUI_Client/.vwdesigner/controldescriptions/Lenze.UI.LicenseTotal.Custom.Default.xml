@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.LicenseTotal" style="Custom.Default" name="Lenze.UI.LicenseTotal.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">LicenseTotal</title>
+  <description type="text/plain">Control for showing a summary of the license information.</description>
+  <properties>
+
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the DataContext option.</description>
+    </property>
+    
+
+    <!-- Title-->
+    <property displayName="Title text" name="titleText" datatype="String" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleText option.</description>
+    </property>
+    <property displayName="Title localizable text" name="titleLocalizableText" datatype="String" category="Title" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the TitleLocalizableText option.</description>
+    </property>
+    <property displayName="Title text alignment" name="titleTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleTextAlignment option.</description>
+    </property>
+    <property displayName="Title line clamp" name="titleLineClamp" datatype="Number" category="Title" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the TitleLineClamp option.</description>
+    </property>
+    <property displayName="Title text wrapping" name="titleTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleTextWrapping option.</description>
+    </property>
+    <property displayName="Title text trimming" name="titleTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleTextTrimming option.</description>
+    </property>
+    <property displayName="Title text contrast" name="titleTextContrast" datatype="Number" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextContrast option.</description>
+    </property>
+    <property displayName="Title uppercase" name="titleUppercase" datatype="Boolean" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleUppercase option.</description>
+    </property>
+    <property displayName="Title text decoration" name="titleTextDecoration" datatype="String" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextDecoration option.</description>
+    </property>
+    <property displayName="Title text shadow" name="titleTextShadow" datatype="String" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextShadow option.</description>
+    </property>
+
+    <property displayName="Title font class" name="titleFontClass" datatype="Lenze.UI.Text.FontClass" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleFontClass option.</description>
+    </property>
+    <property displayName="Title font family" name="titleFontFamily" datatype="String" category="Title" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontFamily option.</description>
+    </property>
+    <property displayName="Title font size" name="titleFontSize" datatype="String" category="Title" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontSize option.</description>
+    </property>
+    <property displayName="Title font weight" name="titleFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Title" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontWeight option.</description>
+    </property>
+    <property displayName="Title line height" name="titleLineHeight" datatype="String" category="Title" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleLineHeight option.</description>
+    </property>
+    <property displayName="Title font style" name="titleFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Title" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontStyle option.</description>
+    </property>
+    <property displayName="Title letter spacing" name="titleLetterSpacing" datatype="String" category="Title" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleLetterSpacing option.</description>
+    </property>
+    
+
+    <!-- Available Name-->
+    <property displayName="Available name text" name="availableNameText" datatype="String" category="Available Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableNameText option.</description>
+    </property>
+    <property displayName="Available name localizable text" name="availableNameLocalizableText" datatype="String" category="Available Name" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableNameLocalizableText option.</description>
+    </property>
+    <property displayName="Available name text alignment" name="availableNameTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Available Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableNameTextAlignment option.</description>
+    </property>
+    <property displayName="Available name line clamp" name="availableNameLineClamp" datatype="Number" category="Available Name" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the AvailableNameLineClamp option.</description>
+    </property>
+    <property displayName="Available name text wrapping" name="availableNameTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Available Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableNameTextWrapping option.</description>
+    </property>
+    <property displayName="Available name text trimming" name="availableNameTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Available Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableNameTextTrimming option.</description>
+    </property>
+    <property displayName="Available name text contrast" name="availableNameTextContrast" datatype="Number" category="Available Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableNameTextContrast option.</description>
+    </property>
+    <property displayName="Available name uppercase" name="availableNameUppercase" datatype="Boolean" category="Available Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableNameUppercase option.</description>
+    </property>
+    <property displayName="Available name text decoration" name="availableNameTextDecoration" datatype="String" category="Available Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableNameTextDecoration option.</description>
+    </property>
+    <property displayName="Available name text shadow" name="availableNameTextShadow" datatype="String" category="Available Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableNameTextShadow option.</description>
+    </property>
+
+    <property displayName="Available name font class" name="availableNameFontClass" datatype="Lenze.UI.Text.FontClass" category="Available Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableNameFontClass option.</description>
+    </property>
+    <property displayName="Available name font family" name="availableNameFontFamily" datatype="String" category="Available Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameFontFamily option.</description>
+    </property>
+    <property displayName="Available name font size" name="availableNameFontSize" datatype="String" category="Available Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameFontSize option.</description>
+    </property>
+    <property displayName="Available name font weight" name="availableNameFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Available Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameFontWeight option.</description>
+    </property>
+    <property displayName="Available name line height" name="availableNameLineHeight" datatype="String" category="Available Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameLineHeight option.</description>
+    </property>
+    <property displayName="Available name font style" name="availableNameFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Available Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameFontStyle option.</description>
+    </property>
+    <property displayName="Available name letter spacing" name="availableNameLetterSpacing" datatype="String" category="Available Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableNameLetterSpacing option.</description>
+    </property>
+    
+
+    <!-- Available Value-->
+    <property displayName="Available value text" name="availableValueText" datatype="String" category="Available Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableValueText option.</description>
+    </property>
+    <property displayName="Available value localizable text" name="availableValueLocalizableText" datatype="String" category="Available Value" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableValueLocalizableText option.</description>
+    </property>
+    <property displayName="Available value text alignment" name="availableValueTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Available Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableValueTextAlignment option.</description>
+    </property>
+    <property displayName="Available value line clamp" name="availableValueLineClamp" datatype="Number" category="Available Value" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the AvailableValueLineClamp option.</description>
+    </property>
+    <property displayName="Available value text wrapping" name="availableValueTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Available Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableValueTextWrapping option.</description>
+    </property>
+    <property displayName="Available value text trimming" name="availableValueTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Available Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableValueTextTrimming option.</description>
+    </property>
+    <property displayName="Available value text contrast" name="availableValueTextContrast" datatype="Number" category="Available Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableValueTextContrast option.</description>
+    </property>
+    <property displayName="Available value uppercase" name="availableValueUppercase" datatype="Boolean" category="Available Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableValueUppercase option.</description>
+    </property>
+    <property displayName="Available value text decoration" name="availableValueTextDecoration" datatype="String" category="Available Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableValueTextDecoration option.</description>
+    </property>
+    <property displayName="Available value text shadow" name="availableValueTextShadow" datatype="String" category="Available Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the AvailableValueTextShadow option.</description>
+    </property>
+
+    <property displayName="Available value font class" name="availableValueFontClass" datatype="Lenze.UI.Text.FontClass" category="Available Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableValueFontClass option.</description>
+    </property>
+    <property displayName="Available value font family" name="availableValueFontFamily" datatype="String" category="Available Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueFontFamily option.</description>
+    </property>
+    <property displayName="Available value font size" name="availableValueFontSize" datatype="String" category="Available Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueFontSize option.</description>
+    </property>
+    <property displayName="Available value font weight" name="availableValueFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Available Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueFontWeight option.</description>
+    </property>
+    <property displayName="Available value line height" name="availableValueLineHeight" datatype="String" category="Available Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueLineHeight option.</description>
+    </property>
+    <property displayName="Available value font style" name="availableValueFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Available Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueFontStyle option.</description>
+    </property>
+    <property displayName="Available value letter spacing" name="availableValueLetterSpacing" datatype="String" category="Available Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the AvailableValueLetterSpacing option.</description>
+    </property>
+    
+
+    <!-- Available Symbol-->
+    <property displayName="Available symbol icon font" name="availableSymbolIconFont" datatype="String" category="Available Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableSymbolIconFont option.</description>
+    </property>
+    <property displayName="Available symbol" name="availableSymbol" datatype="String" category="Available Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableSymbol option.</description>
+    </property>
+    <property displayName="Available symbol type" name="availableSymbolType" editorParameter="Icon; Svg; Bitmap" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Available Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableSymbolType option.</description>
+    </property>
+    <property displayName="Available symbol size" name="availableSymbolSize" datatype="String" category="Available Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AvailableSymbolSize option.</description>
+    </property>
+
+
+    <!-- Remaining Name-->
+    <property displayName="Remaining name text" name="remainingNameText" datatype="String" category="Remaining Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingNameText option.</description>
+    </property>
+    <property displayName="Remaining name localizable text" name="remainingNameLocalizableText" datatype="String" category="Remaining Name" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the RemainingNameLocalizableText option.</description>
+    </property>
+    <property displayName="Remaining name text alignment" name="remainingNameTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Remaining Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingNameTextAlignment option.</description>
+    </property>
+    <property displayName="Remaining name line clamp" name="remainingNameLineClamp" datatype="Number" category="Remaining Name" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the RemainingNameLineClamp option.</description>
+    </property>
+    <property displayName="Remaining name text wrapping" name="remainingNameTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Remaining Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingNameTextWrapping option.</description>
+    </property>
+    <property displayName="Remaining name text trimming" name="remainingNameTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Remaining Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingNameTextTrimming option.</description>
+    </property>
+    <property displayName="Remaining name text contrast" name="remainingNameTextContrast" datatype="Number" category="Remaining Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingNameTextContrast option.</description>
+    </property>
+    <property displayName="Remaining name uppercase" name="remainingNameUppercase" datatype="Boolean" category="Remaining Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingNameUppercase option.</description>
+    </property>
+    <property displayName="Remaining name text decoration" name="remainingNameTextDecoration" datatype="String" category="Remaining Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingNameTextDecoration option.</description>
+    </property>
+    <property displayName="Remaining name text shadow" name="remainingNameTextShadow" datatype="String" category="Remaining Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingNameTextShadow option.</description>
+    </property>
+
+    <property displayName="Remaining name font class" name="remainingNameFontClass" datatype="Lenze.UI.Text.FontClass" category="Remaining Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingNameFontClass option.</description>
+    </property>
+    <property displayName="Remaining name font family" name="remainingNameFontFamily" datatype="String" category="Remaining Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameFontFamily option.</description>
+    </property>
+    <property displayName="Remaining name font size" name="remainingNameFontSize" datatype="String" category="Remaining Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameFontSize option.</description>
+    </property>
+    <property displayName="Remaining name font weight" name="remainingNameFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Remaining Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameFontWeight option.</description>
+    </property>
+    <property displayName="Remaining name line height" name="remainingNameLineHeight" datatype="String" category="Remaining Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameLineHeight option.</description>
+    </property>
+    <property displayName="Remaining name font style" name="remainingNameFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Remaining Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameFontStyle option.</description>
+    </property>
+    <property displayName="Remaining name letter spacing" name="remainingNameLetterSpacing" datatype="String" category="Remaining Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingNameLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Remaining Value-->
+    <property displayName="Remaining value text" name="remainingValueText" datatype="String" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueText option.</description>
+    </property>
+    <property displayName="Remaining value localizable text" name="remainingValueLocalizableText" datatype="String" category="Remaining Value" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the RemainingValueLocalizableText option.</description>
+    </property>
+    <property displayName="Remaining value text alignment" name="remainingValueTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueTextAlignment option.</description>
+    </property>
+    <property displayName="Remaining value line clamp" name="remainingValueLineClamp" datatype="Number" category="Remaining Value" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the RemainingValueLineClamp option.</description>
+    </property>
+    <property displayName="Remaining value text wrapping" name="remainingValueTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueTextWrapping option.</description>
+    </property>
+    <property displayName="Remaining value text trimming" name="remainingValueTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueTextTrimming option.</description>
+    </property>
+    <property displayName="Remaining value text contrast" name="remainingValueTextContrast" datatype="Number" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueTextContrast option.</description>
+    </property>
+    <property displayName="Remaining value uppercase" name="remainingValueUppercase" datatype="Boolean" category="Remaining Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingValueUppercase option.</description>
+    </property>
+    <property displayName="Remaining value text decoration" name="remainingValueTextDecoration" datatype="String" category="Remaining Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingValueTextDecoration option.</description>
+    </property>
+    <property displayName="Remaining value text shadow" name="remainingValueTextShadow" datatype="String" category="Remaining Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RemainingValueTextShadow option.</description>
+    </property>
+
+    <property displayName="Remaining value font class" name="remainingValueFontClass" datatype="Lenze.UI.Text.FontClass" category="Remaining Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingValueFontClass option.</description>
+    </property>
+    <property displayName="Remaining value font family" name="remainingValueFontFamily" datatype="String" category="Remaining Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueFontFamily option.</description>
+    </property>
+    <property displayName="Remaining value font size" name="remainingValueFontSize" datatype="String" category="Remaining Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueFontSize option.</description>
+    </property>
+    <property displayName="Remaining value font weight" name="remainingValueFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Remaining Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueFontWeight option.</description>
+    </property>
+    <property displayName="Remaining value line height" name="remainingValueLineHeight" datatype="String" category="Remaining Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueLineHeight option.</description>
+    </property>
+    <property displayName="Remaining value font style" name="remainingValueFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Remaining Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueFontStyle option.</description>
+    </property>
+    <property displayName="Remaining value letter spacing" name="remainingValueLetterSpacing" datatype="String" category="Remaining Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the RemainingValueLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Remaining Symbol-->
+    <property displayName="Remaining symbol icon font" name="remainingSymbolIconFont" datatype="String" category="Remaining Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the RemainingSymbolIconFont option.</description>
+    </property>
+    <property displayName="Remaining symbol" name="remainingSymbol" datatype="String" category="Remaining Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the RemainingSymbol option.</description>
+    </property>
+    <property displayName="Remaining symbol type" name="remainingSymbolType" editorParameter="Icon; Svg; Bitmap" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Remaining Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingSymbolType option.</description>
+    </property>
+    <property displayName="Remaining symbol size" name="remainingSymbolSize" datatype="String" category="Remaining Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the RemainingSymbolSize option.</description>
+    </property>
+
+
+    <!-- Needed Name-->
+    <property displayName="Needed name text" name="neededNameText" datatype="String" category="Needed Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededNameText option.</description>
+    </property>
+    <property displayName="Needed name localizable text" name="neededNameLocalizableText" datatype="String" category="Needed Name" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededNameLocalizableText option.</description>
+    </property>
+    <property displayName="Needed name text alignment" name="neededNameTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Needed Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededNameTextAlignment option.</description>
+    </property>
+    <property displayName="Needed name line clamp" name="neededNameLineClamp" datatype="Number" category="Needed Name" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the NeededNameLineClamp option.</description>
+    </property>
+    <property displayName="Needed name text wrapping" name="neededNameTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Needed Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededNameTextWrapping option.</description>
+    </property>
+    <property displayName="Needed name text trimming" name="neededNameTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Needed Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededNameTextTrimming option.</description>
+    </property>
+    <property displayName="Needed name text contrast" name="neededNameTextContrast" datatype="Number" category="Needed Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededNameTextContrast option.</description>
+    </property>
+    <property displayName="Needed name uppercase" name="neededNameUppercase" datatype="Boolean" category="Needed Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededNameUppercase option.</description>
+    </property>
+    <property displayName="Needed name text decoration" name="neededNameTextDecoration" datatype="String" category="Needed Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededNameTextDecoration option.</description>
+    </property>
+    <property displayName="Needed name text shadow" name="neededNameTextShadow" datatype="String" category="Needed Name" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededNameTextShadow option.</description>
+    </property>
+
+    <property displayName="Needed name font class" name="neededNameFontClass" datatype="Lenze.UI.Text.FontClass" category="Needed Name" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededNameFontClass option.</description>
+    </property>
+    <property displayName="Needed name font family" name="neededNameFontFamily" datatype="String" category="Needed Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameFontFamily option.</description>
+    </property>
+    <property displayName="Needed name font size" name="neededNameFontSize" datatype="String" category="Needed Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameFontSize option.</description>
+    </property>
+    <property displayName="Needed name font weight" name="neededNameFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Needed Name" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameFontWeight option.</description>
+    </property>
+    <property displayName="Needed name line height" name="neededNameLineHeight" datatype="String" category="Needed Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameLineHeight option.</description>
+    </property>
+    <property displayName="Needed name font style" name="neededNameFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Needed Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameFontStyle option.</description>
+    </property>
+    <property displayName="Needed name letter spacing" name="neededNameLetterSpacing" datatype="String" category="Needed Name" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededNameLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Needed Value-->
+    <property displayName="Needed value text" name="neededValueText" datatype="String" category="Needed Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededValueText option.</description>
+    </property>
+    <property displayName="Needed value localizable text" name="neededValueLocalizableText" datatype="String" category="Needed Value" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededValueLocalizableText option.</description>
+    </property>
+    <property displayName="Needed value text alignment" name="neededValueTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Needed Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededValueTextAlignment option.</description>
+    </property>
+    <property displayName="Needed value line clamp" name="neededValueLineClamp" datatype="Number" category="Needed Value" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the NeededValueLineClamp option.</description>
+    </property>
+    <property displayName="Needed value text wrapping" name="neededValueTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Needed Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededValueTextWrapping option.</description>
+    </property>
+    <property displayName="Needed value text trimming" name="neededValueTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Needed Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededValueTextTrimming option.</description>
+    </property>
+    <property displayName="Needed value text contrast" name="neededValueTextContrast" datatype="Number" category="Needed Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededValueTextContrast option.</description>
+    </property>
+    <property displayName="Needed value uppercase" name="neededValueUppercase" datatype="Boolean" category="Needed Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededValueUppercase option.</description>
+    </property>
+    <property displayName="Needed value text decoration" name="neededValueTextDecoration" datatype="String" category="Needed Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededValueTextDecoration option.</description>
+    </property>
+    <property displayName="Needed value text shadow" name="neededValueTextShadow" datatype="String" category="Needed Value" isBrowsable="false">
+      <description type="text/plain">Gets or sets the NeededValueTextShadow option.</description>
+    </property>
+
+    <property displayName="Needed value font class" name="neededValueFontClass" datatype="Lenze.UI.Text.FontClass" category="Needed Value" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededValueFontClass option.</description>
+    </property>
+    <property displayName="Needed value font family" name="neededValueFontFamily" datatype="String" category="Needed Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueFontFamily option.</description>
+    </property>
+    <property displayName="Needed value font size" name="neededValueFontSize" datatype="String" category="Needed Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueFontSize option.</description>
+    </property>
+    <property displayName="Needed value font weight" name="neededValueFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Needed Value" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueFontWeight option.</description>
+    </property>
+    <property displayName="Needed value line height" name="neededValueLineHeight" datatype="String" category="Needed Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueLineHeight option.</description>
+    </property>
+    <property displayName="Needed value font style" name="neededValueFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Needed Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueFontStyle option.</description>
+    </property>
+    <property displayName="Needed value letter spacing" name="neededValueLetterSpacing" datatype="String" category="Needed Value" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the NeededValueLetterSpacing option.</description>
+    </property>
+
+
+    <!-- Needed Symbol-->
+    <property displayName="Needed symbol icon font" name="neededSymbolIconFont" datatype="String" category="Needed Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededSymbolIconFont option.</description>
+    </property>
+    <property displayName="Needed symbol" name="neededSymbol" datatype="String" category="Needed Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededSymbol option.</description>
+    </property>
+    <property displayName="Needed symbol type" name="neededSymbolType" editorParameter="Icon; Svg; Bitmap" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Needed Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededSymbolType option.</description>
+    </property>
+    <property displayName="Needed symbol size" name="neededSymbolSize" datatype="String" category="Needed Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the NeededSymbolSize option.</description>
+    </property>
+    
+
+    <!-- Link Symbol-->
+    <property displayName="Link symbol icon font" name="linkSymbolIconFont" datatype="String" category="Link Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkSymbolIconFont option.</description>
+    </property>
+    <property displayName="Link symbol" name="linkSymbol" datatype="String" category="Link Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkSymbol option.</description>
+    </property>
+    <property displayName="Link symbol type" name="linkSymbolType" editorParameter="Icon; Svg; Bitmap" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Link Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkSymbolType option.</description>
+    </property>
+    <property displayName="Link symbol size" name="linkSymbolSize" datatype="String" category="Link Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkSymbolSize option.</description>
+    </property>
+    
+
+    <!-- Link Text-->
+    <property displayName="Link text" name="linkText" datatype="String" category="Link Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkText option.</description>
+    </property>
+    <property displayName="Link localizable text" name="linkLocalizableText" datatype="String" category="Link Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkLocalizableText option.</description>
+    </property>
+    <property displayName="Link text alignment" name="linkTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Link Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkTextAlignment option.</description>
+    </property>
+    <property displayName="Link line clamp" name="linkLineClamp" datatype="Number" category="Link Text" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the LinkLineClamp option.</description>
+    </property>
+    <property displayName="Link text wrapping" name="linkTextWrapping" editorParameter="NoWrap; Wrap; WrapWithLineClamp; WrapWithWordBreak" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Link Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkTextWrapping option.</description>
+    </property>
+    <property displayName="Link text trimming" name="linkTextTrimming" editorParameter="Clip; Ellipsis; Overflow" editor="HTML5Design.DesignInformation.StringListPropertyEditor" datatype="String" category="Link Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkTextTrimming option.</description>
+    </property>
+    <property displayName="Link text contrast" name="linkTextContrast" datatype="Number" category="Link Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LinkTextContrast option.</description>
+    </property>
+    <property displayName="Link uppercase" name="linkUppercase" datatype="Boolean" category="Link Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LinkUppercase option.</description>
+    </property>
+    <property displayName="Link text decoration" name="linkTextDecoration" datatype="String" category="Link Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LinkTextDecoration option.</description>
+    </property>
+    <property displayName="Link text shadow" name="linkTextShadow" datatype="String" category="Link Text" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LinkTextShadow option.</description>
+    </property>
+
+    <property displayName="Link font class" name="linkFontClass" datatype="Lenze.UI.Text.FontClass" category="Link Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LinkFontClass option.</description>
+    </property>
+    <property displayName="Link font family" name="linkFontFamily" datatype="String" category="Link Text" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkFontFamily option.</description>
+    </property>
+    <property displayName="Link font size" name="linkFontSize" datatype="String" category="Link Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkFontSize option.</description>
+    </property>
+    <property displayName="Link font weight" name="linkFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Link Text" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkFontWeight option.</description>
+    </property>
+    <property displayName="Link line height" name="linkLineHeight" datatype="String" category="Link Text" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkLineHeight option.</description>
+    </property>
+    <property displayName="Link font style" name="linkFontStyle" datatype="VisiWin.UI.Text.FontStyle" category="Link Text" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkFontStyle option.</description>
+    </property>
+    <property displayName="Link letter spacing" name="linkLetterSpacing" datatype="String" category="Link Text" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LinkLetterSpacing option.</description>
+    </property>
+    
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+
+    <property displayName="Title background color" name="titleBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TitleBackgroundColor option.</description>
+    </property>
+    <property displayName="Title foreground color" name="titleForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TitleForegroundColor option.</description>
+    </property>
+
+    <property displayName="Available name background color" name="availableNameBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableNameBackgroundColor option.</description>
+    </property>
+    <property displayName="Available name foreground color" name="availableNameForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableNameForegroundColor option.</description>
+    </property>
+
+    <property displayName="Available value background color" name="availableValueBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableValueBackgroundColor option.</description>
+    </property>
+    <property displayName="Available value foreground color" name="availableValueForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableValueForegroundColor option.</description>
+    </property>
+
+    <property displayName="Available symbol background color" name="availableSymbolBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableSymbolBackgroundColor option.</description>
+    </property>
+    <property displayName="Available symbol foreground color" name="availableSymbolForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the AvailableSymbolForegroundColor option.</description>
+    </property>
+
+    <property displayName="Needed name background color" name="neededNameBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededNameBackgroundColor option.</description>
+    </property>
+    <property displayName="Needed name foreground color" name="neededNameForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededNameForegroundColor option.</description>
+    </property>
+
+    <property displayName="Needed value background color" name="neededValueBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededValueBackgroundColor option.</description>
+    </property>
+    <property displayName="Needed value foreground color" name="neededValueForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededValueForegroundColor option.</description>
+    </property>
+
+    <property displayName="Needed symbol background color" name="neededSymbolBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededSymbolBackgroundColor option.</description>
+    </property>
+    <property displayName="Needed symbol foreground color" name="neededSymbolForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the NeededSymbolForegroundColor option.</description>
+    </property>
+
+    <property displayName="Link symbol background color" name="linkSymbolBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkSymbolBackgroundColor option.</description>
+    </property>
+    <property displayName="Link symbol foreground color" name="linkSymbolForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkSymbolForegroundColor option.</description>
+    </property>
+
+    <property displayName="Link text background color" name="linkTextBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkTextBackgroundColor option.</description>
+    </property>
+    <property displayName="Link text foreground color" name="linkTextForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LinkTextForegroundColor option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.LicenseTotal" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

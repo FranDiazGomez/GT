@@ -1,0 +1,24 @@
+{
+    "TheProjectIsLoading": "Project is loading",
+    "SimulationMode": "Simulation mode",
+    "BrowserDoesNotSupportWebSocket": "This browser doesn't support web sockets. Make sure to use a supported browser.",
+    "ErrorSimulationOnTargetDevice": "To run this EASY UI project on a controller, set the \"Execution Target\" of the project to \"Target device\" using the EASY UI Designer.",
+    "ErrorTargetDeviceInSimulationMode": "To run this EASY UI project in simulation mode, set the \"Execution Target\" of the project to \"Local\" using the EASY UI Designer.",
+
+    "TryingToConnectToUiServer": "Trying to connect to EASY UI server",
+    "TryingToConnectToUiServerFailed": "Trying to connect to EASY UI server failed",
+    "ThisStepTakesLongerThanExpected": "This step takes longer than usual",
+    "CantConnectToUiServer": "Can't connect to EASY UI server. To try again, please reload this page.",
+
+    "Initialization": "Initialization",
+
+    "LoadingProjectData": "Loading project data",
+    "ProjectGetsStarted": "Starting project",
+    "ProjectInformationCollectionCompleted": "Processing project information",
+    "AlarmSystemReady": "Alarm system ready",
+    "TrendSystemReady": "Trend system ready",
+    "LoggingSystemReady": "Logging system ready",
+    "RecipeSystemReady": "Recipe system ready",
+    "StartingServer": "Starting server",
+    "ServerIsReady": "Server is ready"
+}

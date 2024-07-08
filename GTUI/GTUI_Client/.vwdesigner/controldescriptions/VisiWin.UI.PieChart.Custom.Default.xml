@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.PieChart" style="Custom.Default" name="VisiWin.UI.PieChart.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">PieChart</title>
+  <description type="text/plain">A PieChart control.</description>
+  <defaultTemplate id="VisiWin.UI.PieChartTemplate.Custom.Default"></defaultTemplate>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+     <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+ <!-- Common Properties -->
+    <property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Disabled option.</description>
+    </property>
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property>
+		<property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+		<property displayName="Data source" name="dataSource" datatype="String" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the DataSource option.</description>
+		</property>
+		<property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true">
+			<description type="text/plain">Gets or sets Disabled option.</description>
+		</property>
+
+    <!-- PieChart -->
+    <property displayName="Pie width" name="pieWidth" datatype="String" category="PieChart" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the PieWidth option.</description>
+    </property>
+    <property displayName="Pie height" name="pieHeight" datatype="String" category="PieChart" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the PieHeight option.</description>
+    </property>
+    <property displayName="Pie margin" name="pieMargin" datatype="String" category="PieChart" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the PieMargin option.</description>
+    </property>
+    <property displayName="Pie padding" name="piePadding" datatype="String" category="PieChart" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the PiePadding option.</description>
+    </property>
+    <property displayName="Inner radius" name="innerRadius" datatype="String" category="PieChart" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="RadiusUnits">
+      <description type="text/plain">Gets or sets the InnerRadius option.</description>
+    </property>
+    <property displayName="Outer radius" name="outerRadius" datatype="String" category="PieChart" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="RadiusUnits">
+      <description type="text/plain">Gets or sets the OuterRadius option.</description>
+    </property>
+    <property displayName="Segments" name="segments" datatype="VisiWin.UI.PieSegment.Custom.Default" category="PieChart" isBrowsable="true" isArray="True">
+      <description type="text/plain">Gets or sets the Segments option.</description>
+    </property>
+
+    <!-- Legend -->
+    <property displayName="Show legend" name="showLegend" datatype="Boolean" category="Legend" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowLegend option.</description>
+    </property>
+    <property displayName="Legend border width" name="legendBorderWidth" datatype="String" category="Legend" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LegendBorderWidth option.</description>
+    </property>
+    <property displayName="Legend border style" name="legendBorderStyle" datatype="VisiWin.UI.Border.Style" category="Legend" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LegendBorderStyle option.</description>
+    </property>
+    <property displayName="Legend border radius" name="legendBorderRadius" datatype="String" category="Legend" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LegendBorderRadius option.</description>
+    </property>
+    <property displayName="Legend width" name="legendWidth" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the LegendWidth option.</description>
+    </property>
+    <property displayName="Legend height" name="legendHeight" datatype="String" category="Legend" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the LegendHeight option.</description>
+    </property>
+    <property displayName="Legend margin" name="legendMargin" datatype="String" category="Legend" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LegendMargin option.</description>
+    </property>
+    <property displayName="Legend padding" name="legendPadding" datatype="String" category="Legend" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LegendPadding option.</description>
+    </property>
+    <property displayName="Legend position" name="legendPosition" datatype="VisiWin.UI.Positions.Position5" category="Legend" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LegendPosition option.</description>
+    </property>
+    <property displayName="Legend alignment" name="legendAlignment" datatype="VisiWin.UI.Positions.Position6" category="Legend" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LegendAlignment option.</description>
+    </property>
+    <property displayName="Template" name="template" datatype="String" category="Legend" isBrowsable="false" editor="HTML5Design.DesignInformation.TemplatePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Template option.</description>
+    </property>
+
+    <!-- Authorization -->
+    <property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+    </property>
+    <property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+    </property>
+
+    <!-- Colors -->
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Legend border color" name="legendBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LegendBorderColor option.</description>
+    </property>
+    <property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+    </property>
+    <property displayName="Disabled legend border color" name="disabledLegendBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledLegendBorderColor option.</description>
+    </property>
+  </properties>
+
+  <!-- Events -->
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+    <event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+  </events>
+
+  <content>
+    <![CDATA[
+      <div data-win-control="VisiWin.UI.PieChart" data-win-options="{style:'Custom.Default', template:'VisiWin.UI.PieChartTemplate.Custom.Default'}">
+        <div data-win-control="VisiWin.UI.PieSegment" data-win-options="{value:2,labelText:'LabelText',style:'Custom.Default'}"></div>
+        <div data-win-control="VisiWin.UI.PieSegment" data-win-options="{value:3,labelText:'LabelText',style:'Custom.Default', fillColor:'@PrimaryLightColor'}"></div>
+        <div data-win-control="VisiWin.UI.PieSegment" data-win-options="{value:5,labelText:'LabelText',style:'Custom.Default', fillColor:'@DarkGrey'}"></div>
+      </div>
+    ]]>
+  </content>
+</control>

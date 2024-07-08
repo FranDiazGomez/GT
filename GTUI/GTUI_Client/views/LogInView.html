@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+<head>
+    <title>LogInView</title>
+	<script src="LogInView.js"></script>
+</head>
+<body>
+    <div data-win-control="VisiWin.UI.View" data-win-options='{"style":"Custom.Default","dataContext":"logon"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","alignItems":"Center","justifyContent":"Center","backgroundColor":"@AppBackgroundColor"}'>
+            <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","minWidth":"300px","minHeight":"200px","maxWidth":"500px","maxHeight":"100%"}'>
+                <div data-win-control="VisiWin.UI.Label"
+                     data-win-options='{"style":"Custom.Default","width":"100%","padding":"13px 24px 13px 16px","text":"Log on user","localizableText":"@[ClientSystem].Dialogs.UserManagement.capLogOn","fontClass":"OpenSans40","labelForegroundColor":"@AltGrey"}'></div>
+                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","padding":"24px 24px 16px 24px","minHeight":"220px","flexShrink":1,"flexGrow":1,"overflow":"Auto"}'>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                         data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 20px 0px","inputType":"Text","lostKeyboardFocusBehaviour":"WriteInput","inputFieldMargin":"4px 16px 4px 16px","showTrailingSymbol":true,"trailingSymbol":"person","showErrorText":false,"justifyContent":"Start","backgroundColor":"@AppBackgroundColor","inputBackgroundColor":"@AppBackgroundColor","labelUppercase":false,"showLabel":false,"errorTextMargin":"0px 0px 0px 0px","labelText":"Name","inputHeight":"50px","height":"60px","focusedInputBorderColor":"@PrimaryColor","showFloatingLabel":true,"localizableFloatingLabelText":"@[ClientSystem].Dialogs.UserManagement.lblName","watermarkText":"","focusedFloatingLabelForegroundColor":"@AltGrey","floatingLabelFontClass":"OpenSans16","floatingLabelForegroundColor":"@AltGrey"}'
+                         data-win-bind="winControl.value:name     VisiWin.Binding.Mode.twoWay;" data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction","light":true}]}]}'></div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                         data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 0px 0px","inputType":"Password","lostKeyboardFocusBehaviour":"WriteInput","inputFieldMargin":"4px 16px 4px 16px","showTrailingSymbol":true,"trailingSymbol":"lock_outline","showErrorText":false,"justifyContent":"Start","backgroundColor":"@AppBackgroundColor","inputBackgroundColor":"@AppBackgroundColor","labelUppercase":false,"showLabel":false,"errorTextMargin":"0px 0px 0px 0px","height":"60px","inputHeight":"50px","focusedInputBorderColor":"@PrimaryColor","localizableFloatingLabelText":"@[ClientSystem].Dialogs.UserManagement.lblPassword","showFloatingLabel":true,"watermarkText":"","focusedFloatingLabelForegroundColor":"@AltGrey","floatingLabelFontClass":"OpenSans16","floatingLabelForegroundColor":"@AltGrey"}'
+                         data-win-bind="winControl.value:password VisiWin.Binding.Mode.twoWay" data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction","light":true}]}]}'></div>
+
+                         <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"","fontClass":"OpenSans12","margin":"8px 8px 8px 0px","labelForegroundColor":"@Transparent","disabledForegroundColor":"@ErrorColor"}' data-win-bind="winControl.text:errorText; winControl.disabled:errorText"></div>
+                </div>
+                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","padding":"16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                         data-win-options='{"style":"Custom.Default","width":"100%","margin":"0px","text":"Log on","localizableText":"@[ClientSystem].Dialogs.UserManagement.cmdLogOn","foregroundColor":"@White","pressedForegroundColor":"@White","disabledForegroundColor":"@LightGrey"}'
+                         data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.LogonAction",
+                                            "initialLogon": true
+                                }
+                            ]}]}'></div>
+                    <div data-win-control="VisiWin.UI.Label"
+                         data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 0px 0px 0px","localizableText":"@[ClientSystem].Dialogs.UserManagement.Notes","textWrapping":"Wrap","textAlignment":"Justify","fontClass":"OpenSans12","margin":"8px 8px 8px 0px"}'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

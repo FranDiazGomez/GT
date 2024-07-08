@@ -1,0 +1,24 @@
+﻿[
+    {
+        "title": "Revenue",
+        "subtitle": "US $",
+        "ranges": [ 150, 250, 300 ],
+        "measures": [ 230, 280 ],
+        "markers": [ 250 ]
+    },
+    {
+        "title": "Profit",
+        "subtitle": "%",
+        "ranges": [ 20, 25, 30 ],
+        "measures": [ 22, 25 ],
+        "markers": [ 27 ]
+    },
+    {
+        "title": "Satisfaction",
+        "subtitle": "out of 5",
+        "ranges": [ 3, 4, 5 ],
+        "measures": [ 3.5, 4.5 ],
+        "markers": [ 4.5 ]
+
+    }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.BarLimit" style="Custom.Default" name="VisiWin.UI.BarLimit.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">BarLimit</title>
+  <description type="text/plain">A BarLimit control.</description>
+  <properties>
+
+      <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    <!-- Common Properties -->
+    <property displayName="Start value" name="startValue" datatype="Number" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the StartValue option.</description>
+    </property>
+    <property displayName="End value" name="endValue" datatype="Number" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the EndValue option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	 </property>
+
+    <!-- Colors -->
+    <property displayName="Fill color" name="fillColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the FillColor option.</description>
+    </property>
+  </properties>
+  
+  <content>
+  <![CDATA[<div data-win-control="VisiWin.UI.BarLimit" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

@@ -1,0 +1,90 @@
+/*
+A font stack is a list of fonts and font keywords used 
+to let a browser know our preffered and fallback fonts. 
+*/
+
+body {
+    font-family: "Open Sans","Roboto", "Segoe UI", Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica", "Arial", sans-serif;
+    /* Default Fontstyle */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Segoe UI		targets Windows and Windows Phone.
+
+Roboto			targets Android and newer Chrome OS. It is deliberately listed after
+				"Segoe UI" so that if you are an Android developer on Windows and have 
+				"Roboto" installed, "Segoe UI" will be used instead.
+		
+-apple-system  	targets San Francisco in Safari on Mac OS X and IOS,and it targets 
+			   	"Neue Helvetica" and "Lucida Grande" on older Versions of
+			   	Mac OS X. It properly selects between "San Francisco Text" 
+			   	and "San Francisco Display" depending on the text's size.
+
+system-ui 		represents the default UI font on a given platform.
+
+BlinkMacSystemFont is the equivalent for Chrome on Mac OS X.
+
+Roboto 			
+	category 	sans serif, last version V18 
+	12 styles: 	100, 100italic, 300, 300italic, regular, italic,
+				500, 500italic, 700, 700italic, 900, 900italic
+	charsets	Latin, Greek, Latin-ext, Greek-ext, Cyrillic, Cyrillic-ext, Vietnamese
+
+Segoe UI		
+	category 	sans serif 
+	styles 		bold, italic
+				true italic for the Light, SemiLight and Semibold weights.
+	charsets	Latin, Greek, Cyrillic, Arabic
+*/
+
+/* Typeface Roboto
+   The CSS and web font files to self-host �Roboto�.
+*/
+
+/* Open Sans Light*/
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('fonts/opensans/OpenSans-Light.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/opensans/OpenSans-Light.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Open Sans Regular */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('fonts/opensans/OpenSans-Regular.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/opensans/OpenSans-Regular.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Open Sans Italic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-display: swap;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('fonts/opensans/OpenSans-Italic.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/opensans/OpenSans-Italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Open Sans Bold */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('fonts/opensans/OpenSans-Bold.woff') format('woff'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/opensans/OpenSans-Bold.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

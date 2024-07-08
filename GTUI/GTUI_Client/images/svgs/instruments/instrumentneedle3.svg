@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="100%" height="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <g>
+        <title>Instrument Needle Layer1</title>
+        <path id="instrumentNeedlePath" d="m48.000801,50.000702l2,-49.999178l1.999699,49.999178c-0.394466,0.992718 -1.332237,1.503204 -1.99894,1.503204c-0.666599,0 -1.596249,-0.509705 -2.000759,-1.503204z" stroke-width="0" stroke="#000000" fill="black" />
+    </g>
+</svg>

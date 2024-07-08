@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 50 50.000001"
+   version="1.1"
+   id="cyandial"
+   sodipodi:docname="cyandial.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="22.627418"
+     inkscape:cx="25.959892"
+     inkscape:cy="29.236415"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="cyandial" />
+  <g
+     id="dial"
+     data-name="dial"
+     transform="matrix(0.22351364,0,0,0.24006914,-185.22776,-390.60549)">
+    <line
+       id="Linie_84"
+       data-name="Linie 84"
+       y2="45"
+       transform="translate(940.56,1673.5)"
+       x1="0"
+       y1="0"
+       x2="0"
+       style="fill:none;stroke:#209cdf;stroke-width:3.79999995" />
+    <circle
+       id="Ellipse_54"
+       data-name="Ellipse 54"
+       cx="2.237"
+       cy="2.237"
+       r="2.237"
+       transform="translate(938.322,1728.508)"
+       style="fill:#209cdf" />
+    <path
+       id="Polygon_1"
+       data-name="Polygon 1"
+       d="M 2,0 4,3 H 0 Z"
+       transform="translate(938.56,1670.5)"
+       inkscape:connector-curvature="0"
+       style="fill:#209cdf" />
+    <line
+       id="Linie_85"
+       data-name="Linie 85"
+       x2="0.011"
+       y2="21.195"
+       transform="translate(940.5,1708.5)"
+       x1="0"
+       y1="0"
+       style="fill:none;stroke:#209cdf;stroke-width:1.5" />
+    <path
+       id="Polygon_4"
+       data-name="Polygon 4"
+       d="M 2,0 4,3 H 0 Z"
+       transform="rotate(180,471.28,860.6025)"
+       inkscape:connector-curvature="0"
+       style="fill:#209cdf" />
+  </g>
+</svg>

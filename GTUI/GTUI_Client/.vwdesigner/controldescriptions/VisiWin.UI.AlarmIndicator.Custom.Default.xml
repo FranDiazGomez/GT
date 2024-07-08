@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.AlarmIndicator" style="Custom.Default" name="VisiWin.UI.AlarmIndicator.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">AlarmIndicator</title>
+	<description type="text/plain">An AlarmIndicator control.</description>
+	<properties>
+
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+			<description type="text/plain">Gets or sets the MinWidth option.</description>
+		</property>
+		<property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+			<description type="text/plain">Gets or sets the MaxWidth option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+			<description type="text/plain">Gets or sets the MinHeight option.</description>
+		</property>
+		<property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+			<description type="text/plain">Gets or sets the MaxHeight option.</description>
+		</property>
+		<property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Padding option.</description>
+		</property>
+
+		<!-- Authorization -->
+		<property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+		</property>
+		<property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+		</property>
+
+		<!-- Appearance -->
+		<property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Opacity option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Symbol -->
+		<property displayName="Icon font" name="iconFont" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+			<description type="text/plain">Gets or sets the IconFont option.</description>
+		</property>
+		<property displayName="Show symbol" name="showSymbol" datatype="Boolean" category="Symbol" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ShowSymbol option.</description>
+		</property>
+		<property displayName="Show default symbol" name="showDefaultSymbol" datatype="Boolean" category="Symbol" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowDefaultSymbol option. Wether to show the default symbol, when no other symbol is specified.</description>
+		</property>
+		<property displayName="Symbol size" name="symbolSize" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the SymbolSize option.</description>
+		</property>
+		<property displayName="Symbol type" name="symbolType" datatype="VisiWin.UI.Symbol.Type" category="Symbol" isBrowsable="true">
+			<description type="text/plain">Gets or sets the SymbolType option.</description>
+		</property>
+		<property displayName="Default symbol" name="defaultSymbol" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor" editorParameter="symbolType">
+			<description type="text/plain">Gets or sets the DefaultSymbol option. Selected symbol that is shown, when no other symbol is specified.</description>
+		</property>
+		<property displayName="Auto scaling" name="autoScale" datatype="Boolean" category="Symbol" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AutoScale option. Wether to automatically scale the symbol according to the control size.</description>
+		</property>
+		<property displayName="Symbol padding" name="symbolPadding" datatype="String" category="Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the SymbolPadding option.</description>
+		</property>
+		<property displayName="Clip symbol" name="clipSymbol" datatype="Boolean" category="Symbol" isBrowsable="false">
+			<description type="text/plain">Gets or sets the ClipSymbol option.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColor option.</description>
+		</property>
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderColor option.</description>
+		</property>
+		<property displayName="Default foreground color" name="defaultForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DefaultForegroundColor option. Color of the symbol which is used, when no foreground color is specified.</description>
+		</property>
+		<property displayName="Default background color" name="defaultBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DefaultBackgroundColor option. Color of the background which is used, when no background color is specified.</description>
+		</property>
+		<property displayName="Badge foreground color" name="badgeForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BadgeForegroundColor option. Color of the number inside of the badge.</description>
+		</property>
+		<property displayName="Badge background color" name="badgeBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BadgeBackgroundColor option. Color of the background of the badge.</description>
+		</property>
+
+
+		<!-- AlarmIndicator -->
+		<property displayName="Badge size" name="badgeSize" datatype="String" category="AlarmIndicator" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the BadgeSize option. Size of the badge, when autoscale is disabled.</description>
+		</property>
+		<property displayName="Auto scale badge" name="autoScaleBadge" datatype="Boolean" category="AlarmIndicator" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AutoScaleBadge option. Wether to automatically scale the badge according to the control size.</description>
+		</property>
+		<property displayName="ShowBadge" name="showBadge" datatype="boolean" category="AlarmIndicator" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowBadge option.</description>
+		</property>
+		<property displayName="Auto scale badge text size" name="autoScaleBadgeTextSize" datatype="boolean" category="AlarmIndicator" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AutoScaleBadgerTextSize option. Wether to automatically scale the number inside of the badge according to the badge size.</description>
+		</property>
+		<property displayName="Badge text size" name="badgeTextSize" datatype="String" category="AlarmIndicator" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="PositionUnits">
+			<description type="text/plain">Gets or sets the BadgeTextSize option. Size of the number inside of the badge, when autoscale is disabled.</description>
+		</property>
+		<property displayName="Badge position" name="badgePosition" datatype="VisiWin.UI.Positions.Position7" category="AlarmIndicator" isBrowsable="false">
+			<description type="text/plain">Gets or sets the BadgePosition option.</description>
+		</property>
+		<property displayName="Circular background" name="circularBackground" datatype="boolean" category="AlarmIndicator" isBrowsable="true">
+			<description type="text/plain">Gets or sets the CircularBackground option. Wether to make the background circular or as full control background.</description>
+		</property>
+		<property displayName="Show background" name="showBackground" datatype="boolean" category="AlarmIndicator" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ShowBackground option. Wether to show the colored background.</description>
+		</property>
+
+    <!--AlarmFilter-->
+    <property displayName="Desired groups" name="desiredGroups" datatype="String" category="Alarm Filter" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DesiredGroups option.</description>
+    </property>
+    <property displayName="Alarm indicator items" name="alarmIndicatorItems" datatype="VisiWin.UI.AlarmIndicatorItem.Custom.Default" category="Alarm Filter" isBrowsable="true" isArray="True">
+      <description type="text/plain">Gets or sets the AlarmIndicatorItems option.</description>
+    </property>
+
+
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onAttached"/>
+		<event name="onDetached"/>
+		<event name="onVisibilityChanged"/>
+		<event name="onDisabledChanged"/>
+	    <event name="onClick"/>
+		<event name="onDown"/>
+		<event name="onUp"/>
+	</events>
+
+	<content>
+		<![CDATA[<div data-win-control="VisiWin.UI.AlarmIndicator" data-win-options="{style: 'Custom.Default',width:'70px',height:'70px'}">
+		
+				<div data-win-control="VisiWin.UI.AlarmIndicatorItem" data-win-options="{style: 'Custom.Default',alarmClassName:'Alarm',foregroundColor:'@ErrorColor'}">
+				</div>
+				<div data-win-control="VisiWin.UI.AlarmIndicatorItem" data-win-options="{style: 'Custom.Default',alarmClassName:'Warning',foregroundColor:'@WarningColor'}">
+				</div>
+				<div data-win-control="VisiWin.UI.AlarmIndicatorItem" data-win-options="{style: 'Custom.Default',alarmClassName:'Info',foregroundColor:'@PrimaryColor'}">
+				</div>
+				
+		</div>]]>
+	</content>
+</control>

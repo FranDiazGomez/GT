@@ -1,0 +1,148 @@
+﻿{
+  "svgBindings": {
+    "svgBinding1": {
+      "svgClass": "fanShapes",
+      "attribute": "fill",
+      "defaultAttributeValue": "white",
+      "stateList": [
+        {
+          "value": "5",
+          "attributeValue": "red"
+        },
+        {
+          "value": "10",
+          "attributeValue": "green"
+        },
+        {
+          "value": "10..15",
+          "attributeValue": "violet"
+        },
+        {
+          "value": "40",
+          "attributeValue": "black"
+        },
+        {
+          "value": "41",
+          "attributeValue": "grey"
+        }
+      ]
+    },
+
+    "svgBinding2": {
+      "svgId": "easyuiicon",
+      "attribute": "fill",
+      "defaultAttributeValue": "grey",
+      "stateList": [
+        {
+          "value": "0",
+          "attributeValue": "grey"
+        },
+        {
+          "value": "1",
+          "attributeValue": "yellow"
+        },
+        {
+          "value": "2",
+          "attributeValue": "red"
+        },
+        {
+          "value": "10..15",
+          "attributeValue": "grey"
+        },
+        {
+          "value": "40",
+          "attributeValue": "pink"
+        },
+        {
+          "value": "41",
+          "attributeValue": "lime"
+        }
+      ]
+
+    },
+
+    "svgBinding3": {
+      "svgId": "fanShape2",
+      "attribute": "fill",
+      "defaultAttributeValue": "blue",
+      "stateList": [
+        {
+          "value": "5",
+          "attributeValue": "blue"
+        },
+        {
+          "value": "10",
+          "attributeValue": "yellow"
+        },
+        {
+          "value": "10..15",
+          "attributeValue": "violet"
+        },
+        {
+          "value": "40",
+          "attributeValue": "green"
+        },
+        {
+          "value": "41",
+          "attributeValue": "lime"
+        }
+      ]
+    },
+
+    "svgBinding4": {
+      "svgId": "fanShape3",
+      "attribute": "fill",
+      "defaultAttributeValue": "yellow",
+      "stateList": [
+        {
+          "value": "5",
+          "attributeValue": "blue"
+        },
+        {
+          "value": "10",
+          "attributeValue": "yellow"
+        },
+        {
+          "value": "10..15",
+          "attributeValue": "violet"
+        },
+        {
+          "value": "40",
+          "attributeValue": "green"
+        },
+        {
+          "value": "41",
+          "attributeValue": "lime"
+        }
+      ]
+    },
+
+    "svgBinding5": {
+      "svgId": "fanShape4",
+      "attribute": "fill",
+      "defaultAttributeValue": "yellow",
+      "stateList": [
+        {
+          "value": "5",
+          "attributeValue": "blue"
+        },
+        {
+          "value": "10",
+          "attributeValue": "yellow"
+        },
+        {
+          "value": "10..15",
+          "attributeValue": "violet"
+        },
+        {
+          "value": "40",
+          "attributeValue": "green"
+        },
+        {
+          "value": "41",
+          "attributeValue": "lime"
+        }
+      ]
+    }
+  }
+}

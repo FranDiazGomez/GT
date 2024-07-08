@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VisiWinNET.Settings version="1.0">
+  <Section name="SolutionSettings">
+    <Entry name="SelectedDeviceCommunicator" type="System.String" value="ServerManager" />
+    <Entry name="ConnectedDeviceLastIpAddress" type="System.String" value="192.168.5.99" />
+    <Entry name="ConnectedDeviceLastPort" type="System.String" value="50000" />
+  </Section>
+  <Section name="TargetDeviceConfigurations">
+    <Section name="192.168.5.99">
+      <Entry name="Port" type="System.Int32" value="7100" />
+      <Entry name="PortSSL" type="System.Int32" value="7200" />
+      <Entry name="Protocol" type="VisiWin.Development.Shared.Enums.ProtocolType" value="TCP_Unsafe" />
+      <Entry name="Timeout" type="System.Int32" value="10" />
+      <Entry name="IsSelected" type="System.Boolean" value="True" />
+      <Entry name="PreferredConnectionType" type="VisiWin.Development.Shared.Enums.ConnectionType" value="ServerManager" />
+      <Section name="Projects">
+        <Section name="GTUI_Client">
+          <Entry name="IsSelected" type="System.Boolean" value="True" />
+          <Entry name="Path" type="System.String" value="EasyUI-Web" />
+          <Entry name="RuntimeVersion" type="System.String" value="7.3" />
+          <Entry name="IsStartProjectUnderDevice" type="System.Boolean" value="False" />
+          <Entry name="WebClientPort" type="System.Int32" value="50000" />
+        </Section>
+        <Section name="GTUI_Server">
+          <Entry name="IsSelected" type="System.Boolean" value="True" />
+          <Entry name="Path" type="System.String" value="EasyUI" />
+          <Entry name="RuntimeVersion" type="System.String" value="7.3" />
+          <Entry name="IsStartProjectUnderDevice" type="System.Boolean" value="False" />
+        </Section>
+      </Section>
+    </Section>
+  </Section>
+</VisiWinNET.Settings>

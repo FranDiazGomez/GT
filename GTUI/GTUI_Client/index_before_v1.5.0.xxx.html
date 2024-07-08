@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>EASY Web UI</title>
+
+    <!-- Set the viewport. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <!-- Chrome -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- APPLE MOBILE WEB APP TAGS -->
+    <!-- Allow web app to be run in full-screen mode. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Make the app title different than the page title. -->
+    <meta name="apple-mobile-web-app-title" content="VisiWin">
+
+    <!-- Configure the status bar. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transparent">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="libs/visiwin/logos/EASY_Engineering_Tool_UI_Designer_128px_flat.png">
+
+    <!-- STARTUP IMAGES -->
+    <!-- APPLE MOBILE WEB APP TAGS END -->
+    <!-- Windows MOBILE WEB APP TAGS -->
+    <meta name="msapplication-TileImage" content="libs/visiwin/logos/EASY_Engineering_Tool_UI_Designer_128px_flat.png">
+    <meta name="msapplication-TileColor" content="#004da0">
+
+    <script src="libs/visiwin/apploader.min.js"></script>
+
+    <style>
+        #splash {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: 200;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            background-color: white;
+        }
+
+        #splash>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            font-family: "Segoe UI", Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+            color: #000000;
+
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #splash>.header {
+            width: 100%;
+            min-height: 90px;
+
+            padding-left: 64px;
+            padding-right: 64px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #ffffff;
+        }
+
+        #splash>.header>.logo {
+            height: 40px;
+        }
+
+        #splash>.body {
+            width: 100%;
+            padding: 32px;
+            /* flex-grow: 1; */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #ffffff;
+        }
+
+        #splash .project-header {
+            margin-bottom: 16px;
+
+            font-size: 1.9em;
+            font-weight: 400;
+            color: #004DA0;
+            /* Lenze blue */
+        }
+
+        #splash .project-description {
+            margin-bottom: 32px;
+
+            color: #666666;
+            /* Medium dark grey */
+        }
+
+        #splash .project-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #splash .card {
+            width: 275px;
+            min-width: 275px;
+            max-width: 275px;
+            height: 275px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            overflow: hidden;
+
+            background-color: #ffffff;
+            box-shadow: #00000029 0 3px 6px;
+            /* transition: box-shadow 0.3s ease-in-out;  */
+        }
+
+        #splash .card>img {
+            width: 90%;
+            padding-top: 16px;
+        }
+
+        #splash .card .title {
+            font-size: 1.2em;
+            font-weight: 400;
+            padding-left: 8px;
+        }
+
+        #splash .card .title,
+        #splash .card .content {
+            max-width: calc(100% - 8px * 2);
+            overflow: hidden;
+            text-decoration: none;
+        }
+
+        #splash .card>*,
+        #splash .card>.card-body>* {
+            margin-bottom: 16px;
+        }
+
+        #splash .card-body {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splash__spinner {
+            width: 15px;
+            height: 15px;
+            flex: 0 0 auto;
+            animation: rotate 2s linear infinite;
+            transform-origin: center center;
+        }
+
+        .splash__spinner-path {
+            stroke-dasharray: 89, 200;
+            stroke-dashoffset: -10;
+            stroke-linecap: round;
+            animation: dash 1.5s ease-in-out infinite;
+        }
+
+        @-webkit-keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35;
+            }
+
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124;
+            }
+        }
+
+        @media only screen and (max-height: 530px) {
+
+            #splash .project-header,
+            #splash .project-description {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" name="fake-text" style="display:none" />
+    <input type="password" name="fake-password" style="display:none" />
+
+    <section id="splash">
+        <div class="header">
+            <img src="logo.svg" alt="Lenze Logo" class="logo">
+        </div>
+        <div class="body">
+            <div class="project-header">EASY UI Project</div>
+            <div class="project-description">The project is loading.</div>
+
+            <div class="card">
+                <img src="EASY_UI_Loop_full.gif" alt="EASY UI Logo">
+                <div class="card-body">
+                    <svg class="splash__spinner" viewBox="25 25 50 50">
+                        <circle class="splash__spinner-path" cx="50" cy="50" r="20" fill="none" stroke="#666666"
+                            stroke-width="5"></circle>
+                    </svg>
+                    <span class="title">Loading</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content" data-win-control="VisiWin.UI.App" data-win-options='{"viewName":"views/AppShell.html"}'></div>
+
+    <!--div id="Popover" data-win-control="VisiWin.UI.Popover"></div-->
+
+</body>
+
+</html>

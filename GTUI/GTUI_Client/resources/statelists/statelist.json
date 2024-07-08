@@ -1,0 +1,26 @@
+﻿{
+  "states": {
+    "stateList": [
+      {
+        "value": "5",
+        "attributeValue": "yellow"
+      },
+      {
+        "value": "10",
+        "attributeValue": "violet"
+      },
+      {
+        "value": "10..15",
+        "attributeValue": "lime"
+      },
+      {
+        "value": "40",
+        "attributeValue": "blue"
+      },
+      {
+        "value": "41",
+        "attributeValue": "pink"
+      }
+    ]
+  }
+}

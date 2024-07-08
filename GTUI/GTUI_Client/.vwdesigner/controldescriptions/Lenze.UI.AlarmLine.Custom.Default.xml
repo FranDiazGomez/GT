@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.AlarmLine" style="Custom.Default" name="Lenze.UI.AlarmLine.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">AlarmLine</title>
+  <description type="text/plain">An alarm line showing up when a set alarm class is active.</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+
+    <!-- Appearance -->
+	<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+
+
+        <!-- Common properties-->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	    <description type="text/plain">Gets or sets the DataContext option.</description>
+	  </property>
+
+    <!-- Colors -->
+    <property displayName="Inactive background color" name="inactiveBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactiveBackgroundColor when no alarm is active.</description>
+    </property>
+
+    <!-- Date and Time -->
+    <property displayName="Date format" name="dateFormat" datatype="String" category="Date &amp; Time"  isBrowsable="true">
+      <description type="text/plain">Gets or sets the DateFormat.</description>
+    </property>
+    <property displayName="Time format" name="timeFormat" datatype="String" category="Date &amp; Time"  isBrowsable="true">
+      <description type="text/plain">Gets or sets the TimeFormat.</description>
+    </property>
+
+    <!-- Alarm1 -->
+    <property displayName="Padding" name="alarmOnePadding" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    <property displayName="Font class" name="alarmOneFontClass" datatype="Lenze.UI.Text.FontClass" category="Alarm1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontClass option.</description>
+    </property>
+    <property displayName="Text wrapping" name="alarmOneTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Alarm1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TextWrapping option.</description>
+    </property>
+    <property displayName="Icon font" name="alarmOneIconFont" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IconFont option.</description>
+    </property>
+    <property displayName="Symbol" name="alarmOneSymbol" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the Symbol option.</description>
+    </property>
+    <property displayName="Symbol type" name="alarmOneSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Alarm1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SymbolType option.</description>
+    </property>
+    <property displayName="Desired alarm classes" name="alarmOneDesiredClasses" datatype="String" category="Alarm1" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DesiredAlarmClasses separated by comma.</description>
+    </property>
+    <property displayName="Border width" name="alarmOneBorderWidth" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+
+    <property displayName="Active background color" name="alarmOneActBackgroundColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBackgroundColor option.</description>
+    </property>
+    <property displayName="Active text color" name="alarmOneActTextColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActTextColor option.</description>
+    </property>
+    <property displayName="Active symbol color" name="alarmOneActSymbolColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActSymbolColor option.</description>
+    </property>
+    <property displayName="Active border color" name="alarmOneActBorderColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBorderColor option.</description>
+    </property>
+    <property displayName="Inactive background color" name="alarmOneInactBackgroundColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive text color" name="alarmOneInactTextColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactTextColor option.</description>
+    </property>
+    <property displayName="Inactive symbol color" name="alarmOneInactSymbolColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive border color" name="alarmOneInactBorderColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBorderColor option.</description>
+    </property>
+    <property displayName="Active ack background color" name="alarmOneActAckBackgroundColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Active ack text color" name="alarmOneActAckTextColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckTextColor option.</description>
+    </property>
+    <property displayName="Active ack symbol color" name="alarmOneActAckSymbolColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckSymbolColor option.</description>
+    </property>
+    <property displayName="Active ack border color" name="alarmOneActAckBorderColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBorderColor option.</description>
+    </property>
+    <property displayName="Inactive ack background color" name="alarmOneInactAckBackgroundColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive ack text color" name="alarmOneInactAckTextColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckTextColor option.</description>
+    </property>
+    <property displayName="Inactive ack symbol color" name="alarmOneInactAckSymbolColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive ack border color" name="alarmOneInactAckBorderColor" datatype="String" category="Alarm1" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBorderColor option.</description>
+    </property>
+
+    <!-- Alarm2 -->
+    <property displayName="Padding" name="alarmTwoPadding" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    <property displayName="Font class" name="alarmTwoFontClass" datatype="Lenze.UI.Text.FontClass" category="Alarm2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontClass option.</description>
+    </property>
+    <property displayName="Text wrapping" name="alarmTwoTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Alarm2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TextWrapping option.</description>
+    </property>
+    <property displayName="Icon font" name="alarmTwoIconFont" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IconFont option.</description>
+    </property>
+    <property displayName="Symbol" name="alarmTwoSymbol" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the Symbol option.</description>
+    </property>
+    <property displayName="Symbol type" name="alarmTwoSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Alarm2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SymbolType option.</description>
+    </property>
+    <property displayName="Desired alarm classes" name="alarmTwoDesiredClasses" datatype="String" category="Alarm2" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DesiredAlarmClasses separated by comma.</description>
+    </property>
+    <property displayName="Border width" name="alarmTwoBorderWidth" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+
+    <property displayName="Active background color" name="alarmTwoActBackgroundColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBackgroundColor option.</description>
+    </property>
+    <property displayName="Active text color" name="alarmTwoActTextColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActTextColor option.</description>
+    </property>
+    <property displayName="Active symbol color" name="alarmTwoActSymbolColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActSymbolColor option.</description>
+    </property>
+    <property displayName="Active border color" name="alarmTwoActBorderColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBorderColor option.</description>
+    </property>
+    <property displayName="Inactive background color" name="alarmTwoInactBackgroundColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive text color" name="alarmTwoInactTextColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactTextColor option.</description>
+    </property>
+    <property displayName="Inactive symbol color" name="alarmTwoInactSymbolColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive border color" name="alarmTwoInactBorderColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBorderColor option.</description>
+    </property>
+    <property displayName="Active ack background color" name="alarmTwoActAckBackgroundColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Active ack text color" name="alarmTwoActAckTextColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckTextColor option.</description>
+    </property>
+    <property displayName="Active ack symbol color" name="alarmTwoActAckSymbolColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckSymbolColor option.</description>
+    </property>
+    <property displayName="Active ack border color" name="alarmTwoActAckBorderColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBorderColor option.</description>
+    </property>
+    <property displayName="Inact ack background color" name="alarmTwoInactAckBackgroundColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive ack text color" name="alarmTwoInactAckTextColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckTextColor option.</description>
+    </property>
+    <property displayName="Inactive ack symbol color" name="alarmTwoInactAckSymbolColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive ack border color" name="alarmTwoInactAckBorderColor" datatype="String" category="Alarm2" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBorderColor option.</description>
+    </property>
+
+    <!-- Alarm3 -->
+    <property displayName="Padding" name="alarmThreePadding" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    <property displayName="Font class" name="alarmThreeFontClass" datatype="Lenze.UI.Text.FontClass" category="Alarm3" isBrowsable="true">
+      <description type="text/plain">Gets or sets the FontClass option.</description>
+    </property>
+    <property displayName="Text wrapping" name="alarmThreeTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Alarm3" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TextWrapping option.</description>
+    </property>
+    <property displayName="Icon font" name="alarmThreeIconFont" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IconFont option.</description>
+    </property>
+    <property displayName="Symbol" name="alarmThreeSymbol" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the Symbol option.</description>
+    </property>
+    <property displayName="Symbol type" name="alarmThreeSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Alarm3" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SymbolType option.</description>
+    </property>
+    <property displayName="Desired alarm classes" name="alarmThreeDesiredClasses" datatype="String" category="Alarm3" isBrowsable="true">
+      <description type="text/plain">Gets or sets the DesiredAlarmClasses separated by comma.</description>
+    </property>
+    <property displayName="Border width" name="alarmThreeBorderWidth" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+
+    <property displayName="Active background color" name="alarmThreeActBackgroundColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBackgroundColor option.</description>
+    </property>
+    <property displayName="Active text color" name="alarmThreeActTextColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActTextColor option.</description>
+    </property>
+    <property displayName="Active symbol color" name="alarmThreeActSymbolColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActSymbolColor option.</description>
+    </property>
+    <property displayName="Active border color" name="alarmThreeActBorderColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActBorderColor option.</description>
+    </property>
+    <property displayName="Inactive background color" name="alarmThreeInactBackgroundColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive text color" name="alarmThreeInactTextColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactTextColor option.</description>
+    </property>
+    <property displayName="Inactive symbol color" name="alarmThreeInactSymbolColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive border color" name="alarmThreeInactBorderColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactBorderColor option.</description>
+    </property>
+    <property displayName="Active ack background color" name="alarmThreeActAckBackgroundColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Active ack text color" name="alarmThreeActAckTextColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckTextColor option.</description>
+    </property>
+    <property displayName="Active ack symbol color" name="alarmThreeActAckSymbolColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckSymbolColor option.</description>
+    </property>
+    <property displayName="Active ack border color" name="alarmThreeActAckBorderColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ActAckBorderColor option.</description>
+    </property>
+    <property displayName="Inact ack background color" name="alarmThreeInactAckBackgroundColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBackgroundColor option.</description>
+    </property>
+    <property displayName="Inactive ack text color" name="alarmThreeInactAckTextColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckTextColor option.</description>
+    </property>
+    <property displayName="Inactive ack symbol color" name="alarmThreeInactAckSymbolColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckSymbolColor option.</description>
+    </property>
+    <property displayName="Inactive ack border color" name="alarmThreeInactAckBorderColor" datatype="String" category="Alarm3" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the InactAckBorderColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.AlarmLine"  data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

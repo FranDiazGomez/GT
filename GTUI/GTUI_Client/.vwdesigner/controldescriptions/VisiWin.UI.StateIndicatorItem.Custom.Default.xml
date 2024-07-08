@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.StateIndicatorItem" style="Custom.Default" name="VisiWin.UI.StateIndicatorItem.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">StateIndicatorItem</title>
+  <description type="text/plain">A StateIndicatorItem control.</description>
+  <properties>
+    <!-- Variable -->
+    <property displayName="Value" name="value" datatype="String" category="Variable" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Value option.</description>
+    </property>
+
+       <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+
+    <!-- Symbol -->
+    <property displayName="Icon font" name="iconFont" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IconFont option.</description>
+    </property>
+    <property displayName="Symbol" name="symbol" datatype="String" category="Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the Symbol option.</description>
+    </property>
+    <property displayName="Symbol type" name="symbolType" datatype="VisiWin.UI.Symbol.Type" category="Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SymbolType option.</description>
+    </property>
+
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+
+    <!-- Text -->
+    <property displayName="Text" name="text" datatype="String" category="Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Text option.</description>
+    </property>
+    <property displayName="Localizable text" name="localizableText" datatype="String" category="Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableText option.</description>
+    </property>
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+  </properties>
+
+  <content>
+    <![CDATA[<div data-win-control="VisiWin.UI.StateIndicatorItem" data-win-options="{style:'Custom.Default'}"></div>]]>
+  </content>
+</control>

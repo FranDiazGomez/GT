@@ -1,0 +1,20 @@
+[Vendor]
+Name=INOSOFT GmbH
+Address1=Bünder Straße 194
+Address2=D-32120 Hiddenhausen, Germany
+Phone=+49[0]5221-1666-02
+Fax=+49[0]5221-1666-50
+Mail=info@inosoft.com
+
+[License]
+Lic1=Lenze, Hans-Lenze-Str. 1, 31855 Aerzen
+Lic2=FAST UI runtime license c520
+
+[VisiWin]
+WebClients=15
+Powertags=1000
+
+[OEM]
+DeviceType=c520
+
+™±,‚

@@ -1,0 +1,154 @@
+﻿{
+  "media": {
+    "phone": "screen and (min-width: 0px) and (max-width: 480px)",
+    "tablet": "screen and (min-width: 481px) and (max-width: 840px)",
+    "desktop": "screen and (min-width: 841px) and (max-width: 1280px)",
+    "large-desktop": "screen and (min-width: 1281px)"
+  },
+
+  "styles": {
+    "controls": {
+
+      "VisiWin.UI.CardLayout": {
+        "media": {
+          "phone": {
+            "deviceType": "isPhone",
+            "columnWidth": "25%"
+          },
+          "tablet": {
+            "deviceType": "isTablet",
+            "columnWidth": "12.5%"
+          },
+          "desktop": {
+            "deviceType": "isDesktop",
+            "columnWidth": "8.3333333333%"
+          },
+          "large-desktop": {
+            "deviceType": "isLargeDesktop",
+            "columnWidth": "6.25%"
+          }
+        }
+      },
+
+      "VisiWin.UI.CardLayout.Lenze.Default": {
+        "media": {
+          "phone": {
+            "deviceType": "isPhone",
+            "columnWidth": "25%"
+          },
+          "tablet": {
+            "deviceType": "isTablet",
+            "columnWidth": "12.5%"
+          },
+          "desktop": {
+            "deviceType": "isDesktop",
+            "columnWidth": "8.3333333333%"
+          },
+          "large-desktop": {
+            "deviceType": "isLargeDesktop",
+            "columnWidth": "6.25%"
+          }
+        }
+      },
+	  
+	    "VisiWin.UI.CardLayout.LenzeCyan.Default": {
+        "media": {
+          "phone": {
+            "deviceType": "isPhone",
+            "columnWidth": "25%"
+          },
+          "tablet": {
+            "deviceType": "isTablet",
+            "columnWidth": "12.5%"
+          },
+          "desktop": {
+            "deviceType": "isDesktop",
+            "columnWidth": "8.3333333333%"
+          },
+          "large-desktop": {
+            "deviceType": "isLargeDesktop",
+            "columnWidth": "6.25%"
+          }
+        }
+      },
+	  
+	    "VisiWin.UI.CardLayout.Custom.Default": {
+        "media": {
+          "phone": {
+            "deviceType": "isPhone",
+            "columnWidth": "25%"
+          },
+          "tablet": {
+            "deviceType": "isTablet",
+            "columnWidth": "12.5%"
+          },
+          "desktop": {
+            "deviceType": "isDesktop",
+            "columnWidth": "8.3333333333%"
+          },
+          "large-desktop": {
+            "deviceType": "isLargeDesktop",
+            "columnWidth": "6.25%"
+          }
+        }
+      },
+
+      "VisiWin.UI.AppSideNavLayout": {
+        "media": {
+          "phone": { "drawerMode": "Temporary" },
+          "tablet": { "drawerMode": "Temporary" },
+          "desktop": { "drawerMode": "Permanent" },
+          "large-desktop": { "drawerMode": "Permanent" }
+        }
+      },
+
+      "VisiWin.UI.AppSideNavLayout.Lenze.Default": {
+        "media": {
+          "phone": { "drawerMode": "Temporary" },
+          "tablet": { "drawerMode": "Temporary" },
+          "desktop": { "drawerMode": "Permanent" },
+          "large-desktop": { "drawerMode": "Permanent" }
+        }
+      },
+
+      "VisiWin.UI.AppSideNavLayout.LenzeCyan.Default": {
+        "media": {
+          "phone": { "drawerMode": "Temporary" },
+          "tablet": { "drawerMode": "Temporary" },
+          "desktop": { "drawerMode": "Permanent" },
+          "large-desktop": { "drawerMode": "Permanent" }
+        }
+      },
+
+      "VisiWin.UI.AppSideNavLayout.Custom.Default": {
+        "media": {
+          "phone": { "drawerMode": "Temporary" },
+          "tablet": { "drawerMode": "Temporary" },
+          "desktop": { "drawerMode": "Permanent" },
+          "large-desktop": { "drawerMode": "Permanent" }
+        }
+      },
+
+      "VisiWin.UI.TrendChart": {
+        "media": {
+          "phone": {
+            "xaxisTicks": 1,
+            "yaxisTicks": 2
+          },
+          "tablet": {
+            "xaxisTicks": 2,
+            "yaxisTicks": 3
+          },
+          "desktop": {
+            "xaxisTicks": 3,
+            "yaxisTicks": 4
+          },
+          "large-desktop": {
+            "xaxisTicks": 5,
+            "yaxisTicks": 5
+          }
+        }
+      }
+    }
+  }
+}

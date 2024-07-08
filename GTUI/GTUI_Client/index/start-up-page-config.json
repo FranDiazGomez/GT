@@ -1,0 +1,20 @@
+{
+    "startupSettings": {
+        "webSocketRequestIntervalInSeconds": 1,
+        "connectionAttempts": {
+            "beforeInfoMessage": 15,
+            "afterInfoMessage": 0
+        }
+    },
+    "ui": {
+        "elementIDs": {
+            "projectName": "index-splash-project-name",
+            "projectDescription": "index-splash-project-description",
+            "status": "index-splash-status",
+            "gifAnimation": "index-splash-gif"
+        },
+        "style": {
+            "simulationModeTextForegroundColor": "#47af64"
+        }
+    }
+}

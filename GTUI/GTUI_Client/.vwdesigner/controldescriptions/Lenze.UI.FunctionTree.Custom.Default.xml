@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.FunctionTree" style="Custom.Default" name="Lenze.UI.FunctionTree.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">FunctionTree</title>
+  <description type="text/plain">Function tree of the current application.</description>
+  <properties>
+
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+
+      <!-- Appearance -->
+	<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+
+    <!-- Table -->
+    <property displayName="Indentation padding" name="indentationPadding" datatype="Number" category="Table" isBrowsable="true">
+      <description type="text/plain">Gets or sets the IndentationPadding option.</description>
+    </property>
+
+
+    <!-- Title -->
+    <property displayName="Title font class" name="headerFontClass" datatype="Lenze.UI.Text.FontClass" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontClass option.</description>
+    </property>
+    <property displayName="Title font size" name="headerFontSize" datatype="String" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontSize option.</description>
+    </property>
+    <property displayName="Title font weight" name="headerFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderFontWeight option.</description>
+    </property>
+    <property displayName="Title text alignment" name="headerTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderTextAlignment option.</description>
+    </property>
+
+
+
+    <!-- Cell -->
+    <property displayName="Cell font size" name="bodyCellFontSize" datatype="String" category="Cell" isBrowsable="true">
+      <description type="text/plain">Gets or sets the BodyCellFontSize option.</description>
+    </property>
+    <property displayName="Cell font weight" name="bodyCellFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Cell" isBrowsable="true">
+      <description type="text/plain">Gets or sets the BodyCellFontWeight option.</description>
+    </property>
+    <property displayName="Cell border width" name="bodyCellBorderWidth" datatype="String" category="Cell" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BodyCellBorderWidth option.</description>
+    </property>
+    <property displayName="Cell border style" name="bodyCellBorderStyle" datatype="VisiWin.UI.Border.Style" category="Cell" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BodyCellBorderStyle option.</description>
+    </property>
+
+
+
+    <!-- ArrowSymbol -->
+    <property displayName="Arrow symbol" name="arrowSymbol" datatype="String" category="ArrowSymbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the ArrowSymbol option.</description>
+    </property>
+
+
+
+    <!-- ComponentSymbol -->
+    <property displayName="Component symbol container margin" name="componentSymbolContainerMargin" datatype="String" category="ComponentSymbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the ComponentSymbolContainerMargin option.</description>
+    </property>
+    <property displayName="Component symbol icon font" name="componentSymbolIconFont" datatype="String" category="ComponentSymbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the ComponentSymbolIconFont option.</description>
+    </property>
+    <property displayName="Component symbol size" name="componentSymbolSize" datatype="String" category="ComponentSymbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ComponentSymbolSize option.</description>
+    </property>
+    <property displayName="Component symbol width" name="componentSymbolWidth" datatype="String" category="ComponentSymbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the ComponentSymbolWidth option.</description>
+    </property>
+    <property displayName="Component symbol height" name="componentSymbolHeight" datatype="String" category="ComponentSymbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the ComponentSymbolHeight option.</description>
+    </property>
+
+
+
+    <!-- ErrorSymbol -->
+    <property displayName="Error symbol icon font" name="errorSymbolIconFont" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolIconFont option.</description>
+    </property>
+    <property displayName="Error symbol size" name="errorSymbolSize" datatype="String" category="Error Symbol" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ErrorSymbolSize option.</description>
+    </property>
+    <property displayName="Error symbol border width" name="errorSymbolBorderWidth" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolBorderWidth option.</description>
+    </property>
+    <property displayName="Error symbol border style" name="errorSymbolBorderStyle" datatype="VisiWin.UI.Border.Style" category="Error Symbol" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ErrorSymbolBorderStyle option.</description>
+    </property>
+    <property displayName="Error symbol border color" name="errorSymbolBorderColor" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolBorderColor option.</description>
+    </property>
+    <property displayName="Error symbol fault border radius" name="errorSymbolFaultBorderRadius" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolFaultBorderRadius option.</description>
+    </property>
+    <property displayName="Error symbol trouble border radius" name="errorSymbolTroubleBorderRadius" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolTroubleBorderRadius option.</description>
+    </property>
+    <property displayName="Error symbol warning border radius" name="errorSymbolWarningBorderRadius" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolWarningBorderRadius option.</description>
+    </property>
+    <property displayName="Error symbol information border radius" name="errorSymbolInformationBorderRadius" datatype="String" category="Error Symbol" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolInformationBorderRadius option.</description>
+    </property>
+
+
+    <!-- Logbook -->
+    <property displayName="Logbook symbol" name="logbookSymbol" datatype="String" category="Logbook" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookSymbol option.</description>
+    </property>
+    <property displayName="Logbook icon font" name="logbookIconFont" datatype="String" category="Logbook" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookIconFont option.</description>
+    </property>
+    <property displayName="Logbook margin" name="logbookMargin" datatype="String" category="Logbook" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookMargin option.</description>
+    </property>
+    <property displayName="Logbook padding" name="logbookPadding" datatype="String" category="Logbook" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookPadding option.</description>
+    </property>
+    <property displayName="Logbook dialog name" name="logbookDialogName" datatype="String" category="Logbook" isBrowsable="true" editor="HTML5Design.DesignInformation.DialogNamePropertyEditor">
+      <description type="text/plain">sets the LogbookDialogName of the region.</description>
+    </property>
+
+
+    <!-- CurrentAlarms -->
+    <property displayName="Current alarms icon font" name="currentAlarmsIconFont" datatype="String" category="CurrentAlarms" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the CurrentAlarmsIconFont option.</description>
+    </property>
+    <property displayName="Current alarms margin" name="currentAlarmsMargin" datatype="String" category="CurrentAlarms" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CurrentAlarmsMargin option.</description>
+    </property>
+    <property displayName="Current alarms padding" name="currentAlarmsPadding" datatype="String" category="CurrentAlarms" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CurrentAlarmsPadding option.</description>
+    </property>
+    <property displayName="Current alarms dialog name" name="currentAlarmsDialogName" datatype="String" category="CurrentAlarms" isBrowsable="true" editor="HTML5Design.DesignInformation.DialogNamePropertyEditor">
+      <description type="text/plain">sets the CurrentAlarmsDialogName of the region.</description>
+    </property>
+
+
+    <!-- License -->
+    <property displayName="License symbol" name="licenseSymbol" datatype="String" category="License" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the LicenseSymbol option.</description>
+    </property>
+    <property displayName="License icon font" name="licenseIconFont" datatype="String" category="License" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the LicenseIconFont option.</description>
+    </property>
+    <property displayName="License margin" name="licenseMargin" datatype="String" category="License" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LicenseMargin option.</description>
+    </property>
+    <property displayName="License padding" name="licensePadding" datatype="String" category="License" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LicensePadding option.</description>
+    </property>
+    <property displayName="License dialog name" name="licenseDialogName" datatype="String" category="License" isBrowsable="true" editor="HTML5Design.DesignInformation.DialogNamePropertyEditor">
+      <description type="text/plain">sets the LicenseDialogName of the region.</description>
+    </property>
+
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Title background color" name="headerBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderBackgroundColor option.</description>
+    </property>
+    <property displayName="Title text background color" name="headerTextBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderTextBackgroundColoroption.</description>
+    </property>
+    <property displayName="Title text foreground color" name="headerTextForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HeaderTextForegroundColor option.</description>
+    </property>
+    <property displayName="Logbook foreground color" name="logbookForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookForegroundColor option.</description>
+    </property>
+    <property displayName="Logbook background color" name="logbookBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LogbookBackgroundColor option.</description>
+    </property>
+    <property displayName="Error symbol information foreground color" name="errorSymbolInformationForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolInformationForegroundColor option.</description>
+    </property>
+    <property displayName="Error symbol information background color" name="errorSymbolInformationBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolInformationBackgroundColor option.</description>
+    </property>
+    <property displayName="Error symbol warning foreground color" name="errorSymbolWarningForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolWarningForegroundColor option.</description>
+    </property>
+    <property displayName="Error symbol warning background color" name="errorSymbolWarningBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolWarningBackgroundColor option.</description>
+    </property>
+    <property displayName="Error symbol trouble foreground color" name="errorSymbolTroubleForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolTroubleForegroundColor option.</description>
+    </property>
+    <property displayName="Error symbol trouble background color" name="errorSymbolTroubleBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolTroubleBackgroundColor option.</description>
+    </property>
+    <property displayName="Error symbol fault foreground color" name="errorSymbolFaultForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolFaultForegroundColor option.</description>
+    </property>
+    <property displayName="Error symbol fault background color" name="errorSymbolFaultBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ErrorSymbolFaultBackgroundColor option.</description>
+    </property>
+    <property displayName="Component symbol foreground color" name="componentSymbolForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ComponentSymbolForegroundColor option.</description>
+    </property>
+    <property displayName="Arrow symbol color" name="arrowSymbolColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ArrowSymbolColor option.</description>
+    </property>
+    <property displayName="Cell border color" name="bodyCellBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BodyCellBorderColor option.</description>
+    </property>
+    <property displayName="License foreground color" name="licenseForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LicenseForegroundColor option.</description>
+    </property>
+    <property displayName="License background color" name="licenseBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the LicenseBackgroundColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+  </events>
+
+  <content>
+    <![CDATA[
+      <div data-win-control="Lenze.UI.FunctionTree" data-win-options="{style:'Custom.Default'}">
+      </div>
+    ]]>
+  </content>
+</control>

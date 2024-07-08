@@ -1,0 +1,14 @@
+﻿{
+  "resources": {
+    "backgrounds": {
+      "gradients": {
+        "None": "",
+        "PrimaryVertical": "linear-gradient(to bottom, @PrimaryDarkColor, @PrimaryLightColor 0%, @PrimaryColor 48%, @PrimaryDarkColor 100%)",
+        "PrimaryHorizontal": "linear-gradient(to right, @PrimaryDarkColor, @PrimaryLightColor 0%, @PrimaryColor 48%, @PrimaryDarkColor 100%)",
+        "PrimaryDiagonalRight": "linear-gradient(45deg, @PrimaryDarkColor, @PrimaryLightColor 0%, @PrimaryColor 48%, @PrimaryDarkColor 100%)",
+        "PrimaryDiagonalLeft": "linear-gradient(135deg, @PrimaryDarkColor, @PrimaryLightColor 0%, @PrimaryColor 48%, @PrimaryDarkColor 100%)",
+        "PrimaryRadial": "radial-gradient(ellipse at center, @PrimaryLightColor 0%, @PrimaryColor 48%, @PrimaryDarkColor 100%)"
+      }
+    }
+  }
+}

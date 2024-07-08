@@ -1,0 +1,19 @@
+{
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "workbench.settings.openDefaultSettings": true,
+  "files.exclude": {
+    "**/*.sln": true,
+    "**/*csproj*": true,
+    "**/*Device.config": true,
+    "**/*Restriction.config": true,
+    "**/*vw7": true,
+    "**/*vwsettings": true,
+    "**/web*.config": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/properties": true
+  },
+}

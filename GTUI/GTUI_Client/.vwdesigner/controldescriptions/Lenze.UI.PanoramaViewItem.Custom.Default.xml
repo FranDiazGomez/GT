@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.PanoramaViewItem" style="Custom.Default" name="Lenze.UI.PanoramaViewItem.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">PanoramaViewItem</title>
+  <description type="text/plain"></description>
+  <properties>
+    
+    <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+    <!-- View -->
+    <property displayName="View" name="view" datatype="String" category="View" isBrowsable="true" editor="HTML5Design.DesignInformation.ViewNameDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the View option.</description>
+    </property>
+
+    <!-- Indicator Text -->
+    <property displayName="Indicator text" name="indicatorText" datatype="String" category="Indicator Text" isBrowsable="true">
+      <description type="text/plain">Gets or sets the IndicatorText option.</description>
+    </property>
+    <property displayName="Indicator localizable text" name="indicatorLocalizableText" datatype="String" category="Indicator Text" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the IndicatorLocalizableText option.</description>
+    </property>
+
+    <!-- Indicator Symbol -->
+    <property displayName="Indicator symbol" name="indicatorSymbol" datatype="String" category="Indicator Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the IndicatorSymbol option.</description>
+    </property>
+    <property displayName="Indicator icon font" name="indicatorIconFont" datatype="String" category="Indicator Symbol" isBrowsable="true" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the IndicatorIconFont option.</description>
+    </property>
+    <property displayName="Indicator symbol type" name="indicatorSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Indicator Symbol" isBrowsable="true">
+      <description type="text/plain">Gets or sets the IndicatorSymbolType option.</description>
+    </property>
+    
+
+    <!-- Common Properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	  </property>
+
+    <!-- Authorization -->
+    <property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+    </property>
+
+    <!-- Visibility -->
+    <property displayName="View visible" name="viewVisible" datatype="Boolean" category="Visibility" isBrowsable="true">
+      <description type="text/plain">Gets or sets the viewVisible option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onFocusedChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onValueChanged" isDefault="true"/>
+  </events>
+  
+  <content><![CDATA[<div data-win-control="Lenze.UI.PanoramaViewItem" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

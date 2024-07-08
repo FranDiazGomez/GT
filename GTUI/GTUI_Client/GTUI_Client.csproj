@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F65AD302-DCB7-4181-9B2A-8757E7C418D8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HMI</RootNamespace>
+    <AssemblyName>GTUI_Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>2.4</TypeScriptToolsVersion>
+    <ReferencePath>C:\Program Files %28x86%29\Lenze\VisiWin 7\7.3\Runtime\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="dialogs\AlertDialog.html" />
+    <Content Include="dialogs\dlgCylinder.html" />
+    <Content Include="dialogs\dlgDigitalInput.html" />
+    <Content Include="dialogs\dlgScanner.html" />
+    <Content Include="dialogs\dlgTest1.html" />
+    <Content Include="dialogs\fast\CurrentAlarmsDialog.html" />
+    <Content Include="dialogs\fast\DiagnosisPDFDialog.html" />
+    <Content Include="dialogs\fast\DiagnosisYouTubeDialog.html" />
+    <Content Include="dialogs\fast\LogbookDialog.html" />
+    <Content Include="dialogs\usermanagement\ChangePasswordDialog.html" />
+    <Content Include="dialogs\usermanagement\LogOnDialog.html" />
+    <Content Include="dialogs\usermanagement\LogOutDialog.html" />
+    <Content Include="dialogs\settings\SettingsDialog.html" />
+    <Content Include="dialogs\usermanagement\UserDialog.html" />
+    <Content Include="dialogs\usermanagement\AddUserDialog.html" />
+    <Content Include="dialogs\usermanagement\ChangeUserDialog.html" />
+    <Content Include="dialogs\usermanagement\RemoveUserDialog.html" />
+    <Content Include="dialogs\keyboards\AlphabeticalKeyboardDialog.html" />
+    <Content Include="dialogs\keyboards\NumericKeyboardDialog.html" />
+    <Content Include="dialogs\keyboards\AlphabeticalLightKeyboardDialog.html" />
+    <Content Include="views\PropertiesView.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pages\MachinePage.html" />
+    <Content Include="views\LoadingView.html" />
+    <Content Include="views\AppShell.html" />
+    <Content Include="views\ErrorView.html" />
+    <Content Include="views\ErrorView.js" />
+    <Content Include="views\LogInView.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pages\LoadingPage.html" />
+    <Content Include="pages\CurrentAlarmsPage.html" />
+    <Content Include="pages\DiagnosticsPage.html" />
+    <Content Include="pages\RecipesPage.html" />
+    <Content Include="pages\SettingsPage.html" />
+    <Content Include="pages\StatisticsPage.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\iconfonts\lenze-icons\" />
+    <Folder Include="images\iconfonts\material-icons\" />
+    <Folder Include="images\iconfonts\winjs-icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources\statecollections\colorcollections.json" />
+    <Content Include="resources\statecollections\imagecollections.json" />
+    <Content Include="resources\statecollections\textcollections.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dialogs\dlgCylinder.js">
+      <DependentUpon>dlgCylinder.html</DependentUpon>
+    </None>
+    <None Include="dialogs\dlgDigitalInput.js">
+      <DependentUpon>dlgDigitalInput.html</DependentUpon>
+    </None>
+    <None Include="images\svgs\Lenze_Logo.svg" />
+    <None Include="images\svgs\EASY_UI_Logo.svg" />
+    <None Include="images\svgs\indicatorbottom.svg" />
+    <None Include="images\svgs\instrumentneedle.svg" />
+    <None Include="images\svgs\alarms\alarm_active.svg" />
+    <None Include="images\svgs\alarms\alarm_active_ack.svg" />
+    <None Include="images\svgs\alarms\alarm_inactive.svg" />
+    <None Include="images\svgs\alarms\alarm_inactive_ack.svg" />
+    <None Include="images\svgs\alarms\hint_active.svg" />
+    <None Include="images\svgs\alarms\hint_active_ack.svg" />
+    <None Include="images\svgs\alarms\hint_inactive.svg" />
+    <None Include="images\svgs\alarms\hint_inactive_ack.svg" />
+    <None Include="images\svgs\alarms\message_active.svg" />
+    <None Include="images\svgs\alarms\message_active_ack.svg" />
+    <None Include="images\svgs\alarms\message_inactive.svg" />
+    <None Include="images\svgs\alarms\message_inactive_ack.svg" />
+    <None Include="images\svgs\flags\zh-CN.svg" />
+    <None Include="images\svgs\flags\cs-CZ.svg" />
+    <None Include="images\svgs\flags\de-DE.svg" />
+    <None Include="images\svgs\flags\es-ES.svg" />
+    <None Include="images\svgs\flags\fr-FR.svg" />
+    <None Include="images\svgs\flags\it-IT.svg" />
+    <None Include="images\svgs\flags\nl-NL.svg" />
+    <None Include="images\svgs\flags\pl-PL.svg" />
+    <None Include="images\svgs\flags\ru-RU.svg" />
+    <None Include="images\svgs\flags\en-US.svg" />
+    <None Include="images\svgs\instruments\dial.svg" />
+    <None Include="images\svgs\instruments\dial_darkgrey.svg" />
+    <None Include="images\svgs\instruments\dial_white.svg" />
+    <None Include="images\svgs\instruments\dial_lenzecyan.svg" />
+    <None Include="images\svgs\instruments\line_darkgrey.svg" />
+    <None Include="pages\SettingsPage.js">
+      <DependentUpon>SettingsPage.html</DependentUpon>
+    </None>
+    <None Include="views\PropertiesView.js">
+      <DependentUpon>PropertiesView.html</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bitmaps\EASY_UI_Designer.ico" />
+    <Resource Include="images\bitmaps\EASY_UI_Designer_Flat.ico" />
+    <Resource Include="images\bitmaps\ooops.jpg" />
+  </ItemGroup>
+  <!--ItemGroup>
+	<Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup-->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53018</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53018/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties VisiWinVersion="7.3" VisiWinProjectName="GTUI_Client" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v14.0\WebApplications\Microsoft.WebApplication.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

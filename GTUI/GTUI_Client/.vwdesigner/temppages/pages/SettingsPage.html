@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>Settings</title>
+	<script src="SettingsPage.js"></script>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.Page"
+        data-win-options='{"style":"Custom.Default","designHeight":"600px","designWidth":"1200px","backgroundColor":"@AppBackgroundColor"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","padding":"0px 0px 0px 0px","backgroundColor":"@Transparent"}'>
+	        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"15%","orientation":"Horizontal"}'>
+		        <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","height":"67px"}' id="btnOpenMachineConfig"></div>
+		        <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"465px","variableName":"Controller.PLC.Application.PRG_FW.componentsController.sJSONResponse"}'></div>
+		        <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"465px","variableName":"Controller.PLC.Application.PRG_FW.componentsController.sJSONResponse"}'></div>
+</div>
+	        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"85%"}' id="divMachineTree"></div>
+        </div>
+    </div>
+</body>
+
+</html>

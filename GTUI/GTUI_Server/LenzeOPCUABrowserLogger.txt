@@ -1,0 +1,15 @@
+System information:
+Version                      | VisiWin7 7.3
+Project                      | Server
+VisiWin.LenzeOPCUA.Brw.dll     | 73.3.0.12(Debug=False)
+
+Messages:
+06/07/2024 18:24:10   | Message | Data type LWORD is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type TIME is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO APPLICATION is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO BYTE is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO STRING(4) is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO STRING(c_uiContentStringSize) is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO STRING(c_uiPropertyStringSize) is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type POINTER TO SysFile.RTS_IEC_RESULT is not supported. | XMLParser.Parse() | 
+06/07/2024 18:24:10   | Message | Data type RTS_IEC_HANDLE is not supported. | XMLParser.Parse() | 

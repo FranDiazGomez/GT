@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+	<title>CurrentAlarmsDialog</title>
+</head>
+
+<body>
+	<div id="TemplateContainer" data-win-control="VisiWin.UI.TemplateContainer">
+
+		<div id="VisiWin.UI.AlarmListItemTemplate.Custom.Default" data-win-control="WinJS.Binding.Template">
+			<div data-win-control="VisiWin.UI.AlarmItem"
+				data-win-options='{"style":"Custom.Default","height":"118px", "width":"100%"}'>
+				<div data-win-control="VisiWin.UI.FlexLayout"
+					data-win-options='{"style":"Custom.Default","height":"auto","width":"100%","justifyContent":"Start"}'>
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"38px","orientation":"Horizontal"}'>
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","width":"auto","height":"100%","flexGrow":1.0,"margin":"0px 0px 0px 0px","backgroundColor":"@LightGrey","orientation":"Horizontal","alignItems":"Center"}'>
+							<div data-win-control="VisiWin.UI.Image"
+								data-win-options='{"style":"Custom.Default","width":"30px","height":"30px","margin":"1px 6px 1px 8px","backgroundColor":"@Transparent", "imageSize":"30px", "iconFont":"lenze-icons", "imageType":"Icon"}'
+								data-win-bind="winControl.image:stateSymbol; winControl.foregroundColor:StateInfo.ForeColor">
+							</div>
+							<div data-win-control="VisiWin.UI.Label"
+								data-win-options='{"style":"Custom.Default","textWrapping":"WrapWithLineClamp","width":"50px","fontWeight":"Bold","maxHeight":"100%","flexGrow":1.0,"labelForegroundColor":"@ForegroundColor", "margin":"8px 8px 8px 0px"}'
+								data-win-bind="winControl.text:Param1">
+							</div>
+						</div>
+						<!-- <div data-win-control="VisiWin.UI.Button"
+							data-win-options='{"style":"Custom.Default","showText":false,"showSymbol":true,"symbol":"check","width":"38px","symbolMargin":"0px 0px 0px 0px","margin":"0px 8px 0px 0px","padding":"0px 0px 0px 0px","height":"38px"}'
+							data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"buttonclick","triggeredActions":[{"type":"VisiWin.Actions.AcknowledgeAlarmAction","targetSelector":".vw-alarmlist"}]}]}'>
+						</div> -->
+					</div>
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","height":"auto","width":"100%","padding":"8px 8px 0px 8px"}'>
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"100%","height":"auto","alignItems":"Center"}'>
+							<div data-win-control="VisiWin.UI.FlexLayout"
+								data-win-options='{"style":"Custom.Default","width":"auto","height":"auto","orientation":"Horizontal","alignItems":"Center","margin":"0px 0px 0px 3.5px"}'>
+								<div data-win-control="VisiWin.UI.Image"
+									data-win-options='{"style":"Custom.Default","iconFont":"lenze-icons","image":"clock","margin":"0px 0px 0px 0px"}'>
+									<div data-win-control="VisiWin.UI.ImageState"
+										data-win-options='{"style":"Custom.Default"}'>
+									</div>
+								</div>
+								<div data-win-control="VisiWin.UI.DateTimeVarOut"
+									data-win-options='{"style":"Custom.Default","dateTimeMode":"TimeOnly","margin":"0px 8px 0px 0px"}'
+									data-win-bind="winControl.value:activationTime">
+								</div>
+							</div>
+							<!-- <div data-win-control="VisiWin.UI.Label"
+								data-win-options='{"style":"Custom.Default","text":"","textWrapping":"WrapWithLineClamp","width":"auto","showSymbol":true,"iconFont":"lenze-icons","symbol":"tree","symbolMargin":"0px 8px 0px 0px","margin":"0px 8px 0px 8px","maxWidth":"580px"}'
+								data-win-bind="winControl.text:Group.Text">
+							</div> -->
+							<div data-win-control="VisiWin.UI.Label"
+								data-win-options='{"style":"Custom.Default","text":"","textWrapping":"WrapWithLineClamp","width":"auto","margin":"0px 0px 0px 8px","maxWidth":"150px","uppercase":true}'
+								data-win-bind="winControl.text:Class.Text">
+							</div>
+							<div data-win-control="VisiWin.UI.Label"
+								data-win-options='{"style":"Custom.Default","text":"","textWrapping":"WrapWithLineClamp","width":"auto","margin":"0px 0px 0px 24px","maxWidth":"150px","uppercase":true}'
+								data-win-bind="winControl.text:stateText">
+							</div>
+						</div>
+						<div data-win-control="VisiWin.UI.Label"
+							data-win-options='{"style":"Custom.Default","text":"","textWrapping":"WrapWithLineClamp","width":"100%","margin":"0px 0px 0px 0px","height":"auto","lineClamp":2.0,"padding":"0px 0px 0px 6px","maxHeight":"42px"}'
+							data-win-bind="winControl.text:Text">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-win-control="VisiWin.UI.DialogView"
+		data-win-options='{"style":"Custom.Default","maxWidth":"1200px","minWidth":"900px","designHeight":"1200px","designWidth":"1200px"}'>
+		<div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+			<div data-win-control="VisiWin.UI.ContentDialog"
+				data-win-options='{"style":"Custom.Default","width":"95%","height":"600px","maxWidth":"1200px","minWidth":"900px"}'
+				id="FastCurrentAlarmsDialog">
+				<div data-win-control="VisiWin.UI.ContentDialogHeader"
+					data-win-options='{"style":"Custom.Default","width":"100%","margin":"0px","height":"auto","padding":"0px","minWidth":"100%","justifyContent":"Space-between"}'>
+					<div data-win-control="VisiWin.UI.Label"
+						data-win-options='{"style":"Custom.Default","text":"Log on user","localizableText":"@[ServerApplication].FAST.CurrentAlarms","fontClass":"OpenSans22","textWrapping":"Wrap","margin":"8px 8px 8px 20px"}'>
+					</div>
+					<div data-win-control="VisiWin.UI.Button"
+						data-win-options='{"style":"Custom.Icon","symbol":"close"}'
+						data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]}]}'>
+					</div>
+				</div>
+				<div data-win-control="VisiWin.UI.ContentDialogContent"
+					data-win-options='{"style":"Custom.Default","width":"95%","padding":"0px 0px 0px 0px","margin":"0px 0px 0px 0px","alignItems":"Stretch","justifyContent":"Center","alignContent":"Center","maxHeight":"800px","height":"100%","minWidth":"95%","maxWidth":"100%","overflow":"Visible"}'>
+					<!--style="overflow:scroll; height:75%;"-->
+					<div data-win-control="VisiWin.UI.FlexLayout"
+						data-win-options='{"style":"Custom.Default","width":"100%","height":"100%","padding":"0px 0px 0px 0px","backgroundColor":"@Transparent","top":"5%","bottom":"0px","right":"10px","left":"2.5%","margin":"-30px 0px 0px 0px","overflow":"Hidden","minWidth":"100%","minHeight":"80%"}'>
+						<div data-win-control="VisiWin.UI.AlarmList"
+							data-win-options='{"style":"Custom.Default","height":"85%","minWidth":"100%","minHeight":"85%","maxHeight":"85%","width":"100%","margin":"0px 0px 15px 0px","desiredClasses":"FAULT_LEM, TROUBLE_LEM, WARNING_LEM, INFO_LEM, ERROR_LEM","template":"VisiWin.UI.AlarmListItemTemplate.Custom.Default"}'>
+						</div>
+						<div data-win-control="VisiWin.UI.FlexLayout"
+							data-win-options='{"style":"Custom.Default","width":"100%","height":"10%","borderRadius":"0px 0px 0px 0px","orientation":"Horizontal","margin":"0px 0px 10px 0px","justifyContent":"Center"}'>
+							<!-- <div data-win-control="VisiWin.UI.Button"
+								data-win-options='{"style":"Custom.Default","margin":"0px 8px 0px 8px","borderRadius":"0px 4px 0px 4px"}'
+								data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetVariableAction","variableName":"__FAST.LEM.HideEventID","valueIfTrue":"%value","valueIfFalse":"%value"}]}]}'>
+							</div> -->
+							<div data-win-control="VisiWin.UI.Button"
+								data-win-options='{"style":"Custom.Outlined","localizableText":"@[ServerApplication].FAST.RequestReset","margin":"0px 8px 0px 8px","height":"100%","minHeight":"100%"}'
+								data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetBitAction","variableName":"__FAST.LEM.RequestReset"}]},{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetBitAction","variableName":"__FAST.LEM.RequestReset"}]}]}'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-win-control="VisiWin.UI.ContentDialogActionBar"
+					data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px 0px 16px","justifyContent":"Start","minWidth":"100%"}'>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

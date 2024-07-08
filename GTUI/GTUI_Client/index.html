@@ -1,0 +1,73 @@
+<!--
+easy-ui-project-startup-page - Startup page of the of the EASY UI project
+@version v1.0.4
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>EASY Web UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+    <link rel="icon" href="index/media/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="index/media/favicon.ico" type="image/x-icon" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-title" content="VisiWin">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transparent">
+
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="libs/visiwin/logos/EASY_Engineering_Tool_UI_Designer_128px_flat.png">
+
+    <meta name="msapplication-TileImage" content="libs/visiwin/logos/EASY_Engineering_Tool_UI_Designer_128px_flat.png">
+    <meta name="msapplication-TileColor" content="#004da0">
+
+    <link rel="stylesheet" href="images/iconfonts/lenze-icons/lenze-icons.css">
+    <link rel="stylesheet" href="resources/typography/systemfontstack.css">
+    <link rel="stylesheet" href="index/style.css">
+
+</head>
+
+<body>
+    <input type="text" name="fake-text" style="display:none" />
+    <input type="password" name="fake-password" style="display:none" />
+
+    <section id="splash">
+
+        <div class="index-splash-header">
+            <img class="index-splash-logo" src="./index/media/logo.svg" alt="Logo">
+        </div>
+
+        <div class="index-splash-body">
+
+            <span id="index-splash-project-name"></span>
+
+            <div id="index-splash-project-description"></div>
+
+            <div class="index-splash-card">
+
+                <img id="index-splash-gif" src="./index/media/EASY_UI_Loop_full.gif" alt="EASY UI Logo">
+
+                <div class="index-splash-card-body">
+
+                    <div id="index-splash-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="content" data-win-control="VisiWin.UI.App" data-win-options='{"viewName":"views/AppShell.html"}'></div>
+
+
+    <script src="index/index.js"></script>
+
+</body>
+
+</html>

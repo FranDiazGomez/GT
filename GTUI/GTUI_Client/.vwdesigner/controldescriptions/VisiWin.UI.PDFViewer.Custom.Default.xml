@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.PDFViewer" style="Custom.Default" name="VisiWin.UI.PDFViewer.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">Label</title>
+	<description type="text/plain">A PdfViewer control.</description>
+
+	<properties>
+		<!-- Layout -->
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+			<description type="text/plain">Gets or sets the MinWidth option.</description>
+		</property>
+		<property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+			<description type="text/plain">Gets or sets the MaxWidth option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+			<description type="text/plain">Gets or sets the MinHeight option.</description>
+		</property>
+		<property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+			<description type="text/plain">Gets or sets the MaxHeight option.</description>
+		</property>
+		<property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Padding option.</description>
+		</property>
+
+		<!-- Appearance -->
+		<property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Opacity option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Common Properties -->
+		<property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ClassNames option.</description>
+		</property>
+		<property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="false" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+		<property displayName="Data source" name="dataSource" datatype="String" category="Common Properties" isBrowsable="false" >
+			<description type="text/plain">Gets or sets the DataSource option.</description>
+		</property>
+		<property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true">
+			<description type="text/plain">Gets or sets Disabled option.</description>
+		</property>
+
+		<!-- Authorization -->
+		<property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+		</property>
+		<property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColor option.</description>
+		</property>
+		<property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderColor option.</description>
+		</property>
+		<property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+		</property>
+		<property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+		</property>
+		<property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+		</property>
+
+		<!-- PDFViewer -->
+		<property displayName="Source" name="source" datatype="String" category="PDFViewer" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Gets or sets the source filename, which will be loaded in the pdf viewer.</description>
+		</property>
+		<property displayName="Show navigation" name="navpanes" datatype="Boolean" category="PDFViewer" isBrowsable="false" refreshRequired="true">
+			<description type="text/plain">Gets or sets the ShowNavigation option.</description>
+		</property>
+		<property displayName="Show toolbar" name="toolbar" datatype="Boolean" category="PDFViewer" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Should the toolbar of the browser's built-in PDF viewer be displayed?</description>
+		</property>
+		<property displayName="Show status bar" name="statusbar" datatype="Boolean" category="PDFViewer" isBrowsable="false" refreshRequired="true">
+			<description type="text/plain">Gets or sets the ShowStatusbar option.</description>
+		</property>
+		<property displayName="Show scrollbar" name="scrollbar" datatype="Boolean" category="PDFViewer" isBrowsable="false" refreshRequired="true">
+			<description type="text/plain">Gets or sets the ShowScrollbar option.</description>
+		</property>
+		<property displayName="Zoom" name="zoom" datatype="Number" category="PDFViewer" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Gets or sets the scaling factor for the PDF control.</description>
+		</property>
+		<property displayName="Start page" name="startpage" datatype="Number" category="PDFViewer" isBrowsable="true" refreshRequired="true">
+			<description type="text/plain">Gets or sets  the number of the page to which the PDF file should jump when it is first loaded.</description>
+		</property>
+
+
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onAttached"/>
+		<event name="onDetached"/>
+		<event name="onVisibilityChanged"/>
+		<event name="onDisabledChanged"/>
+	</events>
+
+	<content>
+		<![CDATA[
+        <div data-win-control="VisiWin.UI.PDFViewer" data-win-options='{"style":"Custom.Default","width":"100%","height":"100%"}'></div>
+		]]>
+	</content>
+</control>

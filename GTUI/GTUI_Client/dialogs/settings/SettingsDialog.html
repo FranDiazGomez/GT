@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>SettingsDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","height":"auto","borderRadius":"0px 0px 0px 0px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Settings","fontClass":"OpenSans22","localizableText":"@[ServerApplication].Common.Settings","margin":"8px 8px 8px 20px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px","alignItems":"Start","height":"100%"}'>
+                    <div data-win-control="Lenze.UI.LanguageSelector"
+                        data-win-options='{"style":"Custom.Default","width":"97%","localizableLabelText":"@[ServerApplication].Languages.Language","showLabel":true,"labelFontClass":"OpenSans16","dropDownBoxBackgroundColor":"@Transparent","inputBackgroundColor":"@Transparent","menuBorderStyle":"Solid","checkedInputBorderColor":"@PrimaryColor","inputFieldMargin":"0px 8px 8px 8px","inputBorderRadius":"0px 0px 0px 0px","labelMargin":"0px 0px 4px 0px","leadingSymbolMargin":"0px 2px 0px 8px","menuBorderWidth":"1px 1px 1px 1px","margin":"0px 0px 0px 0px","labelFontSize":"16px","inputFontClass":"OpenSans16"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.DropDownBox"
+                        data-win-options='{"style":"Custom.Default","localizableInputText":"@[ServerApplication].Theming.Theming","symbol":"color_lens","showSymbol":false,"showLeadingSymbol":true,"leadingSymbolSize":"28px","leadingSymbol":"color_lens","leadingSymbolMargin":"0px 0px 0px 8px","backgroundColor":"@Transparent","padding":"0px","margin":"18px 8px 0px 0px","height":"auto","inputBackgroundColor":"@Transparent","inputBorderColor":"@BorderColor","inputBorderWidth":"1px 1px 1px 1px","width":"97%","inputHeight":"40px","showLabel":true,"labelFontClass":"Roboto16","labelFontSize":"16px","labelText":"Thema","labelUppercase":false,"localizableLabelText":"@[ServerApplication].Theming.Theming","menuBorderWidth":"0px 0px 0px 0px","menuBorderColor":"@Black"}'
+                        data-win-actions='{"name":"Theme","triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"selectedIndexChanged","initialProperty":"value","sourcePropertyValueName":"value","triggeredActions":[{"type":"VisiWin.Actions.SetThemeAction"}]}]}'>
+                        <div data-win-control="VisiWin.UI.DropDownBoxItem"
+                            data-win-options='{"style":"Custom.Default","value":"customlighttheme","localizableText":"@[ServerApplication].Theming.LightTheme","borderColor":"@BorderColor","borderWidth":"1px 1px 0px","borderStyle":"Solid","textMargin":"4px 8px 4px 8px","height":"40px"}'>
+                        </div>
+                        <div data-win-control="VisiWin.UI.DropDownBoxItem"
+                            data-win-options='{"style":"Custom.Default","value":"customdarktheme","localizableText":"@[ServerApplication].Theming.DarkTheme","borderColor":"@BorderColor","borderWidth":"0px 1px 1px 1px","borderStyle":"Solid","textMargin":"4px 8px 4px 8px","height":"40px"}'>
+                        </div>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"auto","padding":"16px 24px","orientation":"Vertical","height":"auto","justifyContent":"Center"}'>
+                    <div data-win-control="VisiWin.UI.FlexLayout"
+                        data-win-options='{"style":"Custom.Default","width":"272px","height":"100%","alignItems":"Start","orientation":"Horizontal","justifyContent":"Start"}'>
+                        <div data-win-control="VisiWin.UI.Button"
+                            data-win-options='{"style":"Custom.Default","height":"48px","width":"97%","localizableText":"@[ServerApplication].Common.Ok","margin":"0px"}'
+                            data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]}]}'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

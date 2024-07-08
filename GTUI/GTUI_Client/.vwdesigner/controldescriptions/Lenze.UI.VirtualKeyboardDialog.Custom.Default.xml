@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.VirtualKeyboardDialog" style="Custom.Default" name="Lenze.UI.VirtualKeyboardDialog.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">VirtualKeyboardDialog</title>
+  <description type="text/plain">A virtual keyboard, only one of this control can exist.</description>
+  <properties>
+
+    <!-- Common properties -->
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	  </property>
+
+      <!-- Appearance -->
+	<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+    <!-- Options -->
+    <property displayName="Open with empty value" name="openWithEmptyValue" datatype="Boolean" category="Options" isBrowsable="true">
+      <description type="text/plain">Gets or sets the OpenWithEmptyValue option.</description>
+    </property>
+    
+    <!-- References -->
+    <property displayName="Label name" name="headerLabelName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the HeaderLabelName option.</description>
+    </property>
+    
+    <property displayName="VarIn name" name="varInName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the VarInName option.</description>
+    </property>
+    <property displayName="VarOut name" name="varOutName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the VarOutName option.</description>
+    </property>
+    
+    <property displayName="Min limit label name" name="minLimitLabelName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinLimitLabelName option.</description>
+    </property>
+    <property displayName="Min limit layout name" name="minLimitLayoutName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MinLimitLayoutName option.</description>
+    </property>
+    
+    <property displayName="Max limit label name" name="maxLimitLabelName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MaxLimitLabelName option.</description>
+    </property>
+    <property displayName="Max limit layout name" name="maxLimitLayoutName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the MaxLimitLayoutName option.</description>
+    </property>
+    
+    <property displayName="Keyboard name" name="keyboardName" datatype="String" category="References" isBrowsable="true">
+      <description type="text/plain">Gets or sets the KeyboardName option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.VirtualKeyboardDialog" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

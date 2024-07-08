@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.Checkbox" style="Custom.Default" name="VisiWin.UI.Checkbox.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">CheckBox</title>
+  <description type="text/plain">CheckBox</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+
+    <!-- Variable -->
+    <property displayName="Variable name" name="variableName" datatype="String" category="Variable" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor"
+    editorParameter="ItemDataTypeFilter:Integer:ItemAccessRightsFilter:Write,ReadWrite,ReadOnce">
+      <description type="text/plain">Gets or sets the VariableName option.</description>
+    </property>
+    <property displayName="Bit number" name="bitNumber" datatype="Number" category="Variable" isBrowsable="true" isInteger="true">
+      <description type="text/plain">Gets or sets the BitNumber option.</description>
+    </property>
+	<property displayName="Can recipe edit" name="canRecipeEdit" datatype="Boolean" category="Variable" isBrowsable="false">
+		<description type="text/plain">Determines whether the variable value can be edited using this control in the recipe buffer.</description>
+	</property>
+
+ <!-- Common Properties -->
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property>
+       <property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="true" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Disabled option.</description>
+    </property>
+    <property displayName="Hover (design time)" name="hover" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+      <description type="text/plain">Gets or sets Hover option.</description>
+    </property>
+    <property displayName="Pressed (design time)" name="pressed" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+      <description type="text/plain">Gets or sets Pressed option.</description>
+    </property>
+    <property displayName="Checked" name="checked" datatype="Boolean" category="Control States" isBrowsable="true" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Checked option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+	  <description type="text/plain">Gets or sets the DataContext option.</description>
+	 </property>
+
+
+    <!-- Checkmark -->
+    <property displayName="Checkmark border width" name="checkmarkBorderWidth" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkBorderWidth option.</description>
+    </property>
+    <property displayName="Checkmark border style" name="checkmarkBorderStyle" datatype="VisiWin.UI.Border.Style" category="Checkmark" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CheckmarkBorderStyle option.</description>
+    </property>
+    <property displayName="Checkmark border radius" name="checkmarkBorderRadius" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkBorderRadius option.</description>
+    </property>
+    <property displayName="Checkmark width" name="checkmarkWidth" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the CheckmarkWidth option.</description>
+    </property>
+    <property displayName="Checkmark height" name="checkmarkHeight" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the CheckmarkHeight option.</description>
+    </property>
+    <property displayName="Checkmark margin" name="checkmarkMargin" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkMargin option.</description>
+    </property>
+    <property displayName="Checkmark padding" name="checkmarkPadding" datatype="String" category="Checkmark" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkPadding option.</description>
+    </property>
+    <property displayName="Checkmark icon font" name="checkmarkIconFont" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.IconFontPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkIconFont option.</description>
+    </property>
+    <property displayName="Checkmark symbol" name="checkmarkSymbol" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkSymbol option.</description>
+    </property>
+    <property displayName="Checkmark symbol on" name="checkmarkSymbolOn" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkSymbolOn option.</description>
+    </property>
+    <property displayName="Checkmark symbol off" name="checkmarkSymbolOff" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.SymbolPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkSymbolOff option.</description>
+    </property>
+    <property displayName="Checkmark symbol type" name="checkmarkSymbolType" datatype="VisiWin.UI.Symbol.Type" category="Checkmark" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CheckmarkSymbolType option.</description>
+    </property>
+    <property displayName="Checkmark symbol size" name="checkmarkSymbolSize" datatype="String" category="Checkmark" isBrowsable="false">
+      <description type="text/plain">Gets or sets the CheckmarkSymbolSize option.</description>
+    </property>
+    <property displayName="Checkmark symbol margin" name="checkmarkSymbolMargin" datatype="String" category="Checkmark" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkSymbolMargin option.</description>
+    </property>
+
+    <!-- Label -->
+    <property displayName="Show label" name="showLabel" datatype="Boolean" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowLabel option.</description>
+    </property>
+    <property displayName="Label width" name="labelWidth" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the LabelWidth option.</description>
+    </property>
+    <property displayName="Label height" name="labelHeight" datatype="String" category="Label" isBrowsable="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the LabelHeight option.</description>
+    </property>
+    <property displayName="Label margin" name="labelMargin" datatype="String" category="Label" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LabelMargin option.</description>
+    </property>
+    <property displayName="Label padding" name="labelPadding" datatype="String" category="Label" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the LabelPadding option.</description>
+    </property>
+    <property displayName="Use variable text" name="useVariableText" datatype="Boolean" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the UseVariableText option.</description>
+    </property>
+    <property displayName="Label text" name="labelText" datatype="String" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LabelText option.</description>
+    </property>
+    <property displayName="Localizable label text" name="localizableLabelText" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableLabelText option.</description>
+    </property>
+    <property displayName="Label text on" name="labelTextOn" datatype="String" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelTextOn option.</description>
+    </property>
+    <property displayName="Localizable label text on" name="localizableLabelTextOn" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableLabelTextOn option.</description>
+    </property>
+    <property displayName="Label text off" name="labelTextOff" datatype="String" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelTextOff option.</description>
+    </property>
+    <property displayName="Localizable label text off" name="localizableLabelTextOff" datatype="String" category="Label" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableLabelTextOff option.</description>
+    </property>
+    <property displayName="Label text alignment" name="labelTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LabelTextAlignment option.</description>
+    </property>
+    <property displayName="Label line clamp" name="labelLineClamp" datatype="Number" category="Label" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Label text wrapping" name="labelTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelTextWrapping option.</description>
+    </property>
+    <property displayName="Label text trimming" name="labelTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelTextTrimming option.</description>
+    </property>
+    <property displayName="Label font class" name="labelFontClass" datatype="Lenze.UI.Text.FontClass" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LabelFontClass option.</description>
+    </property>
+    <property displayName="Label font size" name="labelFontSize" datatype="String" category="Label" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LabelFontSize option.</description>
+    </property>
+    <property displayName="Label font weight" name="labelFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Label" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LabelFontWeight option.</description>
+    </property>
+    <property displayName="Label line height" name="labelLineHeight" datatype="String" category="Label" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the LabelLineHeight option.</description>
+    </property>
+    <property displayName="Label text contrast" name="labelTextContrast" datatype="Number" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelTextContrast option.</description>
+    </property>
+    <property displayName="Label uppercase" name="labelUppercase" datatype="Boolean" category="Label" isBrowsable="false">
+      <description type="text/plain">Gets or sets the LabelUppercase option.</description>
+    </property>
+    <property displayName="Label position" name="labelPosition" datatype="VisiWin.UI.Positions.Position2" category="Label" isBrowsable="true">
+      <description type="text/plain">Gets or sets the LabelPosition option.</description>
+    </property>
+
+    <!-- Authorization -->
+    <property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+    </property>
+    <property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+    </property>
+    <property displayName="Authorized (design time)" name="authorized" datatype="Boolean" category="Control States" isBrowsable="false" shouldSerialize="false">
+      <description type="text/plain">Gets or sets the Authorized option.</description>
+    </property>
+
+    <!-- TouchRipple -->
+    <property displayName="Touch ripple enabled" name="touchRippleEnabled" datatype="Boolean" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TouchRippleEnabled option.</description>
+    </property>
+    <property displayName="Ripple radius" name="rippleRadius" datatype="Number" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleRadius option.</description>
+    </property>
+    <property displayName="Ripple speed amount" name="rippleSpeedAmount" datatype="Number" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleSpeedAmount option.</description>
+    </property>
+    <property displayName="Ripple centered" name="rippleCentered" datatype="Boolean" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleCentered option.</description>
+    </property>
+    <property displayName="Ripple unbounded" name="rippleUnbounded" datatype="Boolean" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleUnbounded option.</description>
+    </property>
+    <property displayName="Ripple persistent" name="ripplePersistent" datatype="Boolean" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RipplePersistent option.</description>
+    </property>
+    <property displayName="Ripple fade in duration" name="rippleFadeInDuration" datatype="Number" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleFadeInDuration option.</description>
+    </property>
+    <property displayName="Ripple fade out duration" name="rippleFadeOutDuration" datatype="Number" category="TouchRipple" isBrowsable="false">
+      <description type="text/plain">Gets or sets the RippleFadeOutDuration option.</description>
+    </property>
+    <property displayName="Ripple color" name="rippleColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the RippleColor option.</description>
+    </property>
+
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Hover background color" name="hoverBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverBackgroundColor option.</description>
+    </property>
+    <property displayName="Pressed background color" name="pressedBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked background color" name="checkedBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked hover background color" name="checkedHoverBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedHoverBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked pressed background color" name="checkedPressedBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedPressedBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+
+    <property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ForegroundColor option.</description>
+    </property>
+    <property displayName="Pressed foreground color" name="pressedForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedForegroundColor option.</description>
+    </property>
+    <property displayName="Checked foreground color" name="checkedForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedForegroundColor option.</description>
+    </property>
+    <property displayName="Checked pressed foreground color" name="checkedPressedForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedPressedForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+    </property>
+
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Hover border color" name="hoverBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverBorderColor option.</description>
+    </property>
+    <property displayName="Checked border color" name="checkedBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedBorderColor option.</description>
+    </property>
+    <property displayName="Checked hover border color" name="checkedHoverBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedHoverBorderColor option.</description>
+    </property>
+    <property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+    </property>
+
+    <property displayName="Checkmark foreground color" name="checkmarkForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Hover checkmark foreground color" name="hoverCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Pressed checkmark foreground color" name="pressedCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Checked checkmark foreground color" name="checkedCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Checked hover checkmark foreground color" name="checkedHoverCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedHoverCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Checked pressed checkmark foreground color" name="checkedPressedCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedPressedCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled checkmark foreground color" name="disabledCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckmarkForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled checked checkmark foreground color" name="disabledCheckedCheckmarkForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckedCheckmarkForegroundColor option.</description>
+    </property>
+
+    <property displayName="Checkmark background color" name="checkmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Hover checkmark background color" name="hoverCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Pressed checkmark background color" name="pressedCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked checkmark background color" name="checkedCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked hover checkmark background color" name="checkedHoverCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedHoverCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Checked pressed checkmark background color" name="checkedPressedCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedPressedCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled checkmark background color" name="disabledCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckmarkBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled checked checkmark background color" name="disabledCheckedCheckmarkBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckedCheckmarkBackgroundColor option.</description>
+    </property>
+
+    <property displayName="Checkmark border color" name="checkmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Hover checkmark border color" name="hoverCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the HoverCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Pressed checkmark border color" name="pressedCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the PressedCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Checked checkmark border color" name="checkedCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Checked hover checkmark border color" name="checkedHoverCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedHoverCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Checked pressed checkmark border color" name="checkedPressedCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the CheckedPressedCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Disabled checkmark border color" name="disabledCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckmarkBorderColor option.</description>
+    </property>
+    <property displayName="Disabled checked checkmark border color" name="disabledCheckedCheckmarkBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledCheckedCheckmarkBorderColor option.</description>
+    </property>
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onCheckedChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onButtonClick" isDefault="true"/>
+    <event name="onButtonClickTrue"/>
+    <event name="onButtonClickFalse"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="VisiWin.UI.Checkbox" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

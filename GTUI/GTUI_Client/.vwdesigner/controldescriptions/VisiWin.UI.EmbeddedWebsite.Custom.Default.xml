@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="1.0" spec="1.0" runtimeType="VisiWin.UI.EmbeddedWebsite" style="Custom.Default" name="VisiWin.UI.EmbeddedWebsite.Custom.Default">
+	<author name="Custom" />
+	<title type="text/plain">Label</title>
+	<description type="text/plain">An EmbeddedWebsite control.</description>
+
+	<properties>
+		<!-- Layout -->
+		<property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+			<description type="text/plain">Gets or sets the Width option.</description>
+		</property>
+		<property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+			<description type="text/plain">Gets or sets the MinWidth option.</description>
+		</property>
+		<property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+			<description type="text/plain">Gets or sets the MaxWidth option.</description>
+		</property>
+		<property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+			<description type="text/plain">Gets or sets the Height option.</description>
+		</property>
+		<property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+			<description type="text/plain">Gets or sets the MinHeight option.</description>
+		</property>
+		<property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+			<description type="text/plain">Gets or sets the MaxHeight option.</description>
+		</property>
+		<property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the Padding option.</description>
+		</property>
+
+		<!-- Appearance -->
+		<property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+			<description type="text/plain">Gets or sets the Opacity option.</description>
+		</property>
+		<property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+			<description type="text/plain">Gets or sets the Visibility option.</description>
+		</property>
+		<property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+			<description type="text/plain">Gets or sets the Shadow option.</description>
+		</property>
+		<property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+			<description type="text/plain">Gets or sets the Background option.</description>
+		</property>
+		<property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderWidth option.</description>
+		</property>
+		<property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+			<description type="text/plain">Gets or sets the BorderStyle option.</description>
+		</property>
+		<property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderRadius option.</description>
+		</property>
+		<property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+			<description type="text/plain">Gets or sets the Style option.</description>
+		</property>
+
+		<!-- Common Properties -->
+		<property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+			<description type="text/plain">Gets or sets the ClassNames option.</description>
+		</property>
+		<property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="false" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+		<property displayName="Data source" name="dataSource" datatype="String" category="Common Properties" isBrowsable="false">
+			<description type="text/plain">Gets or sets the DataSource option.</description>
+		</property>
+		<property displayName="Disabled" name="disabled" datatype="Boolean" category="Control States" isBrowsable="false">
+			<description type="text/plain">Gets or sets Disabled option.</description>
+		</property>
+
+		<!-- Authorization -->
+		<property displayName="Authorization mode" name="authorizationMode" datatype="VisiWin.UI.Authorization.Mode" category="Authorization" isBrowsable="true">
+			<description type="text/plain">Gets or sets the AuthorizationMode option.</description>
+		</property>
+		<property displayName="Authorization right" name="authorizationRight" datatype="String" category="Authorization" isBrowsable="true" editor="HTML5Design.DesignInformation.RightDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the AuthorizationRight option.</description>
+		</property>
+
+		<!-- Colors -->
+		<property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BackgroundColor option.</description>
+		</property>
+		<property displayName="Foreground color" name="foregroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the ForegroundColor option.</description>
+		</property>
+		<property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the BorderColor option.</description>
+		</property>
+		<property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+		</property>
+		<property displayName="Disabled foreground color" name="disabledForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledForegroundColor option.</description>
+		</property>
+		<property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+			<description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+		</property>
+
+		<!-- EmbeddedWebsite -->
+		<property displayName="Referrer policy" name="referrerPolicy" datatype="VisiWin.UI.EmbeddedWebsite.ReferrerPolicy" category="EmbeddedWebsite" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Specifies which referrer information to send when fetching the iframe.</description>
+		</property>		
+		<property displayName="Allow fullscreen" name="allowfullscreen" datatype="Boolean" category="EmbeddedWebsite" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Set to true if the iframe can activate fullscreen mode by calling the requestFullscreen() method</description>
+		</property>
+		<property displayName="Allow payment request" name="allowpaymentrequest" datatype="Boolean" category="EmbeddedWebsite" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Set to true if a cross - origin iframe should be allowed to invoke the Payment Request API</description>
+		</property>
+		<property displayName="Loading" name="loading" datatype="VisiWin.UI.EmbeddedWebsite.Loading" category="EmbeddedWebsite" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met</description>
+		</property>
+		<property displayName="Name" name="name" datatype="String" category="EmbeddedWebsite" isBrowsable="false" isAdvanced="true">
+			<description type="text/plain">Gets or sets the Name option.</description>
+		</property>
+		<property displayName="Allow" name="allow" datatype="String" category="EmbeddedWebsite" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Specifies a feature policy for the iframe.</description>
+		</property>
+
+		<!-- Source-->
+		<property displayName="Source" name="src" datatype="String" category="EmbeddedWebsite" isBrowsable="true" >
+			<description type="text/plain">Specifies the address of the document to embed in the iframe.</description>
+		</property>
+		<property displayName="Source Doc" name="srcdoc" datatype="String" category="EmbeddedWebsite" isBrowsable="false" >
+			<description type="text/plain">Specifies the HTML content of the page to show in the iframe.</description>
+		</property>
+		<property displayName="Runtime only" name="runtimeOnly" datatype="Boolean" category="EmbeddedWebsite" isBrowsable="true" >
+			<description type="text/plain">Allows the website to load only at runtime.</description>
+		</property>
+
+		<!-- Variable-->
+		<property displayName="Variable name" name="variableName" datatype="String" category="EmbeddedWebsite" isBrowsable="true" editor="HTML5Design.DesignInformation.VariableNameDialogPropertyEditor" 
+		editorParameter="ItemDataTypeFilter:VT_Bstr:ItemAccessRightsFilter:Read,ReadWrite,ReadOnce">
+			<description type="text/plain">Binds the variable, which sets the Src property of the iframe.</description>
+		</property>
+
+		<!-- EmbeddedWebSite Sandbox -->
+		<property displayName="Use sandbox" name="useSandbox" datatype="Boolean" category="Sandbox" isBrowsable="true" >
+			<description type="text/plain">Enables an extra set of restrictions for the content in the iframe.</description>
+		</property>
+
+		<property displayName="Allow forms" name="allowForms" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows form submission.</description>
+		</property>
+		<property displayName="Allow modals" name="allowModals" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows to open modal windows.</description>
+		</property>
+		<property displayName="Allow orientation lock" name="allowOrientationLock" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows to lock the screen orientation.</description>
+		</property>
+		<property displayName="Allow pointer lock" name="allowPointerLock" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows to use the Pointer Lock API.</description>
+		</property>
+		<property displayName="Allow popups" name="allowPopups" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows popups.</description>
+		</property>
+		<property displayName="Allow popups to escape sandbox" name="allowPopupsToEscapeSandbox" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows popups to open new windows without inheriting the sandboxing.</description>
+		</property>
+		<property displayName="Allow presentation" name="allowPresentation" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows to start a presentation session.</description>
+		</property>
+		<property displayName="Allow same origin" name="allowSameOrigin" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows the iframe content to be treated as being from the same origin.</description>
+		</property>
+		<property displayName="Allow scripts" name="allowScripts" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows to run scripts.</description>
+		</property>
+		<property displayName="Allow top navigation" name="allowTopNavigation" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows the iframe content to navigate its top-level browsing context.</description>
+		</property>
+		<property displayName="Allow top navigation by user activation" name="allowTopNavigationByUserActivation" datatype="Boolean" category="Sandbox" isBrowsable="true" isAdvanced="true">
+			<description type="text/plain">Allows the iframe content to navigate its top-level browsing context, but only if initiated by user.</description>
+		</property>
+
+
+
+	</properties>
+
+	<!-- Events -->
+	<events>
+		<event name="onInitialized"/>
+		<event name="onAttached"/>
+		<event name="onDetached"/>
+		<event name="onVisibilityChanged"/>
+		<event name="onDisabledChanged"/>
+	</events>
+
+	<content>
+		<![CDATA[
+        <div data-win-control="VisiWin.UI.EmbeddedWebsite" data-win-options='{"style":"Custom.Default","width":"auto","height":"auto"}'></div>
+		]]>
+	</content>
+
+</control>

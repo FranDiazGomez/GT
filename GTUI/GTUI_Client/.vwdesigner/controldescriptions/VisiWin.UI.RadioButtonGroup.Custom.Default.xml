@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="VisiWin.UI.RadioButtonGroup" style="Custom.Default" name="VisiWin.UI.RadioButtonGroup.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">RadioButtonGroup</title>
+  <description type="text/plain">RadioButtonGroup</description>
+  <properties>
+    <!-- Layout -->
+    <property displayName="Width" name="width" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the Width option.</description>
+    </property>
+    <property displayName="Min width" name="minWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinWidthUnits">
+      <description type="text/plain">Gets or sets the MinWidth option.</description>
+    </property>
+    <property displayName="Max width" name="maxWidth" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxWidthUnits">
+      <description type="text/plain">Gets or sets the MaxWidth option.</description>
+    </property>
+    <property displayName="Height" name="height" datatype="String" category="Layout" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the Height option.</description>
+    </property>
+    <property displayName="Min height" name="minHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MinHeightUnits">
+      <description type="text/plain">Gets or sets the MinHeight option.</description>
+    </property>
+    <property displayName="Max height" name="maxHeight" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="MaxHeightUnits">
+      <description type="text/plain">Gets or sets the MaxHeight option.</description>
+    </property>
+    <property displayName="Padding" name="padding" datatype="String" category="Layout" isBrowsable="false" isAdvanced="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the Padding option.</description>
+    </property>
+    <property displayName="Selected index" name="selectedIndex" datatype="Number" category="Layout" isBrowsable="true" isInteger="true" refreshRequired="true">
+      <description type="text/plain">Gets or sets the SelectedIndex option.</description>
+    </property>
+
+     <!-- Alignment -->
+    <property displayName="Align items" name="alignItems" datatype="VisiWin.UI.FlexLayout.AlignItems" category="Alignment" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AlignItems option.</description>
+    </property>
+    <property displayName="Justify content" name="justifyContent" datatype="VisiWin.UI.FlexLayout.JustifyContent" category="Alignment" isBrowsable="true">
+      <description type="text/plain">Gets or sets the JustifyContent option.</description>
+    </property>
+    <property displayName="Align content" name="alignContent" datatype="VisiWin.UI.FlexLayout.AlignContent" category="Alignment" isBrowsable="true">
+      <description type="text/plain">Gets or sets the AlignContent option.</description>
+    </property>
+    <property displayName="Wrap" name="wrap" datatype="Boolean" category="Alignment" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Wrap option.</description>
+    </property>
+    <property displayName="Orientation" name="orientation" datatype="VisiWin.UI.FlexLayout.Orientation" category="Alignment" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Orientation option.</description>
+    </property>
+
+    <!-- Appearance -->
+    <property displayName="Border width" name="borderWidth" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderWidth option.</description>
+    </property>
+    <property displayName="Border style" name="borderStyle" datatype="VisiWin.UI.Border.Style" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the BorderStyle option.</description>
+    </property>
+    <property displayName="Border radius" name="borderRadius" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderRadius option.</description>
+    </property>
+    <property displayName="Opacity" name="opacity" datatype="Number" category="Appearance" isBrowsable="false">
+      <description type="text/plain">Gets or sets the Opacity option.</description>
+    </property>
+    <property displayName="Visibility" name="visibility" datatype="VisiWin.UI.Visibility" category="Appearance" isBrowsable="true">
+      <description type="text/plain">Gets or sets the Visibility option.</description>
+    </property>
+    <property displayName="Shadow" name="shadow" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ShadowPropertyEditor">
+      <description type="text/plain">Gets or sets the Shadow option.</description>
+    </property>
+    <property displayName="Background" name="background" datatype="String" category="Appearance" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor" editorParameter="background">
+      <description type="text/plain">Gets or sets the Background option.</description>
+    </property>
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+
+    
+    <!-- Common Properties -->
+    <property displayName="Class names" name="classNames" datatype="String" category="Common Properties" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ClassNames option.</description>
+    </property>
+   <property displayName="Disabled" name="disabled" datatype="Boolean"  category="Common Properties" isBrowsable="false" shouldSerialize="true">
+      <description type="text/plain">Gets or sets Disabled option.</description>
+    </property>
+    <property displayName="Data context" name="dataContext" datatype="String" category="Common Properties" isBrowsable="true" editor="HTML5Design.DesignInformation.ObservableDialogPropertyEditor">
+			<description type="text/plain">Gets or sets the DataContext option.</description>
+		</property>
+
+    <!-- Title -->
+    <property displayName="Show title" name="showTitle" datatype="Boolean" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowTitle option.</description>
+    </property>
+    <property displayName="Title width" name="titleWidth" datatype="String" category="Title" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the TitleWidth option.</description>
+    </property>
+    <property displayName="Title height" name="titleHeight" datatype="String" category="Title" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the TitleHeight option.</description>
+    </property>
+    <property displayName="Title margin" name="titleMargin" datatype="String" category="Title" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the TitleMargin option.</description>
+    </property>
+    <property displayName="Title padding" name="titlePadding" datatype="String" category="Title" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the TitlePadding option.</description>
+    </property>
+    <property displayName="Title text" name="titleText" datatype="String" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleText option.</description>
+    </property>
+    <property displayName="Localizable title text" name="localizableTitleText" datatype="String" category="Title" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableTitleText option.</description>
+    </property>
+    <property displayName="Title text alignment" name="titleTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleTextAlignment option.</description>
+    </property>
+    <property displayName="Title line clamp" name="titleLineClamp" datatype="Number" category="Title" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Title text wrapping" name="titleTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextWrapping option.</description>
+    </property>
+    <property displayName="Title text trimming" name="titleTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextTrimming option.</description>
+    </property>
+    <property displayName="Title font class" name="titleFontClass" datatype="Lenze.UI.Text.FontClass" category="Title" isBrowsable="true">
+      <description type="text/plain">Gets or sets the TitleFontClass option.</description>
+    </property>
+    <property displayName="Title font size" name="titleFontSize" datatype="String" category="Title" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontSize option.</description>
+    </property>
+    <property displayName="Title font weight" name="titleFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Title" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleFontWeight option.</description>
+    </property>
+    <property displayName="Title line height" name="titleLineHeight" datatype="String" category="Title" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the TitleLineHeight option.</description>
+    </property>
+    <property displayName="Title text contrast" name="titleTextContrast" datatype="Number" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleTextContrast option.</description>
+    </property>
+    <property displayName="Title uppercase" name="titleUppercase" datatype="Boolean" category="Title" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TitleUppercase option.</description>
+    </property>
+
+    <!-- Subtitle -->
+    <property displayName="Show subtitle" name="showSubtitle" datatype="Boolean" category="Subtitle" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ShowSubtitle option.</description>
+    </property>
+    <property displayName="Subtitle width" name="subtitleWidth" datatype="String" category="Subtitle" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the SubtitleWidth option.</description>
+    </property>
+    <property displayName="Subtitle height" name="subtitleHeight" datatype="String" category="Subtitle" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the SubtitleHeight option.</description>
+    </property>
+    <property displayName="Subtitle margin " name="subtitleMargin" datatype="String" category="Subtitle" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the SubtitleMargin option.</description>
+    </property>
+    <property displayName="Subtitle padding " name="subtitlePadding" datatype="String" category="Subtitle" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the SubtitlePadding option.</description>
+    </property>
+    <property displayName="Subtitle text " name="subtitleText" datatype="String" category="Subtitle" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SubtitleText option.</description>
+    </property>
+    <property displayName="Localizable subtitle text" name="localizableSubtitleText" datatype="String" category="Subtitle" isBrowsable="true" editor="HTML5Design.DesignInformation.TextDialogPropertyEditor">
+      <description type="text/plain">Gets or sets the LocalizableSubtitleText option.</description>
+    </property>
+    <property displayName="Subtitle text alignment" name="subtitleTextAlignment" datatype="VisiWin.UI.Text.Alignment" category="Subtitle" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SubtitleTextAlignment option.</description>
+    </property>
+    <property displayName="Subtitle line clamp" name="subtitleLineClamp" datatype="Number" category="Subtitle" isBrowsable="false" isInteger="true">
+      <description type="text/plain">Defines the number of visible lines.</description>
+    </property>
+    <property displayName="Subtitle text wrapping" name="subtitleTextWrapping" datatype="VisiWin.UI.Text.Wrapping" category="Subtitle" isBrowsable="false">
+      <description type="text/plain">Gets or sets the SubtitleTextWrapping option.</description>
+    </property>
+    <property displayName="Subtitle text trimming" name="subtitleTextTrimming" datatype="VisiWin.UI.Text.Trimming" category="Subtitle" isBrowsable="false">
+      <description type="text/plain">Gets or sets the SubtitleTextTrimming option.</description>
+    </property>
+    <property displayName="Subtitle font class" name="subtitleFontClass" datatype="Lenze.UI.Text.FontClass" category="Subtitle" isBrowsable="true">
+      <description type="text/plain">Gets or sets the SubtitleFontClass option.</description>
+    </property>
+    <property displayName="Subtitle font size" name="subtitleFontSize" datatype="String" category="Subtitle" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the SubtitleFontSize option.</description>
+    </property>
+    <property displayName="Subtitle font weight" name="subtitleFontWeight" datatype="VisiWin.UI.Text.FontWeight" category="Subtitle" isBrowsable="true" isAdvanced="false">
+      <description type="text/plain">Gets or sets the SubtitleFontWeight option.</description>
+    </property>
+    <property displayName="Subtitle line height" name="subtitleLineHeight" datatype="String" category="Subtitle" isBrowsable="false" isAdvanced="false">
+      <description type="text/plain">Gets or sets the SubtitleLineHeight option.</description>
+    </property>
+    <property displayName="Subtitle text contrast" name="subtitleTextContrast" datatype="Number" category="Subtitle" isBrowsable="false">
+      <description type="text/plain">Gets or sets the SubtitleTextContrast option.</description>
+    </property>
+    <property displayName="Subtitle uppercase" name="subtitleUppercase" datatype="Boolean" category="Subtitle" isBrowsable="false">
+      <description type="text/plain">Gets or sets the SubtitleUppercase option.</description>
+    </property>
+    
+    <!-- Colors -->
+    <property displayName="Background color" name="backgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="borderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the BorderColor option.</description>
+    </property>
+    <property displayName="Title foreground color" name="titleForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TitleForegroundColor option.</description>
+    </property>
+    <property displayName="Subtitle foreground color" name="subtitleForegroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the SubtitleForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled background color" name="disabledBackgroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBackgroundColor option.</description>
+    </property>
+    <property displayName="Disabled border color" name="disabledBorderColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledBorderColor option.</description>
+    </property>
+    <property displayName="Disabled title foreground color" name="disabledTitleForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledTitleForegroundColor option.</description>
+    </property>
+    <property displayName="Disabled subtitle foreground color" name="disabledSubtitleForegroundColor" datatype="String" category="Colors" isBrowsable="false" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the DisabledSubtitleForegroundColor option.</description>
+    </property>
+  </properties>
+
+  <!-- Events -->
+  <events>
+  <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+
+    <event name="onSelectedIndexChanged" isDefault="true"/>
+  </events>
+
+  <content>
+    <![CDATA[
+		<div data-win-control="VisiWin.UI.RadioButtonGroup" data-win-options="{style:'Custom.Default'}">
+			<div data-win-control="VisiWin.UI.RadioButton" data-win-options="{style:'Custom.Default'}"></div>
+			<div data-win-control="VisiWin.UI.RadioButton" data-win-options="{style:'Custom.Default'}"></div>
+			<div data-win-control="VisiWin.UI.RadioButton" data-win-options="{style:'Custom.Default'}"></div>
+		</div>
+	]]>
+  </content>
+</control>

@@ -1,0 +1,81 @@
+﻿{
+  "resources": {
+    "themes": {
+      "lighttheme": {
+        "PrimaryColor": "rgb(32,156,223)",
+        "PrimaryLightColor": "rgb(77,201,241)",
+        "PrimaryDarkColor": "rgb(0,32,62)",
+        
+        "AccentColor1": "rgb(0,77,160)",
+        "AccentColor2": "rgb(217,243,252)",
+        "AccentColor3": "rgb(200,212,0)",
+
+        "Transparent": "rgba(255,255,255, 0)",
+        "Black": "rgb(0,0,0)",
+        "White": "rgb(255,255,255)",
+        "WhiteGrey": "rgb(246,246,246)",
+        "LightGrey": "rgb(217,217,217)",
+        "MediumGrey": "rgb(178,178,178)",
+        "DarkGrey": "rgb(64,64,64)",
+        "AltGrey": "#666666",
+        "AltGrey2":"rgb(217,217,217)",
+
+        "WarningColor": "rgb(244,152,0)",
+        "ErrorColor": "rgb(226,15,50)",
+        "SuccessColor": "rgb(71,175,100)",
+        "InfoColor": "rgb(32,156,223)",
+        
+        "ForegroundColor": "rgb(0,0,0)", 
+        "AltForegroundColor": "rgb(255,255,255)",
+        "DisabledForegroundColor": "rgb(140,140,140)",
+
+        "BackgroundColor": "rgb(255,255,255)",
+        "AltBackgroundColor": "rgb(246,246,246)",
+        "AppBackgroundColor": "rgb(255,255,255)",
+
+        "HoverBackgroundColor": "rgb(77,201,241)",
+        "PressedBackgroundColor": "rgb(77,201,241)",
+        "CheckedBackgroundColor": "rgb(32,156,223)",
+        "DisabledBackgroundColor": "transparent",
+
+        "BorderColor": "rgb(140,140,140)",
+        "HoverBorderColor": "rgb(77,201,241)",
+        "CheckedBorderColor": "rgb(32,156,223)",
+        "PressedBorderColor": "rgb(32,156,223)",
+        "DisabledBorderColor": "rgb(178,178,178)",
+
+
+        "None": "transparent",
+        "BaseLow": "rgb(255, 255, 255)",
+        "BaseHigh": "rgb(0, 0, 0)",
+        "ChromeLow": "rgb(250, 250, 250)",
+        "ChromeMediumLow": "#eeeeee",
+        "ChromeMedium": "rgb(225, 225, 225)",
+        "ChromeMediumHigh": "rgb(187, 187, 187)",
+        "ChromeHigh": "rgb(158, 158, 158)",
+        "LenzeDarkGrey": "#686868",
+        "LenzeCyan": "#209cdf",
+        "LenzeLightCyan": "#60c4ef",
+        "SecondaryColor": "#ffffff",
+        "SecondaryLightColor": "#bbbbbb",
+        "SecondaryDarkColor": "#bbbbbb",
+        "BarIndicatorColor": "#004da0",
+        "ScrimColor": "rgba(104, 104, 104, 0.3)",  
+        "DividerColor": "rgba(0, 0, 0, 0.12)",
+        "AltHoverBackgroundColor": "#6694C6",
+        "AltPressedBackgroundColor": "#003070",
+        "SecondaryCheckedBackgroundColor": "rgba(80, 80, 80, 0.1)",
+        "CheckedHoverBackgroundColor": "#bbbbbb",
+        "CheckedPressedBackgroundColor": "#004da0",
+        "SecondaryDisabledBackgroundColor": "#003070",
+        "DisabledCheckedBackgroundColor": "#e1e1e1",
+        "AltBorderColor": "#686868",
+        "CheckedHoverBorderColor": "rgb(31,31,31)",
+        "CheckedPressedBorderColor": "rgb(31,31,31)",
+        "DisabledCheckedBorderColor": "rgb(202, 202, 202)",
+        "RippleColor": "#003070",
+        "ButtonRippleColor": "rgba(0, 0, 0, 0.2)"
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>AddUserDialog</title>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView"
+        data-win-options='{"style":"Custom.Default","designWidth":"800px","designHeight":"800px","dataContext":"addUser"}'
+        data-win-bind="winControl.onAfterHide:reset">
+        <div data-win-control="VisiWin.UI.FlexLayout"
+            data-win-options='{"style":"Custom.Default","alignItems":"Center"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","height":"auto","minWidth":"320px","borderRadius":"0px 0px 0px 0px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","text":"Add user","localizableText":"@[ServerSystem].Dialogs.UserManagement.capAddUser","fontClass":"OpenSans22","margin":"8px 8px 8px 20px","symbolMargin":"0px 8px 0px 0px"}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 8px 0px 0px","symbol":"close","width":"50px","hoverBackgroundColor":"@HoverBackgroundColor","pressedBackgroundColor":"@PressedBackgroundColor"}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"320px","padding":"16px 24px 16px 24px","height":"auto"}'>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"70px","margin":"0px 0px 12px 0px","watermarkText":"","lostKeyboardFocusBehaviour":"WriteInput","floatingLabelText":"Name","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrName","showErrorText":true,"justifyContent":"Start","labelUppercase":false,"localizableHelperText":"@[ServerApplication].UserManagement.UsernameRules","showHelperText":true,"showFloatingLabel":true,"showLabel":false}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:name              VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserNameError"
+                        id="addusername"></div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 4px 0px","watermarkText":"","lostKeyboardFocusBehaviour":"WriteInput","floatingLabelText":"Full name","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrFullName","showErrorText":true,"justifyContent":"Start","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.lblFullName","labelMargin":"0px 0px 4px 0px","labelFontClass":"OpenSans14","labelUppercase":false,"showLabel":false,"showFloatingLabel":true,"helperTextMargin":"0px 0px 0px 0px","inputHeight":"48px"}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:fullName          VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserFullNameError">
+                    </div>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"8px 0px 4px 0px","listType":"AddUserGroups","showErrorText":true,"errorTextAlignment":"Justify","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrUserGroup","showLabel":false,"labelFontClass":"OpenSans14","height":"60px","textContainerHeight":"48px","disabled":false,"localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.hdrUserGroup","showFloatingLabel":true}'
+                        data-win-bind="winControl.selectedValue:groupName VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserGroupError">
+                    </div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"70px","margin":"16px 0px 12px 0px","watermarkText":"","inputType":"Password","lostKeyboardFocusBehaviour":"WriteInput","floatingLabelText":"Password","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblPassword","showErrorText":true,"justifyContent":"Start","localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.lblPassword","labelMargin":"0px 0px 4px 0px","labelFontClass":"OpenSans14","labelUppercase":false,"localizableHelperText":"@[ServerApplication].UserManagement.PasswordRules","showHelperText":true,"showLabel":false,"showFloatingLabel":true}'
+                        data-win-bind="winControl.value:newPassword       VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isNewPasswordError"
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.TextVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"100%","minHeight":"60px","margin":"0px 0px 4px 0px","watermarkText":"","inputType":"Password","lostKeyboardFocusBehaviour":"WriteInput","floatingLabelText":"Repeat password","localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblRepeatPassword","showErrorText":true,"justifyContent":"Start","labelContainerWidth":"80%","labelFontClass":"OpenSans14","labelUppercase":false,"showFloatingLabel":true,"showLabel":false}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'
+                        data-win-bind="winControl.value:repeatPassword    VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isRepeatPasswordError">
+                    </div>
+                    <div data-win-control="VisiWin.UI.Select"
+                        data-win-options='{"style":"Custom.Default","width":"100%","margin":"8px 0px 8px 0px","listType":"AddUserStates","showErrorText":true,"errorTextAlignment":"Justify","justifyContent":"Start","showLabel":false,"localizableLabelText":"@[ServerSystem].Dialogs.UserManagement.lblState","labelFontClass":"OpenSans14","containerHeight":"100px","textContainerHeight":"48px","showFloatingLabel":true,"localizableFloatingLabelText":"@[ServerSystem].Dialogs.UserManagement.lblState"}'
+                        data-win-bind="winControl.selectedValue:userState VisiWin.Binding.Mode.twoWay; winControl.errorText: errorText; winControl.errorMode: isUserStateError">
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","width":"100%","padding":"16px 24px"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Outlined","minWidth":"100px","margin":"0px 12px 8px 0px","fontClass":"OpenSans16","width":"45%","localizableText":"@[ServerApplication].Common.Cancel"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","minWidth":"100px","margin":"0px 0px 8px 0px","text":"Ok","fontClass":"OpenSans16","borderWidth":"1px","width":"50%","localizableText":"@[ServerApplication].Common.Ok","borderStyle":"solid","borderColor":"@Transparent"}'
+                        data-win-bind="winControl.disabled:canExecute Converters.booleanInverter"
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.AddUserAction"}]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

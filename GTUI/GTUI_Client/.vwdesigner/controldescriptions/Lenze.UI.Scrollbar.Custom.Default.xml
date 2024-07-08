@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<control version="7.3" spec="1.0" runtimeType="Lenze.UI.Scrollbar" style="Custom.Default" name="Lenze.UI.Scrollbar.Custom.Default">
+  <author name="Custom" />
+  <title type="text/plain">Scrollbar</title>
+  <description type="text/plain">Control for styling the scrollbar.</description>
+  <properties>
+    
+    <!-- Appearance -->
+    <property displayName="Style" name="style" datatype="String" category="Appearance" isBrowsable="true" editor="HTML5Design.DesignInformation.StylePropertyEditor" refreshRequired="true">
+      <description type="text/plain">Gets or sets the Style option.</description>
+    </property>
+    
+
+    <!-- Scrollbar -->
+    <property displayName="Scrollbar enabled" name="scrollbarEnabled" datatype="Boolean" category="Scrollbar" isBrowsable="true">
+      <description type="text/plain">Gets or sets the ScrollbarEnabled option.</description>
+    </property>
+    <property displayName="Height" name="scrollbarHeight" datatype="String" category="Scrollbar" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="HeightUnits">
+      <description type="text/plain">Gets or sets the ScrollbarHeight option.</description>
+    </property>
+    <property displayName="Width" name="scrollbarWidth" datatype="String" category="Scrollbar" isBrowsable="true" editor="HTML5Design.DesignInformation.SizePropertyEditor" editorParameter="WidthUnits">
+      <description type="text/plain">Gets or sets the ScrollbarWidth option.</description>
+    </property>
+    <property displayName="Border width" name="scrollbarBorderWidth" datatype="String" category="Scrollbar" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ScrollbarBorderWidth option.</description>
+    </property>
+    <property displayName="Border radius" name="scrollbarBorderRadius" datatype="String" category="Scrollbar" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ScrollbarBorderRadius option.</description>
+    </property>
+    <property displayName="Border style" name="scrollbarBorderStyle" datatype="VisiWin.UI.Border.Style" category="Scrollbar" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ScrollbarBorderStyle option.</description>
+    </property>
+    <property displayName="Background color" name="scrollbarBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ScrollbarBackgroundColor option.</description>
+    </property>
+    <property displayName="Border color" name="scrollbarBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ScrollbarBorderColor option.</description>
+    </property>
+
+
+    <!-- Track -->
+    <property displayName="Track border width" name="trackBorderWidth" datatype="String" category="Track" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackBorderWidth option.</description>
+    </property>
+    <property displayName="Track border radius" name="trackBorderRadius" datatype="String" category="Track" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackBorderRadius option.</description>
+    </property>
+    <property displayName="Track border style" name="trackBorderStyle" datatype="VisiWin.UI.Border.Style" category="Track" isBrowsable="false">
+      <description type="text/plain">Gets or sets the TrackBorderStyle option.</description>
+    </property>
+
+    <property displayName="Track background color" name="trackBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackBackgroundColor option.</description>
+    </property>
+    <property displayName="Track border color" name="trackBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the TrackBorderColor option.</description>
+    </property>
+
+
+    <!-- Thumb -->
+    <property displayName="Thumb border width" name="thumbBorderWidth" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderWidth option.</description>
+    </property>
+    <property displayName="Thumb border radius" name="thumbBorderRadius" datatype="String" category="Thumb" isBrowsable="false" editor="HTML5Design.DesignInformation.ThicknessPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderRadius option.</description>
+    </property>
+    <property displayName="Thumb border style" name="thumbBorderStyle" datatype="VisiWin.UI.Border.Style" category="Thumb" isBrowsable="false">
+      <description type="text/plain">Gets or sets the ThumbBorderStyle option.</description>
+    </property>
+    <property displayName="Thumb background color" name="thumbBackgroundColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBackgroundColor option.</description>
+    </property>
+    <property displayName="Thumb border color" name="thumbBorderColor" datatype="String" category="Colors" isBrowsable="true" editor="HTML5Design.DesignInformation.ColorPropertyEditor">
+      <description type="text/plain">Gets or sets the ThumbBorderColor option.</description>
+    </property>
+
+  </properties>
+
+  <events>
+    <event name="onInitialized"/>
+    <event name="onAttached"/>
+    <event name="onDetached"/>
+    <event name="onHoverChanged"/>
+    <event name="onVisibilityChanged"/>
+    <event name="onDisabledChanged"/>
+  </events>
+
+  <content><![CDATA[<div data-win-control="Lenze.UI.Scrollbar" data-win-options="{style:'Custom.Default'}"></div>]]></content>
+</control>

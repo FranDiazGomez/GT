@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>NumericKeyboardDialog</title>
+    <style>
+        #NumericDialog {
+            pointer-events: all;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default","dataContext":"touchkeyboardInfo"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"auto","height":"auto"}' id="NumericDialog">
+                <div data-win-control="Lenze.UI.VirtualKeyboardDialog"
+                    data-win-options='{"style":"Custom.Default","headerLabelName":"NumericDialogHeaderLabel","varInName":"NumericDialogNumericVarIn","varOutName":"NumericDialogNumericVarOut","minLimitLayoutName":"NumericDialogMinLayout","minLimitLabelName":"NumericDialogMinLabel","maxLimitLayoutName":"NumericDialogMaxLayout","maxLimitLabelName":"NumericDialogMaxLabel","keyboardName":"NumericDialogKeyboard","openWithEmptyValue":true}'>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between","padding":"0px 16px 0px 16px","margin":"8px 0px 0px 0px"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 0px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px"}'
+                        id="NumericDialogHeaderLabel"></div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 0px 0px 0px","symbol":"close","enablePreventEvents":true}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","alignItems":"Stretch","padding":"8px 16px 16px 16px"}'>
+                    <div data-win-control="VisiWin.UI.NumericVarOut"
+                        data-win-options='{"style":"Custom.Default","margin":"0px","showLabel":false,"borderWidth":"1px 1px 1px 1px","valueFontClass":"OpenSans16","valueTextAlignment":"Left","valueContainerWidth":"100%","valueContainerHeight":"100%","width":"100%","labelMargin":"0px 0px 0px 0px","leadingSymbolMargin":"0px 0px 0px 0px","symbolMargin":"0px 0px 0px 0px","valueMargin":"8px 8px 0px 8px","backgroundColor":"@AltGrey2","unitForegroundColor":"@ForegroundColor","valueForegroundColor":"@ForegroundColor","valueHeight":"32px","valueWidth":"100%","unitMargin":"8px 8px 6px 8px"}'
+                        id="NumericDialogNumericVarOut" data-win-bind='winControl.unitText:varUnitText'></div>
+                    <div data-win-control="VisiWin.UI.NumericVarIn"
+                        data-win-options='{"style":"Custom.Default","width":"auto","showLabel":false,"height":"auto","inputFontClass":"OpenSans16","inputPadding":"0px 0px 0px 0px","inputTextAlignment":"Left","inputMargin":"0px 0px 0px 0px","inputFieldMargin":"0px 8px 0px 8px","margin":"8px 0px 8px 0px","unitMargin":"8px 8px 6px 8px"}'
+                        id="NumericDialogNumericVarIn" data-win-bind='winControl.unitText:varUnitText'></div>
+                    <div data-win-control="VisiWin.UI.FlexLayout"
+                        data-win-options='{"style":"Custom.Default","width":"auto","height":"auto","orientation":"Horizontal","justifyContent":"Space-between","margin":"0px 0px 8px 0px"}'>
+                        <div data-win-control="VisiWin.UI.FlexLayout"
+                            data-win-options='{"style":"Custom.Default","height":"auto","width":"auto","orientation":"Horizontal"}'
+                            id="NumericDialogMinLayout">
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableText":"@[ServerApplication].Keyboard.MinValue"}'>
+                            </div>
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 8px"}'
+                                id="NumericDialogMinLabel"></div>
+                        </div>
+                        <div data-win-control="VisiWin.UI.FlexLayout"
+                            data-win-options='{"style":"Custom.Default","height":"auto","width":"auto","orientation":"Horizontal"}'
+                            id="NumericDialogMaxLayout">
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 0px","localizableText":"@[ServerApplication].Keyboard.MaxValue"}'>
+                            </div>
+                            <div data-win-control="VisiWin.UI.Label"
+                                data-win-options='{"style":"Custom.Default","margin":"0px 0px 0px 8px"}'
+                                id="NumericDialogMaxLabel"></div>
+                        </div>
+                    </div>
+                    <div data-win-control="Lenze.UI.VirtualKeyboard" id="NumericDialogKeyboard"
+                        data-win-options='{"style":"Custom.Default","width":"384px","height":"330px"}'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

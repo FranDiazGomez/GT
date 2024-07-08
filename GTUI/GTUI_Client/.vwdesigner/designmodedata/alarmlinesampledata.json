@@ -1,0 +1,38 @@
+﻿{
+    "samples": {
+        "currentAlarmProvider": [
+            {
+                "ActivationTime": "2016-06-02T08:48:39.920Z",
+                "AcknowledgeTime": "1",
+                "AlarmState": 1,
+                "Class": {
+                    "Name": "Alarm",
+                    "Text": "Alarm"
+                },
+                "DeactivationTime": "2016-06-02T08:48:39.920Z",
+                "Group": {
+                    "GroupTree": "MachineModuleA",
+                    "Name": "MachineModuleA",
+                    "Text": "MachineModuleA"
+                },
+                "ID": "5",
+                "LocalizableParam1": "Lorem ipsum",
+                "LocalizableText": "@$956",
+                "Machine": "Messe-13",
+                "Name": "Alarm1",
+                "Param1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores",
+                "Param2": "0",
+                "Priority": "0",
+                "StateInfo": {
+                    "BackColor": "rgbs(255,0,0,255)",
+                    "ForeColor": "rgba(255,255,255,255)",
+                    "Tag": "null",
+                    "Text": "Aktive"
+                },
+                "Tag": "null",
+                "Text": "AlarmLine Testzeile",
+                "User": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+﻿{
+  "resources": {
+    "colors": {
+      "customcolors": {
+        "customColor0": "lime",
+        "customColor1": "#FF7711",
+        "customColor2": "#FF77110F",
+        "customColor3": "#E60",
+        "customColor4": "#E601",
+        "customColor5": "rgb(33, 150, 243)",
+        "customColor6": "rgb(14%, 33%, 78%)",
+        "customColor7": "rgba(0, 0, 0, 0.12)",
+        "customColor8": "rgba(12%, 44%, 78%, 0.55)",
+        "customColor9": "hsl(60, 100%, 50%)",
+        "customColor10": "hsla(270,100%,50%,0.5)",
+        "customColor11": "hwb(240,0%,20%)"
+      }
+    }
+  }
+}
