@@ -12,8 +12,6 @@
         boundModuleOnClickHandler: null,
         boundUpdatedOrderHandler : null,
         boundUpdatedPath: null,
-        boundUpdatedResponse : null,
-        boundUpdatedPath : null,
         bountUpdateWriteProperties : null,
         boundUpdatedDone : null,
 
@@ -53,8 +51,6 @@
             this.varxWriteProperties = this.variableService.GetVariable("WriteProperties");
             //Bind gestores cambio de variables
             this.boundUpdatedOrderHandler = this._OnUpdatedOrder.bind(this);
-            this.boundUpdatedResponse = this._updatedResponse.bind(this);
-            this.boundUpdatedPath = this._updatedPath.bind(this);
             this.bountUpdateWriteProperties = this._updateWriteProperties.bind(this);
             //Bind gestores on click
             this.boundOnClickHandler = this._onClickHandler.bind(this);
@@ -94,8 +90,6 @@
             ]).then(() => {
                 
                 this.varsOrder.Change.add(this.boundUpdatedOrderHandler);
-                this.varsResponse.Change.add(this.boundUpdatedResponse);
-                this.varsActualModulePath.Change.add(this.boundUpdatedPath);
                 this.varxWriteProperties.Change.add(this.bountUpdateWriteProperties);
                 this.varxDone.Change.add(this.boundUpdatedDone);
             });
@@ -108,9 +102,8 @@
         detach: function (element) {
 
             this.varsOrder.Change.remove(this.boundUpdatedOrderHandler);
-            this.varsResponse.Change.remove(this.boundUpdatedResponse);
-            this.varsActualModulePath.Change.remove(this.boundUpdatedPath);
             this.varxWriteProperties.Change.remove(this.bountUpdateWriteProperties);
+            this.varxDone.Change.remove(this.boundUpdatedDone);
         },
 
         // Called by the AppPageNavigator before the page object is finally destroyed. 
@@ -164,31 +157,30 @@
             event.stopPropagation();
 
             this.element = this.MachineConfiguration.Components.find((element)=>element.ID==args.target.id);
+   
 
             this._xOpenDialogOrder=true;
+
+            const path = GeneratePath(this.MachineConfiguration,this.element.ID);
+
+            this.varsActualModulePath.Value=path;
 
             if(this.element!=this.oldElement){
                 this.oldElement=this.element;
 
-                const path = GeneratePath(this.MachineConfiguration,this.element.ID);
-
-                this.varsActualModulePath.Value=path;
-
-  
             }else{
-                this._updatedResponse();
+               
             }
+
+            let orderGetProperties = {"order": "getProperties","id": "1" };
+            orderGetProperties.id=this.element.ID;
+            this.varsOrder.Value=JSON.stringify(orderGetProperties);
         },
 
         _updateWriteProperties : function(){
             console.log("Actualizadas!!!");
         },
 
-
-        _updatedResponse: function(){
-
-
-        },
 
 
         ActualizarComponentes : function(){
@@ -230,31 +222,30 @@
         _OnUpdatedOrder : function(){
 
             //Espera a que se confirme la escritura de una nueva order para activar el xExecute del bloque
-            this.varxExecute.Value=true;
+            if(this.varsOrder.Value!=""){
+                this.varxExecute.Value=true;
+            }
+            
 
         },
 
-        _updatedPath : function(){
-
-            let orderGetProperties = {"order": "getProperties","id": "1" };
-            orderGetProperties.id=this.element.ID;
-            this.varsOrder.Value=JSON.stringify(orderGetProperties);
-
-        },
 
         _onUpdatedDone : function(){
+
 
             if (this.varxDone.Value){
                 this.varxExecute.Value=false;
 
-                //La actualización de la respuesta es para actualziar componentes
+
+                //La actualización de la respuesta es para actualizar componentes
                 if(this._xUpdateComponentsOrder){
                     this.ActualizarComponentes();
                     this._xUpdateComponentsOrder=false;
+                    this.varsOrder.Value="";
                 }
 
                 //La actualización de la respuesta es para abrir diálogo de componente
-                if(this._xOpenDialogOrder && this.varsActualModulePath.Value!=""){
+                if(this._xOpenDialogOrder){
 
 
                     let sDialogName;
@@ -266,6 +257,7 @@
                     this._xOpenDialogOrder=false;
 
                 }
+
             }
            
 

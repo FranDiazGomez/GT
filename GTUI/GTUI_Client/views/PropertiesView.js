@@ -7,7 +7,13 @@
        //Variables
        variableService : null,
        varsResponse: VisiWin.System.DataAccess.IVariable,
+       varsOrder : VisiWin.System.DataAccess.IVariable,
 
+       //Identificador de component actual
+        componentID : null,
+
+        //Handlers de eventos
+        boundOnInputChangeHandler: null,
 
 		// Is jumped to once when this page is navigated to.
         // The new page (pageControl) is passed in element, optionally the set pageOptions are passed in options.
@@ -15,9 +21,13 @@
         // "PageMode": "None" init is called every time the page is loaded.  
         // "PageMode": "Cache" init is only called when the page is loaded for the first time.
         init: function (element, options) {
-            //this.boundOnClickHandler = this._onClickHandler.bind(this);
+            
             this.variableService = VisiWin.System.DataAccess.VariableService.getService();
             this.varsResponse = this.variableService.GetVariable("Controller.PLC.Application.PRG_FW.componentsController.sJSONResponse");
+            this.varsOrder = this.variableService.GetVariable("Controller.PLC.Application.PRG_FW.componentsController.sJSONOrder");
+
+            //Event handlers bind
+            this.boundOnInputChangeHandler = this.onInputChange.bind(this);
         },
 
         // Is called when the new page has been rendered.
@@ -28,7 +38,7 @@
             // Sample code
             this.divPropertiesElement = document.getElementById("divProperties");
             if (this.divPropertiesElement && this.divPropertiesElement.winControl) {
-                this.ActualizarPropiedades();
+
             }
         },
 
@@ -36,7 +46,8 @@
         // This is the right place to create VisiWin objects and add its event handler. 
         // PageMode": <any> regardless of the PageMode, attach is called when each page is loaded.
         attach: function (element) {
-
+            this.ActualizarPropiedades();
+            this.getComponentID();
         },
 
         // Called first when a page is unloaded.
@@ -71,6 +82,15 @@
             // debugger;
         },
 
+        getComponentID : function(){
+
+            let Order = JSON.parse(this.varsOrder.Value);
+            
+            this.componentID = Order.id;
+
+            this.varsOrder.Value="";
+        },
+
         ActualizarPropiedades : function(){
 
             let PropertiesForm = document.createElement("form");
@@ -81,13 +101,12 @@
             let ModuleProperties = JSON.parse(this.varsResponse.Value);
 
             ModuleProperties.Properties.forEach((element,index)=>{
-                console.log(element);
                 inputProperty=document.createElement("input");
                 inputProperty.setAttribute("type","text");
                 inputProperty.setAttribute("id",element.PropertyName);
                 inputProperty.value=element.PropertyValue;
                 inputProperty.setAttribute("name",element.PropertyName);
-                inputProperty.addEventListener("change",this.onInputChange);
+                inputProperty.addEventListener("change",this.boundOnInputChangeHandler);
                 labelProperty=document.createElement("label");
                 labelProperty.innerHTML=element.PropertyName;
                 labelProperty.setAttribute("htmlFor",element.PropertyName);
@@ -99,8 +118,14 @@
             this.divPropertiesElement.appendChild(PropertiesForm);
         },
 
-        onInputChange : function(){
-            console.log("Input cambiado");
+        onInputChange : function(e){
+            
+            let updatePropertyOrder = {"order": "updateProperty","id": "","name": "","value": ""};
+            updatePropertyOrder.id=this.componentID;
+            updatePropertyOrder.name=e.target.id;
+            updatePropertyOrder.value=e.target.value;
+
+            this.varsOrder.Value=JSON.stringify(updatePropertyOrder);
         }
 
     });
