@@ -145,7 +145,7 @@
         // Handler botón actualizar componentes
         _onClickHandler: function (args) {
 
-            let orderGetComponents = {"order": "getComponents","id": "0","deep": "2"};
+            let orderGetComponents = {"order": "getComponents","id": "0","deep": "0"};
 
             this.varsOrder.Value=JSON.stringify(orderGetComponents);
             this._xUpdateComponentsOrder = true;
@@ -280,7 +280,7 @@ function GeneratePath(machineConfiguration,moduleID){
     }
     while(ActualModule.ParentID!=0);
 
-    path="Controller.PLC.Application.MAIN_PRG."+path;
+    path="Controller.PLC.Application.PLC_PRG."+path;
 
     return path;
 

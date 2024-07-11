@@ -3785,157 +3785,223 @@
 							<Node Name="componentsController">
 								<LocalizedText Name="sJSONOrder" Text="" />
 								<LocalizedText Name="sJSONResponse" Text="" />
-								<LocalizedText Name="xExecute" Text="" />
 								<LocalizedText Name="xDone" Text="" />
-								<LocalizedText Name="xError" Text="" />
+								<LocalizedText Name="xExecute" Text="" />
 							</Node>
 						</Node>
-						<Node Name="MAIN_PRG">
+						<Node Name="PLC_PRG">
 							<Node Name="ClassScanner_0">
 								<Node Name="ApproxCylinder">
+									<Node Name="Encoder">
+										<Node Name="Control">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+										<Node Name="LSB">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+										<Node Name="MSB">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+									</Node>
 									<Node Name="SensorIn">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
 									<Node Name="SensorOut">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
 									<Node Name="ValvIn">
-										<Node Name="configVarsList[0]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="ValvOut">
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+								</Node>
+								<Node Name="FoldingCylinder">
+									<Node Name="Encoder">
+										<Node Name="Control">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[1]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="LSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[10]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="MSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[11]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+									</Node>
+									<Node Name="SensorIn">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="SensorOut">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="ValvIn">
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="ValvOut">
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+								</Node>
+								<Node Name="ScannerArmLeft">
+									<Node Name="Cylinder">
+										<Node Name="Encoder">
+											<Node Name="Control">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="LSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="MSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
 										</Node>
-										<Node Name="configVarsList[12]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="SensorIn">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[13]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="SensorOut">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[14]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="ValvIn">
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[15]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="ValvOut">
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[16]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+									</Node>
+									<Node Name="EdgeSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="TouchSensor">
+										<Node Name="Control">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[17]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="LSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[18]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="MSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[19]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+									</Node>
+									<Node Name="ZTouchSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+								</Node>
+								<Node Name="ScannerArmRight">
+									<Node Name="Cylinder">
+										<Node Name="Encoder">
+											<Node Name="Control">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="LSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="MSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
 										</Node>
-										<Node Name="configVarsList[2]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="SensorIn">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[20]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="SensorOut">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[3]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="ValvIn">
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[4]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="ValvOut">
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[5]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+									</Node>
+									<Node Name="EdgeSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="TouchSensor">
+										<Node Name="Control">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[6]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="LSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[7]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="MSB">
+											<LocalizedText Name="bValue" Text="" />
 										</Node>
-										<Node Name="configVarsList[8]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+									</Node>
+									<Node Name="ZTouchSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+								</Node>
+								<Node Name="ScannerArmUp">
+									<Node Name="Cylinder">
+										<Node Name="Encoder">
+											<Node Name="Control">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="LSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
+											<Node Name="MSB">
+												<LocalizedText Name="bValue" Text="" />
+											</Node>
 										</Node>
-										<Node Name="configVarsList[9]">
-											<LocalizedText Name="dwTypeClass" Text="" />
-											<LocalizedText Name="sName" Text="" />
-											<LocalizedText Name="sType" Text="" />
+										<Node Name="SensorIn">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
 										</Node>
-										<LocalizedText Name="_adressed" Text="" />
-										<LocalizedText Name="_bit" Text="" />
-										<LocalizedText Name="_chanel" Text="" />
-										<LocalizedText Name="_read" Text="" />
-										<LocalizedText Name="_type" Text="" />
-										<LocalizedText Name="_zone" Text="" />
-										<LocalizedText Name="cmpOrder" Text="" />
-										<LocalizedText Name="cmpState" Text="" />
-										<LocalizedText Name="configVarsCounter" Text="" />
-										<LocalizedText Name="id" Text="" />
-										<LocalizedText Name="oldOrder" Text="" />
-										<LocalizedText Name="oldVal" Text="" />
-										<LocalizedText Name="parent" Text="" />
-										<LocalizedText Name="sAdress" Text="" />
-										<LocalizedText Name="sName" Text="" />
-										<LocalizedText Name="sParentName" Text="" />
-										<LocalizedText Name="stableStatesList[0]" Text="" />
-										<LocalizedText Name="stableStatesList[1]" Text="" />
-										<LocalizedText Name="stableStatesList[10]" Text="" />
-										<LocalizedText Name="stableStatesList[2]" Text="" />
-										<LocalizedText Name="stableStatesList[3]" Text="" />
-										<LocalizedText Name="stableStatesList[4]" Text="" />
-										<LocalizedText Name="stableStatesList[5]" Text="" />
-										<LocalizedText Name="stableStatesList[6]" Text="" />
-										<LocalizedText Name="stableStatesList[7]" Text="" />
-										<LocalizedText Name="stableStatesList[8]" Text="" />
-										<LocalizedText Name="stableStatesList[9]" Text="" />
-										<LocalizedText Name="state" Text="" />
-										<LocalizedText Name="sType" Text="" />
-										<LocalizedText Name="xEnabled" Text="" />
-										<LocalizedText Name="xInverted" Text="" />
+										<Node Name="SensorOut">
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
+											<LocalizedText Name="xValue" Text="" />
+										</Node>
+										<Node Name="ValvIn">
+											<LocalizedText Name="xValue" Text="" />
+										</Node>
+										<Node Name="ValvOut">
+											<LocalizedText Name="xValue" Text="" />
+										</Node>
+									</Node>
+									<Node Name="EdgeSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
+										<LocalizedText Name="xValue" Text="" />
+									</Node>
+									<Node Name="TouchSensor">
+										<Node Name="Control">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+										<Node Name="LSB">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+										<Node Name="MSB">
+											<LocalizedText Name="bValue" Text="" />
+										</Node>
+									</Node>
+									<Node Name="ZTouchSensor">
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
 								</Node>

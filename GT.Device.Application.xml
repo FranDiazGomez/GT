@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.0.0.0" runtimeid="3.5.17.0" libversion="3.5.17.0" compiler="3.5.17.40" lmm="3.5.17.0" profile="PLC Designer V3.28.0+" settings="SupportOPCUA, LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="GT" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeUserDef name="T_ClassComponent" size="0" nativesize="4016" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponent" />
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
+    <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
+    <TypeSimple name="T_STRING_8192_" size="8193" swapsize="0" typeclass="String" iecname="STRING(8192)" />
+    <TypeUserDef name="T_ClassComponentController" size="8523" nativesize="296208" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponentController">
+      <UserDefElement iecname="xExecute" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sJSONOrder" type="T_STRING" byteoffset="1" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xSave" type="T_BOOL" byteoffset="82" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="83" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFilePath" type="T_STRING" byteoffset="84" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFileName" type="T_STRING" byteoffset="165" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xDone" type="T_BOOL" byteoffset="246" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sJSONResponse" type="T_STRING_8192_" byteoffset="247" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xBusy" type="T_BOOL" byteoffset="8440" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="8441" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sErrorCode" type="T_STRING" byteoffset="8442" vartype="VAR_OUTPUT" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassDI" size="3" nativesize="4128" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDI" basetype="T_ClassComponent">
+      <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xForceTrue" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xForceFalse" type="T_BOOL" byteoffset="2" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassDO" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDO" basetype="T_ClassComponent">
+      <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassNI_8" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNI_8" basetype="T_ClassComponent">
+      <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassNO_8" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNO_8" basetype="T_ClassComponent">
+      <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassEncoder" size="3" nativesize="16360" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassEncoder" basetype="T_ClassComponent">
+      <UserDefElement iecname="LSB" type="T_ClassNI_8" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="MSB" type="T_ClassNI_8" byteoffset="1" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Control" type="T_ClassNO_8" byteoffset="2" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassCylinder" size="11" nativesize="36872" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassCylinder" basetype="T_ClassComponent">
+      <UserDefElement iecname="SensorIn" type="T_ClassDI" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="SensorOut" type="T_ClassDI" byteoffset="3" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvIn" type="T_ClassDO" byteoffset="6" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvOut" type="T_ClassDO" byteoffset="7" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Encoder" type="T_ClassEncoder" byteoffset="8" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassScannerArm" size="20" nativesize="65512" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScannerArm" basetype="T_ClassComponent">
+      <UserDefElement iecname="Cylinder" type="T_ClassCylinder" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="TouchSensor" type="T_ClassEncoder" byteoffset="11" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ZTouchSensor" type="T_ClassDI" byteoffset="14" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="EdgeSensor" type="T_ClassDI" byteoffset="17" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassScanner" size="82" nativesize="274416" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
+      <UserDefElement iecname="ScannerArmLeft" type="T_ClassScannerArm" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="20" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="40" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="60" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="71" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="PLC_PRG">
+        <Node name="ClassScanner_0" type="T_ClassScanner" access="ReadWrite" />
+      </Node>
+      <Node name="PRG_FW">
+        <Node name="componentsController" type="T_ClassComponentController" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>

@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.0.0.0" runtimeid="3.5.17.0" libversion="3.5.17.0" compiler="3.5.17.40" lmm="3.5.17.0" profile="PLC Designer V3.28.0+" settings="SupportOPCUA, LayoutCalculator=OptimizedClientSideLayoutCalculator" />
+    <ProjectInfo name="TecnocatV2" devicename="Device" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
+    <TypeSimple name="T_DINT" size="4" swapsize="4" typeclass="DInt" iecname="DINT" />
+    <TypeSimple name="T_DWORD" size="4" swapsize="4" typeclass="DWord" iecname="DWORD" />
+    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_LWORD" size="8" swapsize="8" typeclass="LWord" iecname="LWORD" />
+    <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
+    <TypeSimple name="T_STRING_1_" size="2" swapsize="0" typeclass="String" iecname="STRING(1)" />
+    <TypeSimple name="T_STRING_255_" size="256" swapsize="0" typeclass="String" iecname="STRING(255)" />
+    <TypeSimple name="T_STRING_4_" size="5" swapsize="0" typeclass="String" iecname="STRING(4)" />
+    <TypeSimple name="T_STRING_8192_" size="8193" swapsize="0" typeclass="String" iecname="STRING(8192)" />
+    <TypeSimple name="T_STRING_MAX_LEN_APPLNAME_" size="61" swapsize="0" typeclass="String" iecname="STRING(MAX_LEN_APPLNAME)" />
+    <TypeSimple name="T_STRING_c_uiContentStringSize_" size="4097" swapsize="0" typeclass="String" iecname="STRING(c_uiContentStringSize)" />
+    <TypeSimple name="T_STRING_c_uiPropertyStringSize_" size="257" swapsize="0" typeclass="String" iecname="STRING(c_uiPropertyStringSize)" />
+    <TypeSimple name="T_STRING_c_uiPropertyStringSize__1" size="65" swapsize="0" typeclass="String" iecname="STRING(c_uiPropertyStringSize)" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeSimple name="T_UDINT" size="4" swapsize="4" typeclass="UDInt" iecname="UDINT" />
+    <TypeSimple name="T_UINT" size="2" swapsize="2" typeclass="UInt" iecname="UINT" />
+    <TypeArray name="T_ARRAY__0__10__OF_INT" size="22" nativesize="22" typeclass="Array" iecname="ARRAY [0..10] OF INT" basetype="T_INT">
+      <ArrayDim minrange="0" maxrange="10" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__15__OF_BYTE" size="16" nativesize="16" typeclass="Array" iecname="ARRAY [0..15] OF BYTE" basetype="T_BYTE">
+      <ArrayDim minrange="0" maxrange="15" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__1__OF_INT" size="4" nativesize="4" typeclass="Array" iecname="ARRAY [0..1] OF INT" basetype="T_INT">
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__25__OF_STRING_MAX_CHARS_" size="6656" nativesize="6656" typeclass="Array" iecname="ARRAY [0..25] OF STRING(MAX_CHARS)" basetype="T_STRING_255_">
+      <ArrayDim minrange="0" maxrange="25" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__32__0__1__OF_STRING_c_uiPropertyStringSize_" size="4290" nativesize="4290" typeclass="Array" iecname="ARRAY [0..32, 0..1] OF STRING(c_uiPropertyStringSize)" basetype="T_STRING_c_uiPropertyStringSize__1">
+      <ArrayDim minrange="0" maxrange="32" />
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeArray name="T_ARRAY__0__500__0__1__OF_STRING_c_uiPropertyStringSize_" size="257514" nativesize="257514" typeclass="Array" iecname="ARRAY [0..500, 0..1] OF STRING(c_uiPropertyStringSize)" basetype="T_STRING_c_uiPropertyStringSize_">
+      <ArrayDim minrange="0" maxrange="500" />
+      <ArrayDim minrange="0" maxrange="1" />
+    </TypeArray>
+    <TypeUserDef name="T_IO_RANGES" size="2" nativesize="2" swapsize="2" typeclass="Enum" iecname="IO_RANGES" basetype="T_INT">
+      <UserDefElement type="T_IO_RANGES" iecname="Q" enumvalue="0" />
+      <UserDefElement type="T_IO_RANGES" iecname="I" enumvalue="1" />
+      <UserDefElement type="T_IO_RANGES" iecname="M" enumvalue="2" />
+    </TypeUserDef>
+    <TypeUserDef name="T_IO_TYPES" size="2" nativesize="2" swapsize="2" typeclass="Enum" iecname="IO_TYPES" basetype="T_INT">
+      <UserDefElement type="T_IO_TYPES" iecname="_BOOL" enumvalue="0" />
+      <UserDefElement type="T_IO_TYPES" iecname="_BYTE" enumvalue="1" />
+      <UserDefElement type="T_IO_TYPES" iecname="_WORD" enumvalue="2" />
+      <UserDefElement type="T_IO_TYPES" iecname="_DOUBLE" enumvalue="3" />
+      <UserDefElement type="T_IO_TYPES" iecname="_LONG" enumvalue="4" />
+    </TypeUserDef>
+    <TypeSimple name="T_POINTER_TO_APPLICATION" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO APPLICATION" />
+    <TypeSimple name="T_POINTER_TO_BYTE" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO BYTE" />
+    <TypeSimple name="T_POINTER_TO_STRING_4_" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO STRING(4)" />
+    <TypeSimple name="T_POINTER_TO_STRING_c_uiContentStringSize_" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO STRING(c_uiContentStringSize)" />
+    <TypeSimple name="T_POINTER_TO_STRING_c_uiContentStringSize__1" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO STRING(c_uiContentStringSize)" />
+    <TypeSimple name="T_POINTER_TO_STRING_c_uiPropertyStringSize_" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO STRING(c_uiPropertyStringSize)" />
+    <TypeSimple name="T_POINTER_TO_STRING_c_uiPropertyStringSize__1" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO STRING(c_uiPropertyStringSize)" />
+    <TypeSimple name="T_POINTER_TO_SysFile_RTS_IEC_RESULT" size="8" swapsize="8" typeclass="Pointer" iecname="POINTER TO SysFile.RTS_IEC_RESULT" />
+    <TypeUserDef name="T_TYPE_CLASS" size="4" nativesize="4" swapsize="4" typeclass="Enum" iecname="TYPE_CLASS" basetype="T_DWORD">
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_BOOL" enumvalue="0" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_BIT" enumvalue="1" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_BYTE" enumvalue="2" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_WORD" enumvalue="3" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_DWORD" enumvalue="4" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LWORD" enumvalue="5" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_SINT" enumvalue="6" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_INT" enumvalue="7" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_DINT" enumvalue="8" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LINT" enumvalue="9" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_USINT" enumvalue="10" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_UINT" enumvalue="11" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_UDINT" enumvalue="12" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ULINT" enumvalue="13" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_REAL" enumvalue="14" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LREAL" enumvalue="15" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_STRING" enumvalue="16" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_WSTRING" enumvalue="17" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_TIME" enumvalue="18" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_DATE" enumvalue="19" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_DATEANDTIME" enumvalue="20" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_TIMEOFDAY" enumvalue="21" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_POINTER" enumvalue="22" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_REFERENCE" enumvalue="23" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_SUBRANGE" enumvalue="24" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ENUM" enumvalue="25" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ARRAY" enumvalue="26" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_PARAMS" enumvalue="27" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_USERDEF" enumvalue="28" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_NONE" enumvalue="29" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANY" enumvalue="30" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYBIT" enumvalue="31" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYDATE" enumvalue="32" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYINT" enumvalue="33" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYNUM" enumvalue="34" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYREAL" enumvalue="35" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LAZY" enumvalue="36" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LTIME" enumvalue="37" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_BITCONST" enumvalue="38" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_UXINT" enumvalue="39" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_XWORD" enumvalue="40" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_XINT" enumvalue="41" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_XSTRING" enumvalue="42" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_VARLENARRAY" enumvalue="43" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_ANYSTRING" enumvalue="44" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_VECTOR" enumvalue="45" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LDATE" enumvalue="46" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LDATEANDTIME" enumvalue="47" />
+      <UserDefElement type="T_TYPE_CLASS" iecname="TYPE_LTIMEOFDAY" enumvalue="48" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ConfigVar" size="176" nativesize="176" typeclass="Userdef" pouclass="STRUCTURE" iecname="ConfigVar">
+      <UserDefElement iecname="pt" type="T_POINTER_TO_BYTE" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="8" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="89" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="dwTypeClass" type="T_TYPE_CLASS" byteoffset="172" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_JSON_Builder" size="265998" nativesize="266008" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="JSON_Builder">
+      <UserDefElement iecname="asProperties" type="T_ARRAY__0__500__0__1__OF_STRING_c_uiPropertyStringSize_" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xInputIsJSON" type="T_BOOL" byteoffset="257514" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="257515" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sContent" type="T_STRING_8192_" byteoffset="257516" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sConcatHelper" type="T_STRING_c_uiPropertyStringSize_" byteoffset="265709" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psContent" type="T_POINTER_TO_STRING_c_uiContentStringSize_" byteoffset="265968" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psProperty" type="T_POINTER_TO_STRING_c_uiPropertyStringSize_" byteoffset="265976" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psConcatHelper" type="T_POINTER_TO_STRING_c_uiPropertyStringSize_" byteoffset="265984" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="uiPropertyIndex" type="T_UINT" byteoffset="265992" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="uiDepthIndex" type="T_UINT" byteoffset="265994" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xSkipData_Brackets" type="T_BOOL" byteoffset="265996" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xSkipData_Enum" type="T_BOOL" byteoffset="265997" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_JSON_Parser" size="12643" nativesize="12656" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="JSON_Parser">
+      <UserDefElement iecname="sContent" type="T_STRING_c_uiContentStringSize_" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="4097" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="asProperties" type="T_ARRAY__0__32__0__1__OF_STRING_c_uiPropertyStringSize_" byteoffset="4098" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="uiPropertyCount" type="T_UINT" byteoffset="8388" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEnumerationPresent" type="T_BOOL" byteoffset="8390" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="uiEnumerationIndex" type="T_UINT" byteoffset="8392" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sContent_int" type="T_STRING_c_uiContentStringSize_" byteoffset="8394" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psContent" type="T_POINTER_TO_STRING_c_uiContentStringSize__1" byteoffset="12496" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sProperty" type="T_STRING_c_uiPropertyStringSize__1" byteoffset="12504" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psProperty" type="T_POINTER_TO_STRING_c_uiPropertyStringSize__1" byteoffset="12576" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sSearch" type="T_STRING_1_" byteoffset="12584" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psSearch" type="T_POINTER_TO_STRING_4_" byteoffset="12592" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="psProperties" type="T_POINTER_TO_STRING_c_uiPropertyStringSize__1" byteoffset="12600" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="diContentLength" type="T_DINT" byteoffset="12608" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="diPropertyLength" type="T_DINT" byteoffset="12612" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="uiIndex" type="T_UINT" byteoffset="12616" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosQuotationMark_Name" type="T_ARRAY__0__1__OF_INT" byteoffset="12618" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosQuotationMark_Value" type="T_ARRAY__0__1__OF_INT" byteoffset="12622" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosColom" type="T_INT" byteoffset="12626" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosQuotationMark_Loop" type="T_INT" byteoffset="12628" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosComma" type="T_INT" byteoffset="12630" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosComma_Old" type="T_INT" byteoffset="12632" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosComma_Property" type="T_INT" byteoffset="12634" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosBracketStart" type="T_INT" byteoffset="12636" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosBracketEnd" type="T_INT" byteoffset="12638" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iPosQuotationMark" type="T_INT" byteoffset="12640" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xOutput_Mem" type="T_BOOL" byteoffset="12642" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeSimple name="T_RTS_IEC_HANDLE" size="8" swapsize="8" typeclass="Pointer" iecname="RTS_IEC_HANDLE" aliasedtype="T_POINTER_TO_BYTE" aliasediecname="POINTER TO BYTE" />
+    <TypeUserDef name="T_APPLICATION" size="188" nativesize="192" typeclass="Userdef" pouclass="STRUCTURE" iecname="APPLICATION">
+      <UserDefElement iecname="pAppParent" type="T_POINTER_TO_APPLICATION" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iId" type="T_UDINT" byteoffset="8" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="CodeGuid" type="T_ARRAY__0__15__OF_BYTE" byteoffset="12" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="DataGuid" type="T_ARRAY__0__15__OF_BYTE" byteoffset="28" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="udiState" type="T_UDINT" byteoffset="44" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="udiOpState" type="T_UDINT" byteoffset="48" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="hBootproject" type="T_RTS_IEC_HANDLE" byteoffset="56" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="hDebugTask" type="T_RTS_IEC_HANDLE" byteoffset="64" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="pfGlobalInit" type="T_POINTER_TO_BYTE" byteoffset="72" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="pfGlobalExit" type="T_POINTER_TO_BYTE" byteoffset="80" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="hSessionIdPool" type="T_RTS_IEC_HANDLE" byteoffset="88" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="hForcePool" type="T_RTS_IEC_HANDLE" byteoffset="96" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="hBPPool" type="T_RTS_IEC_HANDLE" byteoffset="104" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="bPersistentForce" type="T_DINT" byteoffset="112" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="szName" type="T_STRING_MAX_LEN_APPLNAME_" byteoffset="116" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="udiPSVersion" type="T_UDINT" byteoffset="180" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="udiTargetSettingVersion" type="T_UDINT" byteoffset="184" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeArray name="T_ARRAY__0__20__OF_ConfigVar" size="3696" nativesize="3696" typeclass="Array" iecname="ARRAY [0..20] OF ConfigVar" basetype="T_ConfigVar">
+      <ArrayDim minrange="0" maxrange="20" />
+    </TypeArray>
+    <TypeUserDef name="T_LineReader" size="7280" nativesize="7288" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="LineReader">
+      <UserDefElement iecname="xGetLine" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xCloseFile" type="T_BOOL" byteoffset="1" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFileName" type="T_STRING" byteoffset="2" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFilePath" type="T_STRING" byteoffset="83" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xLineReady" type="T_BOOL" byteoffset="164" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="asLine" type="T_ARRAY__0__25__OF_STRING_MAX_CHARS_" byteoffset="165" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="iReadVars" type="T_INT" byteoffset="6822" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEOF" type="T_BOOL" byteoffset="6824" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="6825" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sErrorCode" type="T_STRING_255_" byteoffset="6826" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="_xOldExec" type="T_BOOL" byteoffset="7082" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_xOldCloseFile" type="T_BOOL" byteoffset="7083" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_state" type="T_INT" byteoffset="7084" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_nSize" type="T_LWORD" byteoffset="7088" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_readOk" type="T_BOOL" byteoffset="7096" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_sBuffer" type="T_STRING" byteoffset="7097" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_varCounter" type="T_INT" byteoffset="7178" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_charCounter" type="T_INT" byteoffset="7180" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_sFileLongName" type="T_STRING" byteoffset="7182" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="stFileHandle" type="T_RTS_IEC_HANDLE" byteoffset="7264" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="stFileResult" type="T_POINTER_TO_SysFile_RTS_IEC_RESULT" byteoffset="7272" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_LineWriter" size="784" nativesize="792" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="LineWriter">
+      <UserDefElement iecname="xWriteLine" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFileName" type="T_STRING" byteoffset="1" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFilePath" type="T_STRING" byteoffset="82" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sLine" type="T_STRING_255_" byteoffset="163" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xAppend" type="T_BOOL" byteoffset="419" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEOF" type="T_BOOL" byteoffset="420" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xDone" type="T_BOOL" byteoffset="421" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xFileOpened" type="T_BOOL" byteoffset="422" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="423" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sErrorCode" type="T_STRING_255_" byteoffset="424" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="_xOldExec" type="T_BOOL" byteoffset="680" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_xOldEOF" type="T_BOOL" byteoffset="681" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_state" type="T_INT" byteoffset="682" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_sFileLongName" type="T_STRING" byteoffset="684" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="stFileHandle" type="T_RTS_IEC_HANDLE" byteoffset="768" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="stFileResult" type="T_POINTER_TO_SysFile_RTS_IEC_RESULT" byteoffset="776" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassComponent" size="3980" nativesize="4000" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassComponentController" size="295342" nativesize="296208" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponentController">
+      <UserDefElement iecname="xExecute" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sJSONOrder" type="T_STRING" byteoffset="1" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xSave" type="T_BOOL" byteoffset="82" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xRead" type="T_BOOL" byteoffset="83" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFilePath" type="T_STRING" byteoffset="84" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sFileName" type="T_STRING" byteoffset="165" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="sJSONResponse" type="T_STRING_8192_" byteoffset="246" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xError" type="T_BOOL" byteoffset="8439" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xDone" type="T_BOOL" byteoffset="8440" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="sErrorCode" type="T_STRING" byteoffset="8441" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="componentIndex" type="T_INT" byteoffset="8522" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="bytesToClean" type="T_STRING" byteoffset="8524" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="tFirstApp" type="T_POINTER_TO_APPLICATION" byteoffset="8608" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="JSON_BldCtrl" type="T_JSON_Builder" byteoffset="8616" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="JSON_PrsCtrl" type="T_JSON_Parser" byteoffset="274616" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xExecuteOld" type="T_BOOL" byteoffset="287259" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FileWriter" type="T_LineWriter" byteoffset="287264" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="writeState" type="T_INT" byteoffset="288048" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="i" type="T_INT" byteoffset="288050" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="j" type="T_INT" byteoffset="288052" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FileReader" type="T_LineReader" byteoffset="288056" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="readState" type="T_INT" byteoffset="295336" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iRead" type="T_INT" byteoffset="295338" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="jRead" type="T_INT" byteoffset="295340" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassDI" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDI" basetype="T_ClassComponent">
+      <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassDO" size="4075" nativesize="4096" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDO" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="3980" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEnabled" type="T_BOOL" byteoffset="3981" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sAdress" type="T_STRING" byteoffset="3982" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xInverted" type="T_BOOL" byteoffset="4063" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="oldVal" type="T_BOOL" byteoffset="4064" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_adressed" type="T_BOOL" byteoffset="4065" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_zone" type="T_IO_RANGES" byteoffset="4066" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_type" type="T_IO_TYPES" byteoffset="4068" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_chanel" type="T_INT" byteoffset="4070" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_bit" type="T_INT" byteoffset="4072" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_read" type="T_BOOL" byteoffset="4074" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassNI_8" size="4073" nativesize="4096" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNI_8" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="3980" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEnabled" type="T_BOOL" byteoffset="3981" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sAdress" type="T_STRING" byteoffset="3982" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_adressed" type="T_BOOL" byteoffset="4063" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_zone" type="T_IO_RANGES" byteoffset="4064" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_type" type="T_IO_TYPES" byteoffset="4066" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_chanel" type="T_INT" byteoffset="4068" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_bit" type="T_INT" byteoffset="4070" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_read" type="T_BYTE" byteoffset="4072" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassNO_8" size="4072" nativesize="4096" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNO_8" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="3980" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEnabled" type="T_BOOL" byteoffset="3981" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sAdress" type="T_STRING" byteoffset="3982" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_adressed" type="T_BOOL" byteoffset="4063" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_zone" type="T_IO_RANGES" byteoffset="4064" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_type" type="T_IO_TYPES" byteoffset="4066" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_chanel" type="T_INT" byteoffset="4068" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="_bit" type="T_INT" byteoffset="4070" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassEncoder" size="16224" nativesize="16296" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassEncoder" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="xReset" type="T_BOOL" byteoffset="3980" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xEnabled" type="T_BOOL" byteoffset="3981" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xCW" type="T_BOOL" byteoffset="3982" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xRollover" type="T_BOOL" byteoffset="3983" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iValue" type="T_INT" byteoffset="3984" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="LSB" type="T_ClassNI_8" byteoffset="3992" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="MSB" type="T_ClassNI_8" byteoffset="8072" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Control" type="T_ClassNO_8" byteoffset="12152" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassCylinder" size="28384" nativesize="36728" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassCylinder" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="xEnabled" type="T_BOOL" byteoffset="3980" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="tIn" type="T_TIME" byteoffset="3984" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="tOut" type="T_TIME" byteoffset="3988" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="iEncoder" type="T_INT" byteoffset="3992" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="SensorIn" type="T_ClassDI" byteoffset="3994" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="SensorOut" type="T_ClassDI" byteoffset="3995" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvIn" type="T_ClassDO" byteoffset="4000" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvOut" type="T_ClassDO" byteoffset="8080" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Encoder" type="T_ClassEncoder" byteoffset="12160" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassScannerArm" size="48594" nativesize="65256" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScannerArm" basetype="T_ClassComponent">
+      <UserDefElement iecname="configVarsList" type="T_ARRAY__0__20__OF_ConfigVar" byteoffset="0" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="configVarsCounter" type="T_INT" byteoffset="3696" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sType" type="T_STRING" byteoffset="3698" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="id" type="T_INT" byteoffset="3780" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="parent" type="T_INT" byteoffset="3782" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="stableStatesList" type="T_ARRAY__0__10__OF_INT" byteoffset="3784" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpOrder" type="T_INT" byteoffset="3806" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="oldOrder" type="T_INT" byteoffset="3808" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="cmpState" type="T_INT" byteoffset="3810" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="tState" type="T_TIME" byteoffset="3812" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="state" type="T_INT" byteoffset="3816" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sName" type="T_STRING" byteoffset="3818" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="sParentName" type="T_STRING" byteoffset="3899" vartype="VAR" inherited_from="T_ClassComponent" access="ReadWrite" />
+      <UserDefElement iecname="iScanValue" type="T_INT" byteoffset="3980" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="iTouchValue" type="T_INT" byteoffset="3982" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="Cylinder" type="T_ClassCylinder" byteoffset="3984" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="TouchSensor" type="T_ClassEncoder" byteoffset="32368" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ZTouchSensor" type="T_ClassDI" byteoffset="48592" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="EdgeSensor" type="T_ClassDI" byteoffset="48593" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+    <TypeUserDef name="T_ClassScanner" size="202572" nativesize="273344" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
+      <UserDefElement iecname="ScannerArmLeft" type="T_ClassScannerArm" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="48600" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="97200" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="145800" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="174184" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="RightScanOffset" type="T_INT" byteoffset="202568" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="LeftScanOffset" type="T_INT" byteoffset="202570" vartype="VAR" access="ReadWrite" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="MAIN_PRG">
+        <Node name="ClassScanner_0" type="T_ClassScanner" access="ReadWrite" />
+      </Node>
+      <Node name="PRG_FW">
+        <Node name="componentsController" type="T_ClassComponentController" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
