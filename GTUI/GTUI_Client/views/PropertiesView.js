@@ -103,8 +103,8 @@
             ModuleProperties.Properties.forEach((element,index)=>{
                 inputProperty=document.createElement("input");
                 inputProperty.setAttribute("type","text");
-                inputProperty.setAttribute("id",element.PropertyName);
                 inputProperty.value=element.PropertyValue;
+                inputProperty.setAttribute("id",element.PropertyName);
                 inputProperty.setAttribute("name",element.PropertyName);
                 inputProperty.addEventListener("change",this.boundOnInputChangeHandler);
                 labelProperty=document.createElement("label");

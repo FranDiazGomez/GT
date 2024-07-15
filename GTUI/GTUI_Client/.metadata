@@ -5,11 +5,11 @@
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\favicon.ico" RelativeFilePath="favicon.ico" LastWriteTime="06/20/2018 12:08:22" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.csproj" RelativeFilePath="GTUI_Client.csproj" LastWriteTime="07/06/2024 16:56:38" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.csproj.user" RelativeFilePath="GTUI_Client.csproj.user" LastWriteTime="04/16/2024 16:54:41" Attributes="Archive" />
-		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.Device.config" RelativeFilePath="GTUI_Client.Device.config" LastWriteTime="07/08/2024 17:30:34" Attributes="Archive" />
+		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.Device.config" RelativeFilePath="GTUI_Client.Device.config" LastWriteTime="07/09/2024 11:53:42" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.Restriction.config" RelativeFilePath="GTUI_Client.Restriction.config" LastWriteTime="04/15/2024 17:24:31" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.sln" RelativeFilePath="GTUI_Client.sln" LastWriteTime="07/06/2024 16:44:40" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.vw7" RelativeFilePath="GTUI_Client.vw7" LastWriteTime="07/06/2024 16:44:42" Attributes="Archive" />
-		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.vwsettings" RelativeFilePath="GTUI_Client.vwsettings" LastWriteTime="07/08/2024 17:30:34" Attributes="Archive" />
+		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\GTUI_Client.vwsettings" RelativeFilePath="GTUI_Client.vwsettings" LastWriteTime="07/09/2024 11:53:42" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\index.html" RelativeFilePath="index.html" LastWriteTime="11/30/2023 14:16:16" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\index_before_v1.5.0.xxx.html" RelativeFilePath="index_before_v1.5.0.xxx.html" LastWriteTime="08/24/2023 07:33:40" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\libs.7z" RelativeFilePath="libs.7z" LastWriteTime="11/20/2023 14:12:02" Attributes="Archive" />
@@ -245,6 +245,6 @@
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\views\LogInView.html" RelativeFilePath="views\LogInView.html" LastWriteTime="08/31/2023 14:33:24" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\views\LogInView.js" RelativeFilePath="views\LogInView.js" LastWriteTime="11/17/2022 12:42:00" Attributes="Archive" />
 		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\views\PropertiesView.html" RelativeFilePath="views\PropertiesView.html" LastWriteTime="07/06/2024 18:47:44" Attributes="Archive" />
-		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\views\PropertiesView.js" RelativeFilePath="views\PropertiesView.js" LastWriteTime="07/08/2024 17:30:26" Attributes="Archive" />
+		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Client\views\PropertiesView.js" RelativeFilePath="views\PropertiesView.js" LastWriteTime="07/09/2024 11:53:37" Attributes="Archive" />
 	</Metadata.Entries>
 </Metadata>
