@@ -3,7 +3,7 @@
 	<ProjectFile.Systems>
 		<ProjectSystem>
 			<ProjectSystem.GlobalConfig>
-				<GlobalConfig DateCreated="2024-04-15 17:24:32" DateLastModified="2024-07-08 14:33:09" DBVersion="7.3.3.0" DefaultLcid="1033" DesignerProject="GTUI_Server.sln" DesignerType="JScript" Lcid="1033" ProductType="VisiWin7" ProjectTemplate="Server JScript" ProjectType="Server" RuntimeType="" StoreLanguagesExplicit="True" UIType="None" UserTemplate="Server" VendorID="46F35531-5643-47BE-BF03-0B154E5B61D9" VisiWinVersion="7.3" />
+				<GlobalConfig DateCreated="2024-04-15 17:24:32" DateLastModified="2024-07-15 12:05:39" DBVersion="7.3.3.0" DefaultLcid="1033" DesignerProject="GTUI_Server.sln" DesignerType="JScript" Lcid="1033" ProductType="VisiWin7" ProjectTemplate="Server JScript" ProjectType="Server" RuntimeType="" StoreLanguagesExplicit="True" UIType="None" UserTemplate="Server" VendorID="46F35531-5643-47BE-BF03-0B154E5B61D9" VisiWinVersion="7.3" />
 			</ProjectSystem.GlobalConfig>
 			<ProjectSystem.ServerConfig>
 				<ServerConfig>
@@ -1790,156 +1790,222 @@
 										<Variable Name="sJSONResponse" PLCAddress="s=|var|c500.Application.PRG_FW.componentsController.sJSONResponse" DataType="String" AccessPath="4" />
 										<Variable Name="xExecute" PLCAddress="s=|var|c500.Application.PRG_FW.componentsController.xExecute" DataType="Boolean" AccessPath="4" />
 										<Variable Name="xDone" PLCAddress="s=|var|c500.Application.PRG_FW.componentsController.xDone" DataType="Boolean" AccessPath="4" />
-										<Variable Name="xError" PLCAddress="s=|var|c500.Application.PRG_FW.componentsController.xError" DataType="Boolean" AccessPath="4" />
 									</Node>
 								</Node>
-								<Node Name="MAIN_PRG">
+								<Node Name="PLC_PRG">
 									<Node Name="ClassScanner_0">
 										<Node Name="ApproxCylinder">
+											<Node Name="Encoder">
+												<Node Name="Control">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+												<Node Name="LSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+												<Node Name="MSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+											</Node>
 											<Node Name="SensorIn">
-												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorIn.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="SensorOut">
-												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorOut.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorOut.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="ValvIn">
-												<Node Name="configVarsList[0]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[0].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[0].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[0].sType" DataType="String" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="ValvOut">
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.ValvOut.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+										</Node>
+										<Node Name="FoldingCylinder">
+											<Node Name="Encoder">
+												<Node Name="Control">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[1]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[1].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[1].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[1].sType" DataType="String" AccessPath="4" />
+												<Node Name="LSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[10]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[10].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[10].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[10].sType" DataType="String" AccessPath="4" />
+												<Node Name="MSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[11]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[11].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[11].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[11].sType" DataType="String" AccessPath="4" />
+											</Node>
+											<Node Name="SensorIn">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorIn.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="SensorOut">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorOut.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorOut.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="ValvIn">
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="ValvOut">
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.ValvOut.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+										</Node>
+										<Node Name="ScannerArmLeft">
+											<Node Name="Cylinder">
+												<Node Name="Encoder">
+													<Node Name="Control">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="LSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="MSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
 												</Node>
-												<Node Name="configVarsList[12]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[12].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[12].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[12].sType" DataType="String" AccessPath="4" />
+												<Node Name="SensorIn">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorIn.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[13]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[13].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[13].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[13].sType" DataType="String" AccessPath="4" />
+												<Node Name="SensorOut">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorOut.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorOut.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[14]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[14].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[14].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[14].sType" DataType="String" AccessPath="4" />
+												<Node Name="ValvIn">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[15]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[15].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[15].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[15].sType" DataType="String" AccessPath="4" />
+												<Node Name="ValvOut">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.ValvOut.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[16]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[16].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[16].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[16].sType" DataType="String" AccessPath="4" />
+											</Node>
+											<Node Name="EdgeSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.EdgeSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.EdgeSensor.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="TouchSensor">
+												<Node Name="Control">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[17]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[17].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[17].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[17].sType" DataType="String" AccessPath="4" />
+												<Node Name="LSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[18]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[18].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[18].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[18].sType" DataType="String" AccessPath="4" />
+												<Node Name="MSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[19]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[19].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[19].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[19].sType" DataType="String" AccessPath="4" />
+											</Node>
+											<Node Name="ZTouchSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+										</Node>
+										<Node Name="ScannerArmRight">
+											<Node Name="Cylinder">
+												<Node Name="Encoder">
+													<Node Name="Control">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="LSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="MSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
 												</Node>
-												<Node Name="configVarsList[2]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[2].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[2].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[2].sType" DataType="String" AccessPath="4" />
+												<Node Name="SensorIn">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorIn.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[20]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[20].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[20].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[20].sType" DataType="String" AccessPath="4" />
+												<Node Name="SensorOut">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorOut.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorOut.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[3]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[3].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[3].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[3].sType" DataType="String" AccessPath="4" />
+												<Node Name="ValvIn">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[4]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[4].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[4].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[4].sType" DataType="String" AccessPath="4" />
+												<Node Name="ValvOut">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.ValvOut.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[5]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[5].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[5].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[5].sType" DataType="String" AccessPath="4" />
+											</Node>
+											<Node Name="EdgeSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.EdgeSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.EdgeSensor.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="TouchSensor">
+												<Node Name="Control">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[6]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[6].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[6].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[6].sType" DataType="String" AccessPath="4" />
+												<Node Name="LSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[7]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[7].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[7].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[7].sType" DataType="String" AccessPath="4" />
+												<Node Name="MSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
 												</Node>
-												<Node Name="configVarsList[8]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[8].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[8].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[8].sType" DataType="String" AccessPath="4" />
+											</Node>
+											<Node Name="ZTouchSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+										</Node>
+										<Node Name="ScannerArmUp">
+											<Node Name="Cylinder">
+												<Node Name="Encoder">
+													<Node Name="Control">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="LSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
+													<Node Name="MSB">
+														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+													</Node>
 												</Node>
-												<Node Name="configVarsList[9]">
-													<Variable Name="dwTypeClass" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[9].dwTypeClass" DataType="UInt32" AccessPath="4" />
-													<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[9].sName" DataType="String" AccessPath="4" />
-													<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsList[9].sType" DataType="String" AccessPath="4" />
+												<Node Name="SensorIn">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorIn.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorIn.xValue" DataType="Boolean" AccessPath="4" />
 												</Node>
-												<Variable Name="_adressed" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._adressed" DataType="Boolean" AccessPath="4" />
-												<Variable Name="_bit" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._bit" AccessPath="4" />
-												<Variable Name="_chanel" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._chanel" AccessPath="4" />
-												<Variable Name="_read" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._read" DataType="Boolean" AccessPath="4" />
-												<Variable Name="_type" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._type" AccessPath="4" />
-												<Variable Name="_zone" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn._zone" AccessPath="4" />
-												<Variable Name="cmpOrder" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.cmpOrder" AccessPath="4" />
-												<Variable Name="cmpState" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.cmpState" AccessPath="4" />
-												<Variable Name="configVarsCounter" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.configVarsCounter" AccessPath="4" />
-												<Variable Name="id" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.id" AccessPath="4" />
-												<Variable Name="oldOrder" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.oldOrder" AccessPath="4" />
-												<Variable Name="oldVal" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.oldVal" DataType="Boolean" AccessPath="4" />
-												<Variable Name="parent" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.parent" AccessPath="4" />
-												<Variable Name="sAdress" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.sAdress" DataType="String" AccessPath="4" />
-												<Variable Name="sName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.sName" DataType="String" AccessPath="4" />
-												<Variable Name="sParentName" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.sParentName" DataType="String" AccessPath="4" />
-												<Variable Name="stableStatesList[0]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[0]" AccessPath="4" />
-												<Variable Name="stableStatesList[1]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[1]" AccessPath="4" />
-												<Variable Name="stableStatesList[10]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[10]" AccessPath="4" />
-												<Variable Name="stableStatesList[2]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[2]" AccessPath="4" />
-												<Variable Name="stableStatesList[3]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[3]" AccessPath="4" />
-												<Variable Name="stableStatesList[4]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[4]" AccessPath="4" />
-												<Variable Name="stableStatesList[5]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[5]" AccessPath="4" />
-												<Variable Name="stableStatesList[6]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[6]" AccessPath="4" />
-												<Variable Name="stableStatesList[7]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[7]" AccessPath="4" />
-												<Variable Name="stableStatesList[8]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[8]" AccessPath="4" />
-												<Variable Name="stableStatesList[9]" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.stableStatesList[9]" AccessPath="4" />
-												<Variable Name="state" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.state" AccessPath="4" />
-												<Variable Name="sType" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.sType" DataType="String" AccessPath="4" />
-												<Variable Name="xEnabled" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.xEnabled" DataType="Boolean" AccessPath="4" />
-												<Variable Name="xInverted" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.xInverted" DataType="Boolean" AccessPath="4" />
-												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.MAIN_PRG.ClassScanner_0.ApproxCylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
+												<Node Name="SensorOut">
+													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorOut.xForceFalse" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorOut.xForceTrue" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorOut.xValue" DataType="Boolean" AccessPath="4" />
+												</Node>
+												<Node Name="ValvIn">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.ValvIn.xValue" DataType="Boolean" AccessPath="4" />
+												</Node>
+												<Node Name="ValvOut">
+													<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.ValvOut.xValue" DataType="Boolean" AccessPath="4" />
+												</Node>
+											</Node>
+											<Node Name="EdgeSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.EdgeSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.EdgeSensor.xValue" DataType="Boolean" AccessPath="4" />
+											</Node>
+											<Node Name="TouchSensor">
+												<Node Name="Control">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+												<Node Name="LSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+												<Node Name="MSB">
+													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
+												</Node>
+											</Node>
+											<Node Name="ZTouchSensor">
+												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
 										</Node>
 									</Node>

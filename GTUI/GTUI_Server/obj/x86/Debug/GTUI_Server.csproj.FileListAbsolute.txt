@@ -4,3 +4,9 @@ C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Ser
 C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.csproj.CoreCompileInputs.cache
 C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.dll
 C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.pdb
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\bin\Debug\GTUI_Server.dll
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\bin\Debug\GTUI_Server.pdb
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.csproj.AssemblyReference.cache
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.csproj.CoreCompileInputs.cache
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.dll
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\obj\x86\Debug\GTUI_Server.pdb

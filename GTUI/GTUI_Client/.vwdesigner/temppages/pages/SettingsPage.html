@@ -15,7 +15,13 @@
 	        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"15%","orientation":"Horizontal"}'>
 		        <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","height":"67px"}' id="btnOpenMachineConfig"></div>
 		        <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"465px","variableName":"Controller.PLC.Application.PRG_FW.componentsController.sJSONResponse"}'></div>
-		        <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"465px","variableName":"Controller.PLC.Application.PRG_FW.componentsController.sJSONResponse"}'></div>
+		        <div data-win-control="VisiWin.UI.TextVarIn" data-win-options='{"style":"Custom.Default","width":"370px","variableName":"Controller.PLC.Application.PRG_FW.componentsController.sJSONOrder"}' data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}'></div>
+		        
+		              <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options='{"style":"Custom.Default","variableName":"Controller.PLC.Application.PRG_FW.componentsController.xDone"}'>
+		                <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","fillColor":"@ErrorColor","value":"0"}'></div>
+			              <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
+		              </div>
+		            
 </div>
 	        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"85%"}' id="divMachineTree"></div>
         </div>
