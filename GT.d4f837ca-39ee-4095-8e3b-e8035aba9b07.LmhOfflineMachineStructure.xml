@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LenzeXmlDocument SchemaVersion="1.0" Lang="en-US">
+    <DescriptionInformation DocumentVersion="1.0.0.1" Creation="2024-07-15T12:04:41" PDBID="PDB20240715120441">
+        <Modification DateTime="2024-07-15T12:04:41"><![CDATA[Generated from PLC Designer]]></Modification>
+    </DescriptionInformation>
+    <DeviceInfo>
+        <Name><![CDATA[Device]]></Name>
+        <Application><![CDATA[Application]]></Application>
+        <DeviceGuid><![CDATA[d4f837ca-39ee-4095-8e3b-e8035aba9b07]]></DeviceGuid>
+    </DeviceInfo>
+    <Components>
+        <Component>
+            <Name><![CDATA[EtherCAT_Master]]></Name>
+            <InstancePath><![CDATA[Device.Application.IoConfig_Globals.EtherCAT_Master.ModuleHandlerBase]]></InstancePath>
+            <InstanceID>0x4FC86101</InstanceID>
+        </Component>
+        <Component>
+            <Name><![CDATA[Controller_Sync_Device]]></Name>
+            <InstancePath><![CDATA[Device.Application.IoConfig_Globals.Controller_Sync_Device.ModuleHandlerBase]]></InstancePath>
+            <InstanceID>0x42BE7BCD</InstanceID>
+        </Component>
+        <Component>
+            <Name><![CDATA[L_IMHP_Intern]]></Name>
+            <InstancePath><![CDATA[Device.Application.L_IMHP_Intern.DeviceModuleHandler]]></InstancePath>
+            <InstanceID>0x3BD1A25D</InstanceID>
+        </Component>
+    </Components>
+</LenzeXmlDocument>

@@ -232,7 +232,7 @@
 
         _onUpdatedDone : function(){
 
-            console.log("Done detectdo");
+
 
 
             if (this.varxDone.Value){
