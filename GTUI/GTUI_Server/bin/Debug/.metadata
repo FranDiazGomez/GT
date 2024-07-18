@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Metadata xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns="clr-namespace:VisiWin.ProjectDeployment;assembly=VisiWin7.Essentials">
 	<Metadata.Entries>
-		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\Content\GTUI_Server.1031.lng" RelativeFilePath="GTUI_Server.1031.lng" LastWriteTime="07/15/2024 12:05:39" Attributes="Archive" />
-		<MetadataEntry FilePath="C:\Users\fdiaz\Documents\Repositorios\GT\GTUI\GTUI_Server\Content\GTUI_Server.1033.lng" RelativeFilePath="GTUI_Server.1033.lng" LastWriteTime="07/15/2024 12:05:39" Attributes="Archive" />
+		<MetadataEntry FilePath="C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\Content\GTUI_Server.1031.lng" RelativeFilePath="GTUI_Server.1031.lng" LastWriteTime="07/17/2024 14:39:00" Attributes="Archive" />
+		<MetadataEntry FilePath="C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GTUI\GTUI_Server\Content\GTUI_Server.1033.lng" RelativeFilePath="GTUI_Server.1033.lng" LastWriteTime="07/17/2024 14:39:00" Attributes="Archive" />
 	</Metadata.Entries>
 </Metadata>

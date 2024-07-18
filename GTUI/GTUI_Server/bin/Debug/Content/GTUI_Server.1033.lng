@@ -3787,6 +3787,13 @@
 								<LocalizedText Name="sJSONResponse" Text="" />
 								<LocalizedText Name="xExecute" Text="" />
 								<LocalizedText Name="xDone" Text="" />
+								<LocalizedText Name="sErrorCode" Text="" />
+								<LocalizedText Name="sFileName" Text="" />
+								<LocalizedText Name="sFilePath" Text="" />
+								<LocalizedText Name="xBusy" Text="" />
+								<LocalizedText Name="xError" Text="" />
+								<LocalizedText Name="xRead" Text="" />
+								<LocalizedText Name="xSave" Text="" />
 							</Node>
 						</Node>
 						<Node Name="PLC_PRG">
@@ -3815,10 +3822,19 @@
 									</Node>
 									<Node Name="ValvIn">
 										<LocalizedText Name="xValue" Text="" />
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 									</Node>
 									<Node Name="ValvOut">
 										<LocalizedText Name="xValue" Text="" />
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 									</Node>
+									<LocalizedText Name="iEncoder" Text="" />
+									<LocalizedText Name="sState" Text="" />
+									<LocalizedText Name="xSetIn" Text="" />
+									<LocalizedText Name="xSetOut" Text="" />
+									<LocalizedText Name="xStop" Text="" />
 								</Node>
 								<Node Name="FoldingCylinder">
 									<Node Name="Encoder">
@@ -3844,10 +3860,19 @@
 									</Node>
 									<Node Name="ValvIn">
 										<LocalizedText Name="xValue" Text="" />
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 									</Node>
 									<Node Name="ValvOut">
 										<LocalizedText Name="xValue" Text="" />
+										<LocalizedText Name="xForceFalse" Text="" />
+										<LocalizedText Name="xForceTrue" Text="" />
 									</Node>
+									<LocalizedText Name="iEncoder" Text="" />
+									<LocalizedText Name="sState" Text="" />
+									<LocalizedText Name="xSetIn" Text="" />
+									<LocalizedText Name="xSetOut" Text="" />
+									<LocalizedText Name="xStop" Text="" />
 								</Node>
 								<Node Name="ScannerArmLeft">
 									<Node Name="Cylinder">
@@ -3874,10 +3899,19 @@
 										</Node>
 										<Node Name="ValvIn">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
 										<Node Name="ValvOut">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
+										<LocalizedText Name="iEncoder" Text="" />
+										<LocalizedText Name="sState" Text="" />
+										<LocalizedText Name="xSetIn" Text="" />
+										<LocalizedText Name="xSetOut" Text="" />
+										<LocalizedText Name="xStop" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3926,10 +3960,19 @@
 										</Node>
 										<Node Name="ValvIn">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
 										<Node Name="ValvOut">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
+										<LocalizedText Name="iEncoder" Text="" />
+										<LocalizedText Name="sState" Text="" />
+										<LocalizedText Name="xSetIn" Text="" />
+										<LocalizedText Name="xSetOut" Text="" />
+										<LocalizedText Name="xStop" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3978,10 +4021,19 @@
 										</Node>
 										<Node Name="ValvIn">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
 										<Node Name="ValvOut">
 											<LocalizedText Name="xValue" Text="" />
+											<LocalizedText Name="xForceFalse" Text="" />
+											<LocalizedText Name="xForceTrue" Text="" />
 										</Node>
+										<LocalizedText Name="iEncoder" Text="" />
+										<LocalizedText Name="sState" Text="" />
+										<LocalizedText Name="xSetIn" Text="" />
+										<LocalizedText Name="xSetOut" Text="" />
+										<LocalizedText Name="xStop" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />

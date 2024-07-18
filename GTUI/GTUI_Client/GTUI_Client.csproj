@@ -50,10 +50,9 @@
     <Content Include="dialogs\AlertDialog.html" />
     <Content Include="dialogs\dlgCylinder.html" />
     <Content Include="dialogs\dlgDI.html" />
+    <Content Include="dialogs\dlgDO.html" />
     <Content Include="dialogs\dlgScannerArm.html" />
-    <Content Include="dialogs\dlgDIOld.html" />
     <Content Include="dialogs\dlgScanner.html" />
-    <Content Include="dialogs\dlgDIOld2.html" />
     <Content Include="dialogs\dlgTest1.html" />
     <Content Include="dialogs\fast\CurrentAlarmsDialog.html" />
     <Content Include="dialogs\fast\DiagnosisPDFDialog.html" />
@@ -105,14 +104,11 @@
     <None Include="dialogs\dlgDI.js">
       <DependentUpon>dlgDI.html</DependentUpon>
     </None>
+    <None Include="dialogs\dlgDO.js">
+      <DependentUpon>dlgDO.html</DependentUpon>
+    </None>
     <None Include="dialogs\dlgScannerArm.js">
       <DependentUpon>dlgScannerArm.html</DependentUpon>
-    </None>
-    <None Include="dialogs\dlgDIOld.js">
-      <DependentUpon>dlgDIOld.html</DependentUpon>
-    </None>
-    <None Include="dialogs\dlgDIOld2.js">
-      <DependentUpon>dlgDIOld2.html</DependentUpon>
     </None>
     <None Include="images\svgs\Lenze_Logo.svg" />
     <None Include="images\svgs\EASY_UI_Logo.svg" />

@@ -1,0 +1,223 @@
+--------------------------------------------------------------------------------
+Checking arguments for creation of PTA package
+Target LPK file: C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GT_PLC\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk
+Package configuration file: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+OK
+
+--------------------------------------------------------------------------------
+Checking arguments for LDP merge
+Execution directory name: C:\Users\ecornado\AppData\Local\assembly\dl3\GAPYQ5ZM.210\0XBY4HAO.N8J\a7458821\009a5b3c_ce2dda01
+Signature key file: missing.
+Base device LDP file: C:\ProgramData\Lenze\DeviceDescription\{5E796237-6C09-48EA-8C4D-572A2234DAA5}\Lenze_25200000_0x00010C00.ldp
+TA LDP file: C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GT_PLC\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.SoftPlcParameter.ldp
+LDP target directory: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27
+OK
+
+--------------------------------------------------------------------------------
+Reading LDP merge configuration data from file:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+
+OK
+
+--------------------------------------------------------------------------------
+Extracting base device LXD file structure
+Main document: Lenze_25200000_0x00010C00.lxd / Version: 1.0.0.0 / Bytes: 466455 / LastWriteTimeUtc: 2024-04-08T13:30:05.4068049Z / MD5 hash: AHRJzUjmuWf9milw5apMjg==
+String table document: Lenze_25200000_0x00010C00.de-DE.lxd / Version: 1.0.0.0 / Bytes: 145277 / LastWriteTimeUtc: 2024-04-08T13:30:05.4188296Z / MD5 hash: BWWIw+ehDZasRac8PEInsg==
+OK
+
+--------------------------------------------------------------------------------
+Extracting TA LXD file structure
+Main document: SoftPlcParameter.lxd / Version: 1.0.0.0 / Bytes: 118834 / LastWriteTimeUtc: 2024-07-12T13:03:35.6605154Z / MD5 hash: LGxUrliXuoz7hvPAFIOOLw==
+String table document: SoftPlcParameter.de-DE.lxd / Version: 1.0.0.0 / Bytes: 118773 / LastWriteTimeUtc: 2024-07-12T13:03:35.6645152Z / MD5 hash: e1QxOeSz+j3+jfYNnKK4Jw==
+Data file: SoftPlcEasyStarterConfig.de-DE.xml / Bytes: 210 / LastWriteTimeUtc: 2024-07-12T13:03:35.6645152Z / MD5 hash: Ld/DlFRy4QQSu+RIYkJQmw==
+Data file: SoftPlcEasyStarterConfig.xml / Bytes: 301 / LastWriteTimeUtc: 2024-07-12T13:03:35.6645152Z / MD5 hash: Fvp9tNnNjhGJ7Gy2cxQ5BQ==
+OK
+
+--------------------------------------------------------------------------------
+Reading LXD merge configuration data from file:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+
+Reading string arguments from config file
+TA number: 100
+TA version: 1
+SelectTextFor1018Sub2Suffix en-US: TA GT
+SelectTextFor1018Sub2Suffix de-DE: TA GT
+ProductNameSuffix en-US: TA GT
+ProductNameSuffix de-DE: TA GT
+ProductInfoTextSuffix en-US: TA GT
+ProductInfoTextSuffix de-DE: TA GT
+SelectTextFor2013Sub1 en-US: TA GT
+SelectTextFor2013Sub1 de-DE: TA GT
+OK
+
+--------------------------------------------------------------------------------
+Checking arguments for LXD merge
+Execution directory name: C:\Users\ecornado\AppData\Local\assembly\dl3\GAPYQ5ZM.210\0XBY4HAO.N8J\a7458821\009a5b3c_ce2dda01
+LXD schema: C:\Program Files (x86)\Lenze\PlcDesigner\3.28.0.28491\PlcDesigner\Common\LXD.xsd
+Package configuration file: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+Temp directory: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27
+LXD target directory: automatically set to C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27
+OK
+
+--------------------------------------------------------------------------------
+Reading LXD merge configuration data from file:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+
+LXD merge configuration data already known.
+Reading C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config skipped.
+OK
+
+--------------------------------------------------------------------------------
+Identifying base device file structure
+Main document: 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\B\Lenze_25200000_0x00010C00.lxd'
+String table 'de-DE': 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\B\de-DE\Lenze_25200000_0x00010C00.de-DE.lxd'
+OK
+
+--------------------------------------------------------------------------------
+Identifying TA file structure
+Main document: 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\SoftPlcParameter.lxd'
+String table 'de-DE': 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\de-DE\SoftPlcParameter.de-DE.lxd'
+Data file: 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\SoftPlcParameter\SoftPlcEasyStarterConfig.de-DE.xml'
+Data file: 'C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\SoftPlcParameter\SoftPlcEasyStarterConfig.xml'
+OK
+
+--------------------------------------------------------------------------------
+Reading:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\B\Lenze_25200000_0x00010C00.lxd
+Reading:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\B\de-DE\Lenze_25200000_0x00010C00.de-DE.lxd
+Reading:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\SoftPlcParameter.lxd
+Reading:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\A\de-DE\SoftPlcParameter.de-DE.lxd
+OK
+
+--------------------------------------------------------------------------------
+Merging data
+
+Merging / updating main document
+0 sub menu entries cloned.
+1081 error list entries cloned.
+EncodedType set to: 25200000#100
+Version set to: 1.3073.0.0
+ProductRevision set to: 1.3073
+ProductName set to: c520 FW V01.12 - TA GT
+ProductInfoText set to: c520 FW V01.12 - TA GT
+SelectTect for 0x2013:1 is already known
+Writing main document to:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\T\Lenze_25200000#100_0x00010C01.lxd
+OK
+
+Merging / updating string tables
+Updating string table for culture: de-DE
+1085 string table entries added.
+0 string table entries redefined.
+ProductName for culture de-DE set to: c520 FW V01.12 - TA GT
+ProductInfoText for culture de-DE set to: c520 FW V01.12 - TA GT
+TA related SelectText in 0x2013:1 for culture de-DE set to: TA GT
+Writing string table document to: 
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\T\de-DE\Lenze_25200000#100_0x00010C01.de-DE.lxd
+OK
+
+
+Temporary LXD file structure successfully created: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\T\Lenze_25200000#100_0x00010C01.lxd
+OK
+
+--------------------------------------------------------------------------------
+Validating created temporary file structure
+OK
+
+--------------------------------------------------------------------------------
+Compare & update target file structure
+OK
+
+--------------------------------------------------------------------------------
+Updating LDP
+
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\Lenze_25200000_100_0x00010C01.ldp
+Creating temporary LDP file: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\1dc76b22-94e0-4086-9bdb-cf9fa5230d34\Lenze_25200000_100_0x00010C01.ldp
+Adding file structure related to C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\Lenze_25200000#100_0x00010C01.lxd
+Signing temporary LDP
+Closing temporary LDP.
+
+Data of saved temporary LDP:
+ContentType: LDP/Device
+Version: 0.0.0.4
+Created: 12/07/2024 13:03:36
+Creator: OTEL3
+Modified: 12/07/2024 13:03:36
+LastModifiedBy: ecornado
+Property: BaseDeviceLdpFileName = Lenze_25200000_0x00010C00.ldp
+Signature key id: i900.LdpMerge
+Signature: \Lenze_25200000#100_0x00010C01.lxd - 15A0DEC3DCB92BC39078BEBB16093E7095B0862558B9EB0CDD6558DCC02D0E3280ECFF47189B23126C3185F2D924041C2860933B622B575959C553C356DBB37BC210571765E962AFEBA6B214686A85998CFCF2DF176F532ED749DCAC6801D6F00B3BB47D21F2FC3561841090D1D12102AF886FEAD5CB648FA30F25CBC8F711FA
+Signature: \Cultures\de-DE\Lenze_25200000#100_0x00010C01.de-DE.lxd - 03FB557BCAC4CA16550D885FC0A3CC54E2CA8E1B7A43F7A8908F92984053BA56ECDAA6EB2531E4AC36C90AF9CE8840A9F28254C8A071402D62ED08B27489FF6A182DE5FDD048D20A1E7BF0837D96DA11E6E073E9AC028E4CDCF41A658158AA04DE20B0DC417FE177FB867F3EEC23CE1B3A2638B504974CB647EE0A19F2FE6470
+Main document: Lenze_25200000#100_0x00010C01.lxd / Version: 1.0.0.0 / Bytes: 574852 / LastWriteTimeUtc: 2024-07-12T13:03:36.0515664Z / MD5 hash: 6Qp9PJ6j98rdLi7qI2k7ig==
+String table document: Lenze_25200000#100_0x00010C01.de-DE.lxd / Version: 1.0.0.0 / Bytes: 257370 / LastWriteTimeUtc: 2024-07-12T13:03:36.1126000Z / MD5 hash: rl2mbr/UPdFF7WH71hcPgQ==
+
+Target LDP file does not exist and will be created newly.
+Copying temporary LDP file to: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\Lenze_25200000_100_0x00010C01.ldp
+
+Final target LDP data:
+ContentType: LDP/Device
+Version: 0.0.0.4
+Created: 12/07/2024 13:03:36
+Creator: OTEL3
+Modified: 12/07/2024 13:03:36
+LastModifiedBy: ecornado
+Property: BaseDeviceLdpFileName = Lenze_25200000_0x00010C00.ldp
+Signature key id: i900.LdpMerge
+Signature: \Lenze_25200000#100_0x00010C01.lxd - 15A0DEC3DCB92BC39078BEBB16093E7095B0862558B9EB0CDD6558DCC02D0E3280ECFF47189B23126C3185F2D924041C2860933B622B575959C553C356DBB37BC210571765E962AFEBA6B214686A85998CFCF2DF176F532ED749DCAC6801D6F00B3BB47D21F2FC3561841090D1D12102AF886FEAD5CB648FA30F25CBC8F711FA
+Signature: \Cultures\de-DE\Lenze_25200000#100_0x00010C01.de-DE.lxd - 03FB557BCAC4CA16550D885FC0A3CC54E2CA8E1B7A43F7A8908F92984053BA56ECDAA6EB2531E4AC36C90AF9CE8840A9F28254C8A071402D62ED08B27489FF6A182DE5FDD048D20A1E7BF0837D96DA11E6E073E9AC028E4CDCF41A658158AA04DE20B0DC417FE177FB867F3EEC23CE1B3A2638B504974CB647EE0A19F2FE6470
+Main document: Lenze_25200000#100_0x00010C01.lxd / Version: 1.0.0.0 / Bytes: 574852 / LastWriteTimeUtc: 2024-07-12T13:03:36.0515664Z / MD5 hash: 6Qp9PJ6j98rdLi7qI2k7ig==
+String table document: Lenze_25200000#100_0x00010C01.de-DE.lxd / Version: 1.0.0.0 / Bytes: 257370 / LastWriteTimeUtc: 2024-07-12T13:03:36.1126000Z / MD5 hash: rl2mbr/UPdFF7WH71hcPgQ==
+OK
+
+--------------------------------------------------------------------------------
+Reading LPK merge configuration data from file:
+C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\TaPackage.config
+
+PackageNameSuffix en-US: TA GT
+PackageNameSuffix de-DE: TA GT
+DisplayNodes en-US: c520
+DisplayNodes de-DE: c520
+OK
+
+--------------------------------------------------------------------------------
+Updating target LPK
+
+C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GT_PLC\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk
+
+Creating temporary LPK file: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk
+There are no additional files to be added to LPK.
+Saving temporary LPK file: C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk
+Data of saved temporary LPK:
+Package Id: 8fb7a19b-96a8-4151-925e-f4ab993c7569
+Package version: 1.0
+Content: UserDeviceDescription
+Package name: c520 FW V01.12 - TA GT (100) V1
+Package name en-US: c520 FW V01.12 - TA GT (100) V1
+Package name de-DE: c520 FW V01.12 - TA GT (100) V1
+Display nodes: c520
+Display nodes en-US: c520
+Display nodes de-DE: c520
+Package module: Lenze_25200000_100_0x00010C01.ldp / Version: 0.0.0.4 / Bytes: 91532 / LastWriteTimeUtc: 2024-07-12T13:03:36.4374604Z / MD5 hash: 0QiCrRoEo52sVcNMDY9FHQ==
+OK
+
+Target LPK file does not exist and will be created newly.
+Copying LPK file from C:\Users\ecornado\AppData\Local\Temp\0e1e370d-dd5d-4659-984b-9efde1e63f27\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk to C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GT_PLC\GT.d4f837ca-39ee-4095-8e3b-e8035aba9b07.Lenze_25200000_000000_100_0x00010A01.intlpk
+
+Final target package data:
+Package Id: 8fb7a19b-96a8-4151-925e-f4ab993c7569
+Package version: 1.0
+Content: UserDeviceDescription
+Package name: c520 FW V01.12 - TA GT (100) V1
+Package name en-US: c520 FW V01.12 - TA GT (100) V1
+Package name de-DE: c520 FW V01.12 - TA GT (100) V1
+Display nodes: c520
+Display nodes en-US: c520
+Display nodes de-DE: c520
+Package module: Lenze_25200000_100_0x00010C01.ldp / Version: 0.0.0.4 / Bytes: 91532 / LastWriteTimeUtc: 2024-07-12T13:03:36.4374604Z / MD5 hash: 0QiCrRoEo52sVcNMDY9FHQ==
+OK
+
+-------------------------------------------------------------------------------
+

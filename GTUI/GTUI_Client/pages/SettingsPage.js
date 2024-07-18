@@ -189,28 +189,49 @@
 
             var MachineModuleTree = document.getElementById("divMachineTree");
             var UnsignedListTree = document.createElement("ul");
-            var RootListItemText = document.createTextNode("GT");
+            UnsignedListTree.className='tree'; //Añadir clase tree para que se vea como árbol
+            var RootDetail = document.createElement("details"); //Añadir detalles para que se vea como árbol
+            RootDetail.setAttribute('open', '') //Añadir atributo open para que se cargue el árbol desplegado
+            var RootListItemText = document.createElement("summary"); //Añadir sumary (he cambiado createTextNode por createElement para crear un elemento summary en vez de texto)
+            RootListItemText.textContent="GT"; //Añadir texto al summary
+            RootListItemText.className='parent'; //Añadir clase parent para que se vea como árbol
+            
             var RootListItem =  document.createElement("li");
             var RootUnsignedList = document.createElement("ul");
             RootUnsignedList.id='ul0';
-            RootListItem.appendChild(RootListItemText);
-            RootListItem.appendChild(RootUnsignedList);
-            UnsignedListTree.appendChild(RootListItem);
+            RootDetail.appendChild(RootListItemText); //Añadir texto al detalle 
+            RootDetail.appendChild(RootUnsignedList); //Añadir lista al detalle
+            RootListItem.appendChild(RootDetail); //Añadir detalles al li 
+            UnsignedListTree.appendChild(RootListItem); 
             MachineModuleTree.appendChild(UnsignedListTree);
+            console.log(this.MachineModuleTree);
             
             this.MachineConfiguration.Components.forEach(mmelement => {
-                let Text1 = document.createTextNode(mmelement.ComponentName);
+                let Text1 = document.createElement("span");
+                Text1.textContent = mmelement.ComponentName;
+                Text1.addEventListener('dblclick',this.boundModuleOnClickHandler);// He añadido un evento click al texto en vez de al li
+                Text1.id=mmelement.ID; //Añadir id al texto
+                let Summary1 = document.createElement("summary"); //Añadir texto para que se vea como árbol 
+                Summary1.id='sumary'+(mmelement.ID);    
+                Summary1.appendChild(Text1); //Añadir texto al summary
+                let DetailsItem = document.createElement("details"); //Añadir detalles para que se vea como árbol
+                DetailsItem.setAttribute('open', '') //Añadir atributo open para que se vea abierto
                 let ListItem = document.createElement("li");
-                ListItem.addEventListener('click',this.boundModuleOnClickHandler);
                 let ListItemUl = document.createElement("ul");
                 ListItemUl.id='ul'+(mmelement.ID);
-                ListItem.id=mmelement.ID;
-                ListItem.appendChild(Text1);
-                ListItem.appendChild(ListItemUl);
+
+                //ListItem.id=mmelement.ID;
+                DetailsItem.appendChild(Summary1); //Añadir texto al detalle
+                DetailsItem.appendChild(ListItemUl); //Añadir lista al detalle
+                ListItem.appendChild(DetailsItem); //Añadir detalles al li
                 
-                if(document.getElementById('ul'+(mmelement.ParentID)))
+                if(document.getElementById('ul'+ (mmelement.ParentID)))
                 {
-                    document.getElementById('ul'+(mmelement.ParentID)).appendChild(ListItem);
+                    document.getElementById('ul'+ (mmelement.ParentID)).appendChild(ListItem);
+                    if(document.getElementById('sumary'+ (mmelement.ParentID))){
+                        document.getElementById('sumary'+ (mmelement.ParentID)).setAttribute('class','parent');
+                    }
+                        
                 }
                 else{
                     UnsignedListTree.appendChild(ListItem);

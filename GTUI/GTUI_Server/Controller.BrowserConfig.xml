@@ -5,7 +5,7 @@
   <Messages>true</Messages>
   <Device>
     <Alias>PLC</Alias>
-    <Filename>C:\Users\fdiaz\Documents\Repositorios\GT\GT.Device.Application.xml</Filename>
+    <Filename>C:\Users\ecornado\Documents\Cantejadora\Software\UI\GT\GT.Device.Application.xml</Filename>
     <NamespaceIndex>4</NamespaceIndex>
     <DeviceType>c500</DeviceType>
   </Device>
