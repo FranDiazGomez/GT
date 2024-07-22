@@ -4,18 +4,18 @@
 
 <head>
     <title>ContentDialog</title>
-	<script src="dlgScannerArm.js"></script>
+	<script src="dlgScanner.js"></script>
 </head>
 
 <body>
     <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
         <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
             <div data-win-control="VisiWin.UI.ContentDialog"
-                data-win-options='{"style":"Custom.Default","width":"600px","height":"558px"}'>
+                data-win-options='{"style":"Custom.Default","width":"600px","height":"600px"}'>
                 <div data-win-control="VisiWin.UI.ContentDialogHeader"
                     data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between"}'>
                     <div data-win-control="VisiWin.UI.Label"
-                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Scanner Arm"}'>
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Scanner"}'>
                     </div>
                     <div data-win-control="VisiWin.UI.Button"
                         data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close"}'
@@ -36,17 +36,52 @@
 	                
 	                
 	                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"50%","height":"100%","orientation":"Vertical"}'>
-		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","height":"auto","width":"100%"}'>
-			                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"100%","labelText":"Posicion Actual","labelFontClass":"OpenSans16"}' id="rActPos"></div>
-			                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"100%","labelText":"Sensor Touch","labelFontClass":"OpenSans16"}' id="rSensTouch"></div>
-			                
-			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","orientation":"Horizontal"}'>
-				                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"Glass Detector "}'></div>
-				                <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options="{style:'Custom.Default'}" id="xValue">
-				                			                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","fillColor":"@ErrorColor","value":"0"}'></div>
-					                <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
-				                			                      </div></div>
-			                    </div>
+		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto","borderColor":"@Black"}'>
+			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","height":"auto","width":"100%","orientation":"Horizontal","justifyContent":"Start"}'>
+				                
+				                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"35%","height":"auto"}'>
+					                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"Left Arm"}'></div>
+                                </div>
+				                      <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options="{style:'Custom.Default'}" id="xLeftSensor">
+				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
+					                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
+				                      </div>
+				                    </div>
+			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"100%","height":"auto"}'>
+				                <div  data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","labelText":"Measure","width":"50%","margin":"8px 0px 8px 8px","height":"auto"}' id="rLeftMeasure"></div>
+				                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"50%","margin":"8px 0px 8px 0px","labelText":"Probe"}' id="rLeftProbe"></div>
+</div>
+</div>
+		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto"}'>
+		                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","height":"auto","width":"100%","orientation":"Horizontal","justifyContent":"Start"}'>
+			                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"35%","height":"auto"}'>
+				                			                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"Center Arm"}'></div></div>
+			                			                <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options='{"style":"Custom.Default"}' id="xCenterSensor">
+			                			                				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
+			                			                					                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
+			                			                				                      </div>
+		                				                
+		                				                    </div>
+		                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"100%","height":"auto"}'>
+		                				                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","labelText":"Measure","width":"50%","margin":"8px 0px 8px 8px"}' id="rCenterMeasure"></div>
+		                				                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"50%","margin":"8px 0px 8px 0px","labelText":"Probe"}' id="rCenterProbe"></div>
+		                </div>
+		                </div>
+		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","height":"auto"}'>
+		                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","height":"auto","width":"100%","orientation":"Horizontal","justifyContent":"Start"}'>
+			                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"35%","height":"auto"}'>
+				                			                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"Right Arm"}'></div></div>
+			                			                <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options='{"style":"Custom.Default"}' id="xRightSensor">
+			                			                				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
+			                			                					                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
+			                			                				                      </div>
+		                				                
+		                				                    </div>
+		                			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","orientation":"Horizontal","width":"100%","height":"auto"}'>
+		                				                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","labelText":"Measure","width":"50%","margin":"8px 0px 8px 8px"}' id="rRightMeasure"></div>
+		                				                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"50%","margin":"8px 0px 8px 0px","labelText":"Probe"}' id="rRightProbe"></div>
+		                </div>
+		                </div>
 		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","orientation":"Horizontal","justifyContent":"Space-between","height":"auto"}'>
 			                <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","width":"25%","text":"SCAN"}' id="btnScan"></div>
 			                <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","width":"25%","text":"HOME"}' id="btnHome"></div>

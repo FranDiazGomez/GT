@@ -81,6 +81,10 @@
             });
 
             this._updateVariableStatus();
+
+            if (this.btnForce && this.btnForce.winControl && this.varForce.Value) {
+                this.btnForce.winControl.checked=true;
+            }
         },
 
         // Called first when a page is unloaded.

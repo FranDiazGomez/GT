@@ -87,8 +87,6 @@
             if (this.btnForceFalse && this.btnForceFalse.winControl && this.varForceFalse.Value) {
                 this.btnForceFalse.winControl.checked=true;
             }
-
-            this._updateVariableStatus();
         },
 
         // Called first when a page is unloaded.

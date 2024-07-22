@@ -79,6 +79,14 @@
             });
 
             this._updateVariableStatus();
+
+            if (this.btnForceTrue && this.btnForceTrue.winControl && this.varForceTrue.Value) {
+                this.btnForceTrue.winControl.checked=true;
+            }
+
+            if (this.btnForceFalse && this.btnForceFalse.winControl && this.varForceFalse.Value) {
+                this.btnForceFalse.winControl.checked=true;
+            }
         },
 
         // Called first when a page is unloaded.

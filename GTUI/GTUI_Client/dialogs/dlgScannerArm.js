@@ -9,8 +9,8 @@
 
         //Variables propias del dialog
         varPosition : VisiWin.System.DataAccess.IVariable,
-        varTouch : VisiWin.System.DataAccess.IVariable,
-        varGlassDet : VisiWin.System.DataAccess.IVariable,
+        varProbe : VisiWin.System.DataAccess.IVariable,
+        varGlassSensor : VisiWin.System.DataAccess.IVariable,
         varGoScan : VisiWin.System.DataAccess.IVariable,
         varGoHome : VisiWin.System.DataAccess.IVariable,
         varStop : VisiWin.System.DataAccess.IVariable,//////////////////////////////////////////////////
@@ -23,8 +23,8 @@
 
         _updateVariableStatusHandler : null,
         _Position : HTMLDivElement,
-        _Touch : HTMLDivElement,
-        _GlassDet : HTMLDivElement,//////////////////////////////////////////////////
+        _Probe : HTMLDivElement,
+        _GlassSensor : HTMLDivElement,//////////////////////////////////////////////////
 
 		// Is jumped to once when this page is navigated to.
         // The new page (pageControl) is passed in element, optionally the set pageOptions are passed in options.
@@ -66,8 +66,8 @@
             }
             
             this._Position = document.getElementById("rActPos");
-            this._Touch = document.getElementById("rSensTouch");
-            this._GlassDet = document.getElementById("xValue");//////////////////////////////////////////////////
+            this._Probe = document.getElementById("rProbeSensor");
+            this._GlassSensor = document.getElementById("xValue");//////////////////////////////////////////////////
             
             
         },
@@ -80,24 +80,24 @@
 
             //Genera path de las variables del dialog
             this.varPosition = this.variableService.GetVariable(this.varsActualModulePath.Value+"Cylinder.rEncoder");
-            this.varTouch = this.variableService.GetVariable(this.varsActualModulePath.Value+"TouchSensor.rValue");
-            this.varGlassDet = this.variableService.GetVariable(this.varsActualModulePath.Value+"EdgeSensor.xValue");
+            this.varProbe = this.variableService.GetVariable(this.varsActualModulePath.Value+"ProbeSensor.rValue");
+            this.varGlassSensor = this.variableService.GetVariable(this.varsActualModulePath.Value+"GlassSensor.xValue");
             this.varGoScan = this.variableService.GetVariable(this.varsActualModulePath.Value+"xScanMan");
             this.varGoHome = this.variableService.GetVariable(this.varsActualModulePath.Value+"xHomeMan");
             this.varStop = this.variableService.GetVariable(this.varsActualModulePath.Value+"xStopMan");//////////////////////////////////////////////////
 
             Promise.all([
                 this.varPosition.AttachAsync(),
-                this.varTouch.AttachAsync(),
-                this.varGlassDet.AttachAsync(),
+                this.varProbe.AttachAsync(),
+                this.varGlassSensor.AttachAsync(),
                 this.varGoScan.AttachAsync(),
                 this.varGoHome.AttachAsync(),   
                 this.varStop.AttachAsync(),//////////////////////////////////////////////////
 
             ]).then(() => {
                 this.varPosition.Change.add(this._updateVariableStatusHandler);  
-                this.varTouch.Change.add(this._updateVariableStatusHandler);
-                this.varGlassDet.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+                this.varProbe.Change.add(this._updateVariableStatusHandler);
+                this.varGlassSensor.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
             });
 
             setTimeout(this._updateVariableStatus(), 3000);
@@ -112,8 +112,8 @@
            
             //Específico para cada dialog
             this.varPosition.Change.remove(this._updateVariableStatusHandler);
-            this.varTouch.Change.remove(this._updateVariableStatusHandler);
-            this.varGlassDet.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+            this.varProbe.Change.remove(this._updateVariableStatusHandler);
+            this.varGlassSensor.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
         },
 
         // Called by the AppPageNavigator before the page object is finally destroyed. 
@@ -181,16 +181,16 @@
 
             }
             
-            if (this.varTouch.Value){
-                this._Touch.winControl.value = this.varTouch.Value;
+            if (this.varProbe.Value){
+                this._Probe.winControl.value = this.varProbe.Value;
             }else{
-                this._Touch.winControl.value = -111;
+                this._Probe.winControl.value = -111;
             }
 
-            if (this.varGlassDet.Value){
-                this._GlassDet.winControl.value = 1;
+            if (this.varGlassSensor.Value){
+                this._GlassSensor.winControl.value = 1;
             }else{
-                this._GlassDet.winControl.value = 0;
+                this._GlassSensor.winControl.value = 0;
             }//////////////////////////////////////////////////
             
         }

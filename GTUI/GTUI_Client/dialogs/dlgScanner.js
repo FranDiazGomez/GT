@@ -1,6 +1,6 @@
 ﻿(function () {
     "use strict";
-    VisiWin.UI.Pages.define("dialogs/dlgScannerArm.html", {
+    VisiWin.UI.Pages.define("dialogs/dlgScanner.html", {
 
         //Variables genéricas para todos los Dialogs
         varsActualModulePath : VisiWin.System.DataAccess.IVariable,
@@ -8,9 +8,19 @@
         _updateVariableStatusHandler: null,
 
         //Variables propias del dialog
-        varPosition : VisiWin.System.DataAccess.IVariable,
-        varTouch : VisiWin.System.DataAccess.IVariable,
-        varGlassDet : VisiWin.System.DataAccess.IVariable,
+        varLeftSensor : VisiWin.System.DataAccess.IVariable,
+        varLeftMeasure : VisiWin.System.DataAccess.IVariable,
+        varLeftProbe: VisiWin.System.DataAccess.IVariable,
+
+        varCenterSensor : VisiWin.System.DataAccess.IVariable,
+        varCenterMeasure : VisiWin.System.DataAccess.IVariable,
+        varCenterProbe: VisiWin.System.DataAccess.IVariable,
+
+        varRightSensor : VisiWin.System.DataAccess.IVariable,
+        varRightMeasure : VisiWin.System.DataAccess.IVariable,
+        varRightProbe: VisiWin.System.DataAccess.IVariable,
+        
+        varState : VisiWin.System.DataAccess.IVariable,
         varGoScan : VisiWin.System.DataAccess.IVariable,
         varGoHome : VisiWin.System.DataAccess.IVariable,
         varStop : VisiWin.System.DataAccess.IVariable,//////////////////////////////////////////////////
@@ -22,9 +32,20 @@
 		boundOnClickHandler: null,
 
         _updateVariableStatusHandler : null,
-        _Position : HTMLDivElement,
-        _Touch : HTMLDivElement,
-        _GlassDet : HTMLDivElement,//////////////////////////////////////////////////
+        //_sState : HTMLDivElement,
+
+        _LeftSensor : HTMLDivElement,
+        _LeftMeasure : HTMLDivElement,
+        _LeftProbe : HTMLDivElement,
+
+        _CenterSensor : HTMLDivElement,
+        _CenterMeasure : HTMLDivElement,
+        _CenterProbe : HTMLDivElement,
+
+        _RightSensor : HTMLDivElement,
+        _RightMeasure : HTMLDivElement,
+        _RightProbe : HTMLDivElement,//////////////////////////////////////////////////
+        
 
 		// Is jumped to once when this page is navigated to.
         // The new page (pageControl) is passed in element, optionally the set pageOptions are passed in options.
@@ -64,10 +85,21 @@
             if (this.btnStop && this.btnStop.winControl) {
                 this.btnStop.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
             }
+
+            //this._sState = document.getElementById("sState");
             
-            this._Position = document.getElementById("rActPos");
-            this._Touch = document.getElementById("rSensTouch");
-            this._GlassDet = document.getElementById("xValue");//////////////////////////////////////////////////
+            this._LeftSensor = document.getElementById("xLeftSensor");
+            this._LeftMeasure = document.getElementById("rLeftMeasure");
+            this._LeftProbe = document.getElementById("rLeftProbe");
+
+            this._CenterSensor = document.getElementById("xCenterSensor");
+            this._CenterMeasure = document.getElementById("rCenterMeasure");
+            this._CenterProbe = document.getElementById("rCenterProbe");
+
+            this._RightSensor = document.getElementById("xRightSensor");
+            this._RightMeasure = document.getElementById("rRightMeasure");
+            this._RightProbe = document.getElementById("rRightProbe");//////////////////////////////////////////////////  
+        
             
             
         },
@@ -79,28 +111,58 @@
             if (VisiWin.Utilities.isInDesignMode()) return;
 
             //Genera path de las variables del dialog
-            this.varPosition = this.variableService.GetVariable(this.varsActualModulePath.Value+"Cylinder.rEncoder");
-            this.varTouch = this.variableService.GetVariable(this.varsActualModulePath.Value+"TouchSensor.rValue");
-            this.varGlassDet = this.variableService.GetVariable(this.varsActualModulePath.Value+"EdgeSensor.xValue");
-            this.varGoScan = this.variableService.GetVariable(this.varsActualModulePath.Value+"xScanMan");
-            this.varGoHome = this.variableService.GetVariable(this.varsActualModulePath.Value+"xHomeMan");
-            this.varStop = this.variableService.GetVariable(this.varsActualModulePath.Value+"xStopMan");//////////////////////////////////////////////////
+            this.varLeftSensor = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmLeft.GlassSensor.xValue");
+            this.varLeftMeasure = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmLeft.Cylinder.rEncoder");
+            this.varLeftProbe = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmLeft.ProbeSensor.rValue");
+
+            this.varCenterSensor = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmUp.GlassSensor.xValue");
+            this.varCenterMeasure = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmUp.Cylinder.rEncoder");
+            this.varCenterProbe = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmUp.ProbeSensor.rValue");
+
+            this.varRightSensor = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmRight.GlassSensor.xValue");
+            this.varRightMeasure = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmRight.Cylinder.rEncoder");
+            this.varRightProbe = this.variableService.GetVariable(this.varsActualModulePath.Value+"ScannerArmRight.ProbeSensor.rValue");
+
+            this.varState = this.variableService.GetVariable(this.varsActualModulePath.Value+"sState");
+            this.varGoScan = this.variableService.GetVariable(this.varsActualModulePath.Value+"xScan");
+            this.varGoHome = this.variableService.GetVariable(this.varsActualModulePath.Value+"xHome");
+            this.varStop = this.variableService.GetVariable(this.varsActualModulePath.Value+"xStop");//////////////////////////////////////////////////
 
             Promise.all([
-                this.varPosition.AttachAsync(),
-                this.varTouch.AttachAsync(),
-                this.varGlassDet.AttachAsync(),
+                this.varLeftSensor.AttachAsync(),
+                this.varLeftMeasure.AttachAsync(),  
+                this.varLeftProbe.AttachAsync(),
+
+                this.varCenterSensor.AttachAsync(),
+                this.varCenterMeasure.AttachAsync(),
+                this.varCenterProbe.AttachAsync(),
+
+                this.varRightSensor.AttachAsync(),
+                this.varRightMeasure.AttachAsync(),
+                this.varRightProbe.AttachAsync(),
+                
+                this.varState.AttachAsync(),    
                 this.varGoScan.AttachAsync(),
                 this.varGoHome.AttachAsync(),   
                 this.varStop.AttachAsync(),//////////////////////////////////////////////////
 
             ]).then(() => {
-                this.varPosition.Change.add(this._updateVariableStatusHandler);  
-                this.varTouch.Change.add(this._updateVariableStatusHandler);
-                this.varGlassDet.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+                this.varLeftSensor.Change.add(this._updateVariableStatusHandler);
+                this.varLeftMeasure.Change.add(this._updateVariableStatusHandler);  
+                this.varLeftProbe.Change.add(this._updateVariableStatusHandler);
+
+                this.varCenterSensor.Change.add(this._updateVariableStatusHandler);
+                this.varCenterMeasure.Change.add(this._updateVariableStatusHandler);
+                this.varCenterProbe.Change.add(this._updateVariableStatusHandler);
+
+                this.varRightSensor.Change.add(this._updateVariableStatusHandler);
+                this.varRightMeasure.Change.add(this._updateVariableStatusHandler);
+                this.varRightProbe.Change.add(this._updateVariableStatusHandler);   
+
+                this.varState.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
             });
 
-            setTimeout(this._updateVariableStatus(), 3000);
+            this._updateVariableStatus();
 
         },
 
@@ -111,9 +173,19 @@
 
            
             //Específico para cada dialog
-            this.varPosition.Change.remove(this._updateVariableStatusHandler);
-            this.varTouch.Change.remove(this._updateVariableStatusHandler);
-            this.varGlassDet.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+            this.varLeftSensor.Change.remove(this._updateVariableStatusHandler);
+            this.varLeftMeasure.Change.remove(this._updateVariableStatusHandler);
+            this.varLeftProbe.Change.remove(this._updateVariableStatusHandler);
+
+            this.varCenterSensor.Change.remove(this._updateVariableStatusHandler);
+            this.varCenterMeasure.Change.remove(this._updateVariableStatusHandler);
+            this.varCenterProbe.Change.remove(this._updateVariableStatusHandler);
+
+            this.varRightSensor.Change.remove(this._updateVariableStatusHandler);   
+            this.varRightMeasure.Change.remove(this._updateVariableStatusHandler);
+            this.varRightProbe.Change.remove(this._updateVariableStatusHandler);
+
+            this.varState.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
         },
 
         // Called by the AppPageNavigator before the page object is finally destroyed. 
@@ -172,25 +244,61 @@
 
         _updateVariableStatus : function(){
 
-
-            if (this.varPosition.Value){
-                this._Position.winControl.value = this.varPosition.Value;
-
+            //Left Arm
+            if (this.varLeftSensor.Value){
+                this._LeftSensor.winControl.value = this.varLeftSensor.Value;
             }else{
-                this._Position.winControl.value = -13;
-
-            }
-            
-            if (this.varTouch.Value){
-                this._Touch.winControl.value = this.varTouch.Value;
-            }else{
-                this._Touch.winControl.value = -111;
+                this._LeftSensor.winControl.value = 0;
             }
 
-            if (this.varGlassDet.Value){
-                this._GlassDet.winControl.value = 1;
+            if (this.varLeftMeasure.Value){
+                this._LeftMeasure.winControl.value = this.varLeftMeasure.Value;
             }else{
-                this._GlassDet.winControl.value = 0;
+                this._LeftMeasure.winControl.value = -11;
+            }
+
+            if (this.varLeftProbe.Value){
+                this._LeftProbe.winControl.value = this.varLeftProbe.Value;
+            }else{
+                this._LeftProbe.winControl.value = -111;
+            }
+
+            //Center Arm
+            if (this.varCenterSensor.Value){ç
+                this._CenterSensor.winControl.value = this.varCenterSensor.Value;
+            }else{
+                this._CenterSensor.winControl.value = 0;
+            }   
+
+            if (this.varCenterMeasure.Value){
+                this._CenterMeasure.winControl.value = this.varCenterMeasure.Value;
+            }else{
+                this._CenterMeasure.winControl.value = -12;
+            }
+
+            if (this.varCenterProbe.Value){
+                this._CenterProbe.winControl.value = this.varCenterProbe.Value;
+            }else{
+                this._CenterProbe.winControl.value = -112;
+            }
+
+            //Right Arm
+            if (this.varRightSensor.Value){
+                this._RightSensor.winControl.value = this.varRightSensor.Value;
+            }else{
+                this._RightSensor.winControl.value = 0;
+            }
+
+            if (this.varRightMeasure.Value){
+                this._RightMeasure.winControl.value = this.varRightMeasure.Value;
+            }else{
+                this._RightMeasure.winControl.value = -13;
+            }
+
+            if (this.varRightProbe.Value){
+                this._RightProbe.winControl.value = this.varRightProbe.Value;
+            }else{
+                this._RightProbe.winControl.value = -113;
             }//////////////////////////////////////////////////
             
         }

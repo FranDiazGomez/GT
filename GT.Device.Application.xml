@@ -70,16 +70,20 @@
       <UserDefElement iecname="xStopMan" type="T_BOOL" byteoffset="2" vartype="VAR" access="ReadWrite" />
       <UserDefElement iecname="sState" type="T_STRING" byteoffset="3" vartype="VAR" access="ReadWrite" />
       <UserDefElement iecname="Cylinder" type="T_ClassCylinder" byteoffset="84" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="TouchSensor" type="T_ClassEncoder" byteoffset="200" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ZTouchSensor" type="T_ClassDI" byteoffset="214" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="EdgeSensor" type="T_ClassDI" byteoffset="217" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ProbeSensor" type="T_ClassEncoder" byteoffset="200" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ZProbeSensor" type="T_ClassDI" byteoffset="214" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="GlassSensor" type="T_ClassDI" byteoffset="217" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassScanner" size="890" nativesize="290424" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
-      <UserDefElement iecname="ScannerArmLeft" type="T_ClassScannerArm" byteoffset="0" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="220" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="440" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="660" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="776" vartype="VAR" access="ReadWrite" />
+    <TypeUserDef name="T_ClassScanner" size="974" nativesize="297856" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
+      <UserDefElement iecname="sState" type="T_STRING" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xHome" type="T_BOOL" byteoffset="81" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xScan" type="T_BOOL" byteoffset="82" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xStop" type="T_BOOL" byteoffset="83" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmLeft" type="T_ClassScannerArm" byteoffset="84" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="304" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="524" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="744" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="860" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
   </TypeList>
   <NodeList>
