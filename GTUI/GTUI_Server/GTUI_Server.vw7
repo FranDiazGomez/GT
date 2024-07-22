@@ -3,7 +3,7 @@
 	<ProjectFile.Systems>
 		<ProjectSystem>
 			<ProjectSystem.GlobalConfig>
-				<GlobalConfig DateCreated="2024-04-15 17:24:32" DateLastModified="2024-07-17 14:39:00" DBVersion="7.3.3.0" DefaultLcid="1033" DesignerProject="GTUI_Server.sln" DesignerType="JScript" Lcid="1033" ProductType="VisiWin7" ProjectTemplate="Server JScript" ProjectType="Server" RuntimeType="" StoreLanguagesExplicit="True" UIType="None" UserTemplate="Server" VendorID="46F35531-5643-47BE-BF03-0B154E5B61D9" VisiWinVersion="7.3" />
+				<GlobalConfig DateCreated="2024-04-15 17:24:32" DateLastModified="2024-07-19 14:37:01" DBVersion="7.3.3.0" DefaultLcid="1033" DesignerProject="GTUI_Server.sln" DesignerType="JScript" Lcid="1033" ProductType="VisiWin7" ProjectTemplate="Server JScript" ProjectType="Server" RuntimeType="" StoreLanguagesExplicit="True" UIType="None" UserTemplate="Server" VendorID="46F35531-5643-47BE-BF03-0B154E5B61D9" VisiWinVersion="7.3" />
 			</ProjectSystem.GlobalConfig>
 			<ProjectSystem.ServerConfig>
 				<ServerConfig>
@@ -1805,13 +1805,22 @@
 											<Node Name="Encoder">
 												<Node Name="Control">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.Control.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.Control.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="LSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.LSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="MSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.MSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
+												<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.rValue" DataType="Single" AccessPath="4" />
+												<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.xExtReset" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.Encoder.xExtR" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="SensorIn">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1838,18 +1847,28 @@
 											<Variable Name="xSetIn" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.xSetIn" DataType="Boolean" AccessPath="4" />
 											<Variable Name="xSetOut" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.xSetOut" DataType="Boolean" AccessPath="4" />
 											<Variable Name="xStop" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.xStop" DataType="Boolean" AccessPath="4" />
+											<Variable Name="rEncoder" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ApproxCylinder.rEncoder" DataType="Single" AccessPath="4" />
 										</Node>
 										<Node Name="FoldingCylinder">
 											<Node Name="Encoder">
 												<Node Name="Control">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.Control.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.Control.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="LSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.LSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="MSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.MSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
+												<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.rValue" DataType="Single" AccessPath="4" />
+												<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.xExtReset" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.Encoder.xExtR" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="SensorIn">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1876,19 +1895,29 @@
 											<Variable Name="xSetIn" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.xSetIn" DataType="Boolean" AccessPath="4" />
 											<Variable Name="xSetOut" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.xSetOut" DataType="Boolean" AccessPath="4" />
 											<Variable Name="xStop" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.xStop" DataType="Boolean" AccessPath="4" />
+											<Variable Name="rEncoder" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.FoldingCylinder.rEncoder" DataType="Single" AccessPath="4" />
 										</Node>
 										<Node Name="ScannerArmLeft">
 											<Node Name="Cylinder">
 												<Node Name="Encoder">
 													<Node Name="Control">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.Control.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.Control.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="LSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.LSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="MSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.MSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
+													<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.rValue" DataType="Single" AccessPath="4" />
+													<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.xExtReset" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.Encoder.xExtR" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="SensorIn">
 													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1915,6 +1944,7 @@
 												<Variable Name="xSetIn" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.xSetIn" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xSetOut" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.xSetOut" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xStop" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.xStop" DataType="Boolean" AccessPath="4" />
+												<Variable Name="rEncoder" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.Cylinder.rEncoder" DataType="Single" AccessPath="4" />
 											</Node>
 											<Node Name="EdgeSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1924,32 +1954,54 @@
 											<Node Name="TouchSensor">
 												<Node Name="Control">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.Control.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.Control.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="LSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.LSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="MSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.MSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
+												<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.rValue" DataType="Single" AccessPath="4" />
+												<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.xExtReset" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.TouchSensor.xExtR" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="ZTouchSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
+											<Variable Name="xHomeMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.xHomeMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xScanMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.xScanMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xStopMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.xStopMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="sState" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmLeft.sState" DataType="String" AccessPath="4" />
 										</Node>
 										<Node Name="ScannerArmRight">
 											<Node Name="Cylinder">
 												<Node Name="Encoder">
 													<Node Name="Control">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.Control.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.Control.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="LSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.LSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="MSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.MSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
+													<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.rValue" DataType="Single" AccessPath="4" />
+													<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.xExtReset" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.Encoder.xExtR" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="SensorIn">
 													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1976,6 +2028,7 @@
 												<Variable Name="xSetIn" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.xSetIn" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xSetOut" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.xSetOut" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xStop" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.xStop" DataType="Boolean" AccessPath="4" />
+												<Variable Name="rEncoder" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.Cylinder.rEncoder" DataType="Single" AccessPath="4" />
 											</Node>
 											<Node Name="EdgeSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -1985,32 +2038,54 @@
 											<Node Name="TouchSensor">
 												<Node Name="Control">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.Control.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.Control.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="LSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.LSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="MSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.MSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
+												<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.rValue" DataType="Single" AccessPath="4" />
+												<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.xExtReset" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.TouchSensor.xExtR" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="ZTouchSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
+											<Variable Name="xHomeMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.xHomeMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xScanMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.xScanMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xStopMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.xStopMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="sState" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmRight.sState" DataType="String" AccessPath="4" />
 										</Node>
 										<Node Name="ScannerArmUp">
 											<Node Name="Cylinder">
 												<Node Name="Encoder">
 													<Node Name="Control">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.Control.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.Control.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.Control.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="LSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.LSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.LSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
 													<Node Name="MSB">
 														<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.MSB.bValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+														<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.MSB.xForce" DataType="Boolean" AccessPath="4" />
 													</Node>
+													<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.rValue" DataType="Single" AccessPath="4" />
+													<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.xExtReset" DataType="Boolean" AccessPath="4" />
+													<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.Encoder.xExtR" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="SensorIn">
 													<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.SensorIn.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -2037,6 +2112,7 @@
 												<Variable Name="xSetIn" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.xSetIn" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xSetOut" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.xSetOut" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xStop" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.xStop" DataType="Boolean" AccessPath="4" />
+												<Variable Name="rEncoder" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.Cylinder.rEncoder" DataType="Single" AccessPath="4" />
 											</Node>
 											<Node Name="EdgeSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.EdgeSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
@@ -2046,19 +2122,32 @@
 											<Node Name="TouchSensor">
 												<Node Name="Control">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.Control.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.Control.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.Control.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="LSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.LSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.LSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.LSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
 												<Node Name="MSB">
 													<Variable Name="bValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.MSB.bValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="bForceValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.MSB.bForceValue" DataType="Byte" AccessPath="4" />
+													<Variable Name="xForce" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.MSB.xForce" DataType="Boolean" AccessPath="4" />
 												</Node>
+												<Variable Name="rValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.rValue" DataType="Single" AccessPath="4" />
+												<Variable Name="xExtReset" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.xExtReset" DataType="Boolean" AccessPath="4" />
+												<Variable Name="xExtR" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.TouchSensor.xExtR" DataType="Boolean" AccessPath="4" />
 											</Node>
 											<Node Name="ZTouchSensor">
 												<Variable Name="xForceFalse" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xForceFalse" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xForceTrue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xForceTrue" DataType="Boolean" AccessPath="4" />
 												<Variable Name="xValue" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.ZTouchSensor.xValue" DataType="Boolean" AccessPath="4" />
 											</Node>
+											<Variable Name="xHomeMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.xHomeMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xScanMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.xScanMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="xStopMan" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.xStopMan" DataType="Boolean" AccessPath="4" />
+											<Variable Name="sState" PLCAddress="s=|var|c500.Application.PLC_PRG.ClassScanner_0.ScannerArmUp.sState" DataType="String" AccessPath="4" />
 										</Node>
 									</Node>
 								</Node>

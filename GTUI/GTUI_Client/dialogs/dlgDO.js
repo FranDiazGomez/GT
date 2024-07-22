@@ -123,21 +123,25 @@
         _onClickHandler: function (args) {
             console.log(args);
             if (args.target._controlId == "btnForceTrue"){
-                if (this.varForceTrue.Value){
+                if (!(this.btnForceTrue.winControl.checked)){
                     this.varForceTrue.Value=false;
                 }else{
                     this.varForceTrue.Value=true;
+                    this.varForceFalse.Value=false;
+                    this.btnForceFalse.winControl.checked = false;
                 }
-                this.varForceFalse.Value=false;
+                
             } 
 
             if (args.target._controlId == "btnForceFalse"){
-                if (this.varForceFalse.Value){
+                if (!(this.btnForceFalse.winControl.checked)){
                     this.varForceFalse.Value=false;
                 }else{
                     this.varForceFalse.Value=true;
+                    this.varForceTrue.Value=false;
+                    this.btnForceTrue.winControl.checked = false;
                 }
-                this.varForceTrue.Value=false;
+                
             }
             
           

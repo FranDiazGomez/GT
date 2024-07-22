@@ -3802,13 +3802,22 @@
 									<Node Name="Encoder">
 										<Node Name="Control">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="LSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="MSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
+										<LocalizedText Name="rValue" Text="" />
+										<LocalizedText Name="xExtReset" Text="" />
+										<LocalizedText Name="xExtR" Text="" />
 									</Node>
 									<Node Name="SensorIn">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3835,18 +3844,28 @@
 									<LocalizedText Name="xSetIn" Text="" />
 									<LocalizedText Name="xSetOut" Text="" />
 									<LocalizedText Name="xStop" Text="" />
+									<LocalizedText Name="rEncoder" Text="" />
 								</Node>
 								<Node Name="FoldingCylinder">
 									<Node Name="Encoder">
 										<Node Name="Control">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="LSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="MSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
+										<LocalizedText Name="rValue" Text="" />
+										<LocalizedText Name="xExtReset" Text="" />
+										<LocalizedText Name="xExtR" Text="" />
 									</Node>
 									<Node Name="SensorIn">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3873,19 +3892,29 @@
 									<LocalizedText Name="xSetIn" Text="" />
 									<LocalizedText Name="xSetOut" Text="" />
 									<LocalizedText Name="xStop" Text="" />
+									<LocalizedText Name="rEncoder" Text="" />
 								</Node>
 								<Node Name="ScannerArmLeft">
 									<Node Name="Cylinder">
 										<Node Name="Encoder">
 											<Node Name="Control">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="LSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="MSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
+											<LocalizedText Name="rValue" Text="" />
+											<LocalizedText Name="xExtReset" Text="" />
+											<LocalizedText Name="xExtR" Text="" />
 										</Node>
 										<Node Name="SensorIn">
 											<LocalizedText Name="xForceFalse" Text="" />
@@ -3912,6 +3941,7 @@
 										<LocalizedText Name="xSetIn" Text="" />
 										<LocalizedText Name="xSetOut" Text="" />
 										<LocalizedText Name="xStop" Text="" />
+										<LocalizedText Name="rEncoder" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3921,32 +3951,54 @@
 									<Node Name="TouchSensor">
 										<Node Name="Control">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="LSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="MSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
+										<LocalizedText Name="rValue" Text="" />
+										<LocalizedText Name="xExtReset" Text="" />
+										<LocalizedText Name="xExtR" Text="" />
 									</Node>
 									<Node Name="ZTouchSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
 										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
+									<LocalizedText Name="xHomeMan" Text="" />
+									<LocalizedText Name="xScanMan" Text="" />
+									<LocalizedText Name="xStopMan" Text="" />
+									<LocalizedText Name="sState" Text="" />
 								</Node>
 								<Node Name="ScannerArmRight">
 									<Node Name="Cylinder">
 										<Node Name="Encoder">
 											<Node Name="Control">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="LSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="MSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
+											<LocalizedText Name="rValue" Text="" />
+											<LocalizedText Name="xExtReset" Text="" />
+											<LocalizedText Name="xExtR" Text="" />
 										</Node>
 										<Node Name="SensorIn">
 											<LocalizedText Name="xForceFalse" Text="" />
@@ -3973,6 +4025,7 @@
 										<LocalizedText Name="xSetIn" Text="" />
 										<LocalizedText Name="xSetOut" Text="" />
 										<LocalizedText Name="xStop" Text="" />
+										<LocalizedText Name="rEncoder" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -3982,32 +4035,54 @@
 									<Node Name="TouchSensor">
 										<Node Name="Control">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="LSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="MSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
+										<LocalizedText Name="rValue" Text="" />
+										<LocalizedText Name="xExtReset" Text="" />
+										<LocalizedText Name="xExtR" Text="" />
 									</Node>
 									<Node Name="ZTouchSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
 										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
+									<LocalizedText Name="xHomeMan" Text="" />
+									<LocalizedText Name="xScanMan" Text="" />
+									<LocalizedText Name="xStopMan" Text="" />
+									<LocalizedText Name="sState" Text="" />
 								</Node>
 								<Node Name="ScannerArmUp">
 									<Node Name="Cylinder">
 										<Node Name="Encoder">
 											<Node Name="Control">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="LSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
 											<Node Name="MSB">
 												<LocalizedText Name="bValue" Text="" />
+												<LocalizedText Name="bForceValue" Text="" />
+												<LocalizedText Name="xForce" Text="" />
 											</Node>
+											<LocalizedText Name="rValue" Text="" />
+											<LocalizedText Name="xExtReset" Text="" />
+											<LocalizedText Name="xExtR" Text="" />
 										</Node>
 										<Node Name="SensorIn">
 											<LocalizedText Name="xForceFalse" Text="" />
@@ -4034,6 +4109,7 @@
 										<LocalizedText Name="xSetIn" Text="" />
 										<LocalizedText Name="xSetOut" Text="" />
 										<LocalizedText Name="xStop" Text="" />
+										<LocalizedText Name="rEncoder" Text="" />
 									</Node>
 									<Node Name="EdgeSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
@@ -4043,19 +4119,32 @@
 									<Node Name="TouchSensor">
 										<Node Name="Control">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="LSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
 										<Node Name="MSB">
 											<LocalizedText Name="bValue" Text="" />
+											<LocalizedText Name="bForceValue" Text="" />
+											<LocalizedText Name="xForce" Text="" />
 										</Node>
+										<LocalizedText Name="rValue" Text="" />
+										<LocalizedText Name="xExtReset" Text="" />
+										<LocalizedText Name="xExtR" Text="" />
 									</Node>
 									<Node Name="ZTouchSensor">
 										<LocalizedText Name="xForceFalse" Text="" />
 										<LocalizedText Name="xForceTrue" Text="" />
 										<LocalizedText Name="xValue" Text="" />
 									</Node>
+									<LocalizedText Name="xHomeMan" Text="" />
+									<LocalizedText Name="xScanMan" Text="" />
+									<LocalizedText Name="xStopMan" Text="" />
+									<LocalizedText Name="sState" Text="" />
 								</Node>
 							</Node>
 						</Node>

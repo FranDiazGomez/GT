@@ -49,9 +49,12 @@
   <ItemGroup>
     <Content Include="dialogs\AlertDialog.html" />
     <Content Include="dialogs\dlgCylinder.html" />
-    <Content Include="dialogs\dlgDI.html" />
-    <Content Include="dialogs\dlgDO.html" />
     <Content Include="dialogs\dlgScannerArm.html" />
+    <Content Include="dialogs\dlgDI.html" />
+    <Content Include="dialogs\dlgNI_8.html" />
+    <Content Include="dialogs\dlgDO.html" />
+    <Content Include="dialogs\dlgEncoder.html" />
+    <Content Include="dialogs\dlgNO_8.html" />
     <Content Include="dialogs\dlgScanner.html" />
     <Content Include="dialogs\dlgTest1.html" />
     <Content Include="dialogs\fast\CurrentAlarmsDialog.html" />
@@ -101,14 +104,26 @@
     <None Include="dialogs\dlgCylinder.js">
       <DependentUpon>dlgCylinder.html</DependentUpon>
     </None>
+    <None Include="dialogs\dlgScannerArm.js">
+      <DependentUpon>dlgScannerArm.html</DependentUpon>
+    </None>
     <None Include="dialogs\dlgDI.js">
       <DependentUpon>dlgDI.html</DependentUpon>
+    </None>
+    <None Include="dialogs\dlgNI_8.js">
+      <DependentUpon>dlgNI_8.html</DependentUpon>
     </None>
     <None Include="dialogs\dlgDO.js">
       <DependentUpon>dlgDO.html</DependentUpon>
     </None>
-    <None Include="dialogs\dlgScannerArm.js">
-      <DependentUpon>dlgScannerArm.html</DependentUpon>
+    <None Include="dialogs\dlgEncoder.js">
+      <DependentUpon>dlgEncoder.html</DependentUpon>
+    </None>
+    <None Include="dialogs\dlgNO_8.js">
+      <DependentUpon>dlgNO_8.html</DependentUpon>
+    </None>
+    <None Include="dialogs\dlgScanner.js">
+      <DependentUpon>dlgScanner.html</DependentUpon>
     </None>
     <None Include="images\svgs\Lenze_Logo.svg" />
     <None Include="images\svgs\EASY_UI_Logo.svg" />

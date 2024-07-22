@@ -4,7 +4,7 @@
 
 <head>
     <title>ContentDialog</title>
-	<script src="dlgDO.js"></script>
+	<script src="dlgNI.js"></script>
 </head>
 
 <body>
@@ -15,9 +15,8 @@
                 <div data-win-control="VisiWin.UI.ContentDialogHeader"
                     data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between"}'>
                     <div data-win-control="VisiWin.UI.Label"
-                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Digital Output"}'>
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Numerical Input"}'>
                     </div>
-	                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"Component","fontClass":"OpenSans22"}' id="componentName"></div>
                     <div data-win-control="VisiWin.UI.Button"
                         data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close"}'
                         data-win-actions='{
@@ -31,18 +30,16 @@
                                         }
                             ]}]}'>
                     </div>
+	                <div data-win-control="VisiWin.UI.Label" data-win-options="{style:'Custom.Default'}"></div>
                 </div>
                 <div data-win-control="VisiWin.UI.ContentDialogContent"
                     data-win-options='{"style":"Custom.Default","width":"100%","orientation":"Horizontal"}'>
 	                
 	                
-	                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"50%","height":"100%","orientation":"Vertical"}'>
-		                      <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options='{"style":"Custom.Default","width":"142px","height":"134px","value":""}' id="xValue">
-		                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
-			                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
-		                      </div>
-		                <div data-win-control="VisiWin.UI.ToggleButton" data-win-options='{"style":"Custom.Default","text":"On","margin":"8px 8px 8px 8px"}' id="btnForceTrue"></div>
-		                <div data-win-control="VisiWin.UI.ToggleButton" data-win-options='{"style":"Custom.Default","margin":"8px 8px 8px 8px","text":"Off"}' id="btnForceFalse"></div>
+	                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"50%","height":"100%","orientation":"Vertical","alignContent":"Center","alignItems":"Center","justifyContent":"Start"}'>
+		                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","labelText":"Actual Value","labelTextAlignment":"Center"}' id="actualValue"></div>
+		                <div data-win-control="VisiWin.UI.NumericVarIn" data-win-options='{"style":"Custom.Default","labelText":"Force Value","labelTextAlignment":"Center","inputTextAlignment":"Center","flexBasis":"100px","labelTextWrapping":"NoWrap","labelWidth":"auto","showLabel":true,"useVariableText":false}' data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}' id="forceValue"></div>
+		                <div data-win-control="VisiWin.UI.ToggleButton" data-win-options='{"style":"Custom.Default","text":"","margin":"8px 8px 8px 8px","textOff":"Force","textOn":"Unforce"}' id="btnForceTrue"></div>
 		                
 		                    
 </div>

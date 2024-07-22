@@ -82,7 +82,7 @@
             if (VisiWin.Utilities.isInDesignMode()) return;
 
             //Genera path de las variables del dialog
-            this.varEncoder = this.variableService.GetVariable(this.varsActualModulePath.Value+"iEncoder");
+            this.varEncoder = this.variableService.GetVariable(this.varsActualModulePath.Value+"rEncoder");
             this.varState = this.variableService.GetVariable(this.varsActualModulePath.Value+"sState");
             this.varIsIn = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorIn.xValue");
             this.varIsOut = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorOut.xValue");
@@ -159,19 +159,19 @@
             if (args.target._controlId == "btnSetIn"){
                 this.varSetIn.Value=true;
                 this.varSetOut.Value=false;
-                this.varForceFalse.Value=false;
+                this.varStop.Value=false;
             } 
 
             if (args.target._controlId == "btnSetOut"){
-                this.varIsOut.Value=true
-                this.varIsIn.Value=false
+                this.varSetOut.Value=true
+                this.varSetIn.Value=false
                 this.varStop.Value=false
             }
 
             if (args.target._controlId == "btnStop"){
                 this.varStop.Value=true
-                this.varIsOut.Value=false
-                this.varIsIn.Value=false
+                this.varSetOut.Value=false
+                this.varSetIn.Value=false
             }////////////////////////////////////////////////
           
         },
@@ -187,11 +187,8 @@
 
             }
 
-            if (this.varState.Value){
-                this._State.winControl.value = this.varState.Value;
-            }else{
-                this._State.winControl.value = "Stopped";
-            }
+            this._State.winControl.value = this.varState.Value;
+            
 
             if (this.varIsIn.Value){
                 this._IsIn.winControl.value = 1;

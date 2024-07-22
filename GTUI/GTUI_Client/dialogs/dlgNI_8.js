@@ -1,6 +1,6 @@
 ﻿(function () {
     "use strict";
-    VisiWin.UI.Pages.define("dialogs/dlgDI.html", {
+    VisiWin.UI.Pages.define("dialogs/dlgNI_8.html", {
 
         //Variables genéricas para todos los Dialogs
         varsActualModulePath : VisiWin.System.DataAccess.IVariable,
@@ -8,17 +8,17 @@
         _updateVariableStatusHandler: null,
 
         //Variables propias del dialog
-        varValue : VisiWin.System.DataAccess.IVariable,
-        varForceTrue : VisiWin.System.DataAccess.IVariable,
-        varForceFalse : VisiWin.System.DataAccess.IVariable,//////////////////////////////////////////////////
+        varActValue : VisiWin.System.DataAccess.IVariable,
+        varForceValue : VisiWin.System.DataAccess.IVariable,
+        varForce : VisiWin.System.DataAccess.IVariable,//////////////////////////////////////////////////
 
         //Elementos y handlers propios del dialog
-        btnForceTrue: null,
-        btnForceFalse: null,
+        btnForce: null,
 		boundOnClickHandler: null,
 
         _updateVariableStatusHandler : null,
-        _xValue: HTMLDivElement,//////////////////////////////////////////////////
+        _ActValue: HTMLDivElement,
+        _ForceValue: HTMLDivElement,//////////////////////////////////////////////////
 
 		// Is jumped to once when this page is navigated to.
         // The new page (pageControl) is passed in element, optionally the set pageOptions are passed in options.
@@ -44,18 +44,15 @@
         // "PageMode": "Cache" ready is only called when the page is loaded for the first time.
         ready: function (element, options) {
             // Sample code
-            this.btnForceTrue = document.getElementById("btnForceTrue");
-            if (this.btnForceTrue && this.btnForceTrue.winControl) {
-                this.btnForceTrue.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
+            this.btnForce = document.getElementById("btnForce");
+            if (this.btnForce && this.btnForce.winControl) {
+                this.btnForce.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
             }
 
-            this.btnForceFalse = document.getElementById("btnForceFalse");
-            if (this.btnForceFalse && this.btnForceFalse.winControl) {
-                this.btnForceFalse.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
-            }
             
-            this._xValue = document.getElementById("xValue");//////////////////////////////////////////////////
-            //console.log(this._xValue);
+            this._ActValue = document.getElementById("actualValue");
+            this._ForceValue = document.getElementById("forceValue");//////////////////////////////////////////////////
+
         },
 
         // Called after ready.
@@ -65,28 +62,20 @@
             if (VisiWin.Utilities.isInDesignMode()) return;
 
             //Genera path de las variables del dialog
-            this.varValue = this.variableService.GetVariable(this.varsActualModulePath.Value+"xValue");
-            this.varForceTrue = this.variableService.GetVariable(this.varsActualModulePath.Value+"xForceTrue");
-            this.varForceFalse = this.variableService.GetVariable(this.varsActualModulePath.Value+"xForceFalse");
+            this.varActValue = this.variableService.GetVariable(this.varsActualModulePath.Value+"bValue");
+            this.varForceValue = this.variableService.GetVariable(this.varsActualModulePath.Value+"bForceValue");
+            this.varForce = this.variableService.GetVariable(this.varsActualModulePath.Value+"xForce");
 
             Promise.all([
-                this.varValue.AttachAsync(),
-                this.varForceTrue.AttachAsync(),
-                this.varForceFalse.AttachAsync(),//////////////////////////////////////////////////
+                this.varActValue.AttachAsync(),
+                this.varForceValue.AttachAsync(),
+                this.varForce.AttachAsync(),//////////////////////////////////////////////////
 
             ]).then(() => {
-                this.varValue.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+                this.varActValue.Change.add(this._updateVariableStatusHandler);
+                this.varForceValue.Change.add(this._updateVariableStatusHandler);
+                this.varForce.Change.add(this._updateVariableStatusHandler);////////////////////////////////////////////////
             });
-
-            this._updateVariableStatus();
-
-            if (this.btnForceTrue && this.btnForceTrue.winControl && this.varForceTrue.Value) {
-                this.btnForceTrue.winControl.checked=true;
-            }
-
-            if (this.btnForceFalse && this.btnForceFalse.winControl && this.varForceFalse.Value) {
-                this.btnForceFalse.winControl.checked=true;
-            }
 
             this._updateVariableStatus();
         },
@@ -98,7 +87,9 @@
 
            
             //Específico para cada dialog
-            this.varValue.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
+            this.varActValue.Change.remove(this._updateVariableStatusHandler);
+            this.varForceValue.Change.remove(this._updateVariableStatusHandler);
+            this.varForce.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
         },
 
         // Called by the AppPageNavigator before the page object is finally destroyed. 
@@ -114,12 +105,10 @@
         // "PageMode": "None" dispose is called before removing the controls.  
         // PageMode": "Cache" dispose is not called.
         dispose: function (element, args) {
-            if (this.btnForceTrue && this.btnForceTrue.winControl) {
-                this.btnForceTrue.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
+            if (this.btnForce && this.btnForce.winControl) {
+                this.btnForce.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
             }
-            if (this.btnForceFalse && this.btnForceFalse.winControl) {
-                this.btnForceFalse.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
-            }
+            
         },
 
         // If an exception occurs while rendering the corresponding HTML page or while editing this Javascript page,
@@ -132,44 +121,31 @@
         // Example event handler for a button click handler that was created in the Ready method.
         _onClickHandler: function (args) {
             console.log(args);
-            if (args.target._controlId == "btnForceTrue"){
-                if (!(this.btnForceTrue.winControl.checked)){
-                    this.varForceTrue.Value=false;
+            if (args.target._controlId == "btnForce"){
+                if (!(this.btnForce.winControl.checked)){
+                    this.varForce.Value=false;
                 }else{
-                    this.varForceTrue.Value=true;
-                    this.varForceFalse.Value=false;
-                    this.btnForceFalse.winControl.checked = false;
+                    this.varForceValue.Value=this._ForceValue.winControl.value;
+                    this.varForce.Value=true;
                 }
                 
             } 
 
-            if (args.target._controlId == "btnForceFalse"){
-                if (!(this.btnForceFalse.winControl.checked)){
-                    this.varForceFalse.Value=false;
-                }else{
-                    this.varForceFalse.Value=true;
-                    this.varForceTrue.Value=false;
-                    this.btnForceTrue.winControl.checked = false;
-                }
-                
-            }
-            
-          
         },
 
         _updateVariableStatus : function(){
 
 
-            if (this.varValue.Value){
-                this._xValue.winControl.value = 1;
+            if (this.varActValue.Value){
+                this._ActValue.winControl.value = this.varActValue.Value;
 
             }else{
-                this._xValue.winControl.value = 0;
+                this._ActValue.winControl.value = 0;
 
             }//////////////////////////////////////////////////
 
             
-        }
+        },
 
 
     });

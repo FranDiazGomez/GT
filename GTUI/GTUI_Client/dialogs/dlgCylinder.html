@@ -41,15 +41,17 @@
 			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"auto","height":"auto","alignContent":"Start","justifyContent":"Start","alignItems":"Center"}'>
 				                
 				                      <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options="{style:'Custom.Default'}" id="IsIn">
-				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options="{style:'Custom.Default'}"></div>
+				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
+					                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
 				                      </div>
 				                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"IN","textAlignment":"Center"}'></div>
 				                    </div>
-			                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"150px","labelText":"ENCODER","labelTextAlignment":"Center"}' id="Encoder"></div>
+			                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","width":"150px","labelText":"ENCODER","labelTextAlignment":"Center","valueTextAlignment":"Center","valueWidth":"100%"}' id="Encoder"></div>
 			                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"auto","height":"auto"}'>
 				                
 				                      <div data-win-control="VisiWin.UI.ColorIndicator" data-win-options="{style:'Custom.Default'}" id="IsOut">
-				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options="{style:'Custom.Default'}"></div>
+				                        <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"0","fillColor":"@ErrorColor"}'></div>
+					                      <div data-win-control="VisiWin.UI.ColorIndicatorLimit" data-win-options='{"style":"Custom.Default","value":"1","fillColor":"@SuccessColor"}'></div>
 				                      </div>
 				                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","text":"OUT"}'></div>
 				                    </div>
@@ -57,7 +59,7 @@
 			                    
 			                    </div>
 		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","alignItems":"Center","height":"auto"}'>
-			                <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"100%","labelText":"STATE","valueTextAlignment":"Center"}' id="State"></div></div>
+			                <div data-win-control="VisiWin.UI.TextVarOut" data-win-options='{"style":"Custom.Default","width":"100%","labelText":"STATE","valueTextAlignment":"Center","labelTextAlignment":"Center","valueWidth":"100%"}' id="State"></div></div>
 		                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"100%","orientation":"Horizontal","justifyContent":"Center","height":"auto"}'>
 			                <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","width":"20%","text":"IN"}' id="btnSetIn"></div>
 			                <div data-win-control="VisiWin.UI.Button" data-win-options='{"style":"Custom.Default","width":"45%","text":"STOP"}' id="btnStop"></div>

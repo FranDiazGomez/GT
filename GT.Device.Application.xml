@@ -6,10 +6,10 @@
     <ProjectInfo name="GT" devicename="Device" appname="Application" />
   </Header>
   <TypeList>
-    <TypeUserDef name="T_ClassComponent" size="0" nativesize="4016" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponent" />
+    <TypeUserDef name="T_ClassComponent" size="0" nativesize="4008" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponent" />
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
     <TypeSimple name="T_BYTE" size="1" swapsize="1" typeclass="Byte" iecname="BYTE" />
-    <TypeSimple name="T_INT" size="2" swapsize="2" typeclass="Int" iecname="INT" />
+    <TypeSimple name="T_REAL" size="4" swapsize="4" typeclass="Real" iecname="REAL" />
     <TypeSimple name="T_STRING" size="81" swapsize="0" typeclass="String" iecname="STRING" />
     <TypeSimple name="T_STRING_8192_" size="8193" swapsize="0" typeclass="String" iecname="STRING(8192)" />
     <TypeUserDef name="T_ClassComponentController" size="8523" nativesize="296208" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassComponentController">
@@ -25,51 +25,61 @@
       <UserDefElement iecname="xError" type="T_BOOL" byteoffset="8441" vartype="VAR_OUTPUT" access="ReadWrite" />
       <UserDefElement iecname="sErrorCode" type="T_STRING" byteoffset="8442" vartype="VAR_OUTPUT" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassDI" size="3" nativesize="4208" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDI" basetype="T_ClassComponent">
+    <TypeUserDef name="T_ClassDI" size="3" nativesize="4200" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDI" basetype="T_ClassComponent">
       <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
       <UserDefElement iecname="xForceTrue" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
       <UserDefElement iecname="xForceFalse" type="T_BOOL" byteoffset="2" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassDO" size="3" nativesize="4200" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDO" basetype="T_ClassComponent">
+    <TypeUserDef name="T_ClassDO" size="3" nativesize="4192" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassDO" basetype="T_ClassComponent">
       <UserDefElement iecname="xValue" type="T_BOOL" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
       <UserDefElement iecname="xForceTrue" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
       <UserDefElement iecname="xForceFalse" type="T_BOOL" byteoffset="2" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassNI_8" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNI_8" basetype="T_ClassComponent">
+    <TypeUserDef name="T_ClassNI_8" size="3" nativesize="4104" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNI_8" basetype="T_ClassComponent">
       <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xForce" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="bForceValue" type="T_BYTE" byteoffset="2" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassNO_8" size="1" nativesize="4112" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNO_8" basetype="T_ClassComponent">
+    <TypeUserDef name="T_ClassNO_8" size="3" nativesize="4104" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassNO_8" basetype="T_ClassComponent">
       <UserDefElement iecname="bValue" type="T_BYTE" byteoffset="0" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="xForce" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="bForceValue" type="T_BYTE" byteoffset="2" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassEncoder" size="3" nativesize="16360" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassEncoder" basetype="T_ClassComponent">
-      <UserDefElement iecname="LSB" type="T_ClassNI_8" byteoffset="0" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="MSB" type="T_ClassNI_8" byteoffset="1" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="Control" type="T_ClassNO_8" byteoffset="2" vartype="VAR" access="ReadWrite" />
+    <TypeUserDef name="T_ClassEncoder" size="14" nativesize="16352" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassEncoder" basetype="T_ClassComponent">
+      <UserDefElement iecname="rValue" type="T_REAL" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="xExtReset" type="T_BOOL" byteoffset="4" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="LSB" type="T_ClassNI_8" byteoffset="5" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="MSB" type="T_ClassNI_8" byteoffset="8" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Control" type="T_ClassNO_8" byteoffset="11" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassCylinder" size="101" nativesize="38520" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassCylinder" basetype="T_ClassComponent">
-      <UserDefElement iecname="iEncoder" type="T_INT" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
-      <UserDefElement iecname="SensorIn" type="T_ClassDI" byteoffset="2" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="SensorOut" type="T_ClassDI" byteoffset="5" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ValvIn" type="T_ClassDO" byteoffset="8" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ValvOut" type="T_ClassDO" byteoffset="11" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="Encoder" type="T_ClassEncoder" byteoffset="14" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="xSetIn" type="T_BOOL" byteoffset="17" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="xSetOut" type="T_BOOL" byteoffset="18" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="xStop" type="T_BOOL" byteoffset="19" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="sState" type="T_STRING" byteoffset="20" vartype="VAR" access="ReadWrite" />
+    <TypeUserDef name="T_ClassCylinder" size="114" nativesize="38472" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassCylinder" basetype="T_ClassComponent">
+      <UserDefElement iecname="rEncoder" type="T_REAL" byteoffset="0" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="SensorIn" type="T_ClassDI" byteoffset="4" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="SensorOut" type="T_ClassDI" byteoffset="7" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvIn" type="T_ClassDO" byteoffset="10" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ValvOut" type="T_ClassDO" byteoffset="13" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Encoder" type="T_ClassEncoder" byteoffset="16" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xSetIn" type="T_BOOL" byteoffset="30" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xSetOut" type="T_BOOL" byteoffset="31" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xStop" type="T_BOOL" byteoffset="32" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sState" type="T_STRING" byteoffset="33" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassScannerArm" size="110" nativesize="67320" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScannerArm" basetype="T_ClassComponent">
-      <UserDefElement iecname="Cylinder" type="T_ClassCylinder" byteoffset="0" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="TouchSensor" type="T_ClassEncoder" byteoffset="101" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ZTouchSensor" type="T_ClassDI" byteoffset="104" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="EdgeSensor" type="T_ClassDI" byteoffset="107" vartype="VAR" access="ReadWrite" />
+    <TypeUserDef name="T_ClassScannerArm" size="220" nativesize="69784" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScannerArm" basetype="T_ClassComponent">
+      <UserDefElement iecname="xHomeMan" type="T_BOOL" byteoffset="0" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xScanMan" type="T_BOOL" byteoffset="1" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="xStopMan" type="T_BOOL" byteoffset="2" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="sState" type="T_STRING" byteoffset="3" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="Cylinder" type="T_ClassCylinder" byteoffset="84" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="TouchSensor" type="T_ClassEncoder" byteoffset="200" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ZTouchSensor" type="T_ClassDI" byteoffset="214" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="EdgeSensor" type="T_ClassDI" byteoffset="217" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
-    <TypeUserDef name="T_ClassScanner" size="533" nativesize="283136" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
+    <TypeUserDef name="T_ClassScanner" size="890" nativesize="290424" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="ClassScanner" basetype="T_ClassComponent">
       <UserDefElement iecname="ScannerArmLeft" type="T_ClassScannerArm" byteoffset="0" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="110" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="220" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="330" vartype="VAR" access="ReadWrite" />
-      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="432" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmRight" type="T_ClassScannerArm" byteoffset="220" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ScannerArmUp" type="T_ClassScannerArm" byteoffset="440" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="ApproxCylinder" type="T_ClassCylinder" byteoffset="660" vartype="VAR" access="ReadWrite" />
+      <UserDefElement iecname="FoldingCylinder" type="T_ClassCylinder" byteoffset="776" vartype="VAR" access="ReadWrite" />
     </TypeUserDef>
   </TypeList>
   <NodeList>
