@@ -4,6 +4,7 @@
     <Entry name="SelectedDeviceCommunicator" type="System.String" value="ServerManager" />
     <Entry name="ConnectedDeviceLastIpAddress" type="System.String" value="192.168.1.21" />
     <Entry name="ConnectedDeviceLastPort" type="System.String" value="50000" />
+    <Entry name="StartUpProject" type="System.String" value="F65AD302-DCB7-4181-9B2A-8757E7C418D8" />
   </Section>
   <Section name="TargetDeviceConfigurations">
     <Section name="192.168.1.21">
