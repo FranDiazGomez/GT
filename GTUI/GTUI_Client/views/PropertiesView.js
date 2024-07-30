@@ -93,29 +93,33 @@
 
         ActualizarPropiedades : function(){
 
-            let PropertiesForm = document.createElement("form");
-            let br = document.createElement("br");
+            let PropertiesTable = document.createElement("table");
+            
             let inputProperty;
             let labelProperty;
+            
 
             let ModuleProperties = JSON.parse(this.varsResponse.Value);
 
             ModuleProperties.Properties.forEach((element,index)=>{
+                let row=document.createElement("tr");
+                let inputCell=document.createElement("td");
                 inputProperty=document.createElement("input");
                 inputProperty.setAttribute("type","text");
                 inputProperty.value=element.PropertyValue;
                 inputProperty.setAttribute("id",element.PropertyName);
                 inputProperty.setAttribute("name",element.PropertyName);
                 inputProperty.addEventListener("change",this.boundOnInputChangeHandler);
-                labelProperty=document.createElement("label");
+                labelProperty=document.createElement("td");
                 labelProperty.innerHTML=element.PropertyName;
-                labelProperty.setAttribute("htmlFor",element.PropertyName);
-                PropertiesForm.appendChild(labelProperty);
-                PropertiesForm.appendChild(inputProperty);
-                PropertiesForm.appendChild(br.cloneNode());
+                //labelProperty.setAttribute("htmlFor",element.PropertyName);
+                PropertiesTable.appendChild(row);
+                row.appendChild(labelProperty);
+                row.appendChild(inputCell);
+                inputCell.appendChild(inputProperty);
             });
 
-            this.divPropertiesElement.appendChild(PropertiesForm);
+            this.divPropertiesElement.appendChild(PropertiesTable);
         },
 
         onInputChange : function(e){
