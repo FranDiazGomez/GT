@@ -119,13 +119,13 @@
         },
 
         onInputChange : function(e){
-            
+            /*
             let updatePropertyOrder = {"order": "updateProperty","id": "","name": "","value": ""};
             updatePropertyOrder.id=this.componentID;
             updatePropertyOrder.name=e.target.id;
             updatePropertyOrder.value=e.target.value;
 
-            this.varsOrder.Value=JSON.stringify(updatePropertyOrder);
+            this.varsOrder.Value=JSON.stringify(updatePropertyOrder);*/
         }
 
     });
