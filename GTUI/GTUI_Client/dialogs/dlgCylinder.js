@@ -8,15 +8,25 @@
         _updateVariableStatusHandler: null,
 
         //Variables propias del dialog
-        varxSensorIn :  VisiWin.System.DataAccess.IVariable,
-        varxSensorOut :  VisiWin.System.DataAccess.IVariable,
-        varxForceCylinder :  VisiWin.System.DataAccess.IVariable,
+        varEncoder : VisiWin.System.DataAccess.IVariable,
+        varState : VisiWin.System.DataAccess.IVariable,
+        varIsIn : VisiWin.System.DataAccess.IVariable,
+        varIsOut : VisiWin.System.DataAccess.IVariable,
+        varSetIn : VisiWin.System.DataAccess.IVariable,
+        varSetOut : VisiWin.System.DataAccess.IVariable,
+        varStop : VisiWin.System.DataAccess.IVariable,//////////////////////////////////////////////////
 
         //Elementos y handlers propios del dialog
-        buttonForceCylinder: null,
-		boundOnClickForceCylinder: null,
-        _SensorInStatus: HTMLDivElement,
-        _SensorOutStatus: HTMLDivElement,
+        btnSetIn: null,
+        btnSetOut: null,
+        btnStop: null,
+		boundOnClickHandler: null,
+
+        _updateVariableStatusHandler : null,
+        _Encoder: HTMLDivElement,
+        _State : HTMLDivElement,
+        _IsIn : HTMLDivElement,
+        _IsOut : HTMLDivElement,//////////////////////////////////////////////////
 
 		// Is jumped to once when this page is navigated to.
         // The new page (pageControl) is passed in element, optionally the set pageOptions are passed in options.
@@ -30,7 +40,7 @@
             this._updateVariableStatusHandler = this._updateVariableStatus.bind(this);
 
             //Específico para cada dialog
-            this.boundOnClickForceCylinder = this._onClickForceCylinder.bind(this);
+            this.boundOnClickHandler = this._onClickHandler.bind(this);
             
 
 
@@ -42,14 +52,27 @@
         // "PageMode": "Cache" ready is only called when the page is loaded for the first time.
         ready: function (element, options) {
             // Sample code
-            this.buttonForceCylinder = document.getElementById("btnForceOut");
-            if (this.buttonForceCylinder && this.buttonForceCylinder.winControl) {
-                this.buttonForceCylinder.winControl.addEventListener("buttonclick", this.boundOnClickForceCylinder);
+            this.btnSetIn = document.getElementById("btnSetIn");
+            if (this.btnSetIn && this.btnSetIn.winControl) {
+                this.btnSetIn.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
             }
 
-            this._SensorInStatus = document.getElementById("SensorInStatus");
-            this._SensorOutStatus = document.getElementById("SensorOutStatus");
-
+            this.btnSetOut = document.getElementById("btnSetOut");
+            if (this.btnSetOut && this.btnSetOut.winControl) {
+                this.btnSetOut.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
+            }
+            
+            this.btnStop = document.getElementById("btnStop");
+            if (this.btnStop && this.btnStop.winControl) {
+                this.btnStop.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
+            }
+            
+            this._Encoder = document.getElementById("Encoder");
+            this._State = document.getElementById("State");
+            this._IsIn = document.getElementById("IsIn");
+            this._IsOut = document.getElementById("IsOut");//////////////////////////////////////////////////
+            
+            
         },
 
         // Called after ready.
@@ -59,22 +82,31 @@
             if (VisiWin.Utilities.isInDesignMode()) return;
 
             //Genera path de las variables del dialog
-            this.varxSensorIn = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorIn.xValue");
-            this.varxSensorOut = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorOut.xValue");
-            this.varxForceCylinder = this.variableService.GetVariable(this.varsActualModulePath.Value+"ValvIn.xValue");
+            this.varEncoder = this.variableService.GetVariable(this.varsActualModulePath.Value+"rEncoder");
+            this.varState = this.variableService.GetVariable(this.varsActualModulePath.Value+"sState");
+            this.varIsIn = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorIn.xValue");
+            this.varIsOut = this.variableService.GetVariable(this.varsActualModulePath.Value+"SensorOut.xValue");
+            this.varSetIn = this.variableService.GetVariable(this.varsActualModulePath.Value+"xSetIn");
+            this.varSetOut = this.variableService.GetVariable(this.varsActualModulePath.Value+"xSetOut");
+            this.varStop = this.variableService.GetVariable(this.varsActualModulePath.Value+"xStop");//////////////////////////////////////////////////
 
             Promise.all([
-                this.varxSensorIn.AttachAsync(),
-                this.varxSensorOut.AttachAsync(),
-                this.varxForceCylinder.AttachAsync(),
+                this.varEncoder.AttachAsync(),
+                this.varState.AttachAsync(),
+                this.varIsIn.AttachAsync(),
+                this.varIsOut.AttachAsync(),
+                this.varSetIn.AttachAsync(),
+                this.varSetOut.AttachAsync(),   
+                this.varStop.AttachAsync(),//////////////////////////////////////////////////
 
             ]).then(() => {
-                this.varxSensorIn.Change.add(this._updateVariableStatusHandler);
-                this.varxSensorOut.Change.add(this._updateVariableStatusHandler);
+                this.varEncoder.Change.add(this._updateVariableStatusHandler);  
+                this.varState.Change.add(this._updateVariableStatusHandler);
+                this.varIsIn.Change.add(this._updateVariableStatusHandler);
+                this.varIsOut.Change.add(this._updateVariableStatusHandler);//////////////////////////////////////////////////
             });
 
             this._updateVariableStatus();
-
         },
 
         // Called first when a page is unloaded.
@@ -84,8 +116,10 @@
 
            
             //Específico para cada dialog
-            this.varxSensorIn.Change.remove(this._updateVariableStatusHandler);
-            this.varxSensorOut.Change.remove(this._updateVariableStatusHandler);
+            this.varEncoder.Change.remove(this._updateVariableStatusHandler);
+            this.varState.Change.remove(this._updateVariableStatusHandler);
+            this.varIsIn.Change.remove(this._updateVariableStatusHandler);
+            this.varIsOut.Change.remove(this._updateVariableStatusHandler);//////////////////////////////////////////////////
         },
 
         // Called by the AppPageNavigator before the page object is finally destroyed. 
@@ -101,46 +135,73 @@
         // "PageMode": "None" dispose is called before removing the controls.  
         // PageMode": "Cache" dispose is not called.
         dispose: function (element, args) {
-            if (this.buttonForceCylinder && this.buttonForceCylinder.winControl) {
-                this.buttonForceCylinder.winControl.removeEventListener("buttonclick", this.boundOnClickForceCylinder);
+            if (this.btnSetIn && this.btnSetIn.winControl) {
+                this.btnSetIn.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
             }
+            if (this.btnSetOut && this.btnSetOut.winControl) {
+                this.btnSetOut.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
+            }
+            if (this.btnStop && this.btnStop.winControl) {
+                this.btnStop.winControl.removeEventListener("buttonclick", this.boundOnClickHandler);
+            }////////////////////////////////////////////////////
         },
 
         // If an exception occurs while rendering the corresponding HTML page or while editing this Javascript page,
         // then this function is branched to. Further information about the error is available in the parameter args. 
         error: function (args) {
-            console.log("Error in page dialogs/dlgCylinder.html, look at args in error function");
+            console.log("Error in page dialogs/dlgDI.html, look at args in error function");
             // debugger;
         },
 
         // Example event handler for a button click handler that was created in the Ready method.
-        _onClickForceCylinder: function (args) {
-            if (this.varxForceCylinder.Value){
-                this.varxForceCylinder.Value=false;
-            }else{
-                this.varxForceCylinder.Value=true;
+        _onClickHandler: function (args) {
+            console.log(args);
+            if (args.target._controlId == "btnSetIn"){
+                this.varSetIn.Value=true;
+                this.varSetOut.Value=false;
+                this.varStop.Value=false;
+            } 
+
+            if (args.target._controlId == "btnSetOut"){
+                this.varSetOut.Value=true
+                this.varSetIn.Value=false
+                this.varStop.Value=false
             }
+
+            if (args.target._controlId == "btnStop"){
+                this.varStop.Value=true
+                this.varSetOut.Value=false
+                this.varSetIn.Value=false
+            }////////////////////////////////////////////////
+          
         },
 
         _updateVariableStatus : function(){
 
 
-            if (this.varxSensorIn.Value){
-                this._SensorInStatus.winControl.value = 1;
+            if (this.varEncoder.Value){
+                this._Encoder.winControl.value = this.varEncoder.Value;
 
             }else{
-                this._SensorInStatus.winControl.value = 0;
+                this._Encoder.winControl.value = 0;
 
             }
 
-            if (this.varxSensorOut.Value){
-                this._SensorOutStatus.winControl.value = 1;
+            this._State.winControl.value = this.varState.Value;
+            
 
+            if (this.varIsIn.Value){
+                this._IsIn.winControl.value = 1;
             }else{
-                this._SensorOutStatus.winControl.value = 0;
-
+                this._IsIn.winControl.value = 0;
             }
 
+            if (this.varIsOut.Value){
+                this._IsOut.winControl.value = 1;
+            }else{
+                this._IsOut.winControl.value = 0;
+            }//////////////////////////////////////////////////
+            
         }
 
 

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<!--Based on LenzeCyan style-->
+
+<head>
+    <title>ContentDialog</title>
+	<script src="dlgNO_8.js"></script>
+</head>
+
+<body>
+    <div data-win-control="VisiWin.UI.DialogView" data-win-options='{"style":"Custom.Default"}'>
+        <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default"}'>
+            <div data-win-control="VisiWin.UI.ContentDialog"
+                data-win-options='{"style":"Custom.Default","width":"600px","height":"558px"}'>
+                <div data-win-control="VisiWin.UI.ContentDialogHeader"
+                    data-win-options='{"style":"Custom.Default","width":"100%","justifyContent":"Space-between"}'>
+                    <div data-win-control="VisiWin.UI.Label"
+                        data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","textAlignment":"Left","textPadding":"0px","margin":"8px 8px 8px 20px","textMargin":"0px","symbolMargin":"0px 8px 0px 0px","text":"Numerical Output"}'>
+                    </div>
+	                <div data-win-control="VisiWin.UI.Label" data-win-options='{"style":"Custom.Default","fontClass":"OpenSans22","text":"Component"}' id="componentName"></div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Icon","margin":"0px 16px 0px 0px","symbol":"close"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogContent"
+                    data-win-options='{"style":"Custom.Default","width":"100%","orientation":"Horizontal"}'>
+	                
+	                
+	                <div data-win-control="VisiWin.UI.FlexLayout" data-win-options='{"style":"Custom.Default","width":"50%","height":"100%","orientation":"Vertical","alignContent":"Center","alignItems":"Start","justifyContent":"Start"}'>
+		                <div data-win-control="VisiWin.UI.NumericVarOut" data-win-options='{"style":"Custom.Default","labelText":"Actual Value","labelTextAlignment":"Left"}' id="actualValue"></div>
+		                <div data-win-control="VisiWin.UI.NumericVarIn" data-win-options='{"style":"Custom.Default","labelText":"Force Value","labelTextAlignment":"Center","inputTextAlignment":"Left","flexBasis":"100px","labelTextWrapping":"NoWrap","labelWidth":"auto","showLabel":true,"useVariableText":false,"classNames":"a"}' data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onClick","triggeredActions":[{"type":"Lenze.Actions.ShowKeyboardDialogAction"}]}]}' id="forceValue"></div>
+		                <div data-win-control="VisiWin.UI.ToggleButton" data-win-options='{"style":"Custom.Default","text":"","margin":"8px 8px 8px 8px","textOff":"Force","textOn":"Unforce"}' id="btnForce"></div>
+		                
+		                    
+</div>
+	                <div data-win-control="VisiWin.UI.Region" data-win-options='{"style":"Custom.Default","width":"50%","height":"90%","viewName":"views/PropertiesView.html"}'></div>
+	                    
+	                    
+	                
+	                    
+                </div>
+                <div data-win-control="VisiWin.UI.ContentDialogActionBar"
+                    data-win-options='{"style":"Custom.Default","padding":"0px 8px","width":"100%","justifyContent":"Center","alignItems":"Start"}'>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Outlined","foregroundColor":"@PrimaryColor","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Cancel","width":"30%","height":"48px","fontClass":"OpenSans16","symbolMargin":"0px 8px 0px 0px"}'
+                        data-win-actions='{
+                            "triggers":[
+                                {
+                                    "type":"VisiWin.Triggers.ControlEventTrigger",
+                                    "eventName":"onButtonClick",
+                                    "triggeredActions":[
+                                        {
+                                            "type":"VisiWin.Actions.CloseDialogAction"
+                                        }
+                            ]}]}'>
+                    </div>
+                    <div data-win-control="VisiWin.UI.Button"
+                        data-win-options='{"style":"Custom.Default","foregroundColor":"@SecondaryColor","pressedForegroundColor":"@PrimaryColor","localizableText":"@[ServerApplication].Common.Ok","width":"30%","height":"48px","borderWidth":"1px","fontClass":"OpenSans16","symbolMargin":"0px 8px 0px 0px"}'
+                        data-win-actions='{"triggers":[{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.CloseDialogAction"}]},{"type":"VisiWin.Triggers.ControlEventTrigger","eventName":"onButtonClick","triggeredActions":[{"type":"VisiWin.Actions.SetBitAction","variableName":"WriteProperties"}]}]}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

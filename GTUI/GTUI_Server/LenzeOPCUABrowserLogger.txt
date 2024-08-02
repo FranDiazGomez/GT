@@ -4,11 +4,3 @@ Project                      | Server
 VisiWin.LenzeOPCUA.Brw.dll     | 73.3.0.12(Debug=False)
 
 Messages:
-15/07/2024 12:05:28   | Message | Data type LWORD is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO APPLICATION is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO BYTE is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO STRING(4) is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO STRING(c_uiContentStringSize) is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO STRING(c_uiPropertyStringSize) is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type POINTER TO SysFile.RTS_IEC_RESULT is not supported. | XMLParser.Parse() | 
-15/07/2024 12:05:28   | Message | Data type RTS_IEC_HANDLE is not supported. | XMLParser.Parse() | 
