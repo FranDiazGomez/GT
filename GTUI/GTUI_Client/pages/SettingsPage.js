@@ -6,6 +6,7 @@
 
         //Elementos HTML
         buttonElement: null,
+        buttonTest : null,
 
         //Bound handlers de Clicks y cambios de variables
 		boundOnClickHandler: null,
@@ -14,6 +15,7 @@
         boundUpdatedPath: null,
         bountUpdateWriteProperties : null,
         boundUpdatedDone : null,
+        boundTestButtonHandler : null,
 
         //Declaración de variables
         varsResponse: VisiWin.System.DataAccess.IVariable,
@@ -25,7 +27,7 @@
 
         //Declaración variables blobales
         MachineConfiguration : null,
-        element : null,
+        MachineElement : null,
         oldElement : null,
         _xOpenDialogOrder : null,
         _xUpdateComponentsOrder : null,
@@ -56,6 +58,7 @@
             this.boundOnClickHandler = this._onClickHandler.bind(this);
             this.boundModuleOnClickHandler = this._onModuleClickHandler.bind(this);
             this.boundUpdatedDone = this._onUpdatedDone.bind(this);
+            this.boundTestButtonHandler = this._buttonTestClick.bind(this);
         },
 
         // Is called when the new page has been rendered.
@@ -69,7 +72,9 @@
                 this.buttonElement.winControl.addEventListener("buttonclick", this.boundOnClickHandler);
             }
 
-
+            this.buttonTest = document.getElementById("testButton");
+            this.buttonTest.addEventListener("click",this.boundTestButtonHandler);
+            
         },
 
         // Called after ready.
@@ -156,25 +161,26 @@
 
             event.stopPropagation();
 
-            this.element = this.MachineConfiguration.Components.find((element)=>element.ID==args.target.id);
-   
+            this.MachineElement = this.MachineConfiguration.Components.find((selectedElement)=>selectedElement.ID==args.target.id);
 
             this._xOpenDialogOrder=true;
 
-            const path = GeneratePath(this.MachineConfiguration,this.element.ID);
-
+            const path = GeneratePath(this.MachineConfiguration,this.MachineElement.ID);
+            
             this.varsActualModulePath.Value=path;
 
-            if(this.element!=this.oldElement){
-                this.oldElement=this.element;
+            if(this.MachineElement!=this.oldElement){
+                this.oldElement=this.MachineElement;
 
             }else{
                
             }
 
             let orderGetProperties = {"order": "getProperties","id": "1" };
-            orderGetProperties.id=this.element.ID;
+            orderGetProperties.id=this.MachineElement.ID;
+           
             this.varsOrder.Value=JSON.stringify(orderGetProperties);
+            
         },
 
         _updateWriteProperties : function(){
@@ -249,6 +255,10 @@
 
         },
 
+        _buttonTestClick : function(){
+            this.ContentDialog("dialogs/dlgScanner.html");
+        },
+
 
         _onUpdatedDone : function(){
 
@@ -272,7 +282,7 @@
 
                     let sDialogName;
 
-                    sDialogName="dialogs/dlg"+this.element.ComponentType+".html";
+                    sDialogName="dialogs/dlg"+this.MachineElement.ComponentType+".html";
 
                     this.ContentDialog(sDialogName);
         

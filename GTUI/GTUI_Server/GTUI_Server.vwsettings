@@ -1674,5 +1674,10 @@
         </Section>
       </Section>
     </Section>
+    <Section name="VisualStudioProject">
+      <Section name="NLogVersion">
+        <Entry name="Updated" type="System.Boolean" value="True" />
+      </Section>
+    </Section>
   </Section>
 </VisiWinNET.Settings>
